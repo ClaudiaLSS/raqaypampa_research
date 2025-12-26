@@ -1,0 +1,101 @@
+id,nombre,apellido,sexo_cabeza,edad_cabeza,ocupacion,CI,comunidad,hijos_0_5,hijos_5_17,adultos_17_59,adultos_mas_60,agri_gan,trab_hogar_agr_gan,sin_actividad,hijos_en_escuela,tipo_familia,miembros,apoyo_eco,ingreso_mensual,habitaciones,migracion_temporal,migracion,panel_solar,iluminacion,gasto_mens_iluminacion,horario_imp,hora_dormir,equipos,cocina,gasto_comb,agua,freq_agua_sem,visitas
+1,Adriana,Vallejos Zurita,Femenino,27,Labores de casa,8856973,Ichuqata,,,,,,,,,,,,,,,,,,,,,,,,,,0
+2,Agustin,Zurita Flores,Masculino,76,Agricultor,3010438,Ichuqata,0,0,2,2,1,3,0,no,Extendido sin hijos,4,No,0,3,No,-,no,velas linternas,72,Noche,22:00,radio,Biomasa,0,red,0,0
+3,Alejo,Tapia Inturias,Masculino,25,Agricultor,8856451,Ichuqata,2,0,2,0,1,1,0,no,Nuclear completo,4,No,100,3,Si,Primavera,no,linterna,32,24 horas,20:00,celular radio,Biomasa,0,Rio,7,0
+4,Andres,Soto Quiroz,Masculino,41,Agricultor,8856308,Ichuqata,2,4,2,0,2,0,0,si,Nuclear completo numeroso,8,No,200,6,No,-,no,linterna,24,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,3
+5,Andres,Blanco Velarde,Masculino,77,Agricultor,913089,Ichuqata,0,0,4,2,3,3,0,no,Extendido sin hijos,6,No,300,4,Si,Primavera,no,velas linternas,190,24 horas,22:00,celular radio,biomasa gas,70,Rio,7,0
+6,Antonio,Negrete Montaño,Masculino,35,Albañil,8837012,Ichuqata,1,4,2,0,1,1,0,si,Nuclear completo numeroso,7,No,100,2,Si,Primavera,no,velas linternas,45,Tarde y Noche,21:00,celular radio,biomasa gas,35,Rio,1,3
+7,Apolinar,Vallejos Cordova,Femenino,70,Labores de casa,934513,Ichuqata,0,2,3,1,3,1,0,si,Extendido,6,No,300,3,No,-,no,velas linternas,44,24 horas,21:00,celular radio,Biomasa,0,Rio,7,0
+8,Arminda ,Reyes Rodriguez,Femenino,29,Estudiante,12742948,Ichuqata,0,2,1,1,1,1,0,si,Nuclear completo,4,No,200,3,No,-,no,linterna,32,24 horas,21:00,celular radio,biomasa gas,30,Vertiente,7,0
+9,Asencio,Arebalo Fernandez,Masculino,44,Agricultor,6528929,Ichuqata,0,4,3,1,3,1,0,si,Extendido numeroso,8,No,100,4,No,-,no,velas linternas,72,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+10,Bartolina,Cordova Blanco,Femenino,71,Labores de casa,3005430,Ichuqata,0,0,0,1,0,1,0,no,Unipersonal,1,No,0,4,Si,Verano,no,velas linternas,28,Noche,22:00,radio,biomasa gas,35,Vertiente,7,0
+11,Benancio,Sanches Zeballos,Masculino,51,Agricultor,7970428,Ichuqata,0,3,2,0,1,1,0,si,Nuclear completo,5,No,100,4,Si,Primavera,no,linterna,32,Noche,22:00,celular,biomasa gas,35,Vertiente,7,0
+12,Benjamin ,Vargas Alvarez,Masculino,62,Agricultor,4395982,Ichuqata,0,0,3,2,1,2,2,no,Extendido sin hijos,5,No,1200,3,No,-,no,linterna,24,Noche,20:00,celular radio,biomasa gas,35,red,0,0
+13,Bonifacio,Molina Pardo,Masculino,55,Agricultor,8856518,Ichuqata,0,0,4,0,2,2,0,si,Extendido sin hijos,4,No,300,4,Si,Verano,no,velas linternas,60,24 horas,22:00,celular radio,Biomasa,0,red,0,2
+14,Calixto,Agreda Inturias,Masculino,42,Agricultor,6538153,Ichuqata,0,0,0,2,2,0,0,no,Pareja nuclear,2,No,0,3,Si,Primavera,no,velas linternas,69,Noche,21:00,celular,Gas,35,Vertiente,7,1
+15,Cresencio ,Galindo Lopez,Masculino,61,Agricultor,8856397,Ichuqata,0,2,3,1,1,3,0,si,Extendido numeroso,7,No,200,4,Si,Verano,no,mechero,10,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+16,Cristina,Tapia Sanchez,Femenino,38,Labores de casa,8856609,Ichuqata,1,5,2,0,1,1,0,si,Nuclear completo numeroso,8,No,200,3,Si,Primavera,no,velas linternas,52,Noche,22:00,celular radio,Biomasa,0,Rio,7,1
+17,Diogenes,Tapia Rojas,Masculino,68,Agricultor,934506,Ichuqata,0,2,1,2,2,1,0,si,Extendido,5,No,300,5,No,-,si,linternas picolamparas,40,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,1
+18,Dionicio,Inturias Garcia,Masculino,45,Agricultor,8692324,Ichuqata,0,1,3,0,1,2,0,si,Extendido,4,No,300,3,Si,Invierno,no,linterna,120,24 horas,22:00,celular radio,biomasa gas,70,Vertiente,7,0
+19,Domingo,Vallejos Coca,Masculino,52,Agricultor,13660041,Ichuqata,0,4,2,0,1,1,0,si,Nuclear completo numeroso,6,No,500,3,No,-,no,linterna,40,Noche,22:00,radio,Biomasa,0,Vertiente,7,1
+20,Edelfrida,Jimenez Snachez,Femenino,38,Labores de casa,9365631,Ichuqata,1,3,0,2,1,1,0,si,Nuclear completo numeroso,6,No,500,3,Si,invierno,no,velas linternas,34,Noche,21:00,celular radio,biomasa gas,35,Rio,1,0
+21,Emilio,Barrios Inturias,Masculino,51,Agricultor,8750639,Ichuqata,0,3,3,0,2,1,0,si,Extendido,6,No,0,3,No,-,no,velas linternas,104,24 horas,22:00,celular radio,Biomasa,0,Vertiente,14,1
+22,Emilio,Vallejos Zurita,Masculino,31,Agricultor,9365383,Ichuqata,2,0,2,0,1,1,0,no,Nuclear completo,4,No,500,2,Si,Primavera,no,velas linternas,20,Noche,22:00,celular radio,biomasa gas,35,Vertiente,7,0
+23,Evangelio,Coca Siles,Masculino,54,Agricultor,9365996,Ichuqata,1,1,2,0,1,1,0,no,Nuclear completo,4,No,200,4,No,-,no,velas linternas,,Tarde y Noche,21:00,celular radio,Biomasa,0,Vertiente,7,2
+24,Fernando,Inturias Blanco,Masculino,45,Agricultor,14190679,Ichuqata,0,2,2,0,1,1,0,si,Nuclear completo,4,No,300,3,No,-,no,linterna,16,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+25,Florencia,Barrios Salvatierra,Femenino,,,,Ichuqata,0,1,2,0,1,1,0,si,Nuclear completo,3,No,500,4,No,-,no,linterna,24,Noche,22:00,celular radio,biomasa gas,70,Vertiente,7,2
+26,Florencio,Zurita Agreda,Masculino,55,Agricultor,9365679,Ichuqata,0,4,0,2,1,1,0,si,Nuclear completo numeroso,6,No,200,4,No,-,no,linterna,24,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,2
+27,Humberto,Sanchez Vallejos,Masculino,23,Estudiante,8857254,Ichuqata,0,1,4,0,3,1,0,no,Extendido,5,No,300,5,Si,verano,no,velas linternas mechero,77,Noche,22:00,celular radio,biomasa gas,35,Rio,7,1
+28,Irene ,Zurita Agreda,Femenino,60,Labores de casa,9365313,Ichuqata,0,1,0,2,1,1,0,si,Nuclear completo,3,No,200,4,No,-,no,velas linternas,,24 horas,22:00,celular,Biomasa,0,Vertiente,7,2
+29,Isabel,Zurita de Vallejos,Femenino,63,Labores de casa,8856892,Ichuqata,0,3,4,1,4,0,0,si,Extendido numeroso,8,No,300,4,Si,Primavera,no,velas linternas,72,24 horas,22:00,celular radio,Biomasa,0,Rio,7,0
+30,Justino ,Vallejos Montaño,Masculino,43,Agricultor,12778873,Ichuqata,0,4,4,2,3,1,2,si,Extendido numeroso,10,Si,500,4,Si,Verano,no,velas linternas,200,Noche,22:00,celular radio,Biomasa,0,Vertiente,14,1
+31,Leon ,Cabrera Becerra,Masculino,45,Agricultor,9365890,Ichuqata,1,1,4,0,3,1,0,si,Extendido,6,No,500,3,Si,Invierno,no,velas linternas,206,24 horas,22:00,celular radio,biomasa gas,35,Rio,7,1
+32,Leonarda,Quiroz Iriarte,Femenino,71,Labores de casa,8856839,Ichuqata,0,2,0,1,0,1,0,si,Monoparental,3,No,300,3,No,-,no,linterna,32,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,2
+33,Marcelino,Sanches Zeballos,Masculino,56,Agricultor,8754994,Ichuqata,0,1,4,0,3,1,0,no,Extendido,5,No,-,4,Si,Primavera,no,velas linternas mechero,64,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,1
+34,Mario ,Agreda Inturias,Masculino,53,Agricultor,6460664,Ichuqata,0,2,2,0,1,1,0,si,Nuclear completo,4,No,200,3,Si,Primavera,no,velas linternas,232,24 horas,21:00,celular,Biomasa,0,Vertiente,7,1
+35,Maura,Barrios Salvatierra,Femenino,54,Labores de casa,7970427,Ichuqata,0,3,1,1,1,1,0,si,Nuclear completo,5,No,200,4,No,-,no,linterna,48,Noche,22:00,ninguno,Biomasa,0,Rio,7,0
+36,Natividad,Montaño Vela,Femenino,97,Labores de casa,13425739,Ichuqata,0,0,0,1,0,1,0,no,Unipersonal,1,No,100,3,No,-,no,linterna,24,Noche,20:00,celular,Biomasa,0,Vertiente,7,0
+37,Panfilo,Cabrera Vallejos,Masculino,86,Agricultor,934504,Ichuqata,0,0,0,1,1,0,0,no,Unipersonal,1,No,0,4,Si,Verano,si,panel solar,0,24 horas,20:00,celular radio,biomasa gas,30,Lluvia,0,1
+38,Primitivo,Agreda Vargas,Masculino,49,Agricultor,5235278,Ichuqata,0,0,4,2,4,2,0,no,Extendido sin hijos,6,No,400,3,No,-,no,mechero,50,Noche,22:00,radio,Biomasa,0,Rio,7,3
+39,Raimundo,Zurita Cordova,Masculino,39,Agricultor,8793372,Ichuqata,0,1,2,0,1,1,0,si,Nuclear completo,3,No,300,4,No,-,no,velas linternas,46,24 horas,22:00,celular radio,biomasa gas,30,Vertiente,8,2
+40,Rodolfo,Agreda Barrios,Masculino,26,Agricultor,8753964,Ichuqata,2,0,2,0,1,1,0,no,Nuclear completo,4,No,500,2,No,-,si,linternas picolamparas,40,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+41,Roman,Inturias Blanco,Masculino,56,Agricultor,14190724,Ichuqata,0,4,2,0,1,1,0,si,Nuclear completo numeroso,6,No,400,4,Si,Primavera,no,velas linternas,72,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,0
+42,Rosalinda,Agreda Blanco,Femenino,22,Estudiante,13425050,Ichuqata,1,0,1,0,1,0,0,no,Monoparental,2,No,300,1,Si,Verano,no,velas linternas,124,24 horas,20:00,celular,Biomasa,0,Vertiente,7,1
+43,Teodora,Vallejos de Zurita,Femenino,70,Labores de casa,8856342,Ichuqata,0,1,1,2,3,0,0,no,Extendido,4,No,0,3,Si,Primavera,no,velas linternas mechero,76,24 horas,22:00,celular radio,Biomasa,0,Rio,7,0
+44,Vicente ,Tapia Sanchez,Masculino,41,Agricultor,6517820,Ichuqata,1,3,0,2,2,0,0,si,Nuclear completo numeroso,6,No,200,3,No,-,no,velas linternas mechero,70,Noche,22:00,celular radio,Biomasa,0,Vertiente,14,1
+45,Victor ,Tapia Vallejos,Masculino,48,Agricultor,8739363,Ichuqata,0,5,2,0,1,1,0,si,Nuclear completo numeroso,7,No,200,4,No,-,no,velas linternas,190,24 horas,21:00,celular radio,Biomasa,0,Vertiente,14,0
+46,Alejandro ,Salbatierra Pardo,Masculino,47,Agricultor,5912697,Tetilla,0,5,4,0,2,2,0,si,Extendido numeroso,9,No,300,4,Si,Verano,no,velas linternas,54,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+47,Bernardino ,Gandanrillas Garcia,Masculino,55,Agricultor,8753889,Tetilla,0,0,4,2,3,2,1,no,Extendido sin hijos,6,No,400,4,Si,Primavera,no,velas linternas,46,Noche,21:00,celular,biomasa gas,35,Vertiente,7,0
+48,Felix,Vasquez Vallejos,Masculino,47,Agricultor,8856801,Tetilla,0,0,3,0,1,2,0,no,Extendido sin hijos,3,No,200,3,No,-,no,velas linternas,60,24 horas,21:00,celular radio,biomasa gas,35,Rio,7,1
+49,Felix,Arroyo Encinas,Masculino,39,Agricultor,8857994,Tetilla,0,0,2,0,1,1,0,no,Pareja nuclear,2,No,400,3,No,-,no,velas linternas,150,24 horas,21:00,celular radio,Biomasa,0,Vertiente,7,1
+50,Francisco,Salvatierra Cordova,Masculino,63,Agricultor,9497093,Tetilla,0,0,0,2,1,1,0,no,Pareja nuclear,2,No,100,4,No,-,no,velas linternas,62,Noche,22:00,celular radio,biomasa gas,35,Rio,7,1
+51,Luciano ,Zurita Pantoja,Masculino,37,Agricultor,7989403,Tetilla,0,5,3,0,2,1,0,si,Extendido numeroso,8,No,100,4,No,-,si,panel solar,0,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+52,Santos,Zurita Pantoja,Masculino,47,Agricultor,8857454,Tetilla,2,0,2,0,1,1,0,no,Nuclear completo,4,No,300,2,Si,invierno,no,linterna,192,24 horas,22:00,ninguno,biomasa gas,35,Vertiente,7,0
+53,Virginia,Garcia Montaño,Femenino,57,Labores de casa,8810926,Tetilla,1,3,2,0,1,1,0,si,Nuclear completo numeroso,6,No,0,2,No,-,no,velas linternas,32,24 horas,22:00,celular radio,Biomasa,0,red,0,1
+54,Zenon,Garcia Montaño,Masculino,31,Agricultor,8857547,Tetilla,2,2,1,1,1,1,0,si,Nuclear completo numeroso,6,No,100,1,Si,primavera,no,linterna,32,Noche,21:00,celular radio,biomasa gas,35,Vertiente,7,1
+55,Aquilino,Quiroz Pintado,Masculino,36,Estudiante,8856302,Tipapampa,0,0,1,0,1,0,0,no,Unipersonal,1,No,500,2,Si,invierno,no,velas linternas,110,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,0
+56,Fidelia ,Arebalo Calderon,Femenino,38,Labores de casa,8750596,Tipapampa,0,3,0,0,0,0,0,no,Monoparental,3,No,0,4,No,-,no,linterna,32,Noche,22:00,celular,Biomasa,0,Vertiente,7,0
+57,German,Calderon Pantoja ,Masculino,57,Agricultor,8750624,Tipapampa,0,1,1,1,1,1,0,no,Nuclear completo,3,No,200,4,Si,Verano,si,Picolampara,0,24 horas,22:00,celular,Biomasa,0,Rio,7,0
+58,Albino,Acosta,Masculino,27,Agricultor,8750608,Molle Orcko,1,1,0,1,0,1,0,no,Monoparental,3,No,1100,2,Si,Primavera,no,velas linternas mechero,68,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,2
+59,Andrea,Reyes Salazar,Femenino,44,Labores de casa,14190592,Molle Orcko,2,5,5,0,1,4,0,si,Extendido numeroso,12,Si,300,4,Si,Verano,no,velas linternas,112,24 horas,20:00,radio,Biomasa,0,Vertiente,7,0
+60,Anita,Inturias Salazar,Femenino,32,Labores de casa,13425797,Molle Orcko,2,2,2,0,1,1,0,si,Nuclear completo numeroso,6,No,0,5,No,-,si,linternas picolamparas,80,24 horas,22:00,radio,biomasa gas,35,Rio,14,0
+61,Basilio,Salazar Saravia,Masculino,58,Agricultor,8750592,Molle Orcko,0,0,2,2,2,2,0,no,Extendido sin hijos,4,No,250,3,Si,Primavera y verano,si,Picolampara,0,Noche,22:00,celular radio,biomasa gas,70,Vertiente,7,2
+62,Calixto,Negrete Choque,Masculino,55,Agricultor,3799684,Molle Orcko,0,1,2,0,1,1,0,si,Nuclear completo,3,No,500,2,Si,Verano,no,linternas mechero,42,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+63,Carlos,Negrete Zurita,Masculino,48,Agricultor,7989355,Molle Orcko,1,4,2,0,1,1,0,si,Nuclear completo numeroso,7,No,100,3,No,-,no,velas linternas,124,24 horas,21:00,ninguno,biomasa gas,35,Vertiente,14,1
+64,Celestina,Inturias Claros de Rodriguez,Femenino,50,Labores de casa,12582342,Molle Orcko,2,4,1,0,1,0,0,si,Monoparental numeroso,7,Si,200,4,Si,Primavera y Invierno,no,velas linternas,48,Noche,22:00,celular radio,biomasa gas,35,Vertiente,7,2
+65,Claudio,Meneses Vargas,Masculino,19,Estudiante,16823337,Molle Orcko,,,,,,,,,,,,,,,,,,,,,,,,,,1
+66,Clemente ,Rivera Correa,Masculino,63,Agricultor,9500367,Molle Orcko,0,1,0,2,1,1,0,si,Nuclear completo,3,Si,300,2,No,-,no,velas,16,24 horas,20:00,celular radio,Biomasa,0,Vertiente,14,0
+67,Dionisio,Vargas Castro,Masculino,52,Agricultor,6542116,Molle Orcko,1,1,3,0,1,2,0,si,Extendido,5,No,200,3,Si,Verano,no,linterna,32,24 horas,21:00,celular radio,Biomasa,0,Vertiente,7,1
+68,Eugenio,Campos Rojas,Masculino,42,Agricultor,8744378,Molle Orcko,1,3,5,0,3,2,0,no,Extendido numeroso,9,No,200,2,Si,invierno,no,velas linternas,210,24 horas,22:00,ninguno,Biomasa,0,Vertiente,14,0
+69,Felipe ,Rivera Correa,Masculino,41,Agricultor,6527346,Molle Orcko,2,3,1,1,2,0,0,no,Nuclear completo numeroso,7,No,200,3,No,-,no,velas linternas,47,Noche,22:00,celular,Biomasa,0,Vertiente,7,1
+70,German,Rodriguez Calero,Masculino,45,Agricultor,12972490,Molle Orcko,0,3,1,0,1,0,0,no,Monoparental,4,No,100,3,No,-,no,velas mecheros,46,24 horas,20:00,celular radio,Biomasa,0,Vertiente,7,0
+71,Guilber,Salazar Flores,Masculino,28,Agricultor,13195049,Molle Orcko,1,4,3,0,2,1,0,si,Extendido numeroso,8,No,300,2,Si,Verano,no,velas linternas mechero,84,24 horas,19:00,celular radio,Biomasa,0,Vertiente,7,1
+72,Guillermo,Negrete Zurita,Masculino,42,Agricultor,12778372,Molle Orcko,1,1,3,0,1,2,0,si,Extendido,5,No,0,2,Si,Verano,no,velas linternas,118,24 horas,21:00,celular radio,biomasa gas,35,Vertiente,7,1
+73,Isabel,Hinojosa,Femenino,73,Labores de casa,7989347,Molle Orcko,0,0,6,1,6,0,1,no,Extendido numeroso sin hijos,7,Si,300,1,Si,Verano,no,linterna,24,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+74,Jose,Acosta Inturias,Masculino,38,Agricultor,13657875,Molle Orcko,0,3,2,0,1,1,0,si,Nuclear completo,5,No,400,3,No,-,no,velas linternas,60,24 horas,21:00,celular radio,Biomasa,0,Vertiente,7,2
+75,Justina,Salazar Soto de Inturias,Femenino,52,Labores de casa,12582445,Molle Orcko,0,3,8,0,7,1,0,si,Extendido numeroso,11,No,600,5,Si,Invierno y verano,no,velas linternas picolampara,208,24 horas,20:00,celular,biomasa gas,35,Vertiente,14,1
+76,Lorenzo ,Rivera Correa,Masculino,51,Agricultor,6517852,Molle Orcko,1,2,2,0,1,1,0,no,Nuclear completo,5,No,0,3,Si,Primavera,no,velas linternas,62,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,1
+77,Lucio,Vargas Claros,Masculino,27,Agricultor,14218817,Molle Orcko,1,0,2,0,1,1,0,no,Nuclear completo,3,No,2100,1,Si,Invierno y verano,no,linterna,64,24 horas,22:00,celular radio,Biomasa,0,red,0,0
+78,Martin,Salazar,Masculino,44,Agricultor,8821119,Molle Orcko,1,4,3,0,2,1,0,si,Extendido numeroso,8,No,200,3,No,-,no,velas linternas,120,24 horas,20:00,celular radio,Biomasa,0,Vertiente,14,1
+79,Martin,Zurita Cabrera,Masculino,59,Agricultor,13386187,Molle Orcko,0,2,0,2,1,1,0,no,Nuclear completo,4,Si,200,4,No,-,no,linterna,32,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+80,Miguel,Meneses Claros,Masculino,53,Agricultor,14190632,Molle Orcko,0,1,2,0,1,1,0,si,Nuclear completo,3,No,400,4,No,-,no,velas linternas mechero,62,24 horas,22:00,celular radio,Biomasa,0,Vertiente,7,1
+81,Moises,Acosta Inturias,Masculino,50,Agricultor,14190253,Molle Orcko,2,3,2,0,1,1,0,si,Nuclear completo numeroso,7,No,200,3,No,-,no,velas linternas,84,24 horas,20:00,celular radio,Biomasa,0,Vertiente,14,2
+82,Nicacia,Rodriguez,Femenino,43,Labores de casa,9308806,Molle Orcko,1,0,1,1,1,1,0,no,Nuclear completo,4,No,300,2,Si,Primavera,no,velas mecheros,110,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+83,Pascual,Zurita Iriarte,Masculino,57,Agricultor,13625295,Molle Orcko,0,2,2,0,1,1,0,no,Nuclear completo,4,No,200,3,No,-,no,linterna,32,24 horas,21:00,celular radio,Biomasa,0,Rio,7,1
+84,Remigio,Rodriguez Inturias,Masculino,34,Agricultor,13386399,Molle Orcko,0,0,2,0,1,1,0,no,Pareja nuclear,2,No,100,6,No,-,no,velas linternas,82,Noche,20:00,celular radio,Biomasa,0,Rio,14,1
+85,Roman,Valverde Claros,Masculino,38,Agricultor,13386027,Molle Orcko,1,1,2,0,1,1,0,no,Nuclear completo,4,No,500,3,No,-,no,velas linternas mechero,68,24 horas,23:00,celular radio,Biomasa,0,red,0,0
+86,Rosa,Cabrera Conde,Femenino,65,Labores de casa,14190843,Molle Orcko,0,0,0,1,0,1,0,no,Unipersonal,1,No,100,4,No,-,no,velas mecheros,55,Noche,21:00,ninguno,Biomasa,0,Vertiente,7,1
+87,Saturna,Vargas Rodriguez,Femenino,41,Labores de casa,14190339,Molle Orcko,0,1,3,0,2,1,0,si,Extendido,4,No,500,2,No,-,no,linterna,32,Noche,22:00,celular radio,Biomasa,0,red,0,0
+88,Vicente ,Inturias Claros,Masculino,,,,Molle Orcko,2,2,1,0,1,0,0,no,Monoparental numeroso,5,No,100,4,Si,invierno,no,velas linternas,124,24 horas,20:00,celular radio,Biomasa,0,Vertiente,7,1
+89,Victoriano ,Negrete Zurita,Masculino,36,Agricultor,7989342,Molle Orcko,0,1,2,0,1,1,0,si,Nuclear completo,3,No,200,4,Si,invierno,no,mechero,25,Noche,21:00,celular radio,Biomasa,0,Vertiente,7,0
+90,Adrian,Felipes,Masculino,26,Agricultor,8856738,Sillar,0,1,1,2,2,1,0,si,Extendido,4,No,100,2,No,-,no,linterna,32,Noche,20:00,celular,Biomasa,0,Rio,7,2
+91,Valeriano,Romero   ,Masculino,87,Agricultor,934595,Sillar,0,0,0,1,1,0,0,no,Unipersonal,1,No,0,3,No,-,si,Picolampara,0,24 horas,20:00,radio,Biomasa,0,Vertiente  y Lluvia,14,2
+92,Benigno,Inturias Fernandez,Masculino,64,Minero,3005408,Sillar,0,0,0,1,1,0,0,no,Unipersonal,1,No,0,2,No,-,si,Panel solar,0,Noche,22:00,celular radio,Biomasa,0,Lluvia,0,2
+93,Dario ,Bargas,Masculino,,,,Sillar,0,1,0,1,1,0,0,si,Monoparental,2,No,100,3,No,-,no,velas linternas,62,Noche,20:00,celular radio,biomasa gas,35,Rio,7,0
+94,Eugenia,Chami Romero,Femenino,66,Labores de casa,13386324,Sillar,0,1,1,1,1,1,0,si,Nuclear completo,3,No,0,2,No,-,no,velas linternas,92,24 horas,22:00,celular radio,biomasa gas,35,Rio,7,2
+95,Guillermo,Romero Becerra,Masculino,44,Agricultor,8840489,Sillar,0,1,2,1,1,1,1,si,Extendido,4,No,100,4,No,-,no,linterna,64,Noche,21:00,celular radio,biomasa gas,70,red,0,2
+96,Guillermo,Cordova Vasquez,Masculino,34,Agricultor,12588313,Sillar,2,2,2,0,1,1,0,si,Nuclear completo numeroso,6,No,200,3,No,-,no,linterna,64,24 horas,21:00,celular radio,Biomasa,0,Vertiente,7,1
+97,Isidoro ,Fernandez,Masculino,68,Agricultor,4393316,Sillar,0,0,0,2,1,1,0,no,Pareja nuclear,2,No,300,5,No,-,no,velas linternas mechero,72,Noche,22:00,celular radio,Biomasa,0,Vertiente,7,0
+98,Julian,Zurita,Masculino,58,Agricultor,934614,Sillar,0,0,9,0,6,3,0,no,Extendido numeroso sin hijos,9,No,0,3,Si,Verano e invierno,no,velas linternas,172,24 horas,22:00,celular radio,Biomasa,0,Vertiente,14,0
+99,Olimpio,Cordova Vasquez,Masculino,39,Agricultor,13657150,Sillar,1,5,2,0,1,1,0,si,Nuclear completo numeroso,8,No,0,2,Si,Primavera,no,Velas,16,Noche,22:00,celular,biomasa gas,70,Rio,7,2
+100,Sandalio,Becerra,Masculino,50,Agricultor,8856769,Sillar,0,1,2,0,1,1,0,si,Nuclear completo,3,No,200,4,No,-,no,velas linternas mechero,116,24 horas,22:00,radio,biomasa gas,35,Vertiente,7,2

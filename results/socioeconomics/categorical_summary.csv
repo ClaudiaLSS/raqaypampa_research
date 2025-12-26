@@ -1,0 +1,27 @@
+variable,description,type,value_counts,missing
+fam_head_gender,Gender of the respondent,Categorical,Male: 75; Female: 25,0
+occupation,Main occupation of the respondent,Categorical,Agriculture: 68; Domestic labour: 23; Student: 5; Missing: 3; Mining: 1,3
+community,Community name where the household is located,Categorical,Ichuqata: 45; Molle Orcko: 32; Sillar: 11; Tetilla: 9; Tipapampa: 3,0
+zone,If the communiti is located in one or another zone ,Categorical,A: 68; B: 32,0
+children_in_school,Whether the family has children in school,Categorical,Yes: 55; No: 43; Missing: 2,2
+family_type,Type of family according to the number and age of members.,Categorical,Nuclear completo: 26; Nuclear completo numeroso: 18; Extendido: 13; Extendido numeroso: 11; Extendido sin hijos: 8; Unipersonal: 7; Monoparental: 6; Pareja nuclear: 5; Missing: 2; Monoparental numeroso: 2; Extendido numeroso sin hijos: 2,2
+eco_support,Whether the family receives economical support from familiars,Categorical,No: 92; Yes: 6; Missing: 2,2
+income_range,Monthly family income range. A is less or equal than 100 BOB. B is less or equal than 250 BOB and C is more than 250 BOB,Categorical,C: 40; B: 25; A: 16; No direct income: 16; Missing: 3,3
+migration,Whether a member of the family migrates temporarily,Categorical,No: 52; Yes: 46; Missing: 2,2
+summer_migration,if temporal migration occurs in summer,Categorical,No: 79; Yes: 19; Missing: 2,2
+winter_migration,if temporal migration occurs in winter,Categorical,No: 86; Yes: 12; Missing: 2,2
+fall_migration,if temporal migration occurs in fall,Categorical,No: 98; Missing: 2,2
+spring_migration,if temporal migration occurs in spring,Categorical,No: 78; Yes: 20; Missing: 2,2
+water_source,household water source,Categorical,Water spring: 66; River: 22; Water network: 8; Missing: 2; Rain: 2,2
+pv_before,if the household had PV panels before,Categorical,No: 89; Yes: 9; Missing: 2,2
+illum_flashlight,Use of flashlights for illumination before having the shs,Categorical,Yes: 84; No: 14; Missing: 2,2
+illum_burner,Use of burners for illumination before having the shs,Categorical,No: 79; Yes: 19; Missing: 2,2
+illum_picolamp,Use of picolamps for illumination before having the shs,Categorical,No: 88; Yes: 10; Missing: 2,2
+illum_solarpv,Use of solar pv for illumination before having the shs,Categorical,No: 92; Yes: 6; Missing: 2,2
+illum_candles,Use of candles for illumination before having the shs,Categorical,Yes: 60; No: 38; Missing: 2,2
+importance_night,they consider having electricity at night is important,Categorical,Yes: 49; No: 49; Missing: 2,2
+importance_allday,they consider having electricity all day is important,Categorical,No: 49; Yes: 49; Missing: 2,2
+before_phone,the familly already owned a cellphone before the shs,Categorical,Yes: 85; No: 13; Missing: 2,2
+before_radio,the familly already owned a radio before the shs,Categorical,Yes: 80; No: 18; Missing: 2,2
+cooking_biomass,Cooking is done using biomass.,Categorical,Yes: 97; Missing: 2; No: 1,2
+cooking_gas,Cooking is done using gas.,Categorical,No: 67; Yes: 31; Missing: 2,2

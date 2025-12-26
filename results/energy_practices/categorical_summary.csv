@@ -1,0 +1,75 @@
+variable,description,type,frequencies,most_frequent,missing
+fam_head_gender,Gender of the respondent,Categorical,Male: 41 (77.4%); Female: 12 (22.6%),Male,0
+occupation,Main occupation of the respondent,Categorical,Agriculture: 36 (67.9%); Domestic labour: 11 (20.8%); Student: 3 (5.7%); Missing: 2 (3.8%); Mining: 1 (1.9%),Agriculture,2
+community,Community name where the household is located,Categorical,Ichuqata: 24 (45.3%); Molle Orcko: 15 (28.3%); Sillar: 8 (15.1%); Tetilla: 6 (11.3%),Ichuqata,0
+children_in_school,Whether the family has children in school,Categorical,Yes: 36 (67.9%); No: 16 (30.2%); Missing: 1 (1.9%),Yes,1
+family_type,Type of family according to the number and age of members.,Categorical,Nuclear completo numeroso: 11 (20.8%); Extendido: 9 (17.0%); Nuclear completo: 9 (17.0%); Extendido numeroso: 7 (13.2%); Unipersonal: 4 (7.5%); Extendido sin hijos: 4 (7.5%); Monoparental: 3 (5.7%); Pareja nuclear: 3 (5.7%); Monoparental numeroso: 2 (3.8%); Missing: 1 (1.9%),Nuclear completo numeroso,1
+eco_support,Whether the family receives economical support from familiars,Categorical,No: 50 (94.3%); Yes: 2 (3.8%); Missing: 1 (1.9%),No,1
+migration,Whether a member of the family migrates temporarily,Categorical,No: 27 (50.9%); Yes: 25 (47.2%); Missing: 1 (1.9%),No,1
+summer_migration,if temporal migration occurs in summer,Categorical,No: 40 (75.5%); Yes: 12 (22.6%); Missing: 1 (1.9%),No,1
+winter_migration,if temporal migration occurs in winter,Categorical,No: 47 (88.7%); Yes: 5 (9.4%); Missing: 1 (1.9%),No,1
+fall_migration,if temporal migration occurs in fall,Categorical,No: 52 (98.1%); Missing: 1 (1.9%),No,1
+spring_migration,if temporal migration occurs in spring,Categorical,No: 41 (77.4%); Yes: 11 (20.8%); Missing: 1 (1.9%),No,1
+water_source,household water source,Categorical,Water spring: 35 (66.0%); River: 12 (22.6%); Water network: 3 (5.7%); Rain: 2 (3.8%); Missing: 1 (1.9%),Water spring,1
+pv_before,if the household had PV panels before,Categorical,No: 46 (86.8%); Yes: 6 (11.3%); Missing: 1 (1.9%),No,1
+illum_flashlight,Use of flashlights for illumination before having the shs,Categorical,Yes: 43 (81.1%); No: 9 (17.0%); Missing: 1 (1.9%),Yes,1
+illum_burner,Use of burners for illumination before having the shs,Categorical,No: 40 (75.5%); Yes: 12 (22.6%); Missing: 1 (1.9%),No,1
+illum_picolamp,Use of picolamps for illumination before having the shs,Categorical,No: 46 (86.8%); Yes: 6 (11.3%); Missing: 1 (1.9%),No,1
+illum_solarpv,Use of solar pv for illumination before having the shs,Categorical,No: 47 (88.7%); Yes: 5 (9.4%); Missing: 1 (1.9%),No,1
+illum_candles,Use of candles for illumination before having the shs,Categorical,Yes: 34 (64.2%); No: 18 (34.0%); Missing: 1 (1.9%),Yes,1
+importance_night,they consider having electricity at night is important,Categorical,No: 27 (50.9%); Yes: 25 (47.2%); Missing: 1 (1.9%),No,1
+importance_allday,they consider having electricity all day is important,Categorical,Yes: 27 (50.9%); No: 25 (47.2%); Missing: 1 (1.9%),Yes,1
+before_phone,the familly already owned a cellphone before the shs,Categorical,Yes: 48 (90.6%); No: 4 (7.5%); Missing: 1 (1.9%),Yes,1
+before_radio,the familly already owned a radio before the shs,Categorical,Yes: 44 (83.0%); No: 8 (15.1%); Missing: 1 (1.9%),Yes,1
+cooking_biomass,Cooking is done using biomass.,Categorical,Yes: 51 (96.2%); No: 1 (1.9%); Missing: 1 (1.9%),Yes,1
+cooking_gas,Cooking is done using gas.,Categorical,No: 34 (64.2%); Yes: 18 (34.0%); Missing: 1 (1.9%),No,1
+transport_motorcycle,People use motorcycle as transport mean.,Categorical,No: 41 (77.4%); Yes: 12 (22.6%),No,0
+transport_car,People use car as transport mean.,Categorical,No: 51 (96.2%); Yes: 2 (3.8%),No,0
+energy_saving_measures,Family members take energy saving measures,Categorical,No: 50 (94.3%); Yes: 3 (5.7%),No,0
+portability_shs,Family members maintain the SHS mostly at home.,Categorical,Yes: 45 (84.9%); No: 8 (15.1%),Yes,0
+food_pres_trofa,Food preservation usign 'trofas',Categorical,Yes: 48 (90.6%); No: 5 (9.4%),Yes,0
+heating,The family uses a method for heating in colder day besides using appropiate clothing.,Categorical,No: 53 (100.0%),No,0
+cooling,The family uses a method for cooling in colder day besides using appropiate clothing.,Categorical,No: 53 (100.0%),No,0
+other_illum,Other source for illumination besides the SHS,Categorical,flashlight: 30 (56.6%); none: 22 (41.5%); burner: 1 (1.9%),flashlight,0
+cooking_rustic,The family has a rustic clay stove,Categorical,Yes: 51 (96.2%); No: 1 (1.9%); Missing: 1 (1.9%),Yes,1
+cooking_metal,The family has an artisanal metal stove,Categorical,No: 31 (58.5%); Yes: 21 (39.6%); Missing: 1 (1.9%),No,1
+cooking_improved,The family has an improved stove,Categorical,No: 51 (96.2%); Yes: 1 (1.9%); Missing: 1 (1.9%),No,1
+cooking_fuel_biomass,The family cooks using biomass as fuel,Categorical,Yes: 52 (98.1%); No: 1 (1.9%),Yes,0
+cooking_fuel_gas,The family cooks using gas as fuel,Categorical,No: 30 (56.6%); Yes: 23 (43.4%),No,0
+cooking_freq,Number of times the family cooks regularly,Categorical,3 times: 27 (50.9%); two times: 20 (37.7%); one time: 4 (7.5%); Missing: 2 (3.8%),3 times,0
+cooking_male,Male family members cook (father sons other),Categorical,No: 49 (92.5%); Yes: 4 (7.5%),No,0
+cooking_female,"Female family members cook (mother, daughter, sister, other)",Categorical,Yes: 49 (92.5%); No: 4 (7.5%),Yes,0
+mat_wall,The predominant construction material in the walls of the house,Categorical,mud: 52 (98.1%); bricks: 1 (1.9%),mud,0
+mat_roof,The predominant construction material in the walls of the house,Categorical,tile: 21 (39.6%); straw: 16 (30.2%); sheet metal: 14 (26.4%); wood: 2 (3.8%),tile,0
+mat_floor,The predominant construction material in the floor of the house,Categorical,dirt: 47 (88.7%); cement: 6 (11.3%),dirt,0
+newly_acq_phone,The family acquired a phone after receiving the SHS,Categorical,No: 30 (56.6%); Yes: 23 (43.4%),No,0
+newly_acq_tv,The family acquired a TV after receiving the SHS,Categorical,No: 53 (100.0%),No,0
+newly_acq_tablet,The family acquired a tablet after receiving the SHS,Categorical,No: 52 (98.1%); Yes: 1 (1.9%),No,0
+newly_acq_radio,The family acquired a radio after receiving the SHS,Categorical,No: 43 (81.1%); Yes: 10 (18.9%),No,0
+newly_acq_flashlight,The family acquired a flashlight after receiving the SHS,Categorical,No: 52 (98.1%); Yes: 1 (1.9%),No,0
+desired_app_phone,The user desires to acquire a phone,Categorical,No: 52 (98.1%); Yes: 1 (1.9%),No,0
+desired_app_TV,The user desires to acquire a TV,Categorical,No: 28 (52.8%); Yes: 25 (47.2%),No,0
+desired_app_laptop,The user desires to acquire a laptop,Categorical,No: 49 (92.5%); Yes: 4 (7.5%),No,0
+desired_app_radio,The user desires to acquire a radio,Categorical,No: 50 (94.3%); Yes: 3 (5.7%),No,0
+desired_app_fridge,The user desires to acquire a fridge,Categorical,No: 49 (92.5%); Yes: 4 (7.5%),No,0
+desired_app_blender,The user desires to acquire a blender,Categorical,No: 51 (96.2%); Yes: 2 (3.8%),No,0
+light_1_morning,Period of use of light_1 during the morning,Categorical,0507: 14 (26.4%); 0407: 10 (18.9%); 0406: 6 (11.3%); 0506: 4 (7.5%); 0510: 3 (5.7%); 0408: 3 (5.7%); 0508: 3 (5.7%); 0608: 3 (5.7%); 0409: 2 (3.8%); 0509: 1 (1.9%); 0610: 1 (1.9%); 0306: 1 (1.9%); 0607: 1 (1.9%); Missing: 1 (1.9%),507,0
+radio_morning,Period of use of radio during the morning,Categorical,Missing: 25 (47.2%); 0508: 10 (18.9%); 0507: 6 (11.3%); 0510: 3 (5.7%); 0608: 2 (3.8%); 0409: 2 (3.8%); 0407: 1 (1.9%); 0509: 1 (1.9%); 0506: 1 (1.9%); 0610: 1 (1.9%); 0406: 1 (1.9%),,0
+light_1_night,Period of use of light_1 during the night,Categorical,1822: 12 (22.6%); 1821: 10 (18.9%); 1820: 9 (17.0%); 1823: 5 (9.4%); 1921: 4 (7.5%); 1922: 3 (5.7%); Missing: 3 (5.7%); 1720: 2 (3.8%); 1722: 1 (1.9%); 1824: 1 (1.9%); 1819: 1 (1.9%); 2022: 1 (1.9%); 2023: 1 (1.9%),1822,0
+Light_2_night,Period of use of light_2 during the night,Categorical,1822: 12 (22.6%); 1821: 9 (17.0%); 1820: 7 (13.2%); 1823: 6 (11.3%); 1805: 4 (7.5%); Missing: 4 (7.5%); 1922: 3 (5.7%); 1921: 2 (3.8%); 2022: 2 (3.8%); 1722: 2 (3.8%); 1824: 1 (1.9%); 1819: 1 (1.9%),1822,0
+light_3_night,Period of use of light_3 during the night,Categorical,Missing: 50 (94.3%); 1822: 2 (3.8%); 1821: 1 (1.9%),,0
+radio_night,Period of use of radio during the night,Categorical,Missing: 26 (49.1%); 1821: 8 (15.1%); 1822: 6 (11.3%); 1820: 4 (7.5%); 1722: 4 (7.5%); 1921: 2 (3.8%); 1824: 1 (1.9%); 1720: 1 (1.9%); 1823: 1 (1.9%),,0
+quality,The quality of the energy supply perceived by the user,Categorical,excellent: 27 (50.9%); good: 25 (47.2%); bad: 1 (1.9%),excellent,0
+accessibility,Accessibility of the SHS in economic terms  perceived by the user.,Categorical,accessible: 36 (67.9%); very accessible: 12 (22.6%); inaccessible: 5 (9.4%),accessible,0
+mant_capacity,How capacitated users feel to use and maintain the SHS.,Categorical,Highly qualified: 41 (77.4%); Poorly qualified: 7 (13.2%); Not qualified: 5 (9.4%),Highly qualified,0
+inst_difficulty,How difficult was the installation process according to the user,Categorical,very easy: 30 (56.6%); easy: 17 (32.1%); hard: 6 (11.3%),very easy,0
+mant_difficulty,How difficult is the maintenance of the SHS according to the user.,Categorical,very easy: 27 (50.9%); easy: 21 (39.6%); hard: 5 (9.4%),very easy,0
+mant_freq,Frequency with which the user performs maintenance on the SHS,Categorical,Very frequent: 39 (73.6%); Infrequent: 10 (18.9%); Never: 4 (7.5%),Very frequent,0
+tech_problems_radio,The user experimented technical problems with the radio,Categorical,Yes: 31 (58.5%); No: 22 (41.5%),Yes,0
+tech_problems_battery,The user experimented technical problems with the PV,Categorical,No: 47 (88.7%); Yes: 6 (11.3%),No,0
+tech_problems_PV,The user experimented technical problems with the PV panel,Categorical,No: 52 (98.1%); Yes: 1 (1.9%),No,0
+tech_problems_USB,The user experimented technical problems with the USB port,Categorical,No: 45 (84.9%); Yes: 8 (15.1%),No,0
+tech_problems_LED,The user experimented technical problems with the LED bulbs,Categorical,No: 50 (94.3%); Yes: 3 (5.7%),No,0
+tech_problems_switch,The user experimented technical problems with the light switch,Categorical,No: 52 (98.1%); Yes: 1 (1.9%),No,0
+money_savings,The family experimented savings after acquiring the SHS,Categorical,Yes: 52 (98.1%); Missing: 1 (1.9%),Yes,0
+demand_satisfaction,Degree of energy demand satisfaction expressed by the user regarding the SHS,Categorical,partially satisfied: 31 (58.5%); totally satisfied: 20 (37.7%); Deficient: 2 (3.8%),partially satisfied,0
