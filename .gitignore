@@ -1,0 +1,43 @@
+# --- LaTeX (Overleaf compatibility) ---
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.blg
+*.pdf
+
+# --- Python / Data Science ---
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+.env
+
+# --- R (if applicable) ---
+.Rhistory
+.RData
+.Ruserdata
+
+# --- OS / IDE Junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Data & Scratch (The "Clean Repo" Rule) ---
+# Ignore large raw data to keep GitHub fast
+data/raw/
+# Ignore the scratch folder so your messy drafts stay local
+scratch/
+
+# --- Exceptions ---
+# Keep the folder structure even if empty
+!data/.gitkeep
+!scripts/.gitkeep
