@@ -1,0 +1,212 @@
+% \documentclass[preprint,12pt]{elsarticle}
+\documentclass[final,3p,times,onecolumn]{elsarticle}
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\journal{International Energy Workshop 2024 (Extended abstract)}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%% \fntext[label3]{}
+
+\title{Modeling Household Behavior in Solar Home Systems Electrification: A Case Study in Raqaypampa, Bolivia}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \affiliation[label1]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%%
+%% \affiliation[label2]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+
+\author[inst1,inst2]{Claudia Sanchez-Solis}
+
+\affiliation[inst1]{organization={Centro Universitario de Investigaciones en Energías, Universidad Mayor de San Simón},%Department and Organization
+            %addressline={Address One}, 
+            city={Cochabamba},
+            %postcode={00000}, 
+            %state={State One},
+            country={Bolivia}}
+
+\affiliation[inst2]{organization={Department of Mechanical and Aerospace Engineering, Université de Liège},%Department and Organization
+            %addressline={Address Two}, 
+            city={Liège},
+            %postcode={22222}, 
+            %state={State Two},
+            country={Belgium}}
+
+\author[inst1]{Sergio Balderrama}
+
+\author[inst2]{Silvain Quoilin}
+
+
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+Rural electrification \sep Solar home systems \sep Energy use \sep Energy demand
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% \linenumbers
+
+%% main text
+\section{Introduction}
+\label{sec:sample1}
+
+The efforts to provide access to clean and affordable energy to everyone on the planet have allowed closing the gap in some parts of the world, driven by Sustainable Development Goal 7 \cite{un_news_centre_transforming_2015}. Nevertheless, recent reports indicate that achieving this goal by 2030 is increasingly unlikely without a significant escalation of efforts \cite{iea_irena_unsd_wb_who_tracking_2023}.  The geographical, political and sociodemographic complexity of some regions, coupled with the intricate systemic nature of energy use, has entailed setbacks and delays in electrification. They are a challenge in terms of energy planning, and are the object of an increasing number of scientific works.
+
+These works focus for example on addressing spatiotemporal variability, openness, and the demand side in future tool development \cite{ringkjob_review_2018}. Recognizing the importance of studying energy demand for off-grid solutions, Riva et al. \cite{riva_modelling_nodate} stress the need for a suitable modelling framework in assessing long-term electricity demand projections in rural energy planning. Furthermore, the link between electricity demand evolution and local rural development requires a quantitative approach \cite{ringkjob_review_2018} that also emphasises the energy behaviour of household occupants\cite{zou_mixed_2018}. 
+    
+Various factors influence the energy behaviour of individuals. According to \cite{Kowsari2011}, the factors affecting household decisions regarding energy consumption can be classified within the personal and contextual domains, which strongly interact and impact the three dimensions of energy use patterns: energy services required by households (lighting, cooking, etc.), energy vectors used to provide energy services (electricity, natural gas, etc.), and energy conversion devices (appliances). On the other hand, \cite{medojevic_integrated_2021} identifies an additional domain related to behaviour change. The study also mentions four key categories affecting energy consumption: sociocultural, situational, individual, and past experience. In \cite{kavousian_determinants_2013}, the authors conclude that factors influencing residential energy consumption can be categorized into four main groups: external conditions, physical housing characteristics, appliance ownership, and occupant practices. The study in \cite{tam_energy-related_2018} also identifies income and economic access to appliances as crucial factors. At the same time, economic factors are highly emphasized; studies like \cite{tesfamichael_eager_2020} establish that it is not the sole determinant, as evidenced in the review. In summary, it is observed that the primary determinant of energy consumption lies in people's behaviour, which is, in turn, shaped by contextual and cultural factors. 
+
+In this context, Stephenson \cite{stephenson_energy_2010} proposed a conceptual framework to enhance the comprehension of factors influencing energy consumption behaviour. The Energy Cultures framework posits that understanding consumer energy behaviour requires an examination of the interplay among cognitive norms, material culture, and energy practices. As outlined by the author, this framework holds versatile applications and can be employed to characterize energy consumption across various scales and sectors, encompassing households, communities, businesses, and industries. Furthermore, the framework proves beneficial in characterizing heterogeneity by facilitating the grouping of units of analysis with similar characteristics. In this conceptual framework, norms represent shared beliefs dictating individual behaviour in a given context, incorporating expectations and aspirations related to practices and material culture. Material culture involves technologies, structures, and assets employed for energy operations, influencing energy usage, providing information, or generating energy. Practices encompass routine and less frequent actions common among social peers, ranging from everyday habits to occasional decisions in acquiring material objects. The framework provides a comprehensive perspective on the interplay of norms, material culture, and practices in understanding energy-related behaviours. This underscores the significance of adopting an interdisciplinary approach to gain a more comprehensive insight into and understanding of user behaviour concerning energy, recognizing it as a complex phenomenon where misalignment can exist between individuals' values, material interests, and behaviour \cite{kavousian_determinants_2013} \cite{schmidt_interdisciplinary_2015}. 
+
+This study aims to devise a modelling approach to investigate the interconnections among self-declared energy practices, actual electricity consumption and external factors such as socioeconomic and cultural factors that influence residents' lifestyle and energy behaviour in remote communities. It is exemplified on a case study in Raqaypampa, Bolivia.
+
+
+\section{Methods}
+\label{sec:methodology} 
+
+\subsection{Case study}
+The Raqaypampa Indigenous Origin Peasant Territory in Cochabamba, Bolivia is inhabited by a predominantly Quechua population of around ten thousand. Among the 43 communities, about 11 have partial access to electricity through the primary grid, while others obtained lanterns and Solar Home Systems (SHS) from previous projects or lack access altogether. This territory's distinctiveness lies in its "autonomous territory" status, signifying self-governance and the self-determination of indigenous and native peasant nations. The research involves monitoring an electrification initiative, involving SHS co-financed through collaboration between international cooperation funding and the beneficiary families.
+
+\subsection{Data collection and analysis}
+Monitoring was initiated in 2023, following the installation of 100 Solar Home Systems (SHS) in Raqaypampa. It involved the installation of data loggers, administering demographic and socioeconomic questionnaires, and semi-structured interviews with key stakeholders, particularly users and regional authorities. The monitoring campaign yielded three types of data: 1) electricity consumption data recorded over one month, 2) demographic and socioeconomic data collected through surveys and reviews, and 3) subjective data on self-reported energy practices and perceptions with special attention in a typical household of the study area. The SHS components, including a 10Wp solar panel, Lithium Ion Phosphate battery pack, USB outlet, and LED light connectors, were monitored using data loggers with a 10-minute resolution. Demographic and socioeconomic data were gathered through surveys and documentary reviews, while fieldwork involved interviews and surveys capturing subjective data on daily energy practices. This process occurred twice—initially during SHS distribution and after ten months of operation. 
+The data was analyzed to obtain daily load profiles and observe the use of both luminaries and rechargeable devices and radios. Also, the bottom-up stochastic demand profile generation model RAMP \cite{Lombardi2019} was used to model the daily load curves of the same households based on the users' self-reported behaviour regarding electricity use. Both generated results were compared to identify the relationship between self-reported behaviour and actual household equipment usage. Concerning standards and perceptions, the interviewees identified the most relevant aspects and those included in documents prepared by the authorities and national reports. Self-reported energy practices were extracted from the questionnaires and interviews to reconstruct a typical day in the life of the community members, paying particular attention to the use of energy.
+
+
+\section{Results and discussion}
+\label{sec:results}
+\subsection{Socio-economic characteristics}
+This study specifically focuses on the Molle Orcko community within Raqaypampa, which is characterized by a lower average monthly income than neighbouring communities. The challenging accessibility of the community, situated in a complex terrain, poses difficulties for residents. While there is an elementary school, the absence of public transportation makes the nearest secondary school inaccessible to those without private vehicles, limiting educational opportunities to primary schooling for most. The primary economic activity, agriculture, has been hampered by a water crisis, impacting family consumption and surplus sales. Livestock, including goats, sheep, and camelids, are also raised. Male migration is prevalent during planting and harvesting seasons, mainly in spring and summer, towards nearby towns, particularly in the tropical zone.
+Additionally, the community lacks access to potable water, relying on rainwater and nearby water sources for sustenance. The area has different types of families, ranging from single-family households composed mainly of older adults to nuclear and extended families. The analyzed family has seven members with young children attending school. In \ref{fig:household}, a typical Raqaypampa household is shown.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{household.png}
+    \caption{Typical household in Raqaypampa}
+    \label{fig:household}
+\end{figure}
+
+This area does not have access to the electricity grid; before the start of the electrification project, families relied heavily on candles and lanterns with disposable batteries, which represent a significant monthly expense. Because of this, daily activities have been heavily framed within the hours of natural light, with a limited period of light to allow the development of the children's schoolwork. 
+
+
+\subsection{Self-reported and measured energy behaviour}
+Before the start of the electrification project, families relied heavily on candles and lanterns with disposable batteries, which meant a monthly expense. Because of this, daily activities have been heavily framed within the hours of natural light, with a limited period of light to allow the development of the children's schoolwork. 
+Respondents in the questionnaires shared insights into their daily lives, which primarily revolve around the agricultural cycles of the land. Typically, women bear more responsibilities at home, while men dedicate most of their time to agricultural work. Men often migrate to other regions during the dry season for additional income. The respondents emphasized the significance of lighting, particularly for women, enabling early-morning household activities like cooking. In the study area, women utilize cattle wool for handmade weaving. Adequate lighting was noted as crucial, allowing them to engage in this activity until late at night, a previously challenging practice.
+Children utilize the lighting primarily for school-related tasks. Particularly valued by men, communication equipment includes the community radio, which convenes community meetings and broadcasts pertinent messages to families. Both men and women equally appreciate the utility of cell phones. Additionally, the use of rechargeable devices such as flashlights and speakers was reported. The portability of radios is particularly crucial, allowing them to be taken to workplaces, including the fields.
+On the other hand, single-person households, predominantly comprising elderly individuals, mentioned that they solely utilize lighting as they don't possess cell phones and choose not to use the radio. Although the SHS can run a small television, no families were reported to own this device, mainly due to economic factors.
+Regarding cooking, it is common to use firewood collected in nearby places, especially for cooking grains, cereals and some vegetables.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{carlos_negrete.png}
+    \caption{Measured performance of the SHS}
+    \label{fig:measured}
+\end{figure}
+
+
+The measured values for May of 2023 are plotted for one representative family in Figure \ref{fig:measured}, where the daily average curves of both photovoltaic generation and consumption of LED lights and the USB port that feeds rechargeable devices such as radios and cell phone chargers can be observed. It can be seen that most of the consumption is due to the luminaries. However, it is observed that the total consumption reaches only about 60\% of the nominal peak capacity of the solar home system. The month of May corresponds to the middle of fall, which is a dry season with fewer hours of natural light. A small peak can be observed between four and six in the morning when the users of this household indicated they start their daily activities. Similarly, a prolonged peak is observed from 6 pm onwards, when the sun sets.
+
+To reproduce such as load curve, the RAMP model is used to convert human behaviour data into quantitative demand values. The necessary inputs were obtained from the questionnaires for specific households. Table \ref{tab:app_use} presents an example of such input for a nuclear family household in Raqaypampa. 
+\begin{table}
+    \centering
+    \begin{tabular}{lcccccccc}
+        Appliance & n & P [W] & Cycle [min] & Tot use [min] & Start W1 & End W1 & Start W2 & End W2\\\hline
+      Indoor LED light  & 1 & 3 & 120 & 60 & 18:00 & 23:00 & - & -\\
+      Outdoor LED light   & 1 & 3 & 60 & 5:00 & 00:00 & 8:00 & 18:00 & 24:00\\
+      Radio  & 1 & 3 & 30 & 120 & 6:00 & 12:00 & 18:00 & 21:00\\
+      Phone charger   & 1 & 5 & 60 & 180 & 12:00 & 24:00 & - & -\\
+      Data logger   & 1 & 0.5 & 30 & 1440 & 00:00 & 24:00 & - & - \\\hline
+    \end{tabular}
+    \caption{Appliances use}
+    \label{tab:app_use}
+\end{table}
+
+Figure \ref{fig:ramp_curves} illustrates the measured average daily load curve for a user in the Molle Orcko community throughout May. The blue line depicts the load curve generated with RAMP, utilizing the previously specified inputs that align with the equipment and usage dynamics of the same user. This curve illustrates the average daily load after simulating 31 days. The measured peak load is 5.70 W, slightly deviating from the RAMP-generated peak load of 5.63 W, indicating a 1.23\% error. Regarding total energy, the measured data records 59.76 Wh, whereas RAMP shows 59.42 Wh, resulting in a minimal error of 0.56\%. 
+
+The latter suggests that RAMP effectively captures the user's electricity consumption patterns, providing valuable insights for understanding and modelling energy dynamics in remote communities such as Molle Orcko. Nevertheless, a noticeable discrepancy is apparent in the graph at the day's extremes. This could be attributed to the model treating the usage windows of those periods as isolated, potentially posing a limitation to its accuracy.
+
+Moreover, these findings highlight a robust correlation between actual energy consumption and the self-reported energy practices of household occupants. Distinct external factors and the socioeconomic profile of the community markedly influence these practices. The interplay of these elements emphasizes the intricate dynamics shaping energy behaviours in the studied household.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{Figure 2024-02-01 140331.png}
+    \caption{Enter Caption}
+    \label{fig:ramp_curves}
+\end{figure}
+
+
+\section{Conclusion}
+\label{sec:conslusion}
+TIn conclusion, this study usesd a modeling perspective to explore the relation between self-declared energy practices, actual electricity consumption, exploring their external influences. Focusinged on the residents of remote communities in Raqaypampa, Bolivia, the investigation sheds light on the multifaceted relationships shaping the lifestyle and energy behaviour of the community members. The findings highlightcontribute valuable insights into the dynamic interplay of individual practices, consumption patterns, and broader contextual factors, providing understanding of energy dynamics in this remote setting.
+Understanding the specific energy practices and consumption patterns of residents allows policymakers to design electrification initiatives tailored to the community's unique needs and preferences. This might involve selecting appropriate energy technologies and ensuring accessibility based on daily routines.
+Further investigation is essential to delve into the temporal impacts, particularly considering the influence of seasonal variations throughout the year. These variations significantly shape the production cycles that, in turn, dictate the lifestyle and daily routines of the residents in Raqaypampa. Understanding the nuances of these temporal dynamics will provide a more comprehensive view of the interplay between energy practices and the seasonal aspects that shape the community's way of life. To achieve this, future works will focus on conducting a sustained monitoring period of at least one year at the research site and extending the comparison to all households in the community is needed. 
+The proposed stochastic demand model will then be usable in other contexts and communities for energy planning purposes, contributing to the optimal design of solar home systems and remote microgrids.
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+
+
+
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+ \bibliographystyle{elsarticle-num} 
+ \bibliography{cas-refs}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+% \begin{thebibliography}{00}
+
+% %% \bibitem{label}
+% %% Text of bibliographic item
+
+% \bibitem{}
+
+% \end{thebibliography}
+\end{document}
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
