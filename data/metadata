@@ -1,0 +1,22 @@
+# Folder: /data/clean/
+
+## Overview
+This folder contains the raw and clean final datasets for the **Raqaypampa paper**. Data includes qualitative and quantitative datasets. 
+
+folder_version: "1.1.0"
+last_updated: 2025-12-30
+data_steward: "Claudia"
+
+## Data Inventory
+assets:
+  - file: "data_0.csv"
+    type: "dataset"
+    description: "Final processed survey results from the initial socio-economic survey from January 2023"
+    codebook_reference: "codebook_0.pdf" # Points to the codebook in the same folder
+    encoding: "UTF-8"
+    
+  - file: "data_1.csv"
+    type: "dataset"
+    description: "Final processed survey results from the energy use surveys from November 2023 and May 2024"
+    codebook_reference: "codebook_0.pdf" # Points to the codebook in the same folder
+    encoding: "UTF-8"
