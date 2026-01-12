@@ -20,3 +20,21 @@ assets:
     description: "Final processed survey results from the energy use surveys from November 2023 and May 2024"
     codebook_reference: "codebook_0.pdf" # Points to the codebook in the same folder
     encoding: "UTF-8"
+
+
+### Available data
+
+Socioeconomic surveys base: 100
+Energy practices surveys: 53
+Focus groups: 2
+Semi-structured Interviews: 25
+Electricity consumption record DL: 13 (different time spans, needs validation)
+
+## Aditional data REQUIRED
+
+Socioeconomic surveys base: 0
+Energy practices surveys: 30
+Focus groups: 1
+Semi-structured Interviews: 10
+Electricity consumption record DL: 4
+
