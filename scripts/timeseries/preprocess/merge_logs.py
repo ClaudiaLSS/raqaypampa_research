@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Based on your structure, it is 3 levels up from this script
     PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-    USER_ID = "user_11"
+    USER_ID = "user_96_2"
     LOGGER_TYPE = "TPDIN"
 
     INPUT_FOLDER = (

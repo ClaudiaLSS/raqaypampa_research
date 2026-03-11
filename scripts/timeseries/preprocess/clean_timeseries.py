@@ -81,4 +81,4 @@ def clean_tp_din_file(file_name):
     print(f"✅ Success! Cleaned file saved to: {output_path}")
 
 if __name__ == "__main__":
-    clean_tp_din_file("user_72_merged.csv")
+    clean_tp_din_file("user_96_2_merged.csv")
