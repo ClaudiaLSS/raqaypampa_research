@@ -10,8 +10,8 @@ import pandas as pd
 from pathlib import Path
 
 # --- SET YOUR PATHS ---
-RAW_INT_DIR = Path("/home/claudia/Documents/raqaypampa_research/data/raw/interviews")
-OUTPUT_CSV = Path("/home/claudia/Documents/raqaypampa_research/data/raw/interviews/interview_attributes.csv")
+RAW_INT_DIR = Path("/home/claudia/Documents/raqaypampa_research/data/clean/interviews/all")
+OUTPUT_CSV = Path("/home/claudia/Documents/raqaypampa_research/data/clean/interviews/all/interview_attributes.csv")
 
 def extract_metadata_from_text():
     metadata_list = []
