@@ -41,3 +41,8 @@ scratch/
 # Keep the folder structure even if empty
 !data/.gitkeep
 !scripts/.gitkeep
+
+# Ignore temporary SQLite files created while QualCoder is running
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
