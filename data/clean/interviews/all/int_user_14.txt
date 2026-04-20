@@ -1,0 +1,132 @@
+user_ID: 14
+name: Calixto Agreda Inturias
+gender: Male
+community: Ichuqata
+date: 25/02/2026
+category: user
+interviewer: Marisol, Claudia
+Nota: Se encontraba solo don Calixto
+
+R3: Buenos días, estamos viniendo del proyecto de panel solar de la universidad
+RMA: Buenos días 
+R3: Buenos días ¿Cómo están?
+RMA: Bien 
+R3: ¿Cuántos viven en su casa? 
+R1: Vivimos dos 
+R1: Son niños o son mayores 
+RMA: Ellos ya son mayores 
+R1: De 18 hasta 60 años entre ese rango verdad 
+RMA: Sí  
+R1: Hay alguien que está en la escuela 
+RMA: No si no están en el colegio ya no hay que hagan sus tareas 
+R1: ¿La luz que les brinda les alcanza? 
+RMA: Si nos alcanza aún quisiera aumentar más paneles solares porque aquí la luz para nosotros es un recurso que se necesita bastante porque este panel solar que tenemos a los celulares carga muy lento y a veces no abastece  
+R1: ¿Siempre están trabajando en el área de la agricultura verdad? 
+RMA: Sí no hay otra opción siempre trabajamos con la agricultura en la siembra la cosecha el manejo de los cultivos 
+R1: ¿Antes de que no haya el panel solar qué usaban para que tengan luz?
+RMA: Antes usábamos mecheros, velas y mecheros 
+R1: Si no creo que haya sido fácil en ese entonces 
+RMA: Si
+R1: ¿Este panel solar alguna vez se apagó o no les ha dado ninguna dificultad?
+RMA: Cuando hace lluvia o cuando está muy nublado se apaga entonces no tiene un buen rendimiento en esas épocas
+R1: ¿En ese caso utilizan un mechero y a veces vela?
+RMA: No usamos mechero o vela, pero si usamos simplemente linternas 
+R1: Ah entonces no utilizan linterna ¿cuándo ustedes van a otro lugar por ejemplo a otra comunidad tienen que ir en qué van en bicicleta o en movilidad?
+RMA: Nosotros generalmente para ir de aquí a otro lugar caminamos a pie como dos horas a veces cuatro horas 
+R1: ¿Entonces ustedes no utilizan mucho transporte? 
+RMA: Utilizamos muy poco debido a que no está a nuestro alcance, y no gozamos de un transporte que pueda ingresar hasta este lugar a veces viene pero muy pocas veces movilidad hasta más allá pero aun así tenemos que caminar 
+R1: ¿Por ejemplo, cuando ustedes van a Rajay Pampa, cuántas veces van al mes o en la semana?
+Si nosotros simplemente cuando sea necesario vamos una vez al mes depende de lo que vemos que es conveniente 
+R1: Así y ¿qué horario se levantan así para el uso de la luz? 
+RMA: Nosotros nos levantamos a partir de las 4 de la mañana 
+R1: y por las noches ¿en qué horario se duermen? Ya que utilizan la luz
+RMA: Dependiendo a veces dormimos a las 7 o a las 8 
+R1: Que bueno sí que ¿antes de dormir realizan algún trabajo utilizando la luz?
+RMA: No realizamos mucho trabajo ningún trabajo bajo la luz, solo usamos para compartir cena, conversación dependiendo no usamos tanto no escuchamos ni siquiera la radio 
+R1: ¿La luz más o menos en que horarios lo utilizan?
+RMA: Dependiendo a veces en las mañanas 1 hora algunas veces 2 horas también y por las noches usamos de 7 a las 8 a veces de 6 a 10 de la noche es muy variado podríamos decir como 2 horas a veces 3 horas por las noches.
+R1: ¿Tienen algún inconveniente con el panel solar? 
+RMA: Si hemos tenido algunos inconvenientes, pasa que este panel solar su batería se agota de forma inmediata cuando se nubla o llueve 
+R1: ¿Tienes algún familiar que está viviendo en algún otro lugar que no sea aquí?
+RMA: Sí tengo 
+R3: ¿Antes vivían aquí?
+RMA: Sí vivían aquí en todo el año a veces se viene también 
+R1: ¿Más o menos un ingreso económico de cuánto perciben?
+RMA: Generalmente nosotros no tenemos buenos ingresos, así que no da mucho para ahorrar es muy poco lo que se podría decir que ahorramos aquí 
+R1: ¿Generalmente su trabajo que realizan es en la agricultura verdad?
+RMA: Así es como ven ustedes aquí todo el trabajo es en al área de agricultura y crianza de animales, aunque es una situación difícil todo nuestro trabajo es para nuestro sustento familiar 
+R1: ¿Por la agricultura mensualmente ustedes perciben algún ingreso económico, aunque sea poco? 
+RMA: Aquí no contamos con un ingreso económico mensual generalmente porque en la agricultura es según la época de producción y a veces el ingreso es anual, pero es muy poco solo es para para nuestro sustento como lo mencione a veces ayudamos a otros para hacer el intercambio o ganarse alguito mas 
+R1: Así entonces dependiendo 
+RMA: Bueno al mes estimando podría ser como 300 bolivianos lo cual procuramos sustentarnos 
+R1: Desde que hay panel solar ¿solo utilizas la luz del panel solar verdad o utilizas quizás linterna vela, mechero? 
+RMA: Si no usamos a veces usamos linterna
+R1: ¿La verdad sí y para cocinar utilizan un fogón o gas también?
+RMA: Si nosotros usamos generalmente fogón a leña preparamos para nuestra alimentación, cuando llueve a veces usamos un poco de cocina con gas muy poco porque es difícil de ir a comprar gas 
+R1: ¿También aquí en casa con qué cuentan con un celular? 
+RMA: Sí tenemos un celular 
+R1: ¿Desde cuándo lo tienes tu celular y cuántas veces haces cargar? 
+RMA: En el día una sola vez hago cargar y en la noche también dependiendo en el día 
+R1: ¿Cuánto tiempo más o menos haces cargar tu celular quizás una hora o dos o 4 horas?
+RMA: Hacemos cargar 4 horas en adelante apenas completa 
+R3: Sí a veces también depende de un cargador algunos cargadores tienen la función de carga rápido y otros lento 
+RMA: Sí por eso a veces yo hago cargar en las noches también hasta el amanecer 
+R1: Para que tú lo puedas conectar para hacerlo cargar ¿tienes algunos otros equipos o algo así por ejemplo como radio? 
+RMA: No tenemos nada en casa solo una linterna que hacemos cargar a veces
+R1: ¿Pero quisieras hacer cargar o qué equipo eléctrico quisieras comprarte como para hacer cargar? Quizás puede ser radio por ejemplo tal vez licuadora ¿que más o menos quisieras tenerlo comprarlo? 
+RMA: Su batería como no tiene capacidad de abastecer o no tiene buena potencia, entonces no necesitamos comprar nada porque no podría abastecer para cargarlo 
+R1: ¿Cuántos focos tienes?
+RMA: Tengo dos focos una en cada habitación
+R1: ¿En qué horario hace cargar más o menos su linterna?
+RMA: De acuerdo a lo que se necesitan o a veces en el día y a veces en la noche también más o menos como dos horas hago cargar 
+R1: ¿Qué es lo que más te gustan del panel solar? Referente a sus beneficios
+RMA: No sé muy bien pero sí lo único que nos beneficia es para hacer cargar y la luz que nos brinda 
+R1: Tú crees que ese panel solar les abastece entonces 
+RMA: Sí nos abastece de hecho es una gran ayuda para contar con la luz para yo pienso que es limitado, pero aun así es muy beneficioso para nosotros
+R1: El panel solar para ustedes es bueno, malo o excelente 
+RMA: Ah es muy bueno 
+R1: ¿Su batería a veces dices que se paga verdad? ¿cuándo se agota el panel solar más o menos, cuántos días?
+RMA: Dependiendo cuando está nublado constantemente o en épocas de lluvia hasta dos tres días deja de funcionar por lo tanto no contamos con la luz durante esos días 
+R1: ¿Tú conoces muy bien el procedimiento de mantener el panel solar?
+RMA: De realizar un mantenimiento respecto a la limpieza si
+R1: ¿No tiene ninguna dificultad respecto al manejo o mantenimiento del panel solar?
+RMA: Ninguna dificultad por el momento lo veo fácil de hecho yo cada cierto tiempo mantengo la limpieza dependiendo es que tengo que verlo mirarlo y en caso de que esté empolvado y sea necesario lo limpio así es como mantenemos 
+R1: ¿Cómo calificarías las fallas en el sistema de este panel solar? 
+RMA: A veces cuando se desestabiliza y toma tiempo no queda otra opción que esperar, pero así es como funciona qué se puede hacer. El único problema que yo tengo también es su entrada para hacer cargar el equipo en este caso el celular, esa es la dificultad que tengo ya sea situación del cable ¿ustedes pueden tener o nos trajeron? 
+R3: Vamos a intentar hacer arreglar para marzo retornando, entonces yo creo que ahí lo veremos otra vez por eso esta parte estamos registrando para que vuelva vean esa parte será el cable o de la entrada o algo así 
+R2: No es el del litio 
+R3: Ah entonces es de litio creo que esa parte no se puede arreglar eso es de la batería o es el cable lo que se mete del foco 
+R2: Es de la batería creo que esa no se puede arreglar podemos mirarlo está bien este panel solar 
+RMA: Sí por qué por lo que nos ayuda el alumbramiento nos favorece bastante usted considera que se ahorra dinero sí De qué manera para mí Está muy bien mejorado bastante de la parte de alumbramiento de lo que antes usaban este panel solar En qué actividad les beneficia Generalmente para comunicarnos Entonces ha habido mejoramiento para realizar algún trabajo u otro es muy favorable verdad es muy bueno con ese alumbramiento qué es lo que más efectúan parte del trabajo lo que haya no hay una exactitud de un dato exacto de lo que nosotros realizamos pero siempre estamos haciendo alguna cosa u otra
+R1: ¿Con el alumbrado realizan algún trabajo? ¿Quizás tejido, lectura u otra actividad?
+RMA: No usamos para realizar trabajos bajo la luz muy rara vez usamos cómo para escoger la papa o algunos trabajitos como desgranar el maíz a veces la linterna también uso en tiempos de cosecha 
+R1: ¿Qué es lo que más te gustaría que se mejore de este panel solar? 
+RMA: Quisiera que sea más potente para poder utilizar para mayores beneficios si fuera potente 
+R1: ¿Su alimentación preparan utilizando fogón con leña o gas?
+RMA: Utilizamos tanto la cocina artesanal y gas también 
+R1: ¿En cuanto a su alimentación qué es lo que más consumen? 
+RMA: Nosotros consumimos generalmente lawa de maíz o choclo o de trigo ya que produce, mote, también consumimos papá sancochada 
+R1: ¿Cuántas veces cocinan en el día?
+RMA: Tres veces a veces dos veces desayuno y cena porque el desayuno es comida
+R3: Aquí el problema es el cable 
+R2: Si es el cable está roto conectando, pero mira que no funciona
+R3: Te lo vamos a registrar vamos a ver si lo podemos traer uno arreglado te lo vamos a registrar está mal su cable el problema es este Jack, entonces este no alumbra
+R2: Si no alumbra para nada este cable que sale es del panel sí con esa entrada no da así este es del panel ahora está cargando nada no funciona ¿aquí hay dos paneles? 
+R3: El otro no da ese conector creo que no tenemos, pero vamos a buscar en caso de tener podemos traerlo, pero del foco tenemos, pero preguntaremos por si acaso este cable no tenemos repuesto ya de los focos se tiene los repuestos vamos a preguntártelo voy a ir preguntando registrármelo voy a preguntar nosotros no tenemos eso, pero vamos a preguntar por si acaso ¿dos paneles tienes entonces? 
+RMA: Sí uno es de mi hermano 
+R3: ¿Cómo se llama su hermano? 
+RMA: Don Mario 
+R3: ¿Dónde vive?
+RMA: Por este tiempo está en Cochabamba trabajando, pero siempre viene constantemente 
+R2: ¿Y solo viven los dos? 
+RMA: Si vivimos los dos 
+R2: Ya Don Calixto queremos ver y preguntarte si el panel es suficiente, si les alcanza por eso les preguntamos estas situaciones para saber cómo se usa la energía para ver cómo en el futuro se podía mejorar por eso es importante para nosotros saber cómo utilizan qué les gusta que no les gusta cual es el problema de este panel solar
+RMA: Yo considero que es muy pequeño y no alcanza no carga como desearíamos cargar 
+R2: Entonces ese es problema a algunos preguntando no tienen dificultades, pero entonces puede ser tal vez problema del cargador hay muchos aspectos que hay de algunos que sí carga de algunos es normal, pero de otro no
+R3: Eso es un poco raro quizás es el cable, ya le vamos a invitar un refresco Don Calixto
+R2: Falta cable del panel solar creo 
+RMA: Generalmente los agricultores salimos a las 9 de la mañana y volvemos para 5 de la tarde 
+R3: Aquí dame tu número de celular para que les comuniquemos
+R1: Agradecemos por perimirnos este tiempo ya nos vamos
+R2: Hasta luego 
+R3: Hasta nuestro retorno muchas gracias

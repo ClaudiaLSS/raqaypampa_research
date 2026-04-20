@@ -1,0 +1,80 @@
+user_ID: 91
+name: Valeriano Romero
+gender: Male
+community: Sillar
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: somos de la universidad ¿Cómo se encuentra?
+[RMS]: ¿Cómo están?
+[R1]: hemos venido a ver los paneles ¿estás bien?
+[RMS]: que bien, si estoy bien
+[R1]: aqui adentro no ¿esto lo voy a desatar?
+[RMS]: si desátalo
+[R1]: ya
+[RMS]: más bien te he escucho talvez ni te iba a atender
+[R1]: ha ya está bien
+[RMS]: si
+[R3]: ¿Cómo esta?
+[RMS]: Buen día
+[R3]: Buen día
+[R1]: Somos tres: Mateo, Claudia: y José
+[RMS]: ha ya, ¿de la universidad son ustedes cierto?
+[R1]: si, de la universidad somos
+[RMS]: ya
+[R1]: 100%
+[R3]: tiene un picolampara también
+[R1]: si, tiene un picolampara si enciende la luz
+[R1]: ¿hacen cargar los celulares?
+[RMS]: mi nieto nomas hace cargar
+[R1]: ya ¿la radio haces funcionar u otro radio es eso?
+[RMS]: la radio estaba aquí creo
+[R1]: haber, no, no hay la radio
+[RMS]: ah quien se lo habrá llevado o robado no sé, tal vez sabe don Guillermo talvez pueden preguntar
+[R1]: si
+[RMS]: ¿Don Guillermo se encuentra en su casa?
+[R1]: hemos ido, pero nadie se encontraba en su casa está cerrado
+[RMS]: si pues, porque esta echado llave será, don Guillermo es mi hijo
+[R1]: ah ya, está cerrado pues, no hay radio
+[RMS]: ¿si pues, le vas a preguntar a Don Guillermo ya? Le vas a decir que no hay su radio del papá Romero
+[R1]: ya
+[RMS]: si yo me llamo Valeriano Romero, si, Don Guillermo Romero el que está en Raqaypampa ¿no?
+[R1]: si
+[RMS]: mi hijo mayor es
+[R1]: si, el, nos ayudó a venir ¿a qué hora prenden la luz, esto iglesia es?
+[RMS]: una pregunta ¿tienes su número de celular de don Guillermo?
+[R1]: yo, si tengo su número
+[RMS]: ya, le puedes llamar a ver que te dice de su casa
+[R1]: ¿de allá de su casa?
+[RMS]: si
+[R1]: ya vamos a preguntar, ¿allá abajo es su casa no?
+[RMS]: si al venir esa casa que pasaron por ahí es
+[R1]: ya vamos a preguntarle entonces ¿a qué hora esto haces funcionar?
+[RMS]: exacto trabaja bien
+[R1]: ¿y esta iglesia a qué hora funciona en la noche?
+[RMS]: si en la noche
+[R1]: En la anoche ¿a qué hora?
+[RMS]: anoche a funcionado, funciona martes en la noche jueves, sábado y domingo en la noche funciona
+[R1]: ya cuatro días a la semana
+[RMS]: si, esto de aquí yo lo revoque, así estando ciego
+[R1]: Ow todo esta revocado
+[RMS]: si, aunque no pueda ver ya bien lo hice
+[R1]: ¿así nomás has hecho, aunque no pueda ver bien?
+[RMS]: si, así hice, esta como 13 años que ya este hecho, y vivo solo ya como 7 años
+[R1]: ¿y voz solito cocinas?
+[RMS]: si, yo solito nomas cocino para mí, talvez les puedo invitar comida para que comamos
+[R1]: tenemos que ir a otros lugares
+[RMS]: ya entonces les quiero decir unas pequeñas palabras ¿ya?
+[R1]: ya
+[RMS]: ¿ustedes son hermanos?
+[R1]: como
+[RMS]: me están escuchando estoy preguntando
+[R1]: ah sí, Claudia: y mateo te están escuchando
+[RMS]: ya,
+[R1]: nos va a hablar dice
+[RMS]: entonces, padre Dios estamos aquí con tus hijos ¿Cuál es tu nombre?
+[R1]: de mi es José
+[RMS]: ¿y tú apellido?
+[R1]: Espinoza
+[RMS]: ya, bendice Dios a los tus hijos que nos está visitando y también bendice porque ellos nos están ayudando con el panel, también permite que escuchen la palabra que les diré, así le pido orando en el hombre del padre espíritu santo amén.

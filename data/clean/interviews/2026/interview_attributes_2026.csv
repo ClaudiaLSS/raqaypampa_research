@@ -1,0 +1,24 @@
+file_name,case_id,user_id,participant_type,gender,community,date
+int_user_62.txt,int_user_62,62,User,Female,Molle orcko,25/03/2026
+int_user_29.txt,int_user_29,29,User,Male,Ichuqata,24/02/2026
+int_user_8.txt,int_user_8,8,User,Female,Ichuqata,25/02/2026
+int_user_51.txt,int_user_51,51,User,Male,Tetilla,26/02/2026
+int_user_78.txt,int_user_78,78,User,Female,Molle orcko,25/03/2026
+int_user_14.txt,int_user_14,14,User,Male,Ichuqata,25/02/2026
+int_user_33.txt,int_user_33,33,User,Male,Ichuqata,25/03/2026
+int_user_44.txt,int_user_44,44,User,Female,Ichuqata,24/02/2026
+int_user_20.txt,int_user_20,20,User,Female,Ichuqata,26/02/2026
+int_user_18.txt,int_user_18,18,User,Male,Molle orcko,25/02/2026
+int_user_38.txt,int_user_38,38,User,Female,Ichuqata,25/03/2026
+int_user_74_2.txt,int_user_74_2,74,User,Female,Molle orcko,25/02/2026
+int_user_11.txt,int_user_11,11,User,Male,Ichuqata,25/03/2026
+int_user_40_2.txt,int_user_40_2,40,User,Female,Ichuqata,25/03/2026
+int_user_57.txt,int_user_57,57,User,Female,Ichuqata,25/03/2026
+int_user_46.txt,int_user_46,46,User,Male,Tetilla,24/02/2026
+int_user_6_2.txt,int_user_6_2,6,User,Male,Ichuqata,25/02/2026
+int_user_48.txt,int_user_48,48,User,Male,Tetilla,24/02/2026
+int_user_52.txt,int_user_52,52,User,Male,Tetilla,26/02/2026
+int_user_61_2.txt,int_user_61_2,61,User,Male,Molle orcko,25/02/2026
+int_user_63_2.txt,int_user_63_2,63,User,Male,Molle orcko,25/02/2026
+int_user_81_2.txt,int_user_81_2,80,User,Female,Molle orcko,25/02/2026
+int_user_37.txt,int_user_37,37,User,Male,Ichuqata,25/03/2026

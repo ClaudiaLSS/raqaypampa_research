@@ -1,0 +1,77 @@
+user_ID: 74
+name: José Acosta Inturias
+interviewee: Victoria Carballo
+gender: Female
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota:
+
+R1: ¿Podemos pasar?
+RF1: Si pasen
+R2: ¿Podemos mirar el panel Solar?
+RM1: Sí sí véanlo  
+R1: ¿Este panel tiene un buen funcionamiento no tiene ninguna falla?
+RF1: A veces no funciona bien
+R2: Haber vamos a mirarlo y revisarlo qué es lo que se salió 
+R3: Creo que su cable se jaló y ahora está como sobresalido 
+R2: Este está en su lugar 
+R1: ¿Cuándo está nublado o cuando llueve deja de funcionar? 
+RF1: Sí a veces deja de funcionar cuando hacemos cargar el celular se termina o se agota 
+R1: ¿Tu radio está funcionando? ¿Tienes hijos que están estudiando se utilizan la luz para hacer las tareas?
+RF1: Sí mis hijos utilizan la luz para realizar sus tareas y sí a veces siempre tenemos la dificultad de que se apague 
+R1: ¿Y realizan algún trabajo en la luz? 
+RF1: No mucho solo lo que es necesario para cocinar cena y luego prepararse para dormir 
+R1: ¿Y no hacen algún tejido o algún trabajo así en la luz?
+RF1: Bueno la luz que nos brinda este panel solar no es tan nítida así que casi no realizamos ningún trabajo 
+R1: ¿Antes del panel solar cómo sustentaban la luz? 
+RF1: Antes teníamos que usar vela 
+R1: ¿Cuándo van a otro lugar a comprar algo van en moto en bicicleta o en bus? 
+RF1: Nosotros vamos a pie no más caminamos un buen tiempo a veces viene el auto allá a la punta y vamos a darle alcance y así vamos en bus a veces por ejemplo Rajay Pampa ya que caminando nada más es 4 horas pues es lejos 
+R1: ¿Cuántos están habitando en tu casa? 
+RF1: Somos siete 
+R1: ¿La luz hasta qué hora o qué tiempo lo utilizan? 
+RF1: Depende a veces tres horas en la noche cuando hacen sus tareas en la madrugada a veces una hora 
+R1: ¿Sus ingresos de que les proviene quizás de la agricultura o de ganadería? 
+RF1: Sí nosotros producimos y cuidamos algunos de nuestros animales vendemos a veces y así podemos sostenernos 
+R1: ¿Referente al monto económico cuánto más perciben? 
+RF1: Esa pregunta es cómo para no poder responder porque nosotros no trabajamos, solo trabajamos en la agricultura una vez al año así cuando sembramos a veces hacemos algunos cambios o a veces nos compramos alguna alimentación 
+R1: ¿Este panel solar lo trajinan en algún lado? 
+RF1: No, siempre está aquí 
+R1: ¿Este panel solar les ayuda bastante? 
+RF1: Sí es muy lindo aquí hacemos cargar el celular de mi hijo  
+R1: ¿Cuántas veces hacen cargar?
+RF1: No depende de lo que se necesite a veces en el día o en la noche cuando sea necesario el celular también hacemos cargar
+R1: ¿En caso de que pueda abastecer cargar que podrían adquirir por ejemplo quizás una licuadora?
+RF1: No creo que nada pues ya que no se puede abastecer ni intentar comprar alguna cosa para cargar yo creo que mejor no comprar nada en caso de que sea así podríamos comprar, así como refrigerador o quizás tele, no creo pueda abastecer 
+R1: ¿Trasladaron a algún lado? 
+RF1: No a ningún lado siempre permanece aquí 
+R1: ¿Realizan algún mantenimiento?
+RF1: La limpieza cuando sea necesario sí ahora que es tiempo de lluvias las lluvias lo lava
+R1: ¿A veces cuando van a algún lado utilizan linterna y hacen cargar linterna?
+RF1: Si usamos linterna es muy bueno
+R1: ¿La luz que les brinda el panel solar es bueno?
+RF1: Sí es muy bueno, excelente 
+R1: ¿Lo que pagaron para conseguir ese panel solar como parte del proyecto fue bueno?
+RF1: Si estuvo bien 
+R1: ¿Hay algún inconveniente con el panel solar?
+RF1: Es solo que cuando llueve o está nublado no carga rápido muy poco carga se apaga a veces la anterior vez nomás se apagó una vez 
+R1: ¿El manejo del sistema es fácil?
+RF1: Sí es fácil 
+R1: ¿Cocina en gas o en fogón? 
+RF1: Generalmente en fogón algunas veces a gas
+R1: ¿Ustedes siembra verdad? 
+RF1: Sí maíz, papa, trigo, quinua así sembramos para nuestro vivir nosotros esperamos con ansias la lluvia para que nuestra producción sea rentable 
+R1: ¿En el día cuántas veces cocinan? 
+RF1: Dos veces para llevarnos merienda al campo y una por la tarde
+R1: ¿Cuál es tu nombre? 
+RF1: Carballo 
+R2: De un mes vamos a volver esto vamos a sacar y no los vamos a llevar 
+RF1: Ya ¿esto que instalaron? 
+R2: Así que se van a quedar batería del panel
+RF1: En na reunión quedaron que a todos tienen que ir revisando y verlo dice que no fueron a ver a todos
+R3: Si iremos a algunos ya fuimos la vez pasada
+R1: Muchas gracias por todo nos vamos a retirar
+R3: Hasta nuestro retorno será, gracias
+R2: Se cuidan que les vaya bien gracias

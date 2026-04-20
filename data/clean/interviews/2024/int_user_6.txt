@@ -1,0 +1,192 @@
+user_ID: 6
+name: Antonio Negrete
+interviewee: Antonio Negrete
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[RMA]: No quiere cargar con eso
+[R1]: ¿con ese cable?
+[RMA]: Si, con eso no quiere cargar, pero con ese otro, si carga en la noche pero
+[R2]: En la mañana, es mejor, porque de aquí de lo que está cargando está absorbiendo pues ¿y tú radio donde esta?
+[RMA]: aquí esta
+[R1]: ¿no funciona?
+[RMA]: si, si
+[R2]: ¿Cuántas personas viven aquí?
+[RMA]: somos 6, 3 mujeres y 3 varones
+[R2]: ¿con los niños más?
+[RMA]: sí.
+[R2]: ¿Cuál es tu nombre y apellido?
+[RMA]: Mi nombre es Antonio y apellido Negrete
+[RMY]: ¿dónde está el cargador aquí estaba?
+[RFA]: pero ahí arriba esta, si no encuentras talvez en el piso se debió caer, ¿ahora la radio va a poder cargar?
+[R1]: no funciona no carga para nada, parecería que fuera esto de aquí lo que dice radio que carga eso
+[R3]: Ya ¿carga su celular no?
+[R1]: Su celular carga directo y también ahora con este vamos a ver si funciona, ahora estamos buscando el
+duplicador, esto que no funciona lo vamos a sacar, no hay el interruptor. Por ahí debe estar
+[R2]: Aquí esta
+[RMA]: ¿solo una luz prendida va a ver?
+[R1]: ¿enciende la luz?
+[R3]: No
+[R2]: ¿van a otros lugares a trabajar?
+[RFA]: vamos como un mes o dos meses
+[R2]: ¿dónde?
+[RFA]: Al monte, pero lo llevamos
+[R2]: ¿esto de aquí o el otro?
+[RFA]: ese de allá lo llevamos porque este no hace cargar el celular
+[R2]: ah ya
+[R1]: hay dos rayitas
+[RMA]: No, una rayita
+[R1]: ni uno de los dos funciona
+[R3]: ¿Pero daba?
+[R1]: ¿Cuándo hemos entrado esto estaba encendido?
+[R3]: Creo que estaba encendido
+[R1]: Se murió el foco no da
+[R3]: que raro si estaba dando, ¿ha prendido no prende no?
+[R1]: Ni uno de los dos, ese rato estaba dando, pero nove, talvez no está bien conectado, le voy a sacar foto
+[R3]: ya
+[RMA]: Don Jaime una vez te dije nove que esta cabecita de la radio no podía recuperar ahora más bien ya funciona un poco
+[R2]: Ah sí, si
+[R1]: Tiene la primera ranura parpadeando y todo el rato
+[R3]: Si
+[R1]: Ahí está haber velo
+[R3]: ah sí cierto, esto es del foco o panel
+[R1]: No, del panel es esto
+[R3]: ¿carga, pero? ¿Reconoce no?
+[R1]: ahora vamos a ver de los focos, algo tiene, incluso lo cambie de puerto talvez tiene tierra.
+[R3]: hay que limpiarlo
+[R1]: Lo hiciste caer esto
+[RMA]: No, por eso aquí quería colocar con clavito, pero quería caer por eso con mechero esta.
+[R3]: Ah ya ahora vamos a probar la carga, ¿Hay un cargador?
+[RMA]: Si aquí esta, y la radio no funciona
+[R2]: Don Antonio
+[R3]: Vamos a probar ahora si funciona
+[RMA]: Ya
+[R1]: El cable y la radio te estoy dando ya estamos cambiando si se arruina uno más ya no podremos cambiarlo
+[RMA]: Eso de allá, un poco nomas estaban tocando, no está hecho nada, pero.
+[R2]: ¿No está hecho nada ah don Antonio que puede estar pasando será no? Porque ayer al visitar casi todos, pero solo uno dejo de funcionar, pero creo que lo mantenían haciéndolo caer a cada rato
+[RMA]: Ah de mí no, yo lo cuido mucho
+[R2]: Ah ya muy bien Don Antonio, eso también al desconectar lo haces con cuidado
+[R1]: ¿desde qué hora prendes la luz?
+[RMA]: desde las 7 de la noche hasta las 9 de la noche, a veces hasta las 10 de la noche
+[R1]: ¿y en la mañana?
+[RMA]: desde la 4 de la mañana hasta que salga el sol, pero tengo mi lamparita eso nomas utilizo para no gastar mucho
+[R2]: ¿al usar no debes hacerlo bajar por completo la batería, ya debes hacerlo cargar?
+[RMA]: si, ahora si me fijo cuando hay una rayita ya lo hago cargar porque tengo miedo que se fregué
+[R2]: ¿Van a dejar su cablecito de duplicador?
+[R3]: Si estamos probando
+[R2]: ya con ese otro cable vas a hacer funcionar don Antonio
+[RMA]: Ya ¿tienen focos para vender?
+[R1]: No, tenemos focos, está cargando ya está en 77%
+[R3]: ya está bien entonces, ¿la radio ha dicho que no funcionaba desde el principio no?
+[R2]: No, no funcionaba y a la vez está relativamente bien mantenido
+[R1]: ¿antes cuando no había luz con que hacías alumbrar?
+[RMA]: Yo, utilizaba mechero
+[R1]: ¿ya no compras pilas?
+[RMA]: o ya no compro pilas solo compro cuando voy a salir en las mañanitas para la linterna para alumbrar
+[R1]: ¿qué es lo que más utilizas la luz, la radio o el celular?
+[RMA]: sí utilizo todo
+[R2]: ¿algunas personas vienen aquí?
+[RMA]: no, no vienen mucho o de vez en cuando vienen de visita
+[R1]: ah ya está bien ¿entonces tu esposa también usa no? ¿y tú mechero dónde está?
+[RMA]: no sé dónde lo puse ¿qué horas se irán el día de mañana?
+[R2]: No, hoy nos iremos por la tarde
+[RMA]: ya voy a buscar, les puedo entregar el mechero antes que se vayan
+[R1]: ¿tus hijos en el colegio?
+[RMA]: Si están estudiando, tengo tres hijos tengo, uno está en cuarto de secundaria
+[R2]: ¿acaso aquí hay secundaria?
+[RMA]: sí aquí hay hasta secundaria, salen bachilleres
+[R3]: Lo puede firmar aquí don Antonio esto de la radio y del cable
+[RMA]: ya está bien
+[R3]: ya gracias
+[R2]: Ya don Antonio vamos a venir más adelante, ha habido dos confusiones pues yo he entendido que nos teníamos que encontrar en la mañana y te estaba esperando, estaba preguntando dónde estabas
+[RMA]: ah no desde las 12 te dije que te iba a esperar
+[R3]: ¿con esto carga no?
+[RMA]: no con este de aquí carga, con picolampara
+[R3]: ah ya
+[R2]: ¿desde cuándo has comprado esto?
+[RMA]: eso lo compré desde hace 7 años
+[R3]: ¿mejor es esto que el otro?
+[RMA]: sí mejor es
+[R2]: ¿ahora, pero la batería está cargando normal no?
+[RMA]: sí ahora sí está cargando
+[R2]: quién sabe el cable a veces puede fallar
+[RMA]: ah sí
+[R2]: ya don Antonio, este fin de mes se van a ir hasta carnaval cierto
+[RMA]: sí
+[R3]: ¿y se lo lleva en el panel?
+[RMA]: sí abajo nos quedamos 1, 2 o 3 semanas o hasta más
+[R2]: sí ¿hasta carnaval no?
+[RMA]: sí, seguro
+[R2]: Y a don Antonio ya hemos cumplido con nuestro deber, me vas a llamar cualquier cosa que quieres comprar yo te lo voy a preguntar, ¿y el panel cada qué tiempo lo limpias?
+[RMA]: ahora que llueve pues la lluvia me lo limpia
+[R2]: ¿cada semana?
+[RMA]: no cada dos semanas se hace la limpieza
+[RFA]: ¿si hacemos ver la radio porque no utilizamos y no hacemos tocar?
+[R2]: ¿no hacen tocar? ¿probaremos en funcionamiento?
+[RMA]: sí no hacemos tocar es de mi papá la radio, pero lo queremos hacer ver
+[R2]: Ya, pero hay alguna queja de parte de tu padre de que algo no funcione
+[RMA]: no, no hay ninguna queja uno de mis hijos se queda con él. Yo trabajaba en una empresa y me pagaron con un panel y ese panel él está utilizando más grande es, él gasta muy poco no utiliza mucho.
+[R2]: haber vamos a ir a ver
+[RMA]: vamos
+[R2]: aquí trabaja pues don Antonio y la empresa le ha dejado este panel
+[R3]: ¿cómo está Don Remigio?
+[R2]: él solo vive con uno de sus hijos de don Antonio y un sobrino más, que no tiene papá ni mamá es huérfano
+[R3]: ya
+[R2]: hay que ver si está cargando bien, está bien la luz, no usa para cargar celular ¿y el otro foco está conectado?
+[RMA]: no, no está conectado solo uno está conectado
+[R1]: qué raro porque está 75 yo creo que en la noche han utilizado
+[R3]: sí, está nublado
+[R2]: por eso no está cargando nada
+[R3]: sí porque tal vez lo han usado en la noche y se ha ido descargando, Y ahora cómo está nublado está cargando muy poco
+[R1]: sí porque no hay indicador
+[R3]: Sí, la radio ¿no usa no aquí?
+[R2]: no
+[R3]: ¿y a los cargadores no conectan mucho no?
+[R1]: ¿y a qué hora prenden la luz aquí?
+[RMA]: desde las 7, 8 de la noche solo dos horas hasta las 10 de la noche
+[R1]: ¿Y en la mañana?
+[RMA]: desde las 3 de la mañana prende, mucho más temprano
+[R1]: ¿no conectan siempre nada para cargar?
+[RMA]: si lo conectamos de vez en cuando, pero carga bien funciona
+[R1]: ¿y en la noche no se apaga de repente no?
+[RMA]: no, no se apaga nada porque tiene otro panel grande y eso le ayuda a que no se apague
+[R1]: ¿ya no compran pilas tampoco no?
+[RMA]: Si compramos para la linterna y salir afuera, ir al baño
+[R2]: ¿velas, pero ya no compran, ni mechero nada?
+[RMA]: no, ya no el panel nos ayuda mucho, mis hijos igual al hacer sus deberes utilizan la luz, antes cuando no había, yo sabía hacer con el mechero.
+[R2]: haber veremos su sistema, es más grande este panel que está aquí
+[R3]: si
+[R1]: tiene batería y está con un controlador más
+[RMA]: ¿eso está bien o está mal? porque mi sobrino me dijo que eso es malo, que le puede llegar el trueno o el rayo cuando llueva
+[R1]: para esto hay unos equipos se llaman fusibles que protegen contra los rayos o truenos, eso es lo que falta
+[RMA]: ¿y ese protector en donde puedo comprar?
+[R1]: se llama fusible está en las empresas donde venden panel, esas personas venden y cada uno cuesta arriba de 30 Bs, tú vas a necesitar para esto dos: uno para el panel y otro para su batería del panel
+[RMA]: ya dos entonces
+[R1]: hay más caros todavía y es mejor porque protege, que cuesta como 30, 40 o 50 bolivianos, debes poner en el panel en estos cables.
+Entrevistado: si me dijeron que si no pongo protección puede llegar el rayo.
+[R1]: así como esto, pero esto es más sencillo esto es para cargador, esto cuesta 10 o 15 Bs. Pero debes comprar eso de 30 o 40 Bs.
+[R2]: entonces don Antonio rápido tienes que comprarte protector para que tu panel no se queme o no lo
+arruine el rayo o los truenos
+[RMA]: sí tengo que comprar rápido en Mizque dice que hay
+[R2]: puedes comprar de energética, también ellos traen
+[RMA]: ¿Fabián nove?
+[R2]: sí así creo que se llama Don Fabián, ahí puedes preguntar, puedes sacar una foto y puedes llevar la foto y les muestras para que te puedan vender mejor
+[R1]: vas a decirle que quieres fusible para panel
+[R2]: ya don Antonio para el tiempo de la lluvia tienes que comprar eso
+[RMA]: ya listo Gracias
+[R3]: ¿mira eso debe ser de 100 no?
+[RMA]: lo encontré solo no sé si le puedo poner así
+[R2]: sí sería mejor
+[RMA]: esto dice que no es recomendado ponerlo abajo
+[R1]: hay que hacer para sus lados con fierro
+[RMA]: sí
+[R2]: Ya Don Antonio
+[R3]: ¿de cuánto es la batería de ese panel grande?
+[R1]: de 120
+[RMA]: Este panel puede abastecer, televisión y también una computadora.
+[R1]: Ah, ya ya
+[R2]: tus gatitos habías tenido bien bonitos este plomo es muy bonito, ya don Antonio nos vamos a retirar
+gracias.

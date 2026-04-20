@@ -1,0 +1,115 @@
+user_ID: 40
+name: Rodolfo Agreda
+interviewee: La mamá de don Rodolfo, Apolina
+gender: Female
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: 
+
+R3: Estamos de ida a casa de don Rodolfo Agreda su madre nos está llevando
+RFY: Esta mas allá está lejos 
+R1: ¿Sera que llueve?
+RFY: No creo o quizás llueva ¿De dónde están viniendo?
+R1: De Cochabamba estamos viniendo de la universidad
+RFY: Ahí está ya me voy
+R1: Si muchas gracias
+R2: ¿Estamos viniendo a ver los paneles solares lo podemos ver?
+RFA: Si pasen nomas
+R2: Vamos a pasar 
+R1: Muchas gracias 
+R3: Cómo estás 
+R2: Cómo están ¿están bien nomás? 
+RFA: Sí estamos bien nomás de mí el panel está ya en la punta eso trajimos 
+R2: ¿De quién es este sistema?
+RFA: Está en mi nombre 
+R2: ¿Cuál es tu nombre?
+RFA: Mi nombre es Apolina, haber haga la prueba por favor colocando esto y esto 
+R3:  Haber veremos 
+R1: ¿y esa casa es de don Rodolfo?
+RFA: Si don Rodolfo es mi hijo  
+R2: ¿Está funcionando bien?
+RFA: Sí me dijo que está funcionando bien nomás 
+R1: Ah ya 
+RFA: Nosotros lo dejamos por este tiempo estuvimos en Chapare estuve durante tres meses y no hice alumbrar no prendimos la luz quizá sea por eso que algo suceda 
+R1: Aquí ¿cuántos habitan en esta casa?
+RFA: Allá está su mamá 
+R2: ¿Está trabajando muy bien este equipo?
+RFA: Sí no más 
+R2: Hay que hacer cargar frecuentemente si no hacemos cargar entonces se podría arruinar 
+RFA: Si está bien, voy a tener que llevar arriba y ahí voy a colocarlo ahí lo haré trabajar 
+R1: ¿Aquí desde qué hora prenden la luz? 
+RFA: A veces desde las 5 o 6 de la mañana generalmente y desde las 7 de la noche hasta las 8 a veces 9 o 10 aproximadamente 
+R1: ¿Referente a la radio ustedes escuchan la radio?
+RFA: No escuchamos ni lo hemos sintonizado ya, porque se arruinó. Ahí al frente está la casa de don Primitivo ¿ya fueron ahí también? 
+R1: No todavía y en este otro lado ¿está de don Raymundo?
+RFA: Si de don Raymundo 
+R1: ¿Aquí cuando utilizan la luz varones y mujeres usan de diferente manera?
+RFA: No usamos de manera independiente usamos en uno solo, aquí los hijos solo son dos 
+R1: ¿Ellos todavía no están a la escuela? 
+RFA: No todavía 
+R1: ¿Con este panel ustedes están contentos? 
+RFA: Sí porque tenemos luz y está bien 
+R1: ¿y cada vez vas a chaparé o en este tiempo nomás?
+RFA: Solo fui un momento en ese mes pasado por noviembre y recientemente he estado llegando aquí en ese entonces no encendí la luz 
+R1: Antes de que no tengas el panel solar con qué sostenían la luz ¿Usaban mechero o vela?
+RFA: Nosotros usábamos mechero después a lo posterior nos compramos un panel solar había un panel muy grande y su batería también muy bien adaptado hemos usado para la luz, mis otros vecinos también solo alumbraban sus hogares con el mechero
+R1: ¿y en las noches cómo utilizan la luz?
+RFA: Nosotros generalmente cocinamos, cenamos y descansamos generalmente así 
+R1: ¿Cuántos celulares tienen?
+RFA:  Referente a los celulares mis hijos tienen cada uno es solo que ellos no están aquí, ellos son todavía muy chiquitos y no utilizan un celular 
+R1: ¿Solo sus padres entonces solo son dos celulares?
+RFA: Si cuando llegan hacen cargar
+R1: ¿Y dónde están sus padres? 
+RFA: Ellos se fueron a trabajar a la mina entonces solo están sus hijos a veces salen una vez al mes entonces ahí usan la luz domingos en las tardes se van también a la mina cada semana 
+R1: ¿y económicamente están bien nomás?
+RFA: Como trabajan las minas ahí un poco de dinero para sustentarse tenemos, pero no mucho 
+R1: ¿y lo que tienen siembras las cosechas lo venden o solo es para su sustento?
+RFA: Solo es para nosotros no alcanza para poder vender ahora también está muy poco no ha llovido bastante entonces no hay mucha producción poco llueve pues aquí 
+R1: ustedes cuando encienden la luz ustedes ¿lo apagan o por si solo se paga? 
+RFA: Nosotros siempre apagamos por sí solo no se puede apagar 
+R1: ¿Alguna vez se apagó la luz?
+RFA: Si sí se apaga
+R1: ¿La luz lo tienen encendido constantemente? 
+RFA: Cuando necesitamos siempre lo encendemos la luz, estuve delicado de salud, así como la respiración quería cortarme algo así 
+R1: ¿Y la radio está funcionando?
+RFA: No no está funcionando 
+R1: ¿Cuántas veces cocinan en el día?
+RFA: Tres veces uno por la mañana al mediodía para almuerzo y llevar y en la noche cenamos a veces solamente un tecito nada más 
+R1: Sí así es entonces ¿en las noches utilizas la luz así como para tejidos o algo así? 
+RFA: Sí a veces realizo el tejido hasta la 1 de la mañana algo así hasta que me dé sueño es muy bueno la luz para avanzar así alguna de nuestras actividades, a veces también los hijos hacen sus tareas hasta la noche 
+R1: ¿Desde qué hora hacen sus tareas ellos porque a veces van a ayudar verdad?
+RFA: Después de ayudar llegando hacen cuando hay que cavar papa también ellos están ayudando todavía y luego recién se ponen a hacer sus tareas a los grandes hay mucha tarea dicen los pequeños no más no tienen mucha tarea creo de los que salen de promoción ellos son los que más tienen tarea dicen este año también probablemente cuatro personas se van a graduar 
+R1: ¿Estos paneles para ustedes referente al precio fue accesible o es muy caro?
+RFA: Está bien nosotros como solo hemos apoyado con un costo que nos fijaron y también nos apoyaron en contraparte como una ayuda 
+R1: En caso de que siempre estés aquí viviendo ¿este panel solar te gustaría que los mejoren?
+RFA: Sería muy bueno que mejorara pues pero no creo que puedan mejorar ya así se puede hacer cargar más cosas sería genial pero nos gustaría también que carga el celular más rápido, yo veo que utilizan bastante celulares es tan necesario para comunicarnos cuando uno esta a distancias separadas, yo también tengo dos nietos ellos son los que manejan celulares yo no 
+R1: ¿Cuántos años más o menos tiene sus nietos?
+RFA: El otro ya tiene 18 años y el otro tiene 15 años ellos ahora están en Chapare en la escuela ya no están aquí se los llevo su tío 
+R1: Este panel solar está bien no más ¿verdad? 
+RFA: Si es bueno uno puede hacer cargar celular y también puedes disponer de la luz, sí está muy bien
+R1: Alguna vez cuando vienen sus vecinos y ¿ustedes prestan para hacer cargar? 
+RFA: Sí prestamos muy pocas veces algunos son familia numerosa entonces préstamos a ellos algunas veces a veces no cabe entonces vienen y nos dicen por favor ayúdanos a que podamos hacer cargar y así hacen cargar por ejemplo hay un abuelito que tiene su panel solar él vive solo y a veces van y lo hacen cargar ahí también porque saben que él no ocupa mucho por eso le dicen pues grande papá ayúdanos queremos hacerlo cargar mi celular así uno solo no abastece no es suficiente.
+R1: Entonces por qué algunos tienen muchos hijos si, ¿entonces sería bueno un panel grande verdad?
+RFA: Sí sería bueno están diciendo que la luz va a llegar pero no sé cuándo llegará no llega aún sería genial porque la corriente carga muy bien yo creo que depende de los dirigentes pienso que no andan no gestionan 
+R1: A veces ¿Utilizan linternas? 
+RFA: Hemos usado la linterna antes pero ahora poco usamos solo cuándo vamos a algún lado nomás usamos a veces es suficiente con la linterna del celular también cómo tiene el internet entonces ahí nomás 
+R1: ¿Y ustedes cuándo van a comprar algo en qué van van en bus?
+RFA: Si porque el bus viene hasta aquí dónde nosotros decimos Kasa ahí viene 
+R1: ¿cada vez viene o de vez en cuando?
+RFA: Ah viene todos los lunes para ir al Rajay Pampa también nos lleva Mizque y de Misque también podemos ir dónde queremos ir en mi caso llegando a mizque me voy a Ivirgarzama (Chapare) y  de chapare me vine hasta sucre luego cogiendo un taxi y me vine hasta Mizque y así un auto también me tuve que coger para poder llegar a veces vienen a recogerme en un auto antes no teníamos como movilizarnos pero ahora por lo menos tenemos estas ventajas antes no había buen camino ni tampoco movilidad yo a veces sé ir con burros para poder alcanzarle a mis hijos a esa de las Lagunillas tenía que traer arroz, abarrotes las cargas como tres quintales ya que mis hijos saben traer ganándose de chapare arroz por quintales así entonces tenía que ir a alcanzarles en burro y antes no había ni para comunicarnos el celular entonces era muy trabajoso a veces llegando me avisaba que le había dejado y yo como mamá me iba con burros a recoger era bastante sufrido antes más que ahora y así ese auto también se pasaba Rajay Pampa ahora nosotros ya no sufrimos como antes hasta la puerta de nuestra casa ya hay auto sí tenemos que coger y ya ya hay camino 
+R1: Entonces ya no hay mucho sufrimiento es bueno escuchar esa parte ¿En qué horarios hacen cargar sus celulares?
+RFA: En cualquier hora que sea conveniente
+R1: ¿En qué horarios hacen alumbrar la luz?
+RFA: Desde las 7 de la noche comentando de mi vecino por ejemplo el don Severino como no pudo agarrar de ese proyecto el panel solar entonces se fue a comprar y lo tiene buen tiempo ya él compró hasta ahora muy bien funciona su panel con su propio dinero fue a comprarse no agarró el de ese proyecto 
+R1: Entonces ahora piensan que es muy ventajoso tener el ¿panel solar?
+RFA: Sí porque nosotros podemos disponer de la luz eso es muy importante porque antes íbamos a hacer cargar hasta Rajay Pampa porque hay pues la luz ahí por eso íbamos a ir a hacer cargar como no había entonces qué podíamos hacer íbamos lejos ahora actualmente ya no es necesario ir en ese sentido nos favorece bastante porque no usamos solamente la luz también pues usamos para hacer cargar el celular desde que llegó hacemos cargar ese panel lo van a revisar por favor
+R2:  Está en buen funcionamiento creo que un poco está mal la orientación no está bien
+R1: Dice que tiene que estar en este lado direccionado al norte - oeste
+RFA: Así tiene que estar nos dijeron por eso bueno está bien entonces así pónganmelo por favor
+R2: Este tiene que tener dirección hacia el norte
+R3: Gracias doña Apolina
+R2: Te vas a cuidar
+RFA: Si está bien gracias 
+R1: Hasta luego chau

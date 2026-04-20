@@ -1,0 +1,25 @@
+user_ID: 90
+name: Adrian Felipes
+gender: Male
+community: Sillar
+date: 21/11/2023
+category: user
+interviewer: Jose
+
+[R1]: Buenos días, hoy estamos aquí en Sillar, vamos hacer una entrevista hoy día miércoles, ¿cuál es tu nombre?
+[RMA]:  Mi nombre es Adrian Felipes 
+[R1]: ¿Por qué compraron este sistema? 
+[RMA]: Bueno primero hablando de eso, nosotros no solíamos utilizar mucho este sistema (SHS), pero necesitábamos iluminación, para estudiar usábamos velas, pero antes nosotros no conocíamos estos paneles solares, pero de poco a poco se conoció, claro esto es más necesario para estudiar en las noches, a veces para nuestros padres (mamá o papá) requieren para hacer actividades por la noche o mañana, por eso es necesario, claro el mayor beneficio es para estudiar y para hacer los deberes,por eso nos ayuda.
+[R1]: Entonces es bueno este panel solar, ¿qué fallas presento o no tienen fallas este SHS?
+[RMA]: Si a veces hay fallas, a veces los instrumentos no vienen de calidad esperada, anteriormente hubo fallas en los cables, pero ya están soldados (reparados), yo mismo hice arreglar y ahora está en buenas condiciones, además anteriormente, vinieron a revisar y notaron las fallas que había, luego se estableció.
+[R1]: Entonces solo fallo el cable, ¿la radio está bien? ¿Está funcionando?
+[RMA]: La radio no funciona
+[R1]: ¿La lampara LED o foco está bien? ¿El celular carga no más?
+[RMA]: Si está bien, el celular carga no mas 
+[R1]: ¿El sistema solo está aquí o llevan a otros lugares?
+[RMA]: Hablando de eso, solo esta en el lugar no llevamos a otro lado
+[R1]: ¿Ustedes cuando trabajan que estación es mejor en época de frio (invierno) o época de calor (verano)? 
+[RMA]:  A veces hace frio, a veces hace calor, mientras haya trabajo, todo es normal para nosotros.
+[R1]: eso es todo, gracias 
+
+

@@ -1,0 +1,64 @@
+user_ID: 78
+name: Martin Salazar
+interviewee: El hijo y la esposa de don Martin Salazar
+gender: Female
+community: Molle Orcko
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: Don Martin fue a pastear a las ovejas
+
+R3:  ya haber ¿Buenos días?
+R2: ¿Buenos días?
+R1: ¿Cómo está en cuanto a su funcionando está bien nomás este panel solar?
+RFA: Sí está bien nomás 
+R1: ¿Cuántos viven aquí?  
+RFA: A nosotros vivimos conmigo más somos cinco 
+R1: ¿Don Ramón es tu esposo?
+RFA: No, de mi esposo es Don Martín 
+R3: Su esposo dijo que es Don Martín Salazar 
+R2: ¿Los celulares están cargando normal?
+RMY: Sí está cargando normal 
+R1: ¿Cuántos celulares tienen?
+RFA: Dos celulares tenemos 
+R3: ¿De tu papá y tu mamá?  
+RMY: Sí 
+R3: ¿A qué hora utilizan los focos o en qué horarios lo usan la luz o los focos más o menos?
+RMY: Ah quieres decir ¿a qué hora encendemos la luz? 
+R1: Si 
+RMY: A partir de las 7 de la noche generalmente 
+R1: En cuanto llegan encienden la luz hacen tareas ¿verdad? 
+RMY: Si
+R3: ¿Pero hasta qué hora encienden la luz?
+RMY: Nosotros generalmente no apagamos a veces sí pero cuando hacemos las tareas así en esas temporadas no apagamos mucho al amanecer apagamos como a las 6 de la mañana 
+R1: ¿y tienen radio y lo utilizan?
+RMY: Sí tenemos y lo utilizamos también esta radio de aquí 
+R3: ¿Sí esa radio?
+RMY: ah esa radio ya no lo usamos 
+R3: ¿Otra radio tienen? 
+RMY: Sí tenemos otra radio 
+R3 y R1: ¿Es recargable o es con pilas?
+RMY: Esta radio si es recargable 
+R1: ¿Aquí hay una linterna más cierta?
+RMY:  Sí, lo hacemos cargar cuando sea necesario 
+R1: ¿Está en buen funcionamiento o se apaga?
+RMY:  No, no se apaga está en buen funcionamiento
+R1: ¿Les gustaría tener un panel más grande?
+RMY: Sí de hecho quisiéramos contar con un panel más amplio que tenga mayor energía para poder también cargar 
+R3: ¿Qué más les gustaría? 
+R1: ¿Qué más podrían comprar como para hacer cargar más adelante si tuvieras mayor energía?
+RMY: Dice que ya va a llegar la luz 
+R3: Ah sí, pero ¿qué es lo que les gustaría comprar o tener como para cargar?
+R1: o qué comprarían primero 
+RMY: Una heladera, un TV
+R3: ¿y aquí todo el año permanecen o se quedan o van a algún lugar a vivir por un tiempo?
+RMY: a veces nosotros nos movemos y estamos por un tiempo ahí abajo 
+R3: ¿En qué mes del año o en qué tiempo van abajo?
+RMY:  Creo que ya no nos vamos a mover vamos a estar permaneciendo aquí la mayor parte, pero sí estuvimos abajo a veces un mes algo así 
+R3: Cuántos meses más o menos están aquí 
+RMY: Depende a veces seis meses algo así 
+R3: Ah creo que por eso la vez pasada cuando vinimos no lo pudimos ubicar qué bueno que esté en buen funcionamiento su equipo
+R1: ¿Cuántos focos tienen en funcionamiento?
+RMY: Los dos focos están en buen funcionamiento 
+R3: Sí hasta aquí hemos podido visitarles, muchas gracias 
+RMY: sí hasta luego

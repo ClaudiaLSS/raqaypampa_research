@@ -1,0 +1,23 @@
+file_name,case_id,user_id,participant_type,gender,community,date
+int_user_23_1.txt,int_user_23_1,23,User,Male,Ichuqata,20/11/2024
+int_user_91.txt,int_user_91,91,User,Male,Sillar,20/11/2024
+int_user_23.txt,int_user_23,23,User,Male,Ichuqata,20/11/2024
+int_user_94.txt,int_user_94,94,User,Female,Sillar,20/11/2024
+int_user_4.txt,int_user_4,4,User,Male,Ichuqata,20/11/2024
+int_user_63.txt,int_user_63,63,User,Male,Molle orcko,19/11/2024
+int_user_64.txt,int_user_64,64,User,Female,Molle orcko,19/11/2024
+int_user_95.txt,int_user_95,95,User,Male,Sillar,20/11/2024
+int_user_74.txt,int_user_74,74,User,Male,Molle orcko,19/11/2024
+int_user_84.txt,int_user_84,84,User,Male,Molle orcko,20/11/2024
+int_user_90_1.txt,int_user_90_1,90,User,Male,Sillar,20/11/2024
+int_user_35.txt,int_user_35,35,User,Male,Ichuqata,20/11/2024
+int_user_83.txt,int_user_83,83,User,Male,Molle orcko,19/11/2024
+int_user_61.txt,int_user_61,61,User,Male,Molle orcko,19/11/2024
+int_user_39.txt,int_user_39,39,User,Male,Ichuqata,20/11/2024
+int_user_99.txt,int_user_99,99,User,Male,Sillar,20/11/2024
+int_user_58.txt,int_user_58,58,User,Male,Molle orcko,20/11/2024
+int_user_19.txt,int_user_19,19,User,Male,Ichuqata,20/11/2024
+int_user_40.txt,int_user_40,40,User,Male,Ichuqata,20/11/2024
+int_user_76.txt,int_user_76,76,User,Male,Molle orcko,19/11/2024
+int_user_6.txt,int_user_6,6,User,Male,Ichuqata,20/11/2024
+int_user_81.txt,int_user_81,81,User,Male,Molle orcko,19/11/2024

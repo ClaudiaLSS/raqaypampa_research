@@ -1,0 +1,18 @@
+variable_name,description,units,data_type,processing_notes
+corrected_timestamp,Reconstructed timeline to fix clock drifts/resets,YYYY-MM-DD HH:MM:SS,DateTime,Primary key. Calculated via backward/forward logic.
+day,Days elapsed since last system boot/reset,days,Float,Restarting the count indicates a power-cycle event.
+time_log,Uptime counter for the current session,HH:MM:SS,String,Resets to 00:00:00 after battery discharge.
+v_pv,Solar Photovoltaic input voltage,V,Float,Range: 0 – 25V.
+v_usb,Voltage at the USB charging port,V,Float,Target: ~5.0V.
+v_led_1,Voltage for LED 1,V,Float,Indicates battery voltage if relay is closed.
+v_led_2,Voltage for LED 2,V,Float,
+c_usb,Current consumed by USB devices,A,Float,Measured at output port.
+c_led_1,Current consumed by LED 1,A,Float,
+c_led_2,Current consumed by LED 2,A,Float,
+temp,System temperature at the controller,°C,Float,
+time_step_min,Measured time between consecutive logs,minutes,Float,
+c_led,Current consumed by jacks,A,Float,
+c_dl,Current consumed by DL,A,Float,
+voc,Voc from PV panel,V,Float,
+isc,Isc from PV panel,A,Float,
+c_cons,Total consumption current,A,Float,

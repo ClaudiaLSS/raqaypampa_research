@@ -1,0 +1,7 @@
+file_name,case_id,user_id,participant_type,gender,community,date
+int_user_90.txt,int_user_90,90,User,Male,Sillar,21/11/2023
+int_user_13.txt,int_user_13,13,User,Male,Ichuqata,21/11/2023
+int_user_88.txt,int_user_88,88,User,Male,Molle orcko,21/11/2023
+int_user_A3.txt,int_user_A3,a3,Authority,Male/female,Central,21/11/2023
+int_user_A2.txt,int_user_A2,a2,Authority,Male,Central,21/11/2023
+int_user_A1.txt,int_user_A1,a1,Authority,Male,Central,21/11/2023

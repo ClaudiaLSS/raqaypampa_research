@@ -1,0 +1,66 @@
+user_ID: 38
+name: Primitivo Agreda
+interviewee: La nuera de don Primitivo
+gender: Female
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: Estaba sola la nuera de don Primitivo pero dijo que ella no vivía ahí así que no pudo dar mucha información.
+
+R1: ¿De don Primitivo su hija eres? 
+RFA: No
+R2: ¿Los dos estarán en su nombre de don Primitivo?
+RFA:  No lo se
+R2: ¿Su batería vamos a ver ya?
+R3: Al panel voy a saca foto, ¿La celular carga?
+RFA: Este ya no quiere cargar estaba diciendo 
+R3: ¿Cuántos viven aquí?
+RFA: Seis
+R3: ¿Son todos adultos?
+R1: ¿Cuantos hijos son?
+RFA: Son 4
+R1: ¿Todos ellos los 4 van a la escuela?
+RFA: Si
+R1: ¿Todos van a la escuela?
+RFA: Si 
+R1: ¿Hacen sus tareas con la luz seguramente verdad?
+RFA: No. Porque nosotros no vivimos aquí por ahora estamos aquí nos vamos cada cierto tiempo a la mina
+R1: ¿Don Primitivo dónde está?
+RFA: Fue a pastorear ganado 
+R1: ¿A qué hora llega más o menos?
+RFA: No va a llegar fue a llevar al otro lado
+R1: ¿Lo llevan a algún lado el panel solar?
+RFA: Si uno de estos lo llevan lo demás no lo llevan permanece aquí 
+R1: Esta en una posición diferente, tiene que estar hacia el sol para que cargue muy bien 
+RFA: Si bien
+R3: ¿Don Primitivo va a otros lugares o tiene otra casa?
+RFA: No solo fue a pastear nada mas
+R1: ¿Cada vez va o se viene?
+RFA: Solo va rara vez luego permanece aquí
+R3: ¿Qué te parece la energía, es suficiente?
+RFA: Si me parece bien  
+R3: ¿En qué horarios usas?
+RFA: Generalmente para cocinar, los hijos ayudan a veces encendemos de 7 a 10 de la mañana 
+R3: ¿A qué hora se levantan? 
+RFA: A las 6 de la mañana a veces 5 de la mañana
+R3: ¿Qué quisieran comprarse en el futuro, foco, radio, Tv?
+RFA: TV quizás 
+R3: ¿Pueden invertir estarían dispuestos para que sea más amplio?
+RFA: Quizás si
+R3: ¿Les pareció caro el panel solar referente a la economía que cancelaron?
+RFA: Me parece accesible, nosotros también queríamos mi esposo es su hijo de don Primitivo no nos informamos que estaban antes vivíamos en otro lugar
+R3: ¿Cómo se llama su hijo de don Primitivo?
+RFA: Don Reynaldo Agreda, nosotros también hubiésemos querido tenerlo el panel solar pero no estuvimos 
+R3: ¿Dónde estaban?
+RFA: En las minas, ahí vivimos
+R3: ¿Ahí tienen luz? ¿Radio, celular?
+RFA: Si tenemos luz, pero no usamos radio
+R3: ¿y no tienen radio?
+RFA: No
+R3: ¿Allá cuánto pagan?
+RFA: Nosotros no pagamos solo pagamos alquiler la dueña paga
+R2: ¿Esta agua es de la lluvia?
+RFA: Si
+R3: Ya muchas gracias 
+R1: Hasta otro día

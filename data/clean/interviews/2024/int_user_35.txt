@@ -1,0 +1,124 @@
+user_ID: 35
+name: Primitivo Agreda
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: ¿a qué hora prendes la luz?
+[RMA]: desde las 6 de la tarde hasta la s10 de mañana
+[R1]: ¿y en la mañanita a qué hora prendes a luz?
+[RMA]: no prendo
+[R1]: ¿Cuántos son aquí?
+[RMA]: somos ocho personas
+[R1]: ¿tiene hijos en el colegio?
+[RMA]: si tengo
+[R1]: entonces sus tareas hacen en la noche con luz
+[RMA]: si
+[R1]: Ah ya está bien
+[RMA]: ¿Qué es lo que más utilizas cargas el celular?
+[R1]: si cargo el celular
+[RMA]: ¿más que utilizas la luz?
+[R1]: si, la radio no funciona
+[RMA]: ¿Cuándo trabajas vas a otros lugares o aquí nomas estas?
+[R1]: voy a trabajar a otro lugar siempre pues
+[RMA]: ¿y el panel lo llevas contigo?
+[R1]: si lo llevo
+[RMA]: bien
+[R1]: ¿son dos sistemas no?
+[RMA]: si
+[R1]: este primero revisemos pues, ahorita lo revisaremos batería 75%
+[R3]: Ya 75%
+[R1]: ¿está funcionando eso?
+[RMA]: si claro que funciona
+[R1]: esto es de afuera
+[RMA]: si es afuera pero no funciona
+[R1]: ¿desde cuándo no funciona?
+[RMA]: desde el mes de abril
+[R1]: ¿esa radio da?
+[RMA]: no tampoco no da
+[R1]: ¿aquí pero el celular carga?
+[RMA]: si
+[R1]: 100% ¿esto también carga el celular no, pero la radio no carga?
+[RMA]: si carga el celular, pero menos la radio
+[R3]: ¿usan otra radio creo?
+[R1]: si tiene afuera uno que están usando
+[RMA]: si, el que funciona con pilas
+[R1]: ¿y esto desde cuando no da?
+[RMA]: desde abril también
+[R1]: ah ya ¿los dos dejaron de funcionar desde abril?
+[RMA]: si
+[R3]: ah ya ¿y se queda aquí todo el año?
+[R1]: no, va a trabajar y lleva el panel, la radio no lleva dice porque no funciona, solo maneja el que funciona con pilas, ¿cada cuánto tiempo compras las pilas?
+[RMA]: compro cada tres meses
+[R1]: ¿usas velas, mecheros?
+[RMA]: no ya no
+[R1]: ¿vives mejor con esto?
+[RMA]: si vivo bien
+[R1]: ¿y haces sus deberes con esto hacen no?
+[RMA]: claro
+[R1]: ¿esta radio lo hicieron caer?
+[RMA]: no
+[R1]: pero no tiene su tapita
+[RMA]: se ha debido de salir nomás no se cayó la radio
+[R1]: ¿y esto es otra radio no que funciona con pilas?
+[RMA]: si es otra radio, es a pilas
+[R1]: ¿una radio te voy a cambiar ya, solo uno, pero porque ya no hay más?
+[RMA]: ya
+[R1]: pero lo vas a cuidar bien porque ya no habrá cambios
+[RMA]: Ah está bien
+[R1]: ahí está, está dando la radio, el otro que se arruino me lo llevare, porque debo demostrar que te hice el cambio
+[RMA]: claro
+[R1]: No le vas a hacer caer ya
+[RMA]: ya, eso tiene que cargar todavía porque no está cargado
+[R1]: si no está cargado, esto es su cajita
+[RMA]: ya
+[R1]: ahí en su cajita para que lo puedas manejar, ahí está su wato, mp3, hay también hay para poner pendrive
+[RMA]: ya
+[R1]: ¿los dos te lo llevas o uno se queda aquí?
+[RMA]: uno nomas llevo
+[R1]: ¿allá ustedes nomas viven?
+[RMA]: si, ahora somos ocho, cuatro están en la escuela
+[R1]: ¿tu esposa la luz utiliza para cocinar, en la mañana, y en la noche?
+[RMA]: si, lo mantenemos prendido hasta las 10 o 12 de la noche
+[R1]: ya ¿y no se apaga?
+[RMA]: no, porque el celular durante el día no le hago cargar mucho para que guante la luz y mis hijos puedan hacer sus tareas por la noche, porque están en la secundaria a veces hasta las 12 de la noche hacen.
+[R1]: ah ya está bien, si te digo que daré televisión ¿vas a querer?, aunque este panel no abastece seria uno más grande? si claro, más grande se necesita ¿a qui hace mucho frio?
+[RMA]: si hace mucho frio
+[R1]: ¿si hay esos equipos para conectar aquí, para que caliente el ambiente estaría bien?
+[RMA]: si estaría muy bien
+[R1]: ¿y en el tiempo de calor hace mucho calor?
+[RMA]: no, no hace mucho calor
+[R1]: ¿entonces no es necesario un ventilador?
+[RMA]: no
+[R1]: ¿Quién hizo eso?
+[RMA]: mis hijos pues porque están en el colegio
+[R1]: para su uso de ustedes o para vender es
+[RMA]: para nuestro uso es, en el colegio aprenden varias cosas como a sembrar todo
+[R1]: ¿y en la noche hacen con la luz sus tareas?
+[RMA]: si
+[R1]: ¿antes cuando no había panel a qué hora dormían?
+[RMA]: esa vez me compre pico lampara, con eso estaba, y si no estaba con eso utilizaba velas y mecheros
+[R1]: ahora ya no compran eso, ni querosén
+[RMA]: si ya no compramos, ahora ni querosén hay
+[R1]: ¿está viviendo bien con esto?
+[RMA]: si estoy mejor, pero falta energía ¿no? No abastece para algunos trabajos del colegio, la energía
+[R1]: si más energía se requiere
+[RMA]: si, para manejar una computadora esto no abastece, puede dar, pero baja rápido la batería, hacen cargar sus celulares para sus tareas y la luz no aguanta tanto en las noches
+[R1]: ya, es mejor el celular cargarlo durante el día desde las 7 de la mañana hasta las 5 de la tarde, no en la noche, porque si lo haces durante la noche va a absorber, tanto la luz y los celulares, entonces la batería tendrá menos años de vida, cuando este con dos líneas debes hacerlo cargar, lo mismo pasa con los celulares.
+[RMA]: ya
+[R1]: ¿tiene computadora?
+[RMA]: no
+[R1]: ¿y ese otro sistema a que nombre esta?
+[RMA]: Matías Blanco
+[R1]: ¿y este otro?
+[RMA]: Primitiva Agreda
+[R3]: aquí me lo firma
+[R1]: ya eso sería todo está bien, esa radio nomas era el problema
+[RMA]: esto más llévenselo
+[R1]: es que no hay más para cambiarte solo uno nomas te estoy cambiando ¿ya?
+[RMA]: ya está bien
+[R1]: eso lo vas a cuidar
+[R3]: gracias
+[R1]: muchas gracias, ya nos vamos

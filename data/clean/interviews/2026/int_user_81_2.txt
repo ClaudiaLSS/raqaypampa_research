@@ -1,0 +1,67 @@
+user_ID: 80
+name: Miguel Meneses
+interviewee: Rosa
+gender: Female
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota:
+
+R2: Cómo estás ¿están bien? 
+R3: Buenas tardes 
+RF1: Buenas tardes 
+R2: ¿Podemos mirarlo? 
+RF1: Sí sí pasen por favor 
+R1: ¿Cuál es tu nombre? 
+RF1: Doña Rosa 
+R2: ¿Ya estás cocinando? 
+RF1: Sí estoy peleando a papá yo siempre cocino a estas horas
+R1: ¿Qué es lo que hacen producir aquí?
+RF1: Arveja, papá, maíz, haba 
+R1: ¿Ustedes venden la producción de sus cosechas? 
+RF1: Si a veces cuando tenemos un buen rendimiento vendemos, pero generalmente es para que comamos nosotros 
+R1: ¿Tienen algunos animales?
+RF1: Sí tenemos vacunos 
+R1: ¿La luz que se alumbra está bien? 
+RF1: Sí está bien en las noches alumbra bien 
+R1: ¿Qué es lo que más haces encargar? 
+RF1: Celular y la radio hacemos cargar 
+R1: ¿El panel solar o la luz se apaga? 
+RF1: No no se apaga tiene un buen funcionamiento hacemos cargar en forma directa 
+R1: ¿Cuántos viven aquí? o viajan quizás a chapare o algún otro lado?
+RF1: Ahora nos quedamos los dos nomás si fueron a trabajar a Chapare pero luego llegan también 
+R1: ¿Hay alguien que está en la escuela? 
+RF1: No ninguno 
+R1: ¿Los dos focos nomás les brinda la luz? 
+RF1: Sí 
+R1: ¿Aquí produce algún árbol de frutales? 
+RF1: No 
+R1: ¿Qué es lo que más desearías obtener o comprarte para poder cargar y utilizar?
+RF1: Quizás televisión como para mirar 
+R1: ¿Llevan a alguna parte el panel solar? 
+RF1: Uno de ellos llevamos, pero uno siempre permanece aquí 
+R1: ¿En qué mes siembran o cosechan?
+RF1: Por todos los santos sembramos y cosechamos a partir de marzo depende por Pascua 
+R1: ¿El mantenimiento del panel es fácil y lo limpian?
+RF1: Si es fácil, lo limpiamos cuando se empolva o cuando sea necesario escuche que cuando cae rayo lo arruina, en épocas de lluvia no limpiamos porque el trueno el rayo nos asusta escuché también que mató a la gente dice que llegó al panel cuando estaba limpiando por eso nosotros nos limpiamos en épocas de lluvia, pero si limpiamos cuando en polvo 
+R1: ¿Alguna vez utilizan también linterna?
+RF1: No usaos con frecuencia la linterna usamos solo cuando es necesario por las noches para salir a veces 
+R1: ¿Van a Misque a veces vamos cuando hay necesidad? 
+RF1: Si, también vamos a Rajay Pampa
+R1: ¿Y cuándo van así a comprar van en bicicleta en moto en movilidad?
+RF1: Viene una movilidad hasta por aquí así que vamos en movilidad 
+R1: ¿Generalmente vienen a hacer cargar alguna vez algún vecino? 
+RF1: No no viene si viene es para conversar 
+R1: ¿Qué es lo que más les gusta del panel solar, creen que es bueno, malo o regular? 
+RF1: Yo considero que es muy bueno porque nos ayuda mucho 
+R1: ¿Tus hijos siempre vienen? 
+RF1: Sí van a llegar solo fueron a ganarse un poco económicamente 
+R1: ¿Cuántos más o menos son? 
+RF1: Somos muchos ya que tengo cinco hijos algunos están en mina 
+R1: ¿La contraparte que pusieron para el panel solar estuvo bien? 
+RF1: Sí sí estuvo muy bien lo que desearía es que mejoren el panel solar sería bueno que tenga buena potencia o algo así  
+R1: ¿Tienen celulares? 
+RF1: Sí tenemos tanto de mi esposo y de mí también mi hijo me dejó entonces es lo que manejo hago cargar a veces me comunico y a veces siempre estoy en contacto con alguien cuando hay bastante sol hay bastante energía también 
+R1: Si muchas gracias ha sido un gusto poder conversar con ustedes unos momentos, ya nos iremos 
+R3: Muchas gracias ya nos vamos que estén muy bien

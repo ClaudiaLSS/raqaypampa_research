@@ -1,0 +1,48 @@
+user_ID: 63
+name: Carlos Negrete Zurita
+interviewee: Carlos Negrete Zurita
+gender: Male
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R3: Estamos ingresando a casa de Don Carlos Negrete Zurita 
+R2: Quisiera que lo ponga un adaptador dijo 
+R3: Sí, pero creo que no va a ser posible vamos a ver 
+R2: Este mes que vuelve puede que traigan 
+R3: Uno de los focos no está funcionando 
+R2: A ver veamos cuál de ellos es o quizás no es el foco quizás sea el cable, es el Socket o la terminal el Socket de este cable se había roto 
+R3: Ay ya ya a ver ya lo desconecté será ese 
+R1: Disculpe Cuál es tu nombre 
+RM1: Carlos Negrete Zurita 
+R1: ¿Cuántos viven en su casa o cuántos están?
+RM1: Los que van a la escuela son tres estamos aquí viviendo siete 
+R1: ¿Cuándo utilizan la luz ustedes lo encienden toda la noche?
+RM1: Sí, pero uno de los focos ya no funciona y el otro está como que se apaga también
+R1: ¿Ustedes o algunos de tu familia se fue a algún otro lado?
+RM1: Nosotros no vamos a ningún lado 
+RF1: No alumbra muy bien entonces por eso estoy avisándoles 
+R1: ¿El panel solar lo limpian para mantenerlo y es fácil?
+RM1: Sí hemos estado limpiando cuidadosamente, si es sencillo
+R1: ¿Hacen cargar linterna o celular? 
+RM1: Nosotros únicamente hacemos cargar el celular a veces hacemos cargar la radio 
+R1: ¿Sus hijos cuando hacen tarea hacen bajo la luz?
+RM1: Si 
+R1: ¿Cocinan en fogón o en a gas? 
+RM1: Solo en fogón para comprar gas ni siquiera hay camino para que pueda ingresar el auto y nos pueda vender gas es una situación complicada en este caso donde vivimos es que es muy lejos para ir a comprar también
+R1: ¿Van a algún lado para realizar alguna compra?
+RM1: Si vamos es solo que tenemos que caminar aproximadamente como 3 horas hasta Rajay Pampa 
+R1: ¿Ustedes para su autosustento realizan sembradíos y tienen algunos animales?
+RM1: Si nosotros básicamente tenemos sembradíos y animalitos también ya que con todo esto nosotros nos sustentamos 
+R1: ¿Qué es lo que desearían adquirir o comprarse, en caso de que pueda abastecer la potencia e carga?
+RM1: Yo pienso que como no hay luz no es tan necesario comprar pienso que la luz es más garantizada para poder cargar lo que es necesario 
+R1: ¿En caso de que pueda haber luz como sería para ti? 
+RM1: Sería muy tranquila pienso que sería de mucha ayuda, cómo no podemos cargar ni un celular bien entonces desearía que haya luz a veces este panel solar tiende a pararse se detiene ya no puede alumbrar a veces se lo pago es uno o dos luego vuelve a encenderse también cuando se nubla paulatinamente se va apaga 
+R1: ¿Cuántas veces cocinan en tu casa?
+RM1: Cocinamos dos a veces tres veces por día nosotros procuramos cocinar saludablemente, para que no podamos ni enfermar
+R1: ¿Cada que tiempo van a algún lado ya sea de compras? 
+RM1: No vamos de compra con secuencia solo cuando es necesario cuando necesitamos algún abarrote a Rajay Pampa 
+R1: Si ya ha llegado el tiempo de podernos ir muchas gracias por todo
+R3: Muchas gracias por todo nos vemos en otra 
