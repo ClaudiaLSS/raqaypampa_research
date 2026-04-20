@@ -1,0 +1,14 @@
+Category,Code,Description
+1_EC_Material,MAT_Energy_Supply,"Technology type (SHS), installed capacity, and battery storage."
+1_EC_Material,MAT_Building,"Wall, floor, and roof materials; building size and number of rooms."
+1_EC_Material,MAT_Appliances,"Number and types of appliances, including ICT, lighting, and thermal comfort."
+1_EC_Material,MAT_Cooking,"Primary cooking methods, such as firewood or traditional ovens."
+2_EC_Norms,NORM_Identity,"Narratives linking energy to traditions, pride, or resistance to technology."
+2_EC_Norms,NORM_Gender,Roles in decision-making and frequency of tasks performed by men vs. women.
+2_EC_Norms,NORM_Aspirations,"Desired services, perceptions of 'enough' electricity, and satisfaction levels."
+2_EC_Norms,NORM_Conservation,Environmental awareness and narratives on saving electricity or waste reduction.
+2_EC_Norms,NORM_Sharing,Frequency of energy-sharing and norms of reciprocity or mutual aid.
+3_EC_Practices,PRAC_Daily_Life,Main energy-related activities inside and outside the household.
+3_EC_Practices,PRAC_Timing,"Activity timing (morning, evening, seasonal) and time windows of use."
+3_EC_Practices,PRAC_Usage_Type,Split between productive activities (agriculture) and household tasks.
+3_EC_Practices,PRAC_Consumption,User narratives on appliance importance and constraints on kWh usage.
