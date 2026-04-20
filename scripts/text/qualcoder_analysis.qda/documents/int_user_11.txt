@@ -1,0 +1,101 @@
+user_ID: 11
+name: Benancio Sanchez
+interviewee: Benancio Sanchez
+gender: Male
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota:
+
+R2: Cómo están, buenos días
+R3: ¿Estás bien no más? 
+RMA: Estoy bien 
+R3: Cómo estás Don Vinancio 
+R2: Está muy bien ¿Estas arando?
+RMA: Esta temporada es muy bueno porque está días lluviosas ¿están caminando? ¿Revisando a todos los lugares que tienen panel solar?
+R3:  Si estamos revisando 
+R2: Está muy bien ese sembradío es trigo ¿verdad?
+RMA: Si
+R2: ¿Con que lo riegas, con el riego o con la lluvia? 
+RMA: Depende a veces si hay agua para regar lo regamos o cuando hay lluvia entonces es mucho mejor en temporadas de lluvia no regamos mucho y a veces tampoco hay agua 
+R2: Este es trigo y ¿produce también maíz? 
+RMA: Está produciendo bien 
+R2: ¿Aquí llena el agua? 
+RMA: Si, ... aquí está la luz y su batería
+R2: Sí está muy bien ¿cuántas personas viven aquí? 
+RMA: Yo vivo solo 
+R1: ¿él va a la escuela? ¿Cuántos años tiene 
+RMA: Si va, debe ser 
+R2: De dónde enciendes la luz de por aquí 
+R1: ¿Desde qué hora utilizan la luz? 
+RMA: Por las noches desde las 7 o 6:30 
+R2: ¿Son dos focos nada más? 
+RMA: Si dos focos en las madrugadas encendemos las luces desde las 4 de la mañana a veces hasta las 10 de la mañana, pero generalmente hasta las 7 a.m. 
+R2: ¿Y esa radio que está ahí está funcionando o no? 
+RMA: A esa radio solo funciona cuando le conectas caso contrario no funciona por eso no podemos ni llevarlo a ningún lado 
+R2: Está lloviendo 
+RMA: En qué vinieron en ¿bus? 
+R2: Sí es solo que el camino no está tan bien cuando llueve ¿verdad? ese río también está lleno 
+RMA: Sí así es cuando llueve 
+R1: ¿Los celulares en qué horario se hacen cargar? 
+RMA: A veces hacemos cargar en el día a veces en la noche 
+R1: ¿Tienen un solo celular? 
+RMA: Sí 
+R3: ¿A veces vienen a visitarte?
+RMA: Sí a veces cuando vienen hacen a encargar 
+R1: ¿Cada qué tiempo vienen ellos? 
+RMA: Ellos vienen en cualquier momento 
+R1: ¿Usted solo vive aquí no va a ningún lado?
+RMA: Solo vivimos aquí
+R1: ¿Van alguna vez quizás una vez por semana, o cada cierto tiempo a Misque?
+RMA: Si a veces voy 
+R1: ¿Cada qué tiempo vas quizás de una semana o dos semanas? 
+RMA: Cuando sea necesario no podemos nosotros frecuentar cada vez nosotros no podemos ir sin motivo alguno solo cuando tenemos necesidad 
+R1: ¿Tienes algún ganado vacuno o quizás ovino? 
+RMA: Sí tengo si quieres podrías comprar 
+R1: ¿Seguramente usted siembra verdad? 
+RMA: Sí claro que sí 
+R1: ¿y de ahí tienes algún ingreso económico seguramente? 
+RMA: Sí algo así para nuestro sustento ahora también tenemos que ir a cosechar papa si quieren podemos ir 
+R2: Podemos ir quizás 
+R1: ¿Esta batería que haces cargar es suficiente o quisieras uno grande quizás si fuera grande? 
+RMA: Sería bueno tele también podría mirar si fuera así 
+R1: ¿Si pudiese haber uno grande y tuviese la capacidad de poder pagar?
+RMA: Para la televisión y para el refrigerador así se podría necesitar uno más grande yo creo 
+R1: ¿Si puedes poner económicamente? 
+RMA: Cuánto será pues es la contraparte 
+R2: Depende más cuántas personas podrían estar interesados y estar seguros de que quisieran y entonces ¿podrías animarte? 
+RMA: Sí me animaría 
+R2: ¿Todo el año estás viviendo aquí nomás? 
+RMA: Yo siempre vivo aquí 
+R1: ¿Este panel trajinas a algún lado o siempre está solo aquí? 
+RMA: No llevamos a ningún lado lo cierto es que nos favorece mucho caso contrario no sé qué haríamos sin la luz quizás las podemos estar llamando a ustedes 
+R2: ¿Se apaga se agota o a veces tiene algún problema? 
+RMA: Sí cuando se nubla no carga y en temporadas a veces no hay luz tampoco en esa temporada entonces nosotros procuramos no hacer cargar mi celular y aquí en la oscuridad no se puede estar preferimos la luz eso es como el modo de ahorrar 
+R2: Sí pero tienen que hacer cargar cuando su celular cuando ya se está por agotarse caso contrario el tiempo de vida es un problema también 
+R1: ¿De tus vecinos hay panel? 
+RMA: Si tienen 
+R3: ¿Alguno de tus vecinos vienen a hacer cargar por favor cárguemelo o algo así?
+RMA: A veces hay alguno de mis vecinos son muchos como familia tienen muchos celulares alguna vez sí vienen aquí muy pocas veces, pero si vienen 
+R1: ¿Ustedes con qué cocinan a gas o a leña? 
+RMA: Nosotros generalmente cocinamos a leña en fogón rara vez usamos gas
+R1: ¿Saben ir a comprar gas de dónde de Rajay Pampa?
+RMA: Sí 
+R1: ¿y con cuánto compran? 
+RMA: Compramos con 45 bolivianos 
+R1: Así que está caro ¿y en qué van a comprar? 
+RMA: Ah yo voy en mi moto 
+R1: ¿En la noche dejan prendido la luz?
+RMA: No para nada 
+R2: ¿y ese sistema que está allá el otro no funciona? 
+RMA: No funciona ya no 
+R2: ¿Qué pasó le falta su batería?
+RMA: No el detalle es que el rayo lo llegó y ya dejó de funcionar no sé si sirve o no ¿cómo se podría saber? ¿lo puedes revisar? 
+R2: No hemos traído ningún equipo para revisarlo en ese cable nosotros podemos medir 12 o 24 voltios si puede dar entonces sí sirve 
+RMA: ¿Hay una parte para hacer cambio de este panel? 
+R2: Si en caso de que se arruinó esa parte podemos cambiar quizás pueda funcionar, sería bueno que te compraras una batería, pero no trajimos ningún equipo 
+RMA: Comprar sin saber si va a funcionar o no no tendría sentido comprar su batería ¿será que van a volver entonces para arreglarlo? 
+R2: No creo que ya volvamos al año no más ya vamos a volver a Rajay Pampa a ver revisaremos Ah, pero se desprendió esta parte, pero, aunque lo conectes no no funciona ya
+R3: Don León ¿estará en su casa?
+RMA: Si debe estar ahí

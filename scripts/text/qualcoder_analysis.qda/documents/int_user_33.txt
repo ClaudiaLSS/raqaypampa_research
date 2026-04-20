@@ -1,0 +1,85 @@
+user_ID: 33
+name: Marcelino Sanchez
+interviewee: Marcelino Sanchez
+gender: Male
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota:
+
+R3: Don Marcelino Sánchez ¿cómo estás? don Marcelino, vamos a ingresar 
+RMA: Si pasen 
+R2: ¿Cómo está, trabajando este equipo? 
+RMA: Está bien no más 
+R2: ¿Don Venancio es tu hermano mayor? 
+RMA: No él es mi menor 
+R3: Ahí está haber pueden encender 
+R1: ¿La luz está funcionando muy bien? 
+RMA: No uno de los focos ya está quemado 
+R2: ¿Y estos dos están funcionando? 
+RMA: Si eso es lo que el foco ya se quemó 
+R2: ¿Dónde está el otro foco? 
+RMA: Creo que está quemado el otro foco 
+R2: ¿Pues un tiempo nomás tiene duración los focos ¿este otro ya no enciende? ¿todo lo sacaste?
+RMA: Sí lo saqué todo ya que no se no enciende 
+R3: Ah ya ya ya ya ya 
+R1: ¿Cuántos viven aquí? Vivimos solo tres
+R1: ¿Cuántos años tiene tu hijo?
+RMA: No es mi hijo propio es mi entenado creo que tiene aproximadamente 40 años, me parece que el foco está quemado 
+R2: Sí parece estar quemado el foco por eso no puede encenderse 
+R1: ¿Desde qué hora utilizan la luz? 
+RMA: Desde las 7 de la noche o cuando el sol se pone
+R2: ¿Hasta qué horario más o menos hacen alumbrar?
+RMA: Hasta las 8 de la noche más o menos 
+R1: ¿Cuántos tienen para hacer cargar? 
+RMA: Un solo celular hacemos cargar
+R1: ¿Aquí cocinan a gas o a leña en fogón?
+RMA: Generalmente a leña 
+R1: ¿El auto viene con gas para que compren, yo creo que no verdad? 
+RMA: No no viene por eso cocinamos en fogón con leña 
+R1: ¿Siempre permanecen aquí o van a algún lado?
+RMA: Nosotros vamos al monte a trabajar 
+R2: Revisando el cable está mal no es el problema el foco creo que te podemos cambiar 
+R1: Te va a dar otro dice uno nuevo 
+R2: Entonces esto guarda nomás está funcionando 
+RMA: Ya está bien 
+R2: ¿y tu radio está funcionando? 
+RMA: No no funciona tampoco hacemos cargar tampoco está conectado 
+R2: ¿Cuánto tiempo te duró? 
+RMA: No no me duró ni un mes desde ese momento mismo se arruino de un tiempito 
+R1: ¿Tienes otra radio o ese mismo no más? 
+RMA: No funciona para nada tampoco tengo otro radio 
+R2: ¿Tienes ganado, ovino o caprino? 
+RMA: Sí tenemos son varios nomás 
+R2: ¿Sabes vender? 
+RMA: Sí 	
+R2: ¿Cuánto cuesta cada oveja?
+RMA: Depende a veces llega hasta 150 bs 
+R2: Creo que ya no va a reproducir sonido este radio
+R1:  Quisieras tener otro radio 
+RMA: Claro por supuesto que quisiera  
+R2: ¿Para qué quisieras tener una radio?
+RMA: Para escuchar noticias todos tienen radio, aquí ni una vez han estado llegando a controlar quizás vinieron hasta que vaya al monte, pero creo que no 
+R1: ¿y tu esposa, pero a veces debe estar aquí no? 
+RMA: Nosotros siempre estamos ocupados cuidando los animales o en los sembradíos ahora también estaba trabajando en cuestión de papa 
+R1: ¿Este sistema lo llevan a algún lado o solo permanece aquí?
+RMA: Aquí nomás lo tenemos
+R2: Tiene su tapa ¿Dónde estará? 
+RMA: No no sé dónde está quizás lo votaron 
+R1: ¿Este panel te parece muy bueno o no? 
+RMA: Realmente es muy bueno 
+R1: ¿Antes que llegue el panel solar cómo es que tenían la luz? 
+RMA: Antes nosotros usábamos mechero o vela 
+R1: ¿Cuándo ustedes cosechan lo venden o simplemente es para ustedes?
+RMA: Generalmente es para nosotros si vendemos una parte
+R1: ¿y qué es lo que más hacen producir aquí? 
+RMA: Papa, maíz, trigo 
+R2: Es de ese otro lado había estado roto no sí pero todo está funcionando 
+RMA: Sí 
+R2: Estas dos cosas vamos a sacar ese de su cable y de su radio 
+R1: Otro nuevo te vamos a dar dice 
+R2: ahí abajo está vamos a traerlo 
+RMA: ¿Cuándo van a volver?
+RMA: Ahí abajo está ahora mismo vamos a traer
+

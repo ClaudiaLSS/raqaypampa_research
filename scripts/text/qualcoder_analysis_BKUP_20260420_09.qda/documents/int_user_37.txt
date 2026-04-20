@@ -1,0 +1,101 @@
+user_ID: 37
+name: Pánfilo Cabrera
+interviewee: Pánfilo Cabrera
+gender: Male
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: Es un adulto mayor que vive solo
+
+R2: Los paneles queremos mirar 
+RMA: Pasen no más 
+R3: Buenas tardes don Panfilo
+RMA: Buenas tardes 
+R2: ¿Estás bien? 
+RMA: Sí 
+R2: Está muy está bien entonces haber vamos a mirar 
+RMA: Si aquí está véanlo nomás su radio no hay 
+R2: ¿No hay, que sucedió? ¿y ese no funciona? 
+RMA: Este es otro creo que mi hijo lo hizo algo no sé qué es lo que hizo pero bueno 
+R1: ¿Usted vive solo aquí nomás?
+RMA: Sí mi hijo a veces viene, pero a veces no también 
+R2: No hay aquí nada 
+RMA: Por favor véalo nomás 
+R1: ¿Está alumbrando bien verdad?
+RMA: Sí está bien está normal 
+R2: ¿A qué hora usas la luz o en que horarios? 
+RMA: Cuando el sol se pone ya enciendo la luz 
+R2: Hasta qué hora 
+RMA: Yo lo apagó cuando ya está por amanecer por las noches nomás yo enciendo la luz a veces hago amanecer 
+R2: ¿Por sí solo se apaga? 
+RMA: No, no se apaga está funcionando bien nomás 
+R1: ¿Tiene celular? 
+RMA: Sí tengo 
+R1: Siempre harás cargar pues aquí ¿verdad? 
+RMA: Sí aquí hago cargar también tengo otro panel solar ese es el que me ayuda bastante 
+R2: ¿Ese panel pequeño verdad? 
+RMA: Sí 
+R2: ¿Pequeño ya tiene mucho tiempo?
+RMA: Sí hace tiempo me compré 
+R1: ¿Ah tú te compraste?
+RMA: Si compré hace mucho tiempo 
+R1: ¿Cuántos focos tienen? 
+RMA: Solo dos focos, pero está alumbrando uno solo y ese otro es aparte 
+R3: ¿Vienen a hacer cargar algunos de tus vecinos o alguien?
+RMA: No dice que van a hacer cargar, pero aquí no vienen nadie solo nos visita hablamos un poco pero no cargan y ¿De donde están viniendo ustedes? 
+R3: De Rajay Pampa fuimos de Sillar 
+R1: ¿Este panel solar está bien o tiene algún problema lo que alumbra?
+RMA: Está bien 
+R1: ¿Vives aquí o vas al Rajay Pampa o algún lado? 
+RMA: Yo solo vivo aquí, aquí me mantengo a veces vamos a Rajay Pampa solo a comprar algunas necesidades que tenemos aquí yo vivo permanentemente mis hijos se fueron a chapare 
+R1: ¿Aquí siembras?
+RMA: Sí 
+R1: ¿Tienes animales?
+RMA: No yo no tengo nada de animales, yo solo estoy en la casa 
+R1: ¿Así, entonces no vas a ningún lado dijiste que siembras en compañía y vas a ahí?
+RMA: Sí a veces voy 
+R2: ¿Tus nietos vienen a visitarte?
+RMA: Si vienen a veces 
+R2: ¿Están en chapare?
+RMA: Sí ellos están en Chapare algunos en Santa Cruz, también yo ya no puedo viajar ni moverme a algún lado
+R1: ¿Cuántas veces te visitan? 
+RMA: A veces depende dos una vez al año 
+R1: ¿Cuando no había panel solar con qué hacías alumbrar?
+RMA: Ese panel pequeño que yo tenía eso me abastecía 
+R2: ¿Cuántos años tienes?
+RMA: Creo que tengo 100 años 
+R2: Wow, estás muy fuerte 
+R1: ¿Sobre este panel su precio que pagaste estuvo bien o no?
+RMA: Sí estuvo bien, cuándo era muy joven yo viajaba a Oruro, La Paz, viaje también a Sucre también ahora que yo soy mayor ya no puedo viajar estando mayores ya no tenemos ningún buen sentido
+R1: Pero te mantienes muy bien 
+RMA: Sí estoy estable tampoco me duele nada y a veces un poco estoy escuchando menos ese es mi problema a veces utilizo lentes también para hacer algunas cosas pelar papa o algo 
+R1: ¿Estos paneles para ti está bien o quisieras tener otro?
+RMA: Yo para que quisiera tener si tengo otro también con esto es suficiente, para mí ¿ahora donde ustedes tienen que ir? 
+R3: A Ichuqata y al Sillar 
+R2: Mañana iremos a Moko Orko 
+RMA: ¿Ustedes dónde viajaron? 
+R1: Nosotros a todo lado solamente nos falta conocer Pando 
+RMA: A mí me falta conocer Potosí, pero no pude viajar 
+R2: Pero Potosí es muy frío 
+RMA: Sí dicen que es muy frío a Santa Cruz también me llevaron hace mucho calor 
+R1: ¿Así cuando vas a comprar alguna cosa en qué vas?
+RMA: Hay un auto que pasa por aquí ahí voy a Rajay Pampa a veces cada día pasa el bus 
+R1: ¿En qué horarios pasa? 
+RMA: Cualquier hora pasa 
+R1: ¿Me parece que mañana hay feria?
+RMA: Si los jueves 
+R1: ¿Cocinas a leña o en gas?
+RMA: Con leña en fogón o en ambos 
+R2: ¿Consumes papa, maíz, trigo esas cuestiones comes?
+RMA: Si poder sin poder cocino como a veces cuando uno ya está de edad ya no comemos como deberíamos comer 
+R2: ¿Cuando algo te duele dónde vas?
+RMA: A mí no me duele nada no voy a ningún lado
+R2:  Sí es muy bueno wow pero uno cuando se termina el gas vas a comprar? ¿A dónde vas a Rajay Pampa? ¿Cuánto cuesta?
+RMA: Si voy muy poco así nomás yo vivo hermanos
+R3: ¿A don Venancio conoces?
+RMA: Si quizás esté o no yo creo que está ahí 
+R3: ¿De tu hijo hay también panel solar?
+RMA: Hay, pero no está aquí
+R2: Nos vamos a ir se va a cuidar
+RMA: Si muchas gracias 

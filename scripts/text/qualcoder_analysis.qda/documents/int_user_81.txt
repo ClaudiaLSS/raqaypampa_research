@@ -1,0 +1,273 @@
+user_ID: 81
+name: Moises Acosta
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+
+[R1]: esta 100%
+[R3]: ¿100%?
+[R1]: si
+[RMA]: no sé por qué no carga el celular que estará fallando, he puesto a noche hoy día igual durante el día.
+[R3]: haber probaremos con cargador
+[R1]: aquí está, pero está cargado
+[R3]: ¿lento no? ¿Cuándo está bajo tarda en reaccionar no?
+[R1]: si, está cargando pero
+[RMA]: mi cargador se murió ya no sirve ese cargador, con este otro cargo
+[R1]: ¿llevas a otro lado tu celular a cargar?
+[RMA]: si en Raqaypampa hemos hecho cargar
+[R3]: ¿será el cable?
+[RMA]: quién sabe talvez el cable no está dando, talvez no hay un buen contacto, por eso talvez es, pero aquí como que carga
+[R1]: ¿la radio está dando?
+[RMA]: si, esta funcionado
+[R1]: ¿carga normal?
+[RMA]: si eso está cargado, pero, cuando está ahí funciona, pero cuando desconecto ya no funciona se apaga
+[R2]: su batería no está funcionando por eso
+[RMA]: eso debe ser si
+[R2]: porque eso directo con corriente se ilumina
+[RMA]: ah sí directo; si, pero al alzar la radio se calla no suena nada, coman, esto les traje
+[R1]: ya gracias hermano
+[R3]: ya gracias
+[R1]: ¿o será este cable?
+[R3]: ¿talvez es el duplicador?
+[R1]: si talvez
+[RFA]: con este picante más coman
+[R2]: muchas gracias
+[R3]: gracias
+[RMA]: ir a trabajar debemos llegar antes de la noche pues
+[R2]: si, pero esto el panel funciona si lo cuidan, debe durarte años, pero tienes que cuidar si se cae se puede arruinar, esto debe estar bien amarrado
+[RMA]: ah ya ahorita lo voy a amarrar
+[R3]: amarrado estaba
+[R2]: ah ya
+[R1]: lo ha roto para que lo podamos ver
+[R2]: ya, y ¿su cargador?
+[R3]: estamos probando directo
+[R1]: si, estamos probando directo, talvez sea este cable duplicador
+[R2]: ha ya está bien
+[R1]: en muchos casos ha fallado
+[R2]: si he visto
+[RMY]: si prueba con este otro, también tengo el otro
+[R2]: hay uno mas
+[RMY]: si
+[R3]: veamos así directo a ver si carga uno
+[R1]: veamos si carga así, que cargue directo y luego vemos si funciona
+[R2]: ¿Cuál es tu nombre me dijiste Ismael?
+[RMC]: si
+[R1]: ¿vas al colegió?
+[RMC]: no
+[R1]: ¿al año vas a ir?
+[RMC]: si
+[R2]: sírvanse mote y esto es ají ulupica
+[RMA]: si esto es ulupica
+[R3]: gracias
+[RMA]: ¿él, sabe hablar quechua?
+[R2]: pregúntale si habla, la anterior vez, han venido de Brasil te recuerdas o no
+[RMA]: no, talvez a mí no me encontraron
+[R2]: él es italiano
+[RMA]: ah ya italiano
+[R2]: si
+[RMA]: entonces él ha venido para ver
+[R2]: si ellos son los que dicen: Buongiorno (todos se rien), son de Europa ahí se encuentra Italia
+[RMA]: ah ya entonces él les está ayudando a ustedes para ver cómo funciona
+[R2]: si también está en el proyecto, un día le podemos traer para que trabaje aquí
+[RMA]: ¿será que puede trabajar aquí?
+[R2]: puede poder pues, o podemos ver, un día te puedes quedar para trabajar dice
+[R4]: ¿sí?
+[RMA]: puedes estar con ganado nomas
+[R4]: puedo trabajar
+[R3]: rico, muy rico
+[R1]: sí que rico ¿Con mami es? ¿con maní es no?
+[RMA]: si
+[R2]: ¿a qui nomas vives don Moises?
+[RMA]: si, por eso este cuidado no se llevar a ningún lado
+[R2]: ¿claro, otros lo trajinan no?
+[RMA]: si, aquí nomas paro no voy a ningún lado
+[R2]: ya
+[R1]: ¿con esto ya no compras pilas nada no?
+[RMA]: no ya no ni querosén compro, solo a veces para caminar linterna utilizo
+[R1]: ¿si, para caminar no?
+[RMA]: si
+[R2]: ¿este cómo va a producir los sembradíos, producirá bien que será no?
+[RMA]: como será pues, parece que no va a producir bien este año ¿él es más alto no?
+[R2]: ah sí, es de buena genética
+[RMA]: si para criar está bien, el alcalde de nosotros de este pueblo, ¿no les debe apoyar no?
+[R2]: ayuda
+[RMA]: solo debe asesorar nomas pues
+[R2]: no, pone dinero
+[RMA]: ¿puso?
+[R2]: si puso, ustedes ponen el 20% nove
+[RMA]: ¿si, lo demás pone él no?
+[R2]: si, lo demás pone don Florencio
+[RMA]: si don Florencio
+[R2]: ¿Cómo está, como está manejando?
+[RMA]: mm no se
+[R2]: Nada, ¿por qué?, pero ¿qué pasa?
+[RMA]: no sé qué estará pasando, en que estará trabajando
+[R2]: ¿y el viene aquí o no?
+[RMA]: no sabe venir, viene debes en cuando, también tiene sus terrenos aquí
+[R2]: ¿es de aquí, me dijeron que era de Santiago?
+[RMA]: no el de Molle Orcko, su mama también
+[R2]: aquí debe estar ayudando el bien pues
+[RMA]: no nada no ayuda, por ejemplo, en la cosecha, tanque nos tenía que dar, pero nada nos dio ni canaletas
+[R1]: ¿nada?
+[RMA]: nada siempre
+[R2]: pero el dirigente debería exigirle pues
+[RMA]: le exige creo que no hace nada, ni canaleta, ni calamina, nada nos da, el tanque ni 10,000 litros creo que es, 8000 litros es
+[R2]: ah pequeñito es
+[RMA]: si pequeñito es, con mi presupuesto con eso nos hemos comprado
+[R2]: ¿el tanque que está en la escuela don Florencio ha hecho traer?
+[RMA]: eso está, antes de que haya alcalde, cuando estaba la sub alcaldía, es grande, es lo que está hecho con cemento don Florencio ha ayudado a hacer
+[R2]: hizo buenas gestiones ¿no?
+[RMA]: si el cumple bien con su obligación, una vez la escuela, el viento lo estaba destrozando don Florencio igual hizo arreglar.
+[R2]: ah ya
+[R3]: están ricas las salsas
+[R4]: picante
+[R3]: si picante
+[RMA]: lawita coman
+[R3]: ¡muchas gracias!
+[R4]: deliciosidad mucho
+[RMA]: ¿lawita, come o no come?
+[R4]: si como, gracias, oh es caliente
+[R3]: si
+[R4]: si caliente, hola, mi nombre es mateo
+[R3]: ¿cuál es tu nombre? pregunta
+[RMA]: Ismael, es su nombre
+[R1]: ¿y del otro?
+[RMA]: Juan Gabriel ¿mateo es su nombre de él?
+[R1]: si, mateo
+[RMA]: ¿de Italia verdad?
+[R4]: si
+[R2]: Niños, ¿cuál es su nombre?
+[RMC]: Ismael...
+[RMA]: aquí está tu lawa para que comas ¿cuál es tu nombre, me olvide?
+[R2]: Jaime
+[RMA]: ¿tienen cargadores ustedes?
+[R2]: no, no tenemos cargador
+[R3]: tenemos cable, pero es tipo “C”
+[R2]: si, pero no le entra a su entrada de cargar de este celular
+[RMA]: ¿a este otro le pude hacer?
+[R3]: ¿a ver? este si tenemos, este cable le podemos dar
+[R2]: hay cable para este celular
+[RMA]: ya, ¿fueron a “Jatun Pampa’?
+[R2]: no hasta Mollo Orcko nomas, pero ya nos hemos cansado
+[RMA]: tiene 25 afiliados, en ese lugar alumbra hasta el amanecer grande es el panel
+[R2]: ha ya allá abajo no
+[RMA]: si
+[R1]: si hemos ido, pero nos hemos cansado
+[RMA]: si no hay ahí, como camino para auto
+[R2]: si
+[R2]: ¿Cuántas personas en total viven en Mollo orcko, cuantos afiliados hay?
+[RMA]: casi como 3 familias
+[R1]: ¿afiliados hay, pero no?
+[RMA]: si, pero no paran aquí se van a trabajar a otros lugares
+[R1]: ¿y cuantos afiliados son?
+[RMA]: aquí son como 35 afiliados
+[R1]: ¿pocos son no?
+[RMA]: si poco somos
+[R2]: una vez vine en el mes de abril creo, estaban haciendo una fiesta grande, en pascua
+[RMA]: ¿si has tomado chicha o no?
+[R2]: ¿si me has dado chicha te acuerdas o no?
+[RMA]: si me acuerdo
+[R2]: ¿deben amanecer no esos días?
+[RMA]: si, amanecemos pues
+[RMA]: ¿has tomado chicha o no? (pregunta al italiano)
+[R4]: si tome chicha
+[RMA]: ¿con alcohol?
+[R4]: si con alcohol, sin alcohol
+[R2]: ¿a qui no ponen alcohol, es purito?
+[RMA]: si purito es
+[R2]: ¿no le ponen alcohol no?
+[RMA]: no pues aquí purito tomamos
+[R2]: lo más sano ¿no hace doler la cabeza?
+[R1]: no hace doler
+[RMA]: ¿nos van a seguir ayudando, la universidad o no?
+[R2]: talvez más después, es que como don Florencio se debe hacer gestiones, así tiene que ser do Adán
+[RMA]: si
+[R2]: ustedes caminaron mucho para venir aquí nosotros ya nos olvidamos
+[RMA]: ¿por qué de mucho tiempo vienen ustedes, si necesitamos dinero para la luz en ese momentoponen?
+[R2]: si ese mismo momento
+[RMA]: ahora esto falla un poco, si falla tengo que hacer tramitar o sino vela tengo que estar usando
+[R2]: no, ya este es un modelo antiguo, ahora hay modelos muy buenos
+[RMA]: ah ya hay nuevos modelos
+[R2]: antes había unas baterías antiguas, como la de los autos
+[RMA]: si había como ese batería pequeño nomas
+[R2]: si era pequeñito
+[RMA]: si esa batería no era tan buena, tenías que echarle agua destilada sino se arruinaba
+[R2]: si no le hecha agua destilada no funciona
+[R1]: ¿cuántas años tienes Ismael?
+[RMA]:5 años tiene
+[R1]: ¿al año ya ira a la escuela no?
+[RMA]: si al año ya ira, yo se ir a Raqaypampa antes cada día iba
+[R2]: ¿terminaste la escuela o no?
+[RMA]: no solo hasta 1ro de primaria pase
+[R1]: wao
+[RMA]: a esta hora no llegaba, llegaba cuando estaba oscureciendo y en la mañanita iba, a veces ni mi tarea hacia
+[R2]: si pues antes así se vivía
+[RMA]: si era muy diferente
+[R2]: antes solo en Raqaypampa era la escuela no había después otras escuelas
+[RMA]: si no había
+[R2]: ¿en cuánto tiempo llegabas a Raqaypampa?
+[RMA]:2 horas
+[R2]: ¿pero caminando rápido no?
+[RMA]: si, si no llegábamos temprano el profesor nos hacía dar dos vueltas
+[R1]: oh
+[R2]: otros profesores malos son pues
+[RMA]: si malos son, pero a los malos nomas tenemos miedo, de los buenos no
+[R2]: si, esos, pero te hacen aprender bien
+[RMA]: si, de mi hijo su profesor bueno es
+[R1]: riñéndote te enseñaban antes los profesores
+[RMA]: si ¿Bolivia estaba ganado no?
+[R1]: si, pero empato
+[RMA]: ¿ah empatado? Bueno a empezado pero
+[R1]: si
+[R2]: mucho estaba perdiendo, porque la selección era de puro viejos, ahora ya cambiaron son jovencitos tienen 20 años asi...
+[RMA]: Eso es bueno pues, los viejos por el dinero nomas están ahí, los jóvenes no
+[R2]: ¿ustedes juegan o no?
+[RMA]: no, ya no me jubile de jugar con pelota de futbol, ni cancha hay también, esa cancha está en ultimas
+[R2]: antes yo iba a los campeonatos en las subcentrales
+[R2]: tienes que decir Dios te lo pague, en castellano es gracias
+[R4]: gracias que Dios te lo pague
+[R2]: si otros dicen “Pachi’’
+[R1]: si también se dice así es más fácil, así aprendemos quechua no, practicando
+[R2]: si practicamos, yo pues en el campo estaba, poco se quechua
+[R1]: otros lugares hablan el quechua fluido
+[RMA]: si fluido hablan
+[R2]: ¿aquí no tanto no? Aquí ya mezclan
+[RMA]: si, no es tan fluido
+[R2]: yo siempre dije pues a don Florencio el panel debe llegar a Molle Orcko porque a veces a ellos no les llega ni una ayuda o apoyo, realmente nada.
+[RMA]: si nada pues, con mechero nomas alumbrábamos
+[R2]: y ellos han aportado, para poner panel han sacado cuotas y eso
+[R3]: si aportaron una parte para estos paneles
+[RMA]: si hemos aportado 500bs
+[R1]: te agradezco mucho muy rico estaba tu lawa
+[R3]: ¡gracias!
+[R1]: ¡muchas gracias! vamos a ver pues lo cables si han cargado
+[R3]: si ha cargado es mejor conectar directo porque más rápido carga o talvez es el cable lo que hace tarde haber lo probamos
+[R1]: un rato veremos si carga, porque directo lo hemos conectado carga sin problema, entonces talvez este sea el problema, vamos a cambiar por otro cable más nuevo a ver si carga un momento hay que esperar
+[RMA]: ah yaya
+[R1]: está cargando ahora 10% está ahora
+[R3]: ¿sí? Ya entonces el cable era hay que cambiar
+[R2]: ¿ese cable no los vamos a llevar ya? Ese cable nuevo lo van a tener ustedes, ese cable lo vas a cuidar no lo vas a doblar mucho.
+[RMA]: ah ya gracias, está bien lo voy a cuidar
+[R2]: ¿aquí son más Inturias o que apellidos hay más aquí?
+[R3]: ¿Moisés acosta no?
+[RMA]: si, Inturias solo dos hay
+[R1]: solo dos
+[RMA]: si
+[R1]: ah ya ¿ese sombrero es para cada fiesta no’
+[RMA]: si para cada fiesta es
+[R3]: me lo firma aquí
+[RMA]: ya
+[R3]: gracias
+[R2]: ya don Moisés eso es todo ¿esto no vas a hacer descargar por completo si ves que aquí hay una barrita lo tienes que hacer cargar?
+[RMA]: si, yo hago alumbrar lo justo, al hacer cargar apago mi celular también la radio
+[R2]: ya, si haces cargar tu celular y la radio durante el día no va a ver problema porque el sol está ayudando a que cargue pues
+[RMA]: si entonces durante el día y no en la noche
+[R1]: de tu celular también no vas a dejar que se baje por completo, cuando la batería este en 20% ya debes cargarlo
+[RMA]: ah, está bien
+[R1]: ya te agradezco mucho
+[RMA]: ya
+[R3]: chao Ismael, muchas gracias
+[R1]: muchas gracias estaba muy rico la lawa.

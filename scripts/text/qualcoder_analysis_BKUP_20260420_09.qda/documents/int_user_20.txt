@@ -1,0 +1,79 @@
+user_ID: 20
+name: Edelfrida Jimenez Salazar
+interviewee: Edelfrida Jimenez Salazar
+gender: Female
+community: Ichuqata
+date: 26/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R1: Vamos a ir pasando 
+R2: ¿Como están, podemos ver sobre el panel solar? 
+R3: ¿Cómo están?
+RFA: Sí estamos bien, pasen nomás
+R2: Que bueno ¿están dando de comer a los cerditos? 
+RFA: Sí
+R2: ¿Podemos verlo? ¿Esta radio es otro? 
+RFA: Sí es otra, aquí está al rincón
+R2: ¿Hay luz que está alumbrando normalmente? ¿También están haciendo cagar normal? 
+RFA: Sí sí está alumbrando normalmente, estamos haciendo cargar también  
+R2: ¿Eres Doña Edelmira verdad?
+RFA: Sí
+R2: ¿La radio siempre lo tienen encendido?
+RFA: A veces lo encendemos la radio, para poder escuchar a veces lo guardamos y cuando sea necesario lo usamos y siempre está funcionando bien. En caso de que se arruine ¿ya no podrían cambiarme verdad? 
+R2: Ya no hay para cambiar, si deseas comprar ya tiene un precio un poco más elevado la radio 
+RFA: No creo que pueda comprarme otro nuevamente 
+R2: Si así es este tiempo todo ha elevado de precio y puede ser que esté con un precio un poco más caro que antes 
+R1: ¿Cuántos viven en esta casa?
+RFA: Nosotros vivimos seis, en el colegio están estudiando los cuatro de mis hijos uno de ellos es todavía bebé aún le falta llegar a los 5 años
+R1: ¿Cuántos focos están usando para la luz? 
+RFA: Dos focos estamos usando
+R1: ¿Referente al mantenimiento o limpiar el panel solar para ustedes es fácil?
+RFA: Sí es muy fácil, cuando en polvo también se asienta lo limpiamos y cuando llueve no lo limpiamos mucho porque la lluvia es que lo lava 
+R1: ¿En el día efectúan algún trabajo?
+RFA: No nosotros no paramos en casa siempre nos vamos a al trabajo de campo 
+R1: ¿En las noches o en la madrugada el alumbrado en que horario más o menos lo usan?
+RFA: Dependiendo a veces desde las 6 la mañana depende de lo que levantamos y por las noches desde 6:00 a 10 p.m. algo así también depende 
+R1: ¿Ustedes cocinan en fogón y gas?
+RFA: Nosotros generalmente cocinamos en leña a leña en fogón porque tenemos que cocinar también para los animalitos como el perro y los cerdos ya que tenemos animalitos, así como 50 ovejas y vacas también tenemos, pero no son muchas, ahora también acaba de llevar para pastorear los animales
+R1: ¿Y para su sustento que más hacen? 
+RFA: Nosotros nos dedicamos también a la agricultura, sembramos papá, trigo, maíz 
+R1: ¿Cuándo tus hijos estudian utilizan la luz?
+RFA: Si la luz es muy elemental para que realicen sus tareas
+R1: ¿Ustedes hacen algún tejido en la luz o algún trabajo?
+RFA: No realizamos ningún trabajo solo mis hijos haciendo sus deberes de estudio
+R1: ¿Qué es lo que te gusta más del panel solar? ¿está bien para ustedes?
+RFA: Lo que más me gusta es que tenemos luz o podemos gozar de la luz antes cuando no teníamos hemos usado vela, mechero a veces no nos abastecía y pues fue un poco difícil, luego usamos también linterna, pero en fin desde que llego el panel solar está bien nos gustaría que nos lleguen otros proyectos más de apoyo, aquí nosotros hacemos cargar y nos es útil hasta ahora, también tenemos celular, aunque no carga mucho y hacemos cargar radio también es muy bueno.
+R1: ¿Qué es lo que más hacen cargar?
+RFA: Nosotros hacemos cargar siempre el celular para dos celulares no abastece solo abastece a un celular y hacemos cargar también la radio siempre optimizamos el poder usarlo para que no se descargue tanto el celular como la radio.
+R1: ¿De tus vecinos tienen paneles solares o quizás vienen a hacerle cargar? 
+RFA: No ellos no vienen a hacer cargar si vienen solo conversamos  
+R1: ¿Lo llevan a algún lado cuando sea necesario el panel solar?
+RFA: A veces trajinamos de vez en cuando a los montes así para ir a trabajar 
+R1: ¿y es complicado o es difícil el manejo?
+RFA: No a nosotros no nos resulta difícil lo cuidamos mucho para no arruinarlo tenemos mucho cuidado al llevarlo, pero si es muy fácil de manejar 
+R1: ¿El precio les pareció accesible de lo que pagaron?
+RFA: Si ha estado bien ya que desde entonces ahora también funciona bien entonces está bien nos sirve en gran manera y nos ayuda bastante en caso de que no hubiese tuviésemos que seguir usando el piquito y para que mis hijos puedan hacer tarea nos puede faltar nos ayuda mucho porque en las noches hacen sus deberes de escuela mis hijos 
+R1: Sí entonces esta bueno ¿Ustedes salen a comprar a algún lado y cuántas veces van?
+RFA: Cuando sea conveniente vamos de comprar alguna verdura, como vamos a pastorear no hay mucho tiempo para ir con frecuencia a veces vamos a Rajay Pampa,  en nuestro caso el bus es muy escaso y también no vienen hasta donde desearíamos que llegue siempre tenemos que ver el caminar a pie
+R1: ¿Cuántas veces cocinan en le día?
+RFA: Nosotros cocinamos en el día dos veces nomás después nos llevamos para poder comer porque en el día salimos a nuestros deberes o trabajos
+R1: ¿Y ustedes venden los ganados y las ovejas por ejemplo un cordero nos dijeron que tiene un costo de 300 bolivianos? me parece económico en otros lados está costando un poco más. 
+RFA: Estos son ovejas criollas nos dicen que es valioso su carne, pero nosotros no vendemos mucho generalmente solamente es para nuestro sustento cuando necesitamos cubrir alguna necesidad ahí vendemos, también cuando nos llegan visita de mis familiares para compartir nos abastece solo es de nuestro sustento.
+R1: ¿Qué nuevas actividades hacen utilizando la luz? 
+RFA: Nosotros solo trabajamos en agricultura a veces vamos a ganar ayudando a los vecinos, así como cosecha de papa, maíz de lo que haya
+R1: ¿La energía es suficiente para ustedes?
+RFA: Sí es muy útil caso contrario podríamos quizás seguir utilizando este piquito (Linterna) 
+R1: ¿Qué quisieras comprarte? en caso de que abasteciera y se pueda cubrir cargar? Por ejemplo, algunos dicen que podrían comprarse o Tv ¿En tu caso que quisieras comprarte?
+RFA: Yo quisiera comprarme, pero no creo que pueda abastecer la carga porque es muy escaso a veces, pero no precisamente necesitamos además debe estar costando caro 
+R1: ¿En casa varón y mujer utiliza la luz para alguna actividad en particular?
+RFA: Si nosotros usamos no precisamente realizamos algún trabajo en la luz pero lo usamos porque nos es necesario, nuestros hijos utilizan en el celular para cargar, también la radio hacemos cargar, en caso de que quisiéramos usar dos celulares no abastece se agota y para no sufrir con la escasez puede que no podamos tener la luz solo muy poco es la potencia y es por eso que no puede recuperarse y no, no hacemos cargar mucho por esa situación. Cuando se nubla tampoco se puede recuperar muy poco hacemos cargar por eso nos damos cuenta que se va a apagar entonces somos cuidadosos.
+R1: ¿Cómo te llamas, disculpe?
+RFA: Doña Edolfrida Jimenez
+R1: Muchas gracias hasta este momento hemos estado muchas gracias hasta entonces
+R2: Es todo Doña Edolfrida 
+R3: Muchas gracias por todo 
+R1: Si ha sido un gusto, en marzo por ahí van a venir ellos 
+RFA: Entonces ahí seguramente estarán les esperamos
+R2: Si gracia gracias a todos, hasta otro momento

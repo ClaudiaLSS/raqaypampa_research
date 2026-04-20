@@ -1,0 +1,29 @@
+user_ID: 99
+name: Olimpio Cordova
+gender: Male
+community: Sillar
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: ¿puedo entrar no? 100% está cargando la luz está funcionando ¿A qué nombre está el equipo?
+[RFY]: A nombre de Olimpio
+[R1]: ¿No está aquí tu papa no?
+[RFY]: No, no está aquí
+[R1]: ah ya está bien, ¿está funcionando nomas? ¿cargan celulares?
+[RFY]: si
+[R1]: ya y ¿la radio funciona?
+[RFY]: No, funciona la radio
+[R1]: ¿Cuántos viven aquí?
+[RFY]: 7 personas
+[R1]: ¿Cuántos están en la escuela?
+[RFY]: cuatro
+[R1]: ya ¿En qué curso están?
+[RFY]: 5to, 3ro, 1ro
+[R1]: Ya ¿esto está funcionando bien pero no?
+[RFY]: si
+[R1]: Ya, ¿este otro panel de que sistema es, de otro?
+[RFY]: si,
+
+
+

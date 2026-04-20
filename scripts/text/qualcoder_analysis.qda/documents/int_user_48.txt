@@ -1,0 +1,59 @@
+user_ID: 48
+name: Feliz Arroyo
+interviewee: Feliz Arroyo
+gender: Male
+community: Tetilla
+date: 24/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: El señor se encontraba de salida hacia la feria.
+
+R3: Buenos días 
+R1: ¿Cuál es su nombre? 
+RMA: Félix Arroyo, ahí está el oso y el otro cómo se llama Camacho el Camacho es un cachorro que pastorea a las ovejas 
+R3: Estamos viniendo de parte de la Universidad del proyecto de los panales solares 
+RMA: Así pasen 
+R1: Queremos verlo si está en buen estado, si tiene un buen funcionamiento, sí está en buen funcionamiento ¿está bien? ya lleva un buen tiempo ¿verdad?
+RMA: No no está todo bien 
+R1: ¿Los dos focos están funcionando verdad? 
+RMA: Sí sí un foco en una habitación y uno está en la cocina
+R1: ¿Qué haces cargar?
+RMA: Lo hago cargar el celular también lo hacía cargar la radio, pero ahora ya no lo hago cargar porque se arruinó, pero si hacemos cargar celular de mi esposa y de mí también, solo celulares hacemos 
+R1: ¿Hace un mantenimiento, así como limpiando el panel solar? 
+RMA: Si limpiamos con un trapo sí estos de estas partes también es precisamente hay que limpiar 
+R1: Está bien ¿abastece todo esto o quisieran aumentar más o quisieran tener algo más?
+RMA: Nos encantaría poderlo tener o adquirir uno más la verdad es que quisiéramos contar o quisiéramos tenerlo un refrigerador o una licuadora o algo, pero nos gustaría que la batería pueda abastecer para poder cargarlo mantenerlo, pero en este caso no lo es de ese modo entonces televisión podría ser también 
+R1: ¿qué hora más o menos lo apagan la luz? 
+RMA: A las 8 y a las 9 depende en la madrugada hacemos alumbrar 
+R1: ¿En qué horarios lo hacen cargar sus celulares?
+RMA: En el día hacemos cargar los celulares vemos que es importante el día soleado es buena opción para cargarlo, pero cuando es nublado nosotros 
+R1: ¿Cuántos viven aquí? 
+RMA: Nosotros solo vivimos dos no tenemos ni hijos
+R1: ¿Viven solo aquí o van a algún otro lado? 
+RMA: Nosotros vivimos aquí no vamos a ningún lado, a veces vamos a trabajar 1 o 2 o 3 jornales 
+R1: Ustedes no salen a ningún lado entonces ¿van a pastorear, sus vacas?
+RMA: Ahora mismo estamos de ida a la feria a Rajay Pampa y a mis bueyes ya los alimenté 
+R1: Ah entonces tienen animales ¿Cuándo siembran van a otros lugares quizás a algunos de tus vecinos? 
+RMA: A veces vamos a ayudar, pero no voy mucho cómo tenemos aquí para cuidar nuestros animales nosotros aquí trabajamos 
+R1: ¿Escuche que a veces llega el rayo? 
+RMA: No, no cae 
+R1: El monto que cancelaron para adquirir el panel solar ¿está bien? 
+RMA: Sí está muy bien nosotros decimos gracias por el apoyo los 500 Bs cancelamos está bien para nosotros fue un beneficio para nosotros a comparación de antes ya que tenemos desde hace tiempo
+R3: Si como 3 años ya deben estar teniendo, desde el 2023 
+R2: ¿Buenos días? apenas hemos llegado ¿cómo estás? ¿estás bien? 
+RMA: Sí estamos bien nomás, sí pero llegaron muy bien 
+R2: Casi nos vamos a otro lado ¿así que va a ir a la feria? 
+RMA: Sí sí tengo que ir de hecho tengo que ir rápido y volver
+R2: Está bien 
+R3: Dice que todo está en perfectas condiciones, el funcionamiento en cuanto al alumbrado y carga también 
+R2: Hay agua verdad, ¿es potable o de alguna represa? 
+RMA: Si hay agua para tomar 
+R2: Waow tiene bastante presión 
+RMA: Sí con bastante presión sale el agua esa temporada cuando hay lluvia hay bastante luego hay que escatimar aquí no tenemos de represa a pesar que hay un atajado para almacenar agua, pero no hay maquinaria para fijar ya se infiltra, aunque coloques agrofil el agua se pierde rápido 
+R2: Pero puede ser útil para ustedes ¿verdad? 
+RMA: Si es cierto lo que pasa es que el agua se infiltra no está muy bien estructurado ese atajado no para el agua es muy complicado hemos optado por muchas opciones, pero aun así no no se puede acumular se infiltra así que necesitamos apoyo técnico 
+R2: De tus vecinos ¿hay panales solares? 
+RMA: Sí, por allá atrás les indicare, bien nosotros ya tenemos que irnos la hora está avanzando ya nos vamos a ir 
+R2: Si está bien muchas gracias 
+R1: Hasta aquí hemos podido visitarles que tengan buen día hasta luego 
+R3: Ya nos vamos a ir, muchas gracias hasta aquí hemos podido visitarles y hasta luego chao chao

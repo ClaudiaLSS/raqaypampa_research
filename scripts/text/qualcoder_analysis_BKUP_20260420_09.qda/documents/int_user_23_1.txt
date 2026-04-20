@@ -1,0 +1,91 @@
+user_ID: 23
+name: Evangelino Coca
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose y Jaime
+
+[R1]: Buenas tardes, estamos viniendo de la universidad
+[R2]: Hace un tiempito ya hemos venido pero tu hijito nomas estaba
+[R3]: buenas, ¿cómo están?
+[RMA]: bien
+[R2]: hemos venido a ver cómo está funcionando el panel o si tiene problemas, ¿cuántos viven aquí Don Felipe?
+[RFA]: somos hartos quienes vivimos aquí
+[R2]: ¿cuántos?
+[RFA]: somos ocho personas que vivimos aquí, mis hijos nomas son pues
+[RMA]: esto no da bien
+[R2]: ¿esto no da bien?
+[RFA]: sí eso no está funcionando bien
+[R3]: y allá vamos a sacarlo eso ya, esto es lo que no da no ve
+[RMA]: sí esto es lo que no hace cargar
+[RFA]: sí no funciona no quiere hacer cargar celulares
+[R2]: ya ahora lo vamos a sacar está bien, ¿dos baterías tienes no?
+[RFA]: sí, pero me lo voy a llevar mañana allá abajo me lo voy a llevar, vamos a otros lugares pues
+[R1]: cuchillo me puede prestar por favor para sacar esto
+[RMA]: Aquí esta
+[R2]: ¿y desde cuándo se ha cortado esto de aquí?
+[RMA]: no es mucho tiempo. Con esto de aquí cargaba, esta con una cinta
+[R2]: ¿los focos están funcionando y el radio cierto?
+[RFA]: sí los focos dan normal pero la radio se ha roto no se escucha nada tampoco, no carga mira a ver
+[R2]: ni prende ni nada siempre
+[RFA]: no nada tampoco suena
+[R2]: a ver lo vamos a ver y ¿desde cuándo no está funcionando la radio?
+[RFA]: desde hace tiempito nomás
+[R2]: ¿cuándo estaba nuevo funcionaba y cargaba?
+[RFA]: sí cargaba normal lo manejábamos mucho
+[R2]: ¿ustedes han comprado los dos paneles? Esto es de este panel y el otro es del otro no
+[RFA]: sí, si esto es de este panel, pero ahora cuando me compro ya no aguanta la radio.
+[R2]: ¿y la batería carga lo mismo?
+[RFA]: sí, sí lo mismo
+[R2]: Entonces Don Felipe vamos a cambiar esto ya, pero este cambio es el último, este tiene un volumen claro.
+[RFA]: de allá han venido unos niños se hicieron vencer entonces se cayó y tenían miedo porque pensaban que nosotros le íbamos a pegar
+[R1]: vamos a arreglar todo esto y así funcionando vamos a dejar ya, pero nos vamos a llevar este que no sirve
+[RFA]: Ya ya, por favor sírvanse este papá hervido
+[R1]: Muchas gracias
+[R2]: Don Felipe ¿cuál es tu apellido?
+[RMA]: Rivera
+[R2]: ¿cuántos hijos tienes?
+[RMA]: tengo ocho hijos
+[R2]: ¿y como mantienes tantos hijos?
+[RFA]: Es muy costoso y agotador, pero tenemos que trabajar
+[R2]: ahí está el cargador ¿cuántos celulares hay aquí?
+[RFA]: esto no más tengo porque luego se pierden los celulares igual, la radio es necesario para escuchar, esto más de aquí no me lo pueden cambiar?
+[R2]: ¿tienen dos paneles no? ¿para quién han agarrado el otro panel?
+[RMA]: para mi hermano mayor
+[R2]: ¿Que se llama tu hermano?
+[RFA]: Don Félix rivera
+[R1]: ya esto está funcionando con su tapita está
+[RMA]: ya
+[R1]: esto vas a limpiar siempre para que no se arruine, ¿cada cuánto lo limpian el panel?
+[RFA]: sí lo limpiamos después de cada tres días
+[R2]: y esto desde qué hora alumbra
+[RFA]: desde las 6 de la tarde alumbra por mis hijos hasta las 10 de la noche o a veces amanece prendido con luz
+[R2]: ¿cuándo la luz amanece alumbrando no se apaga?
+[RMA]: no, no se apaga
+[R1]: para que esté mejor tienen que hacerlo cargar desde las 7 de la mañana hasta las 5 de la tarde, pero en la noche no es favorable, pero es mejor durante el día.
+[R2]: ósea es mejor cargar desde las 7 de la mañana hasta las 11 o 12 de la mañana o por la tarde, los celulares porque en la noche solo consumirá de la batería.
+[RMA]: ah ya
+[R1]: ¿antes de que haya el panel que utilizaban mecheros?
+[RFA]: sí antes si utilizábamos mecheros, velitas, a veces no había querosén y nos teníamos que hacer regalar de algunas personas a veces, el viento igual apagaba el mechero y teníamos que volverlo a encender, pero era más complicado, pero ahora gracias a Dios tenemos este sistema, ahora estoy feliz porque es más fácil, antes había vinchuca no podíamos ver nos picaban, una vez se apareció un alacrán pero ya con esta iluminación, nos dimos cuenta.
+[R2]: ¿quién es el que más se utiliza la luz?
+[RFA]: todos utilizamos como para cocinar y hacer nuestras cosas, esto nomás no funcionaba pues, no cargaba
+[R2]: ya y la radio ¿quién lo utilizaba más?
+[RMA]: nosotros nomás usamos, cuando voy a trabajar me lo llevo conmigo.
+[R2]: ¿y ustedes todo el tiempo paran aquí o a veces van abajo?
+[RFA]: Nosotros vamos a veces abajo de vez en cuando
+[R2]: ¿Y cada qué mes van abajo?
+[RFA]: por ejemplo, mañana pasado vamos a ir abajo, solo algunos vamos no todos, para cosechar y sembrar también, llevamos a nuestros animalitos para alimentar ya que aquí no hay tanto pasto.
+[R2]: el celular también no lo van a hacer descargar por completo si tiene ya una barrita hay que hacerlo cargar para que dure más o sino ya no va a funcionar
+[RFA]: ah ya está bien yo hago cargar a veces mi celular siempre porque necesito para linterna para alumbrar
+[R1]: ah ya muy bien
+[R2]: Cada vez vamos a venir a ver y vamos a ver igual cómo está funcionando de tu hermano ¿ya?
+[RFA]: sí, pero esto no los vamos a llevar allá abajo, porque su hermano de mi esposo no vive aquí.
+[RMA]: mi hermano está en chaparé, fue a cosechar
+[R2]: ah entonces él no vive aquí
+[RMA]: sí él no vive aquí
+[RFA]: por eso yo voy a todas sus reuniones importantes, como congresos y ampliados hasta fui a bloquear de cuenta de él. A mi nombre también ya está ese panel solar
+[RMA]: si no está el nombre de mi hermano, sino ambos están a mi nombre
+[R2]: ya está bien veremos cómo se arregla eso, nosotros venimos siempre a ver cómo funcionan los paneles o que familias tiene problemas con ello
+[RFA]: coman esta comidita pues.
+[R1]: ¡gracias!

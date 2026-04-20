@@ -1,0 +1,109 @@
+user_ID: 64
+name: Celestina Inturias
+gender: Female
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[R3]: Buenas tardes
+[R2]: A ver miraremos
+[RFA]: el panel aquí está pues
+[R2]: a aquí está
+[RFA]: sí aquí está
+[R2]: ¿Doña Celestina cómo es tu apellido, Inturias verdad?
+[RFA]: sí
+[R2]: ¿tú sola vives aquí?
+[RFA]: Sí yo sola vivo con alguno de mis hijos otros de mis hijos no están conmigo
+[R2]: ¿no tienes miedo vivir sola?
+[RFA]: aquí tengo tres hijos pequeños con ellos estoy tranquila, aquí está el sistema
+[R2]: ¿Ah yo creí que estaba por aquí?
+[RFA]: no está por aquí la radio también a veces funciona y a veces no.
+[R1]: hay que hacer la prueba
+[RFA]: a veces parece que funciona y sale la voz, pero a veces no
+[R2]: Ah cierto, ahora lo revisaremos, a veces cuando no lo conectas bien no carga
+[RFA]: no sé qué es lo que se hizo para poder cargar también no carga nada
+[R1]: ¿una sola función dice no?
+[RFA]: no carga ni la radio ni el celular no carga nada ya no carga
+[R1]: creo que es este el problema
+[RFA]: no sé qué es lo que sucedió no carga absolutamente nada
+[R1]: creo que un poco funciona la radio
+[RFA]: un momento así funciona luego ya se quita por eso no carga ni el celular
+[R2]: a veces no conectamos muy bien por eso no enciende no se prende tienes que conectar muy bien, un poco más hay que empujarlo, hay que juntarlo muy bien
+[RFA]: ves ya no quiere cargar
+[R3]: Ah, ¿se mueve no? ah es por eso
+[RFA]: Sí por eso no carga no sé cuál es la dificultad
+[R2]: lo que pasa es que está ya flojo o un poco aflojado, entonces vamos a cambiar ¿está bien? para que pueda funcionar perfectamente
+[RFA]: Sí está bien
+[R2]: este es nuevo
+[RFA]: ustedes me dieron como algo negro está en mi otra casa eso tampoco se salió de una parte de la punta ahora ¿será que hay para comprar? así estaba pensando
+[R1]: Ay siempre para comprar ahora ya están funcionando los dos la radio y el celular
+[RFA]: Ah está bien ¿ahora eso se lo van a llevar?
+[R2]: sí no los vamos a llevar, esto ahora cómo ves ahora estos dos ya están funcionando
+[RFA]: Así cuando llegan mis hijos, quieren hacer cargar a veces se quitonean por usarlo porque funciona es el único que funciona, a veces tienen acuerdos para hacer cargar.
+[R2]: ¿Cuántos hijos tiene?
+[RFA]: aquí solo estoy con tres hijos
+[R2]: ¿Los tres van a la escuela?
+[RFA]: Solo dos nomás están yendo a estudiar uno de mis hijos solo me ayuda a cuidar mis ovejas me ayuda a sembrar me ayuda también en trabajo de campo ahí nomás me ayuda
+[R2]: Ah está bien
+[RFA]: y los dos de mis hijos no me ayudan mucho ahí dentro están mis dos hijos, ¿ahora cuándo irán a volver a venir? o ¿ya no vendrán?
+[R1]: al año no más directamente volveremos
+[RFA]: hubiese sido mejor que vuelvan pronto, en mi otra casa está el otro cable que me dieron, se echó a perder por eso no lo traje lo deje allá.
+[R1]: pero no tenemos eso de nosotros no hay para comprar ahí
+[RFA]: solo el problema es su punta que se rompió
+[R2]: Cuando compres hay que comprar todo completo no cambian solo por partecitas, siempre venden por piezas, porque si le dices, dame solo esta parte o esta sección no te va a vender.
+[RFA]: Ah está bien comprendido y ¿el panel está bien nomás?
+[R1]: si mire está su batería está bien ese panel está haciendo cargar esta batería por eso el panel está en buen funcionamiento está al 100%
+[RFA]: ah entonces ¿está bien no más cierto?
+[R2]: Sí está bien está perfectamente
+[RFA]: ya
+[R2]: esta parte nosotros ya cambiamos y la radio también ya está en buen funcionamiento
+[RFA]: si es así está bien así yo también podría estar con la radio también cuando no consigo dormir entonces yo escucho la radio
+[R2]: Ah sí está bien
+[RFA]: cuando mis hijos se duermen a veces yo tiendo a escuchar la radio
+[R2]: ¿desde qué hora prendes la radio?
+[RFA]: la radio ya enseguida voy a encender
+[R2]: ¿cuándo inicie el programa de Raqaypampa?
+[RFA]: sí desde entonces, aunque igual pongo cualquier sintonía en la radio escucho
+[R2]: ¿hasta qué hora haces alumbrar la luz?
+[RFA]: la luz que ves allá yo hago amanecer
+[R1]: ¿no se apaga?
+[RFA]: No se paga para nada por eso con esa luz duermo tranquila y tampoco tengo miedo la radio también no apago, una vez creo que se apagó dos veces un poco me asusté, pero luego ya no se vuelve a pagar quizás lo hicimos cargar demasiado el celular o la radio algo así.
+[R1]: ¿pilas o vela ya no compras?
+[RFA]: ya no compro desde que tenemos este panel ya no compramos a veces para ir a algún lado compramos, pero ya descansamos de comprar las pilas y las velas ahora también se escucha que las pilas están caras para comprar creo que tiene un costo de 10 Bs, un par de pilas todo ahora está un poco más elevado de precio.
+[R2]: Sí así es casi todo está elevándose de precio
+[RFA]: aquí lo que nos hace falta siempre es la luz y el agua
+[R2]: Claro que sí eso es lo
+[RFA]: Cuando hay la luz cualquier hora también podemos cocinar, una vez me pico un bicho creo que era alacrán, me llevaron a la posta de Raqaypampa, ahora que hay la luz, ya no hay bichos que se nos piquen.
+[R2]: Creo que sí seguro que era un alacrán ahí
+[RFA]: Ahí dentro estuvimos durmiendo y de repente sucedió, hasta que me llevaron hasta Raqaypampa ahora que hay la luz si vemos si hay algún bicho lo podemos hasta matar antes por la oscuridad no se veía, ni comer bien se podía, cuando empezamos a tener esta iluminación, todo mejoro y ha sido muy bueno, ahora hasta en el patio tiene iluminación, podemos comer y cocinar mejor, cuando llegamos por la noche encendemos todo, si no hubiera esta iluminación, el mechero alumbra, la vela también se acaba entonces nos encontramos nuevamente en la oscuridad, nuestro hijos a veces en la oscuridad pisan algo, por eso esta iluminación es lo mejor.
+[R1]: ¿Todas tus familias permanecen aquí todo el año o vas a algún lado?
+[RFA]: Voy siempre a mi otra casa, por eso a veces llevamos
+[R2]: ¿En tiempo de seco debes llevar?
+[RFA]: Nosotros estamos aquí como dos semanas, ahora mismo como no hay agua aquí es un poco difícil quedarse, hasta para tomar no hay, tenemos que traer desde allá atrás donde los eucaliptos para poder contar con el agua, es pesado y trabajoso por eso a veces voy arriba, por eso llevamos el sistema y cuando volvemos aquí también lo traemos y así alumbramos todo lo que necesitamos.
+[R2]: Al colegio también están de ida dos nomás ya
+[RFA]: sí dos no más van ahora al colegio y uno de ellos sí me ayuda
+[R2]: ¿Cuántos hijos tienes?
+[RFA]: tengo 10 hijos algunos están en Santa Cruz como aquí no hay buenas condiciones para vivir bien, para que nos mantengamos para vivir bien de otro lado cuando van algo de dinerito también nos ayudan así nosotros criamos a nuestros hijos también tener hijos también es muy bueno si no tuviéramos hijos tampoco es bueno ni tuviéramos tal vez algún recurso económico, cuando tenemos hijos a través de ellos nos hacen llegar por lo menos algún alimento un poco de arroz aunque sea pero no se hacen llegar
+[R2]: ¿y vienen de Santa Cruz tus hijos?
+[RFA]: sí vienen ahora también van a venir a sembrar uno o el otro siempre vienen cuando así nos ayudan entonces nosotros también estamos bien no más
+[R2]: Ahora aquí no los puedes firmar por favor, porque te estamos dejando ese cable ¿Es igual que tu carnet, tu nombre?
+[RFA]: Sí eso es, mi carnet lo dejé en mi otra casa, me olvidé, así que me vine así de prisa porque tengo que sembrar papa. ¿Falta carnet no?
+[R2]: sí a veces siempre se pide carnet ¿cuántas ovejas tiene?
+[RFA]: son muy pocos y creo que son como unos 15 cómo no hay alimento, aquí no llueve a menudo muy poco, creo que en otro sitio sí llueve.
+Entra un niño....
+[R2]: él es el que trae agua
+[RFA]: ¿sí en la ciudad así no manejan no?
+[R2]: Sí así es no manejan así
+[RFA]: si aquí las cosas son así hay que traer agua desde lejos cada día algunos de mis hijos no tienen miedo, pero uno de ellos tiene mucho miedo
+[R2]: ya Doña celestina todo ha estado muy bien cuando tú lo lleves a tu otra casa y lo vuelves a traer este panel no debes hacerlo caer debes cuidar muy bien si lo haces caer no va a funcionar lo tienes que cuidar muy bien.
+[RFA]: Sí así siempre cuido muy bien lo llevo
+[R2]: Así sea una piedra que le choca entonces eso también no es bueno no va a funcionar
+[RFA]: Cuando yo llevo lo envuelvo muy bien lo cuido bastante
+[R2]: Ah por eso estoy ya está yendo como dos años verdad
+[RFA]: si ya son dos años si no cuidamos no va a aguantar entonces tengo que cuidar bastante
+[R2]: Sí cualquier cosa que no cuidamos siempre es un riesgo
+[RFA]: Yo no lo hago llevar ni con mis hijos, personalmente lo manejo porque puede que ellos lo hagan caer, entonces siempre lo voy cuidando, también lo envuelvo muy bien para poder trajinar.
+[R1]: Si algo sucediera entonces hasta ahí nomás sería
+[RFA]: a claro eso es la realidad por eso yo voy cuidando ¿eso sería todo verdad?
+[R1]: Sí eso sería todo le agradecemos mucho hasta otro momento ya Doña Celestina gracias
