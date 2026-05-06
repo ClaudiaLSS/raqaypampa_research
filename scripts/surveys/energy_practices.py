@@ -18,13 +18,13 @@ import pandas as pd
 import os
 import csv
 import numpy as np
-from scipy.stats import chi2_contingency
+from scipy.stats import chi2_contingency, pearsonr
 
 # === Paths (adjust to your project structure) ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "../data/surveys/data_1.csv")
-CODEBOOK_PATH = os.path.join(BASE_DIR, "../data/surveys/codebook_1.csv")
-OUTPUT_DIR = os.path.join(BASE_DIR, "../results/energy_practices")
+DATA_PATH = os.path.join(BASE_DIR, "../../data/clean/surveys/data_1.csv")
+CODEBOOK_PATH = os.path.join(BASE_DIR, "../../data/clean/surveys/codebook_1.csv")
+OUTPUT_DIR = os.path.join(BASE_DIR, "../../results/energy_practices")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 OUTPUT_NUMERICAL = os.path.join(OUTPUT_DIR, "numerical_summary.csv")
 OUTPUT_CATEGORICAL = os.path.join(OUTPUT_DIR, "categorical_summary.csv")
@@ -193,13 +193,20 @@ extended_corrs = []
 # 1. Numerical–Numerical (Pearson)
 for i, var1 in enumerate(numerical_vars):
     for var2 in numerical_vars[i+1:]:
-        corr = df[[var1, var2]].corr().iloc[0, 1]
+        valid_data = df[[var1, var2]].dropna()
+        if len(valid_data) > 1:
+            # pearsonr returns (statistic, pvalue)
+            corr, p_val = pearsonr(valid_data[var1], valid_data[var2])
+        else:
+            corr, p_val = np.nan, np.nan
+            
         extended_corrs.append({
             "Variable 1": var1,
             "Variable 2": var2,
             "Type": "Numerical–Numerical",
             "Method": "Pearson",
-            "Correlation": corr
+            "Correlation": corr,
+            "P-Value": p_val
         })
 
 # 2. Numerical–Categorical (Correlation ratio)
@@ -207,12 +214,14 @@ for num_var in numerical_vars:
     for cat_var in categorical_vars:
         label_col = cat_var + "_label"
         eta = correlation_ratio(labeled_df[label_col], df[num_var])
+        p_val = np.nan  # correlation_ratio does not compute p-value
         extended_corrs.append({
             "Variable 1": num_var,
             "Variable 2": cat_var,
             "Type": "Numerical–Categorical",
             "Method": "Correlation ratio (η)",
-            "Correlation": eta
+            "Correlation": eta,
+            "P-Value": p_val
         })
 
 # 3. Categorical–Categorical (Cramér’s V)
@@ -221,12 +230,14 @@ for i, var1 in enumerate(categorical_vars):
         label1 = var1 + "_label"
         label2 = var2 + "_label"
         v = cramers_v(labeled_df[label1], labeled_df[label2])
+        p_val = np.nan  # cramers_v does not compute p-value
         extended_corrs.append({
             "Variable 1": var1,
             "Variable 2": var2,
             "Type": "Categorical–Categorical",
             "Method": "Cramér’s V",
-            "Correlation": v
+            "Correlation": v,
+            "P-Value": p_val
         })
 
 # === Save extended correlations ===
