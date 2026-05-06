@@ -1,0 +1,98 @@
+user_ID: 101
+name: None
+interviewee: a young woman
+gender: Female
+community: Ichuqata
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+
+R1: ¿Pregunto?
+R3: Sí, aunque no es de nosotros.
+R1: Queremos preguntarte algo sobre el panel. ¿Podemos preguntarte, por favor?
+RFA: Sí, pregunten nomás.
+R1: ¿Cómo está funcionando su panel? ¿Le parece que está bien?
+RFA: Normalmente está funcionando.
+R1: ¿No se apaga en algún momento?
+RFA: Sí, la vez anterior se apagó.
+R1: ¿Será que es por el tema de que esté nublado?
+RFA: Sí.
+R1: ¿Lo limpian algunas veces?
+RFA: No.
+R1: ¿Qué es lo que más hacen cargar a través del panel?
+RFA: Celular nomás.
+R1: ¿Y la radio?
+RFA: Muy poco hacemos cargar la radio.
+R1: ¿Ocupan la luz por las mañanas y en las noches?
+RFA: Sí, en su mayor parte por las mañanas.
+R1: ¿Cuántos viven aquí?
+RFA: Vivimos cuatro.
+R1: ¿Su esposo está en el trabajo? Estás sola con tus dos hijos; yo creo que todavía no están en la escuela, ¿verdad?
+RFA: Sí, estoy con mis dos hijos, ellos aún no están en la escuela.
+R1: ¿Qué tiempo ya ocupan su panel?
+RFA: Tres años.
+R3: ¿Tiene batería y funciona bien? ¿Les dura o se gasta rápido?
+RFA: Nos dura.
+R3: Ah, ya.
+R1: ¿Trabajan en la agricultura?
+RFA: Sí.
+R1: ¿Tienen algún animal?
+RFA: No, yo de hecho no soy de aquí.
+R1: ¿Van a Raqay Pampa de compras?
+RFA: Sí, vamos.
+R1: ¿Para vivir ustedes se sustentan por la agricultura?
+R3: Durante el año, ¿van a algún lado?
+RFA: Sí.
+R3: ¿En qué mes? Ah, ¿cómo se llama tu perro?
+RFA: Zapato.
+R2, R3: (Risas)
+R3: ¿Cuántos focos me dices que tienes?
+RFA: Dos focos.
+R3: ¿Y qué más? ¿TV? ¿Solo eso?
+RFA: Sí.
+R3: ¿También funciona con el panel?
+RFA: Sí.
+R3: ¿En qué horarios utilizan la TV o cargan sus celulares?
+RFA: Solo a veces vemos la TV y a veces no.
+R3: ¿Qué es lo más importante que puedan hacer cargar?
+RFA: Solo para el alumbrado de los focos y celulares.
+R3: ¿Hombres y mujeres utilizan por igual? ¿Y qué es lo que más le gusta a tu esposo, quizás la radio?
+RFA: Sí, utilizamos por igual. No tenemos radio.
+R3: ¿Cuántos celulares tienen?
+RFA: Solo dos celulares.
+R3: Qué bien. El panel entonces les resulta bien práctico con su batería.
+RFA: Sí, es mucho mejor.
+R3: ¿También lo mueven a otros lugares?
+RFA: Sí, no estaba aquí.
+R3: ¿En otra casita estaba entonces?
+RFA: Sí, lo trajimos desde arriba.
+R3: ¿Cuánto tiempo se quedan aquí?
+RFA: A veces un mes.
+R3: ¿En qué temporada?
+RFA: En tiempo de la cosecha.
+R3: ¿Antes de eso allá nomás paran? Está bien, entonces lo mueven, eso es lo interesante del panel. ¿Y no quisieran comprar algo como, por ejemplo, un refrigerador?
+RFA: No sé, mi pareja puede saber esa parte.
+R3: ¿Y aquí tus vecinos tienen paneles o no tienen?
+RFA: Sí, creo.
+R3: ¿Don Fernando es de aquí, verdad?
+RFA: No sé, no los conozco todavía.
+R3: ¿Y a veces alguien viene a tu casa para hacer cargar, pidiéndote prestado?
+RFA: Sí, vienen.
+R3: ¿Por qué es grande tu panel? ¿Su batería es chiquita o grande? O es de auto... es de plomo, entonces.
+RFA: Su batería sí es grande, de auto. ¿Lo podemos mirar?
+R3: Sí, a ver, lo miraremos. Permiso... a ver, ahí está la batería. Ah, ya, ya, ya. Ah, tiene su transformador. ¿Y cuando lo llevan, todo esto lo llevan?
+RFA: Sí, las veces que lo llevamos; a veces ni lo llevamos.
+R3: ¿No se lo roba nadie de las casas?
+RFA: No, porque venimos a mirarlo.
+R3: Está bien. Alcanza para la TV, para hacer cargar también. ¿Y quién se los ha instalado?
+RFA: No conozco bien.
+R3: ¿Y cuántos enchufes tienen para cargar?
+RFA: Dos; aquí arriba tenemos uno y aquí abajo otro.
+R3: Supongo que es otra empresa.
+RFA: Sí.
+R3: Ya, gracias. Entonces, ¿es suficiente su panel o les falta? ¿O cómo quisieran mejorarlo?
+RFA: Solo queremos arreglar esto.
+R3: Ya.
+RFA: La mayoría están en el monte trabajando.
+R3: Ya, gracias. Nos vamos.
+RFA: Ya.

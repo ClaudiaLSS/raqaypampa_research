@@ -1,0 +1,45 @@
+user_ID: 85
+name: Roman Valverde
+Interviewee: His wife
+gender: Male
+community: Molle Orcko
+date: 25/01/2026
+category: User
+interviewer: Marisol, José, Claudia
+
+R3: A la señora le podemos preguntar qué le parecen los paneles, qué le parece.
+R2: ¿Qué te parecen los paneles? ¿Te parece bien?
+RFA: Es bueno.
+R2: ¿No falla?
+RFA: No está fallando, este [la radio] es el problema.
+R2: La radio.
+RFA: Sí, a veces nos hace mucha falta para escuchar alguna noticia. Verdaderamente me da rabia el no poder contar con un buen funcionamiento.
+R2: Veremos allá ya [en la oficina/base]; en caso de que haya [repuestos], dentro de un mes volveremos.
+RFA: Ya, ya.
+R2: Vamos a ir a ver, y estamos registrando para darles en caso de que tengamos, ¿ya?
+RFA: Ya, ya, ya.
+(Nota: Se repite la línea en el original)
+RFA: Sí, a veces nos hace mucha falta para escuchar alguna noticia. Verdaderamente me da rabia el no poder contar con un buen funcionamiento.
+R3: ¿Usan la luz [del panel] para hacer sus tejidos?
+R2: Dice que no, dice que en el día nomás hace sus tejidos. Entonces usan la luz del sol, hacen su tejido en el día y no en la noche, ¿verdad? Ya que en la noche no se ve [bien con el foco], ¿verdad?
+RFA: Sí, así es. Solo usamos la luz del sol, como no se ve bien en la noche con la luz del panel solar, entonces en el día hacemos nuestros trabajos.
+R2: Está haciendo muy bien y está quedando muy bueno tu tejido. ¿Para vender más sería bueno que puedas hacer tus tejidos?
+RFA: Es solo que las polillas perjudican o causan daño; no nos conviene porque invertimos tiempo también.
+R2: Sí, las polillas hacen daño, pero son muy duros y duraderos sus tejidos.
+RFA: Sí.
+R2: Dice [la compañera] que si le hacen un tejido te puede pagar.
+RFA: No creo poder, tengo que cuidar mis ovinos [ovejas].
+R2: No tienes tiempo entonces, ¿verdad?
+RFA: Sí. Hoy también estoy haciendo que me los cuiden nada más; cada día hay que cuidar.
+R2: Su hijo está llorando.
+RFA: Sí, está llorando.
+R2: ¿Cuántos años tiene?
+RFA: Debe ser como cerca de un año, debe ser.
+R2: Entonces, ¿está bien lo que está trabajando este panel, verdad?
+RFA: Sí, está bien.
+R2: Ya, nos vamos a ir ya.
+RFA: Ya, ya.
+R2: Van a estar bien; volveremos luego de un mes.
+R3: Gracias.
+RFA: Ya, ya.
+

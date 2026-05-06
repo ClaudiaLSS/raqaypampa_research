@@ -1,0 +1,206 @@
+user_ID: 96
+name: Guillermo Romero
+interviewee: Guillermo Romero
+gender: Male
+community: Sillar
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+
+R1: ¿Qué actividad desearías poder hacer?
+RMA: ¿Qué podría ser?
+R3: ¿Un pedazo de esto podemos usar?
+R1: Quizás mejorar la producción de su cultivo para tener ingresos.
+RMA: Lo cierto es que sería bueno que nos apoyen en mejorar la producción.
+R1: ¿Alguno de tus hijos está en la escuela?
+RMA: Sí.
+R1: ¿Cuántos hijos están en la escuela?
+RMA: Solo uno.
+R1: Sus tareas las hace con la luz, ¿verdad?
+RMA: Sí, utilizan la luz para poder hacer sus tareas.
+R1: Les abastece la luz, ¿verdad?
+RMA: Sí.
+R1: ¿Qué actividad haces por día, o en la semana?
+RMA: En su mayoría trabajamos en la agricultura.
+R1: ¿Antes cómo hacían con la luz?
+RMA: Hemos utilizado linternas.
+R1: ¿Alguna vez vela también?
+RMA: Sí.
+R1: Cuando van a algún lado, ¿por cuál de los medios van?
+RMA: En moto.
+R1: En caso de ir a Raqay Pampa, por ejemplo, ¿cuántas veces vas? ¿Una vez o dos veces al mes?
+RMA: Dos veces al mes y cuando sea necesario.
+R1: ¿En qué horario despiertan y utilizan la luz?
+RMA: Levantamos a las 6 de la mañana generalmente.
+R1: ¿En qué horario utilizan la luz por las noches?
+RMA: A veces hasta las 10 de la noche; después descansamos y la apagamos.
+R1: ¿Los paneles solares los llevan a algún lado?
+RMA: A veces, pero los cuidamos mucho.
+R1: ¿Los ingresos que generan es a través de la agricultura o ganadería?
+RMA: Generalmente para nuestro sustento. De la ganadería y la agricultura, es solo para nuestro sustento.
+R3: Cuando lo toco, sí funciona.
+R1: ¿Cuánto perciben de ingresos al mes, un estimado?
+RMA: Nosotros no contamos con un ingreso mensual; es muy variado. Nuestros ingresos solo nos abastecen para cubrir nuestras necesidades.
+R1: En un año, referente a sus ingresos, ¿cuánto perciben al mes en un estimado?
+RMA: Un tanteo... a veces puede ser 6,000 Bs o 7,000 Bs.
+R1: Es muy poco y les sustenta.
+RMA: Generalmente procuramos que nos pueda abastecer nuestras necesidades.
+R1: Así es. Entonces, dijiste que antes utilizaban linterna, vela... ¿y pilas usaban?
+RMA: Sí, pero ahora ya no utilizamos desde que tenemos el panel solar.
+R3: ¿Funciona?
+R1: Desde que hubo el panel solar, ¿ya no utilizan linterna o vela?
+RMA: Sí, ya no usamos. Solo para la radio seguimos utilizando pilas.
+R3: Muchos no estaban en su casa, ¿Don Guillermo?
+RMA: Sí, lo que pasa es que no sabían. La Sra. Basilia tenía que comunicar, pero por falta de comunicación no están; se van a sus chacras.
+R3: Le llamamos y no nos ha contestado.
+RMA: Por eso ahora ya les comuniqué.
+R3: Ah, ya. Mañana vamos a ir a Molle Orko.
+RMA: Sí, con su auto van a ir nomás. Esta mañana también ya les avisé, pero después se habían ido, dijeron.
+R3: Sí, pues, nos hemos cruzado; estuvimos yendo y ahí le hemos visto.
+RMA: Sí, les comuniqué. No sé a dónde habrán ido; recién estoy llegando, me dijeron.
+R3: ¿Y cuándo son las elecciones de las autoridades aquí en Raqay Pampa, Don Guillermo?
+RMA: ¿Aquí en Raqay Pampa? 2026 o 2027.
+R3: ¿Al año?
+RMA: Sí.
+R3: ¿Para Gobernador de Cochabamba votan también aquí?
+RMA: Sí, votamos para Gobernador.
+R3: Ya.
+R1: ¿Saben compartir la luz del panel solar?
+RMA: No, para nada.
+R3: Varios se fueron al Chapare por un tiempo, ¿verdad?
+RMA: Generalmente sus hijos se van.
+R1: ¿Qué otras fuentes de energía utilizan las personas en Raqay Pampa?
+RMA: Algunos ya utilizan la luz (de red). Por este sector utilizamos en su mayoría los paneles solares.
+R1: Comprendido. ¿Tiene algún equipo, un celular, verdad?
+RMA: Sí, un celular.
+R1: ¿Cuánto tiempo hace que usas tu celular o cuánto tiempo tiene?
+RMA: Más de un año, como un año y medio.
+R1: ¿Cuánto tiempo haces cargar en el día tu celular?
+RMA: Depende. Hoy, por ejemplo, hice cargar desde las 11 de la mañana hasta las 3 de la tarde.
+R1: Serían unas 4 o 5 horas. ¿En el día haces cargar? ¿Cada día?
+RMA: No hago cargar mucho.
+R1: ¿Cuántos focos utilizan? Son dos, ¿verdad?
+RMA: Sí, están en funcionamiento.
+R1: En la mañana, desde las 6 de la mañana utilizan la luz.
+RMA: Sí, como una hora por la mañana.
+R1: ¿En la noche en qué horarios?
+RMA: Sí, como dos, a veces tres horas.
+R1: ¿Compraste algún otro equipo para hacer cargar?
+RMA: No.
+R1: ¿La linterna no la haces cargar?
+RMA: No, solo mi celular lo hago cargar.
+R1: ¿Qué equipo deseas o podrías comprarte para hacer cargar?
+RMA: No creo que pueda abastecer; yo pienso que nada. Con lo que hay, estoy bien.
+R1: ¿Procuras ahorrar la energía a veces?
+RMA: No; como todo es normal, entonces no procuro ahorrar.
+R1: ¿Qué es lo que más valoras de este panel solar?
+RMA: El alumbrado.
+R1: ¿Tu panel solar está en buen estado?
+RMA: Sí.
+R1: ¿Cómo les parecen los paneles solares? ¿Les parecen bien o es muy limitado?
+RMA: Estamos satisfechos. Es solo que no se sabe hasta cuándo podría durarnos.
+R1: ¿A otro lado los llevas, el panel solar?
+RMA: No, siempre está aquí.
+R1: ¿Cómo podría calificar el panel solar: excelente, bueno, malo?
+RMA: Bueno, está bien nomás.
+RMA: ¿Dónde se encuentra Rocío?
+R3: No sé dónde estará; creo que está viajando bastante a la Amazonia.
+RMA: Ella camina fuertemente, ¿verdad?
+R3: Sí.
+R1: ¿El alumbrado está bien?
+RMA: Sí, está bien.
+R1: ¿Alguna vez se agota o se termina la batería?
+RMA: Sí. No es con frecuencia, pero sí.
+R1: ¿Quizás es en los días que está muy nublado?
+RMA: Sí.
+R1: ¿El manejo del panel está bien? ¿Lo maneja bien?
+RMA: No mucho, pero siempre lo mantengo limpio cuando sea necesario.
+R1: ¿Es fácil su mantenimiento?
+RMA: Sí, más o menos. No lo voy revisando tanto; tengo miedo de que se arruine.
+R1: ¿Con qué frecuencia mantiene?
+RMA: No lo reviso tanto. A veces no me ubico bien. Generalmente realizo la limpieza. ¿Ahora ya funciona? ¿Ya alumbra?
+R3: Sí, ya funciona. ¿Y su radio? ¿No funciona siempre?
+RMA: No está funcionando.
+R3: ¿Lo tiene aquí?
+RMA: No.
+R3: ¿Dónde lo tiene? Lo hubiésemos llevado para arreglarlo.
+RMA: Lo puedo traer donde se van a quedar. ¿Dónde se quedan siempre?
+R3: No, hoy día no. Lo que pasa es que tenemos que ir a recoger a José, al otro ingeniero. Hoy iremos a Mizque, ahí dormiremos, pero mañana sí nos quedaremos donde solíamos quedarnos. ¿Ahí lo puedes traer, a Raqay Pampa?
+RMA: Sí, de hecho tenemos que entregar listas. ¿A qué hora estarán?
+R3: Yo creo que en la mañana.
+RMA: Pero vas a volver a traer la radio, ¿verdad?
+R3: Sí, pues. Vamos a llevarla para hacerla arreglar y de aquí a tres semanas vamos a venir; ahí la puedo traer. Ya lo teníamos que hacer, es que no pudimos.
+RMA: Entonces, en todo caso, sería mañana en Raqay Pampa, ¿verdad?
+R3: Sí, más o menos a las 10 o puede ser 11 de la mañana.
+RMA: Pregunto: de Molle Orko a su retorno, ¿ahí le puedo entregar yo?
+R3: Ya, está bien, ahí dormiremos.
+R1: ¿Alguna falla pudiste detectar?
+RMA: No tanto, solo la radio. Solo la quiero para escuchar; el problema es la conexión de la radio.
+R3: Y el cable, que estaba en mal contacto. Cuando volvamos ya lo vamos a cambiar.
+R1: ¿Entonces lo van a cambiar?
+R3: No, es solo que lo tenemos en alguna de las casas y lo vamos a sacar.
+R1: ¿Entonces este sistema es de gran utilidad para ustedes? ¿Lo utilizan ya sea en algunos deberes, en educación?
+RMA: Sí, hacen tareas. En su mayoría solo lo utilizo para el celular.
+R1: La comunicación es importante, generalmente cuando quieras escuchar noticias o hablar con alguien. También les permite realizar sus actividades, ¿verdad?
+RMA: Sí, así es.
+R1: En estos últimos años, debido a la luz, ¿ha sido mejor para ustedes el cambio?
+RMA: Sí, así es.
+R3: Antes utilizaban, ¿verdad? Pero, ¿ahora lo utilizan más en las mismas horas o ahora ha cambiado?
+RMA: Antes estuvimos viviendo toda la familia, después no hemos utilizado mucho.
+R3: Actualmente, ¿quiénes viven ahora?
+RMA: Vivimos yo y mi esposa. Generalmente yo estoy aquí; mi esposa a veces.
+R3: ¿Su esposa está en Raqay Pampa?
+RMA: Sí, yo generalmente paro aquí.
+R3: Allá pues tienen luz, ¿verdad? ¿Y cuánto pagan allá al mes?
+RMA: Pagamos 18, 19, a veces 20 Bs.
+R1: ¿Cocinan en fogón y a gas?
+RMA: Sí, en ambos. A veces cocinamos a leña, a veces a gas cuando son épocas de lluvia.
+R1: ¿Qué alimentación consumen bastante?
+RMA: Depende. A veces también usamos para nuestra alimentación macarrón, arroz y lo que producimos: papa, mote, trigo; a veces en pan.
+R1: ¿Es lo que más te gusta del panel?
+RMA: Desearíamos que mejore. Sería bueno que puedan mejorar para nuestros beneficios.
+R3: ¿Allá en Raqay Pampa tienen refrigerador, licuadoras?
+RMA: No tenemos refrigerador; sí tenemos una licuadora. Quisiéramos tener refrigerador para conservar carne.
+R3: Sería bueno. Galletita, sírvase, Don Guillermo.
+RMA: Ya, gracias.
+R3: Hemos ido por donde Don Apolinar y nos dijeron que se habían ido al Chapare. Doña Cristina igual. También fuimos donde Don Fernando Inturias.
+RMA: Aquí al otro lado viven.
+R3: Nos han dicho que vive en otra casa.
+RMA: Aquí al frente es; allá atrás hay que caminar como una hora. Allá atrás fuimos, ¿verdad, Lice?
+R3: Sí, era lejos. Era arriba... no recuerdo dónde.
+RMA: Doña Adriana.
+R1: Sí, ahora vamos a ir a Doña Adriana Vallejos más abajo, a Ichuqata; ahí tenemos que ir. Después, Don Apolinar no estaba, tampoco Don Vicente; a Don Calixto sí lo hemos encontrado.
+RMA: ¿Don Antonio?
+R3: Sí, a Don Antonio también hemos encontrado; él nos avisó de algunos que no estaban ahí.
+RMA: Germán Inturias está ahí ahora mismo, es solo que es lejos. Ese es el problema. Aquí abajo que fuimos, ahí hemos dejado catalizador.
+R3: No, ¿dónde es pues? Ahora estamos aquí, a ver...
+RMA: Una vez fuimos allá abajito, ¿recuerda?
+R3: No. ¿Dónde, Don Germán?
+RMA: Ahí también es de Don Román.
+R3: Pero hay también camino por ahí, ¿no ve?
+RMA: Sí.
+R3: Ahí vamos a llegar ahorita.
+RMA: Sí, es lejitos, pero no sé cómo será el camino.
+R3: A ver, vamos a intentar. Vamos a ir donde Doña Adriana y de ahí nos iremos allá a Tetilla.
+RMA: Allá hay también, pero...
+R3: Queremos llegar a donde no hemos podido llegar, a la mayoría.
+RMA: Ah, ya, entonces allá ya no irán.
+R3: No creo, porque donde Don Valeriano ya fuimos la anterior vez, le hablamos, hicimos una encuesta. Ahora queremos llegar a los que no hemos podido, por eso mañana estaremos en Molle Orko.
+RMA: Entonces... ¿hoy no irán a Raqay Pampa, verdad?
+R3: No, iremos a Tetilla y de ahí directo nos iremos.
+RMA: Entonces te pasaré el número del consejero.
+R3: Ya, a ver... ¿Cómo se llama?
+RMA: Daniel.
+R3: Don Daniel, ya.
+RMA: 67823211, Daniel Sarabia, Consejero.
+R3: Hemos dejado aquí en Molle Orko un [equipo], pero la anterior vez que vinimos no estaban; dicen que se han ido a Laguna, creo.
+RMA: Ah, ¿cómo se llama? ¿Guilber?
+R3: Ajá, sí, Guilber. ¿No ha vuelto? Queremos sacárselo y ponérselo los cablecitos normales. La anterior vez lo llamamos y nos dijo que ya no está ahí, que estaban en Laguna. ¿Ahora le vamos a llamar si va a estar o no?
+RMA: Ya, al otro consejero ya le avisé; contigo van a ir, le dije, le expliqué.
+R3: Ya está bien, yo le voy a llamar hoy día. Ya, Don Guillermo, vamos a ir a Titapampa, ahí donde Don Román.
+RMA: Quizás el camino...
+R3: No está siendo lluvioso.
+RMA: Sí, está haciendo calor. Esta vez no preparé como la anterior vez; les esperé y les invité mote, pero esta vez disculpen... mi esposa tampoco está, recién nomás llegué, pues.
+R1: Sí, comprendemos; siempre hay cosas que debemos hacer.
+R3: Ya nos vamos.
+RMA: Sí, gracias.
