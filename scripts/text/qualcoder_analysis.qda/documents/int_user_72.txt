@@ -1,0 +1,41 @@
+user_ID: 74
+name: Guilllermo Negrete
+interviewee: Teresa Claros
+gender: Female
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+
+R1: Buenas tardes ¿Cómo están? cómo se llama 
+RF1: Teresa Claros 
+R3: ¿Tú haces estos tejidos?, ¿es para vender? 
+RF1: No simplemente hago gangocho y nos pueda servir para cosechar papa 
+R1: ¿Cuántos focos hay aquí? 
+RF1: Solo son dos uno en cada habitación 
+R1: ¿Cuántos hijos tiene? 
+RF1: Son cuatro uno está en la escuela y uno es pequeño y los otros dos fueron a trabajar a Cochabamba seguramente van a llegar para pascua siempre llegan
+R1: ¿Qué es lo que más haces cargar frecuentemente?
+RF1: Hago cargar mi celular, la radio y la linterna siempre hacemos cargar cuando sea necesario constantemente 
+R1: ¿El panel solar a veces se agota? 
+RF1: Si se apaga 
+R1: ¿En qué en qué tiempos? 
+RF1: Cuando están nublado o cuando llueve 
+R1: ¿En qué horario se utilizan más la luz? 
+RF1: Nosotros usamos una vez que se esté poniendo el sol y usamos durante toda la noche apagamos al amanecer. Tenemos otro panel que hace tiempo compramos a veces con eso reemplazamos 
+R1: ¿En qué cocinan en cocina a gas o en fogón?
+RF1: A veces preparamos nuestra alimentación en cocina con gas cuando llueve y con frecuencia usamos fogón 
+R1: ¿Bajo la luz usted hace su tejido? 
+RF1: No yo no realizó ninguna actividad con la luz porque no es tan nítido sí hago mis tejidos siempre estoy haciéndolo afuera 
+R1: ¿Algunos animales tienes? 
+RF1: Sí tenemos como ser dos burros, dos ganaditos y ovinos tenemos como 20, los vendemos para nuestro sustento a veces no se puede ni abastecer con la comida entonces tengo que venderlo 
+R1: Y lo que más cosechan o hacen trabajo de agricultura, ¿qué es lo que más siembran?
+RF1: Papa, trigo, maíz, quinua, arveja ya que los ganados también los alimentamos con chala y a veces también sembramos avena entonces combinamos y así alimentamos a nuestros ganados 
+R1: ¿Y así como árboles frutales tienen? 
+RF1: No producen  
+R1: ¿También dónde lavan su ropa? 
+RF1: Lavamos en el río es solo que tenemos que ir hasta ahí abajo y nos quedamos lavando todo el día 
+R1: ¿El panel solar está funcionando bien? 
+RF1: No a veces siempre se apaga y también necesitamos escuchar la radio pero a veces igual se agota su batería no carga cómo debería ¿Eso lo van a llevar?
+R3: ¿Sí para qué lo vean 
+R1: Muchas gracias por tu aprecio para recibirnos que estén bien hasta luego
