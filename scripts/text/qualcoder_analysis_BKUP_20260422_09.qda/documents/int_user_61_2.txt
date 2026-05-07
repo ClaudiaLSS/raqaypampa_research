@@ -1,0 +1,73 @@
+user_ID: 61
+name: Basilio Salazar
+interviewee: Basilio Salazar
+gender: Male
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R3: Este cable está en buen funcionamiento o tiene alguna falla 
+RMA: Cómo te llamas Basilio Salazar 
+R3: y a don Basilio le vamos a hacer algunas preguntas por favor 
+R3: ¿Hacen cargar los celulares y alguien cuando viene lo hace cargar algún celular?
+RMA: A los celulares grandes no puede cargar o sea no abastece, si alguien viene no hacen cargar 
+R1: ¿Cuántos viven aquí? 
+RMA: Vivimos esposos es decir yo y mi esposa 
+R1: ¿En el día siempre se dedican al trabajo de la agricultura?
+RMA: Si así es sí constantemente nosotros trabajamos en la producción agrícola realizamos todo labores culturales agrícolas 
+R1: ¿Cuándo van a algún lado en qué van?
+RMA: Nosotros vamos caminando hasta la punta de la loma y luego esperamos un autobús que viene para poder ir a Rajay Pampa 
+R1: ¿Y cuando van a que ella punta que dices en cuánto tiempo caminan? 
+RMA: Caminamos dos horas 
+R1: Cuándo van a Mizque o a Rajay Pampa ¿cuántas veces frecuentan ir? 
+RMA: Dos veces al mes o una vez al mes nosotros vamos solo cuando nos hace falta algo o cuando sea necesario 
+R1: Referente al panel solar ¿en qué horarios ocupan la luz? 
+RMA: Nosotros ocupamos durante toda la noche el alumbramiento aproximadamente desde las 7 de la noche hasta la madrugada 
+R1: ¿De parte de tu familia se fueron de este lugar a algún lado? 
+RMA: Sí ahí 
+R1: ¿Cuánto tiempo más o menos se fueron? 
+RMA: Es mucho tiempo como 8 años, pero vienen siempre a vernos 
+R1: ¿Cuánto perciben de ingreso económico más o menos al mes? 
+RMA: No podría decir un monto exacto porque nosotros solamente nos dedicamos a la agricultura y muy poco percibimos dinero cuando sea necesario 
+R1: ¿A veces van a ayudar a algún vecino como un trabajo extra como jornal?
+RMA: A veces sí vamos cuando hay tiempo 
+R1: ¿Y de todo el año su ingreso económico, aunque sea una referencia en muy poca cantidad les abastece? 
+RMA: Si nos abastece, aunque a las justas, pero nos abastece el ingreso es en muy poca cantidad a veces de las producciones que sacamos a la venta generalmente nos abastece para nuestro sustento y a veces no siempre es rentable la producción
+R1: ¿Aparte de usar la luz utilizan linterna?
+RMA: Si utilizamos linterna a veces hago carga 
+R1: ¿y utilizan vela o mechero? 
+RMA: No ya no desde que hay panel solar ya no usamos 
+R1: ¿Desde que ha habido el panel solar hubo momentos en que se apagó? 
+RMA: No no se apagó está bien 
+R1: ¿Tienen celular y hacen cargar en el día? 
+RMA: Sí tenemos y hacemos cargar depende a veces en la noche a veces en el día 
+R1: ¿Hacen cargar, así como la linterna o alguna otra?
+RMA: No nosotros no hacemos cargar nada 
+R1: Tus vecinos cuando vienen ¿hacen cargar?
+RMA: No simplemente nos visitan para mantenernos comunicados, conversamos 
+R1: ¿Cuántos focos están ocupando para el alumbramiento?
+RMA: Dos focos ocupamos 
+R1: En caso de que pueda abastecer para poder cargar ¿qué es lo que te gustaría adquirir o comprar? 
+RMA: Desearía tener algunos focos más pero como no abastece entonces no me animo a comprar nada 
+R1: ¿El panel solar lo trasladan a algún lado?
+RMA: No llevamos a ningún lado tememos a que se pueda arruinar 
+R1: ¿Cuando les brinda la luz es bueno malo o regular?
+RMA: Es muy bueno 
+R1: Cuando ustedes adquirieron el panel solar ¿el precio que colocaron está bien? 
+RMA: Sí está muy bien, aunque yo quisiera una televisión, pero como no abastece entonces no me animo a nada 
+R1: ¿Referente al mantenimiento es fácil y cómodo?
+RMA: Si es fácil a veces cuando sea necesario lo limpiamos 
+R1: ¿El celular generalmente lo usan para comunicarse verdad?
+RMA: Sí el celular es importante para informarse y comunicarse
+R3: ¿De la energía es un buen beneficio para ti?
+RMA: Sí es muy bueno 
+R1: ¿Qué deseas que se mejore del panel solar alguna cosa?
+RMA: Lo cierto es que quisiera que tenga buena potencia para poder cargar 
+R1: ¿Más utilizan fogón o gas para cocinar? 
+RMA: Generalmente fogón 
+R1: Cuando consumen el alimento ¿cuántas veces cocinan al día? 
+RMA: Dos veces a veces 3 veces cocinamos lawa de trigo o de maíz, mote de maíz, haba, papa
+R1: Agradecemos su recibimiento y por escucharnos 
+R3: Nos vamos a ir muchas gracias, ahora vamos a ir a casa de Don Román él tiene muchos

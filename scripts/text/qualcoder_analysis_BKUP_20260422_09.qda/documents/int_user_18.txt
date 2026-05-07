@@ -1,0 +1,92 @@
+user_ID: 18
+name: Dionisio Vargas Castro
+interviewee: Dionisio Vargas Castro
+gender: Male
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R3: Estamos ingresando a la casa de Don Dionisio 
+R2: Buenos días 
+RMA: No sé cuál es el problema, pero este cable me parece no está en buen funcionamiento el único que considero que es este lado para cargar la radio también
+R2: Ah creo que esto está roto se había roto esta parte y la radio tampoco está funcionando ya no está funcionando 
+RMA: Está funcionando un poco pero no muy bien 
+R2: ¿Quién dice que arregla la radio? 
+RMA: Aquí hay un señor que se llama Don Carlos él es el que sabe arreglar 
+R2: Lo llevaste a él 
+R3: Ah Don Carlos le conocen mejor si lo coloca parado no este está roto 
+RMA: No tienen para cambiar ¿este cable? yo escuché que también cambian la radio igual cómo sería no realmente esto se ha roto 
+R3: No lo vas a jalar mucho para no arruinarlo este se va a arruinar si lo haces de ese modo 
+RMA: Ah claro que sí está bien no lo haré no lo voy a jalar voy a tener cuidado 
+R3: Sírvanse
+RMA: Si muchas gracias escuche que no habían llegado a todos que anteriormente llegaron a algunas hace mucho tiempo llegaron aquí también después no llegaron más. También escuche que cambiaron una radio creo y yo también quisiera que me cambien estoy diciendo porque dónde habían cambiado dijeron que habían cambiado 
+R3: ¿En dónde?
+RMA: Donde don José Acosta, ahora van a volver una vez más o ya no volverán sí volveremos, pero nosotros no tenemos radio, aunque tenemos algunas radios está en mal estado, pero podemos ver la manera de hacerlo arreglar ahora también lo pueden controlar no van a poder cambiarlo la radio dice 
+RMA: Entonces ya tendría que hacerme arreglar ¿verdad?
+R3: Sí 
+R2: Esta radio está directamente conectado entonces ves que no conviene mantener desconectado
+R3: No lo trajimos ningún radio 
+R2: Ahí lo carga y no lo desconecto ahí de ahí nomás 
+R1: ¿Cuántos viven aquí?
+RMA: Nosotros solo vivimos mi matrimonio es decir esposo y esposa solo somos tres tenemos una hija más mi hija está viviendo allá en Cochabamba aquí viene de vez en cuando 
+R1: ¿Qué es lo que frecuentemente produces en la agricultura?
+RMA: Maíz, trigo, papa 
+R1: ¿y tienes algunos animalitos?
+RMA: Si tenemos animales nos queda dos animales y ovejas también tenemos muy pocos solo son 15 solo es para nuestro sustento 
+R1: ¿Cada día en que cocinan?
+RMA: Nosotros solo cocinamos en fogón generalmente agua también trajimos desde muy lejos desde muy abajo hay que caminar mucho
+R1: ¿Qué es lo que más te gusta del panel solar? 
+RMA: Me parece perfecto, pero considero que le falta potencia para hacer cargar no está en perfectas condiciones en esa parte no me parece tan bueno me gustaría que estén en perfectas condiciones o que nos pueda abastecer para hacer cargar y para gozar de la luz, después el alumbrado todo eso está bien para mí 
+R1: ¿Y tienen un celular o algo parecido?
+RMA: Sí tenemos y eso es lo que hacemos cargar 
+R1: ¿Hacen cargar en el día o en la noche?
+RMA: A veces hacemos cargar en el día o en la noche nosotros en cuanto se termine su batería lo hacemos cargar 
+R1: Ah cuando se agota su batería lo hacen cargar ¿aquí viven o viajan a algún lado por ejemplo chapare quizás viajan?
+RMA: No viajamos a ningún lado nosotros vivimos aquí no viajamos a ningún lado excepto mi hija que está allá en Cochabamba a veces vamos de algunas pequeñas compras 
+R1: ¿A dónde generalmente van?
+RMA: A veces vamos a Mizque y a veces a Rajay Pampa solo vamos cuando vemos que sea necesario de vez en cuando a Rajay Pampa a veces vamos dos veces al mes algo así los días jueves 
+R1: ¿Aquí no hay transporte verdad para que puedan ir?
+RMA: No gozamos con transporte tenemos que caminar dos horas o una hora y allá donde hay un lugar hacia una Lomita ahí viene el auto y a veces nos lleva porque aquí no quiere ingresar porque el camino no está en buenas condiciones es mucha serranía y el camino no es bueno nos dicen y no quieren subir 
+R1: ¿Desde el momento que les entregó el panel solar a cambiado o les es de mucha ayuda? ¿y cambiaron o aumentaron un panel solar?
+RMA: Seguimos con el mismo panel solar que nos entregaron tampoco hemos aumentado 
+R1: ¿Ustedes utilizan frecuentemente la luz?
+RMA: Si ya que la luz es para usar también necesitamos lo usamos 
+R1: ¿Antes de obtener el panel solar usaban mechero, vela, linterna? 
+RMA: RMA: Sí antes usamos vela, mechero también a veces linterna con pilas que aún lo utilizo, pero desde que hay luz nos favorece bastante nosotros cuando caminamos en la oscuridad a veces llevamos vela así pero solo cuando salimos yo no cuento con esa linterna que hace cargar 
+R1: ¿Ese panel solar que les entregaron en el precio les ha sido muy bueno?
+Sí ha sido bueno desde entonces hemos estado beneficiados con la luz 
+R1: ¿El alumbrado es muy bueno? 
+RMA: Sí es muy bueno porque a través de ellos siempre nosotros contamos con el alumbrado 
+R1: ¿Están alumbrando los dos focos?
+RMA: Sí dos focos están alumbrando 
+R1: ¿No te dio problemas los focos? 
+RMA: Hasta el momento hasta ahora no 
+R1: Ah ¿entonces está un buen tiempo funcionando los focos? 
+RMA: Sí sí buen tiempo estamos utilizando 
+R1: ¿tu esposa y tú más o menos cómo lo utilizan la luz? 
+RMA: Utilizamos en lo que es necesario y está bien nomás todo el funcionamiento 
+R1: ¿La luz usan de diferente manera por ejemplo tu esposa tal vez alguna actividad realiza o también usted? 
+RMA: En realidad, usamos de todo un poco y a veces necesitamos prepararnos para dormir 
+R1: ¿e independientemente cada uno en alguna actividad?
+RMA: No lo usamos 
+R1: ¿Entonces la luz está en buenas condiciones no tiene ninguna dificultad, no se arruinó ni nada de eso solo la radio es el problema ya que faltaba cargadores para poder cargar eso es lo único y los cables de conexión 
+R1: ¿Con tus vecinos compartes la luz o vienen a hacer cargar o algo así?
+RMA: No vienen a hacer cargar, pero cuando vienen a visitar juntos nosotros conversamos alguna cosa y siempre estamos bajo la luz 
+R1: ¿a veces el panel lo trajinas a algún lado?
+RMA: No no constantemente está aquí no lo trajino a ningún lado temo a qué lo puedo arruinar 
+R1: ¿Referente al mantenimiento como hacen?
+RMA: Cuando el polvo lo asienta entonces lo limpio cuando llueve lo lava también 
+R1: ¿Lo que tú haces es la limpieza cuando va empolvando bien, ¿y el mantenimiento es difícil?
+RMA: No no es difícil además no están tan alto es accesible 
+R1: ¿Que quisieras comprarte en caso de que funcione o tenga un buen funcionamiento este panel solar en caso de que levante bien el poder cargar?
+RMA: Lo único que quisiera es comprarme un foco para tener la luz en caso de que me comprara tele no creo que pueda levantar o no puede abastecer quizás por eso no quiero, pienso que la batería se puede bajar rápido pero sí puede ser posible ¿se podría necesitar una batería un poco más grande? Quizás
+R1: ¿y están en casa todo el día?
+RMA: Nosotros siempre estamos trabajando en sembradíos o labores culturales o cuidado de animales todo el día nosotros no estamos en casa nosotros nos vamos desde la mañanita a veces hay que cuidar los animales también 
+R1: ¿La luz lo usa en la mañana y en la noche?
+RMA: Nosotros generalmente usamos en las noches todo el año 
+R1: ¿En qué épocas siembran, cosechan?
+RMA: A partir del mes de septiembre cosechamos como ser papa, haba a pesar de que da para junio Julio por ahí terminamos 
+R1: ¿Y hacen moler harina o algo así de maíz o trigo?
+RMA: A veces sí llevamos a los molinos

@@ -1,0 +1,67 @@
+user_ID: 58
+name: Albino Acosta
+gender: Male
+community: Molle Orcko
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: No carga mi celular
+[R2]: ¿está amarrado o así nomás?
+[RMA]: Así nomás, su cargador ya no sirve, por eso le conecto directo allá.
+[R2]: Directo lo pones
+[R1]: ¿Y por eso no carga tu celular cierto?
+[RMA]: Si directo no quiere cargar, el cargador esta arruinado, solo eso nomas sería el problema nada más después todo es normal, celular todo.
+[R1]: ¿Quién utiliza tu celular?
+[RMA]: Mi hijo menor es el que utiliza el celular y no lo utilizo
+[R2]: ¿Dónde está tu hijo?
+[RMA]: Él fue a la laguna, él es único que utiliza yo no tengo celular, él es el que hace cargar, su cargador necesitaba, estaba pensado comprar.
+[R1]: ¿tienen USB?
+[RMA]: No, no tenemos, un cargador se arruinó, por eso me iré a comprar, solo necesito esto.
+[R1]: ¿los dos están funcionando?
+[RMA]: si
+[R1]: Entonces tu celular tiene que cargar normal
+[RMA]: si carga normal, nosotros cuando ponemos a cargar al conectar mis hijos, no conectan adecuadamente, por eso se va arruinando el cargador.
+[R1]: Con esto va a estar bien. ¿En qué hora alumbra 5 o 6 de la tarde?
+[RMA]: Alumbra desde las 6 de la tarde, a veces hasta amanecer, pero no se apaga
+[R1]: ¿Hacen cargar la radio?
+[RMA]: Celulares nomas hacemos cargar como 5 veces al día
+[R1]: Esta bien entonces ¿y esto cuando conectas funciona bien?
+[RMA]: No, no funciona bien, la radio siempre está en el mismo lugar no movemos a ningún lado.
+[R2]: No se mueve entonces
+[R1]: ¿y este otro?
+[RMA]: No, no se mueve a ningún lado
+[R1]: ¿llevas a algún lugar a cargar?
+[RMA]: No aquí nomas hago cargar, no llevo a ningún lado
+[R1]: ¿Cuántas veces limpias el panel?
+[RMA]: anteayer limpie, la vez pasada también cuando, don Guillermo vino.
+[R1]: ¿vino con un español verdad?
+[RMA]: Si, con don Guillermo más limpiamos
+[R2]: ¿Cuál es tu apellido Don Albino?
+[RMA]: Mi apellido es Acosta
+[R2]: ¿Cuantas familias Acostas son aquí?
+[RMA]: ¿Departe de nosotros?
+[R2]: Si
+[RMA]: Vivimos 6 personas con más mi hijastro
+[R2]: Entonces viven 6 personas aquí
+[R2]: ¿me lo puedes firmar aquí?
+[RMA]: Si está bien
+[R2]: Ya don Albino todo está bien nomas hasta el momento, cuando colocan tus hijos también que sean cuidadosos.
+[RMA]: Por eso mis hijos al momento de cargar a veces hacen caer por un descuido, pero eso sucede de vez en cuando
+[R2]: Si está bien, les vas a recomendar a tus hijos que sean cuidadosos, al momento de conectar,
+[RMA]: allá en ese lugar estaba, pero ahora lo puse en este lugar para que este más seguro
+[R2]: Tienes que colocar en un lugar seguro para que no se caiga
+[R1]: cuando el celular está descargando no hay que dejar que se descargue en su totalidad, cuando ya esté en el 20 por ciento ya tienes que ponerlo a cargar. ¿solo tu hijo hace cargar no?
+[RMA]: Si, por eso solo mi hijo hace cargar el celular porque nosotros no tenemos nada
+[R1]: Ya, está bien nosotros nos vamos, hasta luego don Albino
+[RMA]: Si hasta luego
+[R2]: ¿y mejoro tu estilo de vida con este sistema?
+[RMA]: Si, antes usaba todo el tiempo mechero, ahora ya no
+[R2]: ¿ahora donde esta tu mechero?
+[RMA]: lo hemos votado
+[R2]: ¿Aquí lo ponías tu mechero para alumbrar? (indicado un sitio)
+[RMA]: Si, pero ahora ya no lo necesitamos
+[R2]: ¿Uno nos mas está en el colegio tu hijito?
+[RMA]: Si uno no más, él otro ya ira al año
+[R2]: Ya ya Don Aldino.
+[R1]: Chau chau

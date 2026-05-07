@@ -1,0 +1,51 @@
+user_ID: 46
+name: Alejandro Salvatierra
+interviewee: Papá de Alejandro Salvatierra
+gender: Male
+community: Tetilla
+date: 24/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: Se encontraban dos adultos mayores, uno era presumiblemente el papá de Alejandro Salvatierra
+
+R2: ¿Cómo estás? ¿Estás bien nomás? 
+RMA: Sí estoy bien nomás 
+R3: Ah Buenos días ¿cómo estás? 
+RMA: Estamos bien nomás 
+R2: Estamos viniendo de parte de la universidad para revisar y mirar los paneles solares ¿los podemos revisar y mirar? 
+RMA: Sí claro que sí por este lado mire por favor aquí está la batería está de ese lado aquí también está la radio un buen tiempito ya está así 
+R1: ¿Los dos focos están brindando la luz normal? 
+RMA: Sí los dos focos están perfectamente  
+R1: Entonces se utilizan para el alumbrado 
+R2: Está roto y creo que no gira a ningún lado está roto este por eso no está tan en buen funcionamiento 
+R1: ¿Qué es lo que más hacen cargar? 
+RMA: El celular 
+R2: Está cargando normal y ya lo revisamos a dónde vas a ir a Don Román tenemos que ir 
+R1: ¿Aquí viven o viajan por un tiempo a algún lugar? 
+RMA: No nosotros no salimos de este lugar, pero si tengo familiar que no viven aquí 
+R1: ¿Cuántos viven aquí?
+RMA: Tengo un hijo y una yerna la que pastorea a veces sus animales 
+R1: Ustedes también trabajan en la agricultura ¿verdad? 
+RMA1: Sí siempre estamos trabajando ahora también estamos ahí ven llévense eso es picante se llama ulupica para su ají
+RMA: Ahora estamos trabajando tenemos que hacer barbecho también tenemos que cavar y cosechar papa, nosotros hemos sembrado papa trigo, cebada 
+R1: ¿Referente a luz en qué horarios hacen la luz alumbrar?
+RMA: Generalmente toda la noche alumbra no más no suele apagarse en la mañana también hago alumbrar en la noche solo durante el día lo apago
+R1: ¿También para ustedes está bien el alumbrado? 
+RMA: Sí está bien, mi celular tiene problemas podrías ayudarme ustedes saben son buenos técnicos y por esa cuestión vienen para apoyarnos es muy bueno así recibir sus ayudas. 
+R2: ¿30 segundos va a pasar se tiene que apagar y volver a encender y va a empezar su funcionamiento tu celular 
+RMA: ¿Y usted como se llama?
+R2: Yo me llamo José 
+RMA: Deme su número 
+R2: ¿Mi número de celular? 
+RMA: Sí para emergencias cualquier cosa para llamar 
+R1: ¿Después que hayan adquirido el panel solar es bueno les es de mucha ayuda?
+RMA: Antes nosotros con mechero, vela hemos usado pero ahora ya no este panel es bien nomás ¿Este panel tiene alguna garantía?
+R3: Sí es bien este panel, no tiene garantía dura más o menos de 10 a 15 años 20 años 
+R2: Ah este es otra batería está cargando 
+R3: Está cargando full ¿está bien verdad? 
+RMA: Sí está muy bien, nosotros somos compadres y amigos y si tenemos que conversar conversamos nos ayudamos mutuamente con las realizaciones de nuestros trabajos en cuanto a labores del área agrícola 
+R2: Y ahora ya está listo tu celular 
+RMA: Si está bien muchas gracias
+R3: A llegado el tiempo de irnos, hasta luego 
+R2: Si hasta luego nos vamos a ir 
+RMA: Si hasta otro momento gracias.

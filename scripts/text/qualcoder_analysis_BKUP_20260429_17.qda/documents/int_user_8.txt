@@ -1,0 +1,90 @@
+user_ID: 8
+name: Arminda Reyes
+gender: Female
+community: Ichuqata
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: Se encontraba doña Arminda con sus dos hijos, una niña que terminó la primaria y un bebé.
+
+R3: ¿Tienes panel solar aquí? Estamos viniendo de la Universidad
+RFA: Si
+R3: ¿Por dónde está?, ¿está por aquí?
+RFA: Si pase nomas
+R1: ¿Disculpe cuántos viven aquí? 
+RFA: Nosotros y mi hija (Esposa, esposo, hija, bebe)
+R1: ¿Está en la escuela? No
+RFA: No está descansando antes estaba en la escuela estudiando, pero ahora está descansando hasta primaria ya terminó  
+R1: ¿Acerca de este panel solar que brinda la luz hay alguna dificultad? ¿Quizás se apaga o se prende o está normalmente funcionando? 
+RFA: Sí está bien, no se apaga todavía 
+R1: ¿Lo limpian el panel frecuentemente?
+RFA: No limpiamos con frecuencia 
+R1: ¿Cuántos focos están alumbrando? 
+RFA: Dos focos nomás en las dos habitaciones que tenemos una o en cada habitación 
+R1: ¿Qué hacen cargar, quizás celular, radio, linterna?
+RFA: Nosotros solo celular hacemos cargar 
+R1: ¿Y radio también hacen cargar?
+RFA: Antes hacíamos cargar la radio, pero no abastecía, pero ahora mi radio lo llevé al técnico y no fui a recogerlo todavía 
+R1: ¿A dónde lo llevaste?
+RFA: Lo llevé a Rajay Pampa ahí lo llevé 
+R1: ¿Quién arregla ahí don Claudio? 
+RFA: Don Claudio lo arregla, pero ahora ya pasó un buen tiempo y no lo fui a recoger 
+R1: ¿Aquí con qué se sustentan para vivir en agricultura o quizás también con crianza de animales como vaca, oveja?
+RFA: Sembramos solo una vez al año y tenemos que guardar para nuestra alimentación, también tenemos solo algunos animales ganados y ovejas no tenemos 
+R1: ¿Qué es lo que más cultivan o qué es lo que más siembran? 
+RFA: A veces maíz, haba, trigo dependiendo lo que sembramos y pueda producir 
+R1: ¿Utilizan para cocinar solo fogón o gas también?
+RFA: Cocinamos tanto en gas como en la cocina 
+R1: ¿De dónde compran el gas?
+RFA: De Rajay Pampa y de donde se puede comprar a veces tenemos que salir esperar el auto para ir a comprar
+R3: ¿Esto es para poder realizar la chicha?
+RFA: Sí es para hacer chicha, pero nosotros no hacemos chicha mis antepasados como mi madre lo hacía porque hacerlo es para saber 
+R1: ¿También se ocupan del pastoreo a parte de la agricultura?
+RFA: Sí pastoreamos los animalitos que tenemos 
+R1: ¿De este lugar se trasladan o no a algún lado? 
+RFA: No para nada, no hay donde que podamos ir solo vivimos aquí
+R1: ¿La luz utilizan por la mañana o por la noche? 
+RFA: Sí usamos frecuentemente por las noches, muy poco por las mañanas 
+R1: ¿Qué es lo que más te gusta del panel solar?
+RFA: Lo que nos brida la luz (el alumbrado), lo que se hace cargar celular
+R1: ¿Qué más hacen cagar? 
+RFA: Como les decía un celular tenemos es lo único que hacemos cargar, también demora en cargar toma un buen tiempo para cargar
+R1: ¿Tus vecinos vienen a hacer cargar? 
+RFA: No vienen 
+R1: ¿Esa casa de ella tiene un panel solar de quién es?
+RFA: Es de don Tomás, pero él agarró con un proyecto antes es parecido a este
+R1: ¿Alguna vez se apagó la luz? 
+RFA: Una vez se apagó la luz cuando había velorio como dos noches enteras utilizamos el alumbrado después se apagó, pero ahora desde entonces ya no hacemos alumbrar toda la noche solo cuando hay necesidad de alumbrar por las noches y muy poco por las mañanas lo usamos
+R3: ¿Y que más quisieran comprar como para hacer cargar? Estamos preguntando porque queremos saber para ver si se pudiese colocar una batería más amplia así por eso estamos preguntando o quizás necesiten algo diciendo estamos preguntando 
+RFA: Quizás podría ser televisión, pero debe costar o debe ser costoso para comprar entonces no estamos en condiciones de comprar 
+R3: ¿En caso de que pueda abastecer la batería para cargar que quisieras comprarte? Algo en caso de que aguante 
+RFA: No para mí no hay problema, yo estoy nomás, aunque sin televisión no me hago problema para cualquier noticia o algo yo simplemente por el celular me informo o me comunico
+R1: ¿El panel que compraron fue un precio accesible para ti?
+RFA: Si ya que nos conviene y nos apoyó bastante porque nosotros no pusimos todo el costo de lo que un panel debería costar nos ayudaron, por lo tanto, estamos agradecidos fue muy bueno ahora creo que subió el precio así dijeron que había subido ¿cuánto podría estar costando? ¿será como 5000 Bs, algo así? 
+R3: No, este tamaño que usted lo tiene estimamos que debe estar por los 3000 Bs hay algunos panales solares, pero ya no puede haber uno o igual que esto que tienen debe estar como 3000 bolivianos algo así 
+RFA: ¿Pero la marca debe ser diferente?
+R3: Sí es diferente como esta sí ya no lo hacen ahora ya hay todo apareció muchos modelos, marcas 
+RFA: Sí está bien comprendo ahora que aparecieron hay algunos que sí tienen una dirección buena, pero hay otras que no, eso es lo que yo me di cuenta a veces no lo pregunto siquiera, aunque don Juan atiende dicen que trajo e instalo y nomas el costo fue un poco caro ¿Ustedes conocen a don Juan? ¿Quizás son de la misma empresa? ¿o son de otra empresa o algo así verdad?
+R3: Sí, no sabemos muy bien tampoco de don Juan hemos estado preguntando nos dijeron que en Mizque trabaja, él con nosotros no vino quizás sea de la energética quizás es o será dijimos, pero preguntando creo que no fue así, de dónde será de otro lado debe ser
+RFA: Yo escuché que vende muy caro así hablan entonces yo digo si es muy caro es mejor no, escuché que habían instalado de muy clarito nomás 
+R3: Ah sí 
+R1: ¿El panel lo trajinan a algún lado o solo está aquí?
+RFA: No sabemos llevar a ningún lado siempre está aquí nomás 
+R1: ¿Aquí nomás viven? 
+RFA: Sí nosotros no vamos a ningún lado aquí vivimos siempre quizás cuando vaya a algún lado quizás lo llevaría, pero no voy a ningún lado 
+R1: ¿Utilizando la luz realizan algún trabajo? por ejemplo puede ser el tejido 
+RFA: No, no nada ningún trabajo realizamos
+R1: ¿Antes cuando no había el panel solar o el alumbrado no lo tenían con qué conseguían el alumbrado?
+RFA: Antes siempre con usábamos vela para alumbrarnos teníamos que ahorrar y gastas con cuidado la vela comprando así solíamos estar 
+R1: ¿Y otras, así como linterna hacen cargar?
+RFA: No, no hacemos cargar quizás podría cargar, pero ya no lo hago cargar solo celular es el único que hago cargar 
+R1: ¿Lo limpian el panel solar? 
+RFA: Sí a veces a veces hacemos la limpieza cuando vemos que esta empolvado, pero en épocas de lluvia, la lluvia es lo que le lava así que vemos que no hay necesidad de que limpiemos a veces
+R1: ¿Les resulta difícil limpiar o es fácil?
+RFA: No es complicado es sencillo el poder limpiar
+R3: Si esta bueno, es verdad está muy limpio 
+R3: Bueno ha sido un gusto que estemos aquí junto ustedes, nos vamos a ir entonces le agradecemos muchísimo en otra ocasión vendremos 
+RFA: Sí sí está bien
+R3: Te vas a cuidar 
+R2: Sí gracias hasta luego 
+R3: Hasta un nuevo encuentro

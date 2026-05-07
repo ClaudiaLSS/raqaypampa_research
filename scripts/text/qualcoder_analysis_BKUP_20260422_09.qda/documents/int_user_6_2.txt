@@ -1,0 +1,74 @@
+user_ID: 6
+name: Antonio Negrete
+gender: Male
+community: Ichuqata
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: El entrevistado es don Remigio Negrete, padre de Antonio Negrete. Se encontraban dos adultos mayores.
+
+R2: Cómo están, buenos días
+R3: ¿Estás bien no más? 
+RMA: Estoy bien 
+R3: ¿Cómo están? ¿Cómo estás? 
+RMA: Estamos bien
+R1: ¿Cómo te llamas? 
+RMA: Remigio Negreti, 
+R2: ¿Podemos mirarlo? 
+RMA: Si pueden mirarlo ahí dentro pasen 
+R2: Entonces vamos a pasar 
+R1: ¿Cuántas personas viven aquí? 
+RMA: Aquí vivimos cuatro personas, dos están en el colegio, ya se fueron a su colegio
+R1: ¿Los que están en la escuela son tus nietos? 
+RMA: Sí sí son mis nietos 
+R1: ¿Usted cuántos años tiene? 
+RMA: Cuántos años será que tengo pues no lo sé exacto lo que pasa es que no recuerdo estamos muy enfermos nos encontramos delicados de salud, quizás es el viento que nos cogió estamos indispuestos con temblores, la cabeza nos duele muchísimo y con mucha frecuencia eso es lo que pasa nos duele mucho ¿qué podría hacer? todo nuestro conocimiento pareciera que se pierde, parece que ya estuviésemos por morir 
+R1: Ah Espero que se mejoren, quería preguntarle sobre el panel solar ¿está bien la luz que les brinda el panel solar? 
+RMA: Sí es muy bueno, alumbra muy bien aquí dentro hay también 
+R1: ¿Cuántos focos hay aquí? 
+Hay un foco nomás y con esto hay dos focos pueden abrirlo a esa puerta de esa casa 
+R1: ¿Qué es lo que hacen cargar?
+Cargamos los celulares los dos estudiantes que están estudiando ellos son los que cargan porque ellos son jóvenes y utilizan más la luz
+R1: ¿Ustedes tienen ovejas, ganados? 
+RMA: Si tenemos, lo está pastoreando mi hijo Antonio 
+R1: ¿Cuándo llega del colegio va a pastorear tus nietos?
+RMA: Si ayudan en cuanto llegan, pero el que pastorea en mi hijo el que vive ahí arriba vive muy cerca 
+R1: ¿Ustedes realizan generalmente la actividad de agricultura?
+RMA: Si sí realizamos sembradíos de trigo, papa, maíz 
+R1: ¿Permanecen solo aquí?
+RMA: Nosotros si
+R1: ¿La luz utilizan por la mañana y por la noche? 
+RMA: Generalmente en la mañana lo usamos muy poco o a veces, con más frecuencia usamos por la noche 
+R1: ¿Y estos árboles frutales que tienen aquí como el durazno produce bien?
+RMA: No, no quiere producir, sería bueno que puedan traer para poder tratarlo fertilizantes químicos que ayude a la producción para tener buenos rendimientos, ya que trabajamos en agricultura para nuestro sustento y también lo criamos animalitos también para nuestro sustento.
+R1: ¿Y qué les gusta más de la del panel solar?
+RMA: Que es útil, aunque aquí nos hace falta focos, aquí dentro solo en dos cuartos alumbramos, pero nosotros quisiéramos tener más focos 
+R1: ¿Limpian el panel solar de vez en cuando?
+RMA: Nosotros no podemos limpiar a veces lo lava la lluvia lo empolvado que queda, ni mis nietos no lo limpian
+R2: ¿Esa bolsita que venía junto con el panel, venía con dos cables donde estará no? ¿Aquí hay uno solo uno que está conectado, había? ¿Dónde está su bolsita, yo lo puedo colocar?, si es que encontramos lo puedo colocar 
+R3: ¿Dónde está la bolsita ahí quizás está? 
+RMA: No, no hay siempre ellos también buscaron mucho mis nietos, no encontraron o quizás no conocen ¿Hay solo búsquenlo nomás?
+RMA: Pueden ayudarnos a buscar, quí en la cocina que tenemos quisiéramos un foco
+R1: ¿Cocinan a fogón o a gas?
+RMA: A veces nos ayudamos con el gas, pero generalmente cocinamos en el fogón, a veces cocinamos con gas cuando hay bastante lluvia, como bien, parece que el aire le da a mi esposa.
+R1: Dicen que la ruda es buena ¿pudieron utilizar?
+RMA: Si solo que no nos hace nada la ruda 
+R1: El molle también es muy bueno
+RMA: Todas las plantas medicinales hemos tomamos, pero nada que nos calma nada nos puede ayudar para mejorar nuestra salud 
+R1: Pueden hacer hervir el agua luego añadir molle como fusión y tomarlo un poquito hay que tomar y la otra parte hay que pasarlo al estómago cuando esté tibio 
+RMA: Entonces vamos a intentar, estamos sufriendo más de un año con esta condición de salud 
+R1: No podemos hacer nosotros mucho 
+RMA: Sería bueno que alguien nos podría ayudar en esa parte también, sería muy bueno 
+R1: Por favor podrías decirle a tu hijo que te ayude 
+R3: ¿Este árbol está muy grande lo puedo cortar para que no perjudique que la luz del sol caiga sobre el panel solar? está muy cerca n
+RMA: No, no se preocupe yo lo voy a cortar
+R3: El otro cable dónde hayan puesto, buscamos no lo encuentro yo quería colocarlo, pero no lo encuentro
+RMA: Quizás esta abajo en la habitación, ahí pueden ir la puerta si está cerrada lo pueden abrir para ver si esta ahí y buscarlo no hay problema quizás ahí está dónde está su habitación ahí abajo la puerta de abajo no está nadie en este momento lo pueden ir a buscarlo y simplemente abrirlo nosotros no podemos acompañarlo porque estamos enfermos.
+R3: No encontramos
+RMA: No creo que haya entonces
+R3: Sí no hay no encontré 
+RMA: Cuánto no quisiera que pudiesen traer focos por lo menos un foco necesitamos, los puedo comprar de ustedes, quizás lo que hay algo que falte lo pueden traer nosotros le podemos comprar 
+R3: Haber veremos en caso de que haya vamos a traer, pero dentro del proyecto ya no hay 
+RMA: Si 
+R3: Ya nos vamos a retirar, muchas gracias les agradecemos mucho espero que se cuiden mucho hasta pronto, 
+R1, R3: Muchas gracias hasta otro momento don Remigio.

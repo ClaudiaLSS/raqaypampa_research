@@ -1,0 +1,79 @@
+user_ID: 44
+name: Vicente Tapia Sanchez
+interviewee: Natividad Sanchez
+gender: Female
+community: Ichuqata
+date: 24/02/2026
+category: user
+interviewer: Marisol, Claudia
+Nota: Se encontraban doña Natividad Sanchez, la mamá del usuario registrado
+
+R2: ¿Cómo te llamas? 
+RFA: Natividad Sánchez 
+R3: A doña Natividad, muy bonitas sus florcitas 
+RMA: Lo van a chequear eso también
+R2: Sí, sí vamos a revisarlo ¿ustedes nomás viven aquí? 
+RMA: No él es mi hijo Vicente también tiene su esposa y también hijos tiene 
+R1: ¿Entonces cuántos son? entonces viven 6 personas 
+RMA: Si uno de ellos ya está pastoreando animales y aquí están algunos 
+R1: Ah entonces ¿están estudiando alguno de ellos y cuántos están estudiando?
+RMA: Cuatro 
+R2: Entonces ustedes también tienen animalitos y por eso está pastoreando ¿ellos también tienen aparte y ustedes también? 
+RMA: Sí tenemos aquí siempre estamos ocupados 
+R1: La luz ¿lo ocupan con frecuencia? 
+RMA: Sí porque necesitamos cada día por las noches y van haciendo por las noches sus tareas 
+R1: ¿Aquí cocinan en fogón o en gas?
+RMA: Generalmente cocinamos en fogón con leña 
+R1: ¿Hasta qué hora más o menos utilizan la luz? 
+RMA: Depende a veces como no dura mucho a veces hasta las 10 o 11 lo apagan la luz después de hacer porque no tendría sentido tener prendido porque se podría descargar ya que nosotros necesitamos cargar celulares radio también linterna, aproximadamente usamos algunas veces una hora el alumbrado y en esto procuramos usarlo para cargar porque no podría abastecernos si tenemos mucho cuidado en ese aspecto ¿ustedes lo están revisando todo sobre el panel solar? 
+R2: Sí sí nosotros miramos y revisamos todo referente al panel solar 
+RMA: 
+RMA: Ah qué bueno que revisen por favor 
+R2: Nosotros ahí dentro hay batería eso es lo que queremos mirarlo para revisarlo 
+RMA: Ah eso es lo que se está echado llave, pero al otro lado sería 
+R2:  Sí al otro lado vamos a ver entonces es la casa de mis hijos, pero no están 
+RMA: Ahora vamos a mi casa 
+R2:  Así sí vamos 
+RMA: Estoy ordeñando 
+R2: ¿Hay queso? 
+RMA: Sí de hecho ya llevo a Rajay Pampa para venderlos pasen estaba un poco desordenada 
+R2:  Sí está bien 
+R1: ¿Tu nombre es Natividad verdad?
+RMA: Si mi nombre es Natividad Sánchez ahora vamos a ver de mí o lo que están viendo es de mí
+R1: ¿Aquí hacen cargar radio, linterna y celular? 
+RMA: Sí ahí está haciendo que cante está cargando la radio y así es como está funcionando la radio 
+R2: Sí está muy bien 
+R1: ¿Qué producción están realizando o que cultivos cultivan? 
+RMA: Generalmente tenemos por estas temporadas sembradíos de maíz, papa, trigo que también a veces nos sembramos 
+R1: ¿A veces la batería se les agota? 
+RMA: Aún no todavía a veces sí parece que quiera apagarse algo así pero aun así está bien 
+R2: ¿No se va apagando el alumbramiento? 
+RMA: No todavía el alumbramiento es normal sí, yo me compré otro también otro panel haremos la prueba uno de ellos se apaga, pero el otro no 
+R2: ¿Aquí hay tus hijos no se han ido a ningún lugar? 
+RMA: Después de hacerse mayor se fueron nosotros nomás estamos los dos aquí viviendo 
+R1: ¿Su ocupación en el trabajo es la agricultura y cuidado de animales? 
+RMA: Si yo pastoreo los ovinos y mi esposo ganado, también trabajamos en la agricultura 
+R1: ¿Ustedes van a algún lugar por ejemplo de compras para alimentación? 
+RMA: Si hoy también mi esposo llevo queso para poder vender en Rajay Pampa después de dar alguna alimentación como chala a los ganados 
+R1: ¿En qué cocinan en fogón o en gas? 
+RMA: Generalmente usamos fogón con leña a veces no hay ni gas a veces compramos el gas a lo que podemos y tenemos que usarlo con muy con mucho cuidado porque nos tiene que aguantar buen tiempo.
+R1: ¿Cuántas veces cocinan en el día para su alimentación?
+RMA: En el día cocinamos dos veces a veces tres veces en la mañanita cocinamos luego nos llevamos y por la tarde retornando cocinamos para una cena
+R1: ¿Antes de que no haya los paneles solares como fue referente a la luz y ahora que hay es de mucha ayuda el panel solar? 
+RMA: Era un poco sufrido la situación referente al alumbramiento porque teníamos que usar vela y así teníamos que obtener el alumbrado y también por la vela no se expande la luz,  en cambio este panel solar se expande nos brinda la luz mucho mejor a veces a la vela viene el viento lo sopla lo apaga y a veces también hay mosquitos que vuelan y lo paga en fin es todo un caos pero desde que hay este panel solar nos ha ayudado bastante antes también compramos una linterna al cual llamamos piquito también nos favorecía bastante y así es como nos teníamos que abastecer el alumbrado, ahora que hay panel solar nos ayuda bastante mejor a comparación de antes
+R1: ¿Esa linterna que mencionas como el piquito o linterna qué tiempo ya lo tienes?
+RMA: Ya lo tenemos un buen tiempo es solo que alumbra con pilas y ahora ya lo hacemos cargar
+R2: Su foco se arruinó este foco 
+RMA: Se puede arreglar ¿no creo verdad?
+R2: No, no se puede arreglar 
+RMA: Entonces me tendría que comprar otro ¿verdad? 
+R2: Sí tendría que comprarse otro porque el filamento que tiene dentro el foco se rompió y no se puede recuperar
+RMA: Entonces hay que cambiar y comprar, no tienen ustedes para cambiarme 
+R2: No, no hemos traído ni uno no, ahora solo hemos venido a controlar nada más
+RMA: ¿Cuándo volverán? 
+R3: De un mes vamos a volver 
+R1: Ya hemos concluido nos vamos a ir 
+RMA: Si está bien gracias
+R2: Hasta otro día 
+R3: Muchas gracias hasta nuestro retorno 
+RMA: Si gracias hasta luego

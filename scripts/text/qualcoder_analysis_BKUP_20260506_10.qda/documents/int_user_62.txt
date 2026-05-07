@@ -1,0 +1,102 @@
+user_ID: 62
+name: Calixto Negrete
+interviewee: Calixto Negrete
+gender: Female
+community: Molle Orcko
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: 
+
+RMA: Se ha quemado 
+R1: Dice que se ha quemado
+R3: ¿El rayo habrá caído? 
+R1: ¿El rayo a caído y a quemado?
+RFA: No 
+R1: ¿Entonces desde cuando esta así quemado?
+R3: Cómo están ¿Están bien?
+RFA: Apenas están llegando ¿se cansaron?
+R2: Cómo están ¿Están bien? Vamos a ver el funcionamiento del panel solar
+RMA: Si estamos bien
+R2: ¿Que paso estaba alumbrando antes?
+RMA: Si estaba alumbrando de repente se apagó, la radio que nos dieron estaba haciendo cargar  
+R2: Haber voy a desconectarlo ya 
+RMA: Si está bien ustedes saben muy bien nosotros no somos técnicos ustedes que son profesionales saben muy bien revíselo por favor
+R1: ¿Cuántos días dijiste que esta así?
+RM1: Como tres días no está en funcionamiento estaba alumbrando debió ser como a horas 7 de la noche 
+R1: ¿Así que rápido se apagó?
+RM1: Si por si solo se apagó, cuando estuvieron haciendo sus tareas los hijos ahí se apago
+R1: Dice que cuando le cae el rayo deja de funcionar 
+RM1: No cayo el rayo 
+R2: Problema es el cable 
+R3: Ah el problema es el cable ¿no tiene cable para probar?
+
+RMA: Son tres, pero dos están yendo a la escuela y ellos dos hacen las tareas en las noches y para eso ocupan la luz
+R1: Así entonces ellos dos están estudiando y también la luz utilizan ¿seguramente para cocinar también usan la luz verdad? 
+RMA: Sí así es
+R1: ¿Desde que llegó el panel solar compraste algo más o solo tienes la radio?
+RMA: Solo tengo la radio 
+R1: ¿y cuántos focos tienes?
+RMA: Tengo dos focos y los dos están funcionando 
+R1: ¿Ahora tienes animales como ganado y ovino?
+RMA: Sí tenemos 
+R1: ¿Y qué es lo que más siembran aquí?
+RMA: Si tenemos dos sitios aquí también sembramos a veces pastizales y en el otro lado también 
+R3: Esto no vas a dejar se puede caer hay que ir amarrando por favor puede que se caiga 
+RMA: Ah sí yo a este otro lado voy a colocar para que pueda sostener bien
+R3: Sí a ese lado, aunque sea 
+RMA: Sí está bien que esté ahí nomás entonces 
+R3: Vas a limpiarlo siempre para que tengas la luz 
+RMA: Sí está bien lo voy a ir limpiando cuantas veces sea necesario 
+R3: A veces se empolva y entonces es necesario limpiarlo 
+RMA: Así está bien 
+R1: Estaba la luz bien ¿verdad? 
+RMA: Sí estaba bien 
+R1: ¿Desde qué hora ocupan la luz o en qué horarios? 
+RMA: Después de llegar a partir de las 6 o 7 hasta las 10 de la noche algo así ocupamos siempre la luz 
+R1: ¿Siempre permanecen aquí o van a algún sitio?
+RMA: Allá abajo estamos algunas veces nosotros no estamos solo aquí ahí también llevamos a este panel solar 
+R1: Ah llevan también entonces ¿ustedes quisieran tener un panel solar más grande? 
+RMA: Sí nosotros quisiéramos tener un panel más amplio como para abastecer y gozar de sus beneficios 
+R1: Ah entonces está bien ¿y lo que ustedes cancelaron está bien? 
+RMA: Sí está muy bueno nos ha convenido mucho así que estamos bien de hecho estamos agradecidos
+R1: ¿Desde que ustedes adquirieron este panel compraron algo más?
+RMA: No nada 
+R1: Ah entonces ustedes ocupan para hacer tareas y también ¿para cocinar?
+RMA: Si eso es lo que frecuentamos es cocinar ocupando la luz por las noches y realizar como trabajos así es como ocupamos la luz generalmente por las noches también hacemos cargar el celular 
+R1: ¿Cuántos celulares tienen aquí? 
+RMA: Nosotros tenemos dos celulares 
+R1: ¿y alguna vez se apagó por sí solo su batería?
+RMA: No, no se no se apagó, pero esta vez sí se apagó 
+R1: Ah entonces está funcionando bien sí está funcionando bien 
+RMA: Creo que se quemaron los focos estaba pensando entonces tendré que ir a comprarme de Aiquile así estuve pensando 
+R1: Comprando otro foco podemos colocarlo o sí pueden colocarlo ¿y qué es lo que más les gusta de este panel solar quizás radio celular?
+RMA:  No sé si es porque nos gusta, pero veo que necesitamos el celular y la radio qué es lo que más les conviene también es más conveniente la luz y también convendría en caso de que hubiera TV sería antes vi que levantaba, pero ahora ya no pero no ocupamos nosotros 
+R1: Cómo utiliza la luz generalmente yo creo que para cocinar ¿verdad? 
+RMA: Sí es así para cocinar 
+RMA: Ustedes quisieran tener un panel ¿más grande verdad? 
+RMA: Sí quisiéramos ver TV lo que teníamos se arruino 
+R3: ¿Dice que tiene TV? Ah qué bueno ha estado viendo entonces 
+RMA: Sí es solo que ya no funciona 
+R1: ¿Entonces desde que llegó este panel solar han estado mirando la TV? 
+RMA: Sí hemos estado viendo TV 
+R1: ¿y en qué horarios veían la TV? 
+RMA: Solo por las noches a partir de 9 una hora aproximadamente luego apagamos y ya a descansar este otro que tengo también tiene batería 
+R1: Entonces es bueno también? ¿y con cuánto compraron la TV?
+RMA:  Compramos con 500 bolivianos 
+R1: ¿y hay algún canal de TV que miraba?
+RMA: No solo usábamos CDs por qué no llega pues hasta aquí los canales de TV en caso de que nos puedan entregar otra vez como en un proyecto nosotros podemos colocar lo que nos pueden pedir la cantidad de dinero para obtener TV 
+R1: ¿y qué más quisieran comprar en caso de que sea amplio el panel?
+RMA: Quisiera una televisión grande y quisiera que levante o que sostenga el funcionamiento
+R1: Sí comprendo ¿aquí vienen tus vecinos a hacer cargar algún celular? 
+RMA: No, no saben venir porque cada uno también tiene sus paneles solares entonces no es necesario solo alguna vez cuando tengo visita y alguna vez hacen cargar cuando vienen mis hijos 
+R1: ¿y en un año cuántas veces vienen a visitarte tus hijos? 
+RMA: Sí pues mis hijos vienen a veces una vez al año o dos veces depende así frecuentan no vienen tan seguido tampoco 
+R1: ¿y en qué horarios ocupan la luz? 
+RMA: Generalmente por las tardes a partir de las 6 de la tarde 
+R1: ¿Y cuántas veces cocinan en el día? 
+RMA: Tres veces 
+R1: ¿Aparte de esos focos les hace falta focos?
+RMA: Si nos hace mucha falta de hecho estoy pensando hacer otra casa y los necesitaremos ya que nos va a faltar ya que estos dos focos ya no nos van a ser suficiente
+R2: Ya don Calixto van a estar bien nomás nos vamos a retirar 
+RMA: Sí está bien si hasta luego, van a venir a visitarnos siempre les estaremos esperando 

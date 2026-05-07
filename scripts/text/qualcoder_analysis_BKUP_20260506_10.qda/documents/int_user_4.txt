@@ -1,0 +1,134 @@
+user_ID: 4
+name: Andres Blanco
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[I]: ¿La batería está aquí dentro?
+[RMS]: Si pasen
+[I]: Ah está bien está en perfectas condiciones 100% todo está bien ¿está alumbrando bien?
+[RMS]: si alumbra hace rato nomás lo hice alumbrar, ese es otro
+[I]: está mal
+[I]: ¿su interruptor? ¿a ver el interruptor cierto?
+[I]: sí, ah cierto esta parte está mal
+[RMS]: ¿alumbra o no? parece que está aflojado ¿de qué es así? o ¿por qué es así?
+[I]: esta parte está fallando como tiene dos compartimientos eso se tiene que unir.
+[RMS]: ¿Hay que sacar?
+[I]: no esto, no se debe sacar ahí está ya se apagó
+[RMS]: creo que se puede pero
+[I]: está alumbrando es solo que
+[I]: y el otro
+[I]: ¿aquí solo es el contacto no?
+[I]: No, no se abre creo que se va a romper
+[RMS]: aquí adentro estaba alumbrando
+[I]: ¿está en 100 su batería no?
+[I]: Sí, pero este está
+[I]: no se puede utilizar la luz ahora
+[I]: sí
+[RMS]: este de aquí funciona
+[I]: Ah ese sí funciona
+[RMS]: este esta parte no más es el problema
+[I]: tiene otro panel ahí está creo que necesita una limpieza
+[I]: sí
+[RMS]: ¿se puede hacer un cambio a este?
+[I]: sí se puede cambiar hay que comprar otro interruptor
+[RMS]: Ah ya
+[I]: si cambiamos el interruptor entonces va a funcionar bien es solo que esta partecita está fallando
+[RMS]: ¿así es será que pueden traérmelo, cuando vengan otra vez? yo les puedo comprar
+[I]: sí podemos traer
+[RMS]: ¿así podemos cambiar cierto?
+[I]: al año nomás, pero podemos venir este año no podemos volver ahí está registrando para traer
+[RMS]: Ah bueno está bien
+[I]: ¿desde qué hora alumbra?
+[RMS]: aquí prendemos cuando el sol se pone aproximadamente desde las 6 o 7 de la noche luego para
+dormir apagamos
+[I]: ¿más o menos a las 11 de la noche apaga?
+[RMS]: Sí más o menos a esa hora
+[I]: ¿y en la mañana?
+[RMS]: en la mañana a veces encendemos y a veces no, con este otro panel que tenemos con ese nomás
+encendemos
+[I]: Ah está bien ¿está funcionando bien, no se apaga?
+[RMS]: no se apaga está bien nomás funcionando, si adentro alumbra
+[I]: ¿este panel cuántas veces lo limpias?
+[RMS]: antes de ayer nomás limpié, pero estas veces no estoy limpiando todavía sí siempre voy limpiando
+[I]: ¿aquí haces cargar el celular?
+[RMS]: Sí hago cargar
+[I]: ¿funciona los dos?
+[RMS]: sí funciona los dos
+[I]: ¿la radio también funciona normal?
+[RMS]: sí la radio también funciona, se enciende, prende normal para qué vamos a mentir Entrevistador:
+¿cada día cargas tu celular?
+[RMS]: sí solo de mí hago cargar hago cargar a veces pasado un día a veces cada día
+[I]: ¿ya no usas, pilas, mecheros y velas verdad?
+[RMS]: no, ya no utilizo
+[I]: ¿eso es bueno o no?
+[RMS]: sí es bueno siempre es bueno, antes con velas, linternas y mecheros hacíamos alumbrar, pero
+ahora es muy bueno porque ahora ya podemos contar con este medio
+[I]: ¿con esto entonces hacen hasta más noche sus cosas que haceres?
+[RMS]: Sí es muy bueno por eso hasta mis hijos hacen sus deberes cuando vienen
+[I]: ¿cuántos viven aquí?
+[RMS]: Solo nosotros nos hemos quedado mis hijos se fueron algunos están en las minas algunos en
+Cochabamba solo tengo un hijo que vive cerca y a veces vienen aquí con mis nietos también
+[I]: ¿qué es lo que usas con más frecuencia, cargar el celular, la luz o la radio?
+[RMS]: los tres
+[I]: a los tres entonces
+[RMS]: si hago cargar mi celular, la radio para escuchar los tres
+[I]: Ah ya los tres ¿otras cosas puedes necesitar por ejemplo televisión? sí esto se pudiese
+[RMS]: ¿acaso puede encender la tele?
+[I]: No, ¿pero si en caso de que pueda venir otro equipo, puedes utilizarlo podrías usar?
+[RMS]: si podemos por supuesto que quisiéramos aquí nosotros siempre a través de la base vemos si nos
+podemos animar o podemos querer
+[RMS]: escuche que creo que no puede ser posible
+[I]: si no puede abastecer a lo grande
+[RMS]: Ah posiblemente podemos hacer algo entonces que esté ahí nomás así
+[I]: ¿qué es lo que más te gusta del sistema, que dispongas hasta altas horas de la noche?
+[RMS]: Sí la luz es muy importante y la radio también para escuchar sí ah podemos estar hasta media
+noche también cuando ya no necesitamos la luz entonces lo apagamos y así
+[I]: así es ¿y lo llevas a otros lados?
+[RMS]: no para nada, no llevo a otro lado solo mantenemos aquí en este sitio está arriba si todo eso no
+puedo sacarlo
+[I]: ¿y aquí vienen algunos para hacer cargar?
+[RMS]: si vienen, pero a veces pienso que lo pueden arruinar y por eso a veces no quiero prestar.
+[I]: Ah vienen entonces
+[RMS]: sí vienen me dijeron que se arruina entonces por eso no quiero prestar, aunque se disgustan o se
+enojan, pero qué puedo hacer lo tengo que cuidar
+[I]: Ah ya está bien entonces está bien, funcionando también
+[RMS]: Sí está bien
+[I]: hay que limpiar en este tiempo cuando hay polvo, pero cuando hay lluvia no tanto
+[RMS]: ¿entonces solo la lluvia va a limpiar?
+[I]: sí cuando haga polvo ahí sí hay que limpiar, aunque una vez por mes con un trapo poco húmedo hay que
+limpiar, la radio y el celular en el día debe cargar es mucho mejor.
+[RMS]: Sí eso es verdad, en el día es mejor hacer cargar cuando haga calor, eso sí.
+[I]: Cuando cargas de día, la batería también se carga entonces no consume mucho.
+[RMS]: si lo cargo desde las 10 de la mañana hasta las 5 de la tarde.
+[I]: esta batería no hay que dejar que nunca llegue a cero, cuando la batería este en una línea ya no hay que
+ponerlo a cargar ningún accesorio, el celular también funciona así, si cuidamos así va a durar buen tiempo,
+cuando el celular se descarga por completo dura menos tiempo.
+[RMS]: ¿así?
+[I]: cuando esté llegando al 20% su batería del celular ya hay que ponerlo a cargar el celular no es muy bueno
+hacerlo descargar por completo
+[RMS]: ¿Entonces hasta que se descargue en su totalidad no es bueno?
+[I]: si no es bueno
+[RMS]: Ah sí está comprendido
+[I]: de esa manera hay que cuidar su batería
+[RMS]: Ah está muy bueno sí está bien
+[I]: Sí hasta aquí te agradecemos mucho
+[RMS]: Sí está bien
+[I]: los dos utilizan
+[RMS]: sí usamos a veces cuando mis hijos llegan de las minas o algo así vienen con mis nietos entonces
+a veces estamos llenos
+[I]: Ah claro eso es muy bueno cada cierto tiempo vienen siempre
+[RMS]: Claro que sí vienen
+[I]: para eso son los hijos
+[RMS]: Claro que sí vienen por eso nos reunimos juntos y estamos llenos y a veces también se van
+[I]: Ah tienes gatitos también están muy lindos
+[RMS]: estaban algunos en chapare y ahora ya llegaron
+[I]: ¿cómo se llama usted?
+[RMS]: Andrés Blanco Velarde
+[I]: te agradecemos mucho
+[RMS]: Sí yo también a ustedes les agradezco mucho Gracias
+[I]: al año volveremos
+[I]: gracias
+[RMS]: Sí gracias a ustedes también y hasta pronto

@@ -1,0 +1,83 @@
+user_ID: 84
+name: Remigio Rodriguez
+gender: Male
+community: Molle Orcko
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[RMA]: De mi normal hace dar.
+[R2]: ¿esto está amarrado?
+[RMA]: si este amarrado
+[R2]: ¿Viste si esto carga en su totalidad?
+[RMA]: si, completa carga 100%
+[R2]: ya ¿su cargador funciona?
+[RMA]: si, la radio y el celular cargan normal
+[R2]: después ¿todo el tiempo haces alumbrar esto?
+[RMA]: de noche nomas prendo la luz y se queda prendido hasta que amanezca
+[R1]: ¿y no se apaga?
+[RMA]: no, alumbra normal, ¿si se calienta puede como explotar no?
+[R1]: no, si se junta se mantiene nomás no explota
+[RMA]: puede explotar me dijeron
+[R1]: no, pero hay que hacer alumbrar nomas
+[RMA]: si no estamos aquí, prendido lo dejamos la luz y así amanece
+[R2]: este panel solo puede durar años no es para siempre, a veces dura como dos años o un año según como lo mantienes
+[RMA]: ah ya entonces otro me compro si ya no da ¿cierto? Nos dijeron siempre que si no da el panel cómprense otro
+[R1]: si, pero si tu mantienes todo el tiempo encendido dura poco, pero si cuidas y lo apagas cuando no necesitas así te durar un buen tiempo
+[RMA]: de los demás duro ¿poco? de mí, mi radio igual da normal no está arruinado
+[R1]: está bien ¿cuándo no había panel que comprabas o utilizabas?
+[RMA]: velas y querosén, ahora no compro igual esta muy caro esta a 12bs el par
+[R1]: ahora ya no compras
+[RMA]: si ya no compro porque ya no necesito
+[R2]: ¿entonces te ayuda es bueno no?
+[RMA]: si pues me ayuda mucho
+[R1]: ¿y tus hijos hacen sus tareas con la luz?
+[R2]: no, sus hijos viven con su mamá no con él
+[RMA]: viven con su mamá, de otros sus hijos hacen pues con la luz, otros, pero tampoco tienen y con vela están alumbrando para hacer sus deberes escolares
+[R2]: ¿cada que tiempo comprabas?
+[RMA]: cada semana compraba
+[R2]: no dura pues
+[RMA]: no dura nada, tênia que ir a Raqaypampa a comprar
+[R1]: ¿y vienen a aquí a hacer cargar celular?
+[RMA]: si vienen
+[R1]: está bien y los que vienen ¿no tienen esto?
+[RMA]: no solo cuando vienen a beber hacen cargar
+[R2]: ah jajajajajaja
+[RMA]: aqui en el campo no hay alcohol nada, pues puro chicha sano es
+[R1]: si pues
+[R2]: ya don Remigio, está bien nomas tu panel, iremos a ver los demás, ¿tú sabes si de alguien no está funcionando bien?
+[RMA]: no, de todos alumbran sus luces, normal esta todo
+[R1]: ¿Qué más puedes, si este sistema tendría más capacidad? ¿tele puedes usar?
+[RMA]: si puedo usar
+[R2]: pero este de aquí no hace dar la tele
+[RMA]: si no hace dar la televisión, en la noche igual no hago cargar mi radio nada, pero normal carga todo
+[R2]: está bien ¿vives aquí solo o con tu mamá?
+[RMA]: si solo con mi mama nomas vivo, mis hermanos menores todos están en santa cruz
+[R2]: ¿Cuántos hermanos tienes?
+[RMA]: nosotros somos ocho hermanos
+[R2]: ¿y tú papa?
+[RMA]: se murió a sus 56 años
+[R2]: ¿y tú eres el mayor o menor?
+[RMA]: soy el hermano mayor
+[R2]: entonces puro menores están en Santa Cruz
+[RMA]: puedo dejar aquí a mi mama sola, quien va sembrar y cosechar, nadie lo haría por eso no me fui
+[R2]: ¿y todo el tiempo estás aquí o vas a otros lugares a trabajar?
+[RMA]: si, no voy a otros lugares
+[R2]: ¿y tus terrenos por donde son?
+[RMA]: aquí afuera de mi casa nomas yo siembro
+[R2]: ya otros van a otros lugares como a los montes
+[RMA]: si, de aquí nosotros no vamos al monte, en la casa nomas paramos, pero yo tengo allá arriba papa y voy a veces
+[R2]: ¿entonces está bien funcionando no?
+[RMA]: si funciona bien, no se arruino nada
+[R2]: ya don Remigio, todo está bien gracias
+[RMA]: aquí hay una casa ahí pueden ir a ver.
+[R2]: si vamos air ahí ¿quién vive ahí?
+[RMA]: doña Celestina vive, ella mas bien maneja el panel, arriba tiene una casa
+[R2]: entonces está bien don Remigio
+[R1]: ¿cada que tiempo lo limpias el panel?
+[RMA]: cada mes lo limpiamos
+[R2]: ya don Remigio está bien, cuídate
+[RMA]: ya, ya
+[R3]: gracias
+[R2]: hasta al año don Remigio
+[RMA]: ya chau

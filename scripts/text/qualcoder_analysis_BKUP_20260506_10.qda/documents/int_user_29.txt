@@ -1,0 +1,112 @@
+user_ID: 29
+name: Isabel Zurita de Vallejos
+interviewee: Teófilo Vallejos
+gender: Male
+community: Ichuqata
+date: 24/02/2026
+category: user
+interviewer: Marisol, Claudia
+Nota: Se encontraban solo sus familiares. Tenían dos paneles en la casa.
+
+R1: Dice que uno de ellos era de su madre y uno de ellos de su hija, y que uno de ellos se arruinó 
+R3: Tu mamá es Doña Adriana o doña Isabel, ah ya ¿Doña Adriana vive por aquí también? 
+R1: ¿A quién encuestamos entonces? 
+R3: A el
+R1: ¿Cómo te llamas? 
+RMA: Teófilo Vallejos
+R1: ¿Qué trabajos realizan, solo agricultura verdad? o que más?
+RMA: Sí generalmente trabajamos en la agricultura 
+R1: ¿Cuántos viven aquí?
+RFA: Vivimos siete 
+R1: ¿Cuántos niños hay o cuantos hijos tienen?
+RFA: Solo tengo dos hijos, el resto es de mi madre, también tenemos sobrinos 
+R1: ¿Están en el colegio?
+RFA: Si 2 niños están en la escuela 
+R1: Ah entonces dos están en la escuela ¿más o menos estuvieran entre 6 a 7 años, algo así?, 
+RFA: Si
+R1: Sí en total son siete entonces ¿si van a la escuela ellos para hacer sus tareas ¿en qué horarios lo hacen?
+RFA: Generalmente por las noches 
+R1: ¿Creen que la luz les abastece? 
+RMA: Sí, aunque a veces no es lo suficiente, cuando se nubla especialmente no nos brinda el alumbramiento o hay lluvia  
+R1: ¿Para su sustento qué se dedican en el día, así como por ejemplo trabajar en agricultura y qué más más o menos hacen? 
+RMA: Solo trabajamos en el campo y para nuestro sustento somos dependientes de la agricultura sembramos y cosechamos a veces papa, maíz, trigo 
+R1: ¿Cómo utilizan la luz?, por ejemplo, los que están estudiando ellos utilizan para hacer sus tareas y ¿ustedes? 
+RMA: Utilizamos para hacer cargar celular 
+R1: ¿A veces hacen cargar también la radio? 
+RMA: No no hacemos cargar radio 
+R1: ¿Antes que haya el panel ustedes utilizaban vela o algo? 
+RMA: Sí, nosotros hemos utilizado vela y también ese que se parece a la linterna lo llamamos pico o piquito
+R1: ¿Desde que ha habido el panel solar aun lo utilizan vela o el piquito? 
+RMA: Vemos que ya no es necesario usar vela, pero si el piquito cuando salimos al campo a veces o cuando quiera ir a algún lado por la noche
+R1: ¿Cuándo van a algún lugar por ejemplo a Rajay Pampa, en qué van quizás en bicicleta o en movilidad o caminando o quizás en moto?
+RMA: Nosotros tenemos una moto ahí vamos 
+R1: ¿Ah que lugares van generalmente?
+RMA: Nosotros vamos generalmente a Rajay Pampa 
+R1: ¿En qué horario se levantan o duermen para utilizarlos la luz?, ¿también más o menos queremos saber sobre el alumbramiento si en la mañana lo prenden o en la noche?, ¿también más o menos cuánto tiempo en el día o en la noche?
+RMA: Usamos frecuentemente en las noches aproximadamente hasta las 10 de la noche y muy pocas veces por las mañanas
+R1: Si comprendo, ¿y de tu familia alguien se fue a vivir algún otro lado? quizás por ejemplo a Cochabamba o quizás a Chapare?
+RMA: No solo va mi hermano 
+R1: ¿Cuándo va qué tiempo más o menos se ausenta quizás un mes o dos meses o tres? 
+RMA: Depende a veces dos meses, después vuelve a llegar 
+R1: ¿El ingreso que perciben es de la agricultura o quizás ayudando en un jornal o vendiendo algún animalito? 
+RMA: Nosotros generalmente trabajamos en la agricultura de forma familiar para nuestro sustento los ingresos no podemos estimar con exactitud porque a veces la producción también no nos da un buen rendimiento y depende mucho y es muy variado según las épocas y es por eso que no le puedo dar un dato exacto porque nosotros no somos como esas personas que trabajan y reciben su sueldo al mes únicamente es para nuestro sustento
+R1: ¿Para el alumbramiento utilizan quizás la linterna? 
+RMA: Sí, nosotros generalmente usamos la luz en casa y para ir a terminar trabajo de campo a veces utilizamos linterna 
+R1: ¿Qué es lo que hacen cargar?
+RMA: Hacemos cargar un celular 
+R1: ¿Les parece bueno, malo o regular el panel solar? 
+RMA: Es bueno caso contrario no pudiésemos gozar ni cargar un celular y no tendríamos para informarnos o comunicarnos. 
+R1: Bien ¿este celular cuánto tiempo más o menos lo tienen?
+RMA: Lo tenemos aproximadamente un año 
+R1: ¿Cuánto tiempo más o menos hacen cargar su celular? 
+RMA: Cuando es necesario siempre hacemos cargar dependiendo a veces 4 horas tarda mucho en cargar, por eso creo que depende del tipo de celular y puede ser también por el tema del cargador ya que el panel solar solo se activa para cargar a través de la radiación solar 
+R1: ¿Cuántas veces hacen cargar su celular en el día? 
+RMA: Depende a veces una vez o dos veces 
+R1: ¿Les resulta bien este panel solar? 
+RMA: Sí está bien 
+R1: ¿Compraron algo para cargar algún equipo o algo así o quizás desearían comprar una radio o licuadora? 
+RMA: No sé algo quizás podría ser, pero creo que no es tan necesario ya que no contamos con carga ligera o precisa 
+R1: ¿Aquí nomás ustedes utilizan el sistema solar o no trajinan a otro lado?
+RMA: Nosotros no lo trajimos solo está aquí 
+R1: ¿Qué es lo que más valoran de este sistema solar?
+RMA: Solo el alumbramiento y lo que carga 
+R1: ¿Creen que es muy limitado este panel solar con esas condiciones que les está brindando? 
+RMA: Si yo pienso que sí 
+R1: ¿Ese panel solar referente a su alumbramiento y carga es bueno, malo o regular 
+RMA: Está bueno
+R1: ¿Su batería se termina se agota? 
+RMA: Sí generalmente cuando llueve a veces se paga algo así más o menos 
+R1: ¿Cuántas veces se apagó?
+RMA: Hasta ahora tres veces ya se apagó por sí mismo a veces semanas también se demora en recuperarse 
+R1: ¿En ese caso qué es lo que hacen?
+RMA: A veces usamos linterna 
+R1: ¿De ese sistema solar tú conoces muy bien el mantenimiento lo puedes manejar muy bien? 
+RMA: Más o menos 
+R1: ¿Esa instalación fue bueno o tal vez es dificultoso?
+RMA: Ninguno, pero lo que nos preocupa es que cuando llueve no podemos contar con luz 
+R1: ¿El mantenimiento crees que es fácil o quizás es un poco difícil?
+RMA: Yo no sé muy bien por lo tanto no lo toco mucho en lo que colocaron ahí nomás está lo único es que a veces no tiene buen funcionamiento ya que son muy frecuentes no funciona muy bien y eso no es muy bueno para nosotros, pero aun así está bien
+R1: ¿Para ustedes les parece bien? 
+RMA: Sí está bien nomás 
+R1: ¿Ya sé que hay panel solar ha habido un mejoramiento?
+RMA: Si debido que tenemos el alumbrado es muy bueno y nos ayuda siempre para hacer cargar celular, aunque quisiéramos que nos ayude mucho más 
+R1: ¿Cuando tienen alguna actividad bajo la luz lo hacen? 
+RMA: Nosotros quisiéramos que realmente haya luz aquí en el campo, para hacer alguna actividad realmente muy poco hacemos alguna actividad
+R1: ¿Están de acuerdo con la luz solar?
+RMA: Si estamos de acuerdo de lo que hay ya que nos es de mucha ayuda el alumbramiento, aunque estos últimos tiempos se ha estado apagando 
+R1: ¿Qué es lo que más les gustaría del panel solar? 
+RMA: Quisiéramos que se mejore quisiéramos tener más panel solar o que llegue la luz
+R1: ¿Cocinan en fogón o gas? 
+RMA: Generalmente en el campo nosotros cocinamos en el fogón siempre con leña 
+R1: ¿Qué es lo que más consumen para su alimentación?
+RMA: Maíz, trigo, papá, haba 
+R1: ¿En el día cocinan dos veces tres veces? 
+RMA: Generalmente dos veces en la mañana y en la tarde 
+R1: Muchas gracias por sus respuestas, eso es todo lo que nosotros podemos preguntar para ver algunas opciones de mejora, hemos concluido
+R3: ¿En el día o en la noche tanto varón como mujer utilizan la luz para diferentes actividades?
+RMA: Como ya les mencioné bueno para hacer sus tareas generalmente se necesita y para cargar celular
+R3: ¿Quien vive Doña Adriana verdad? M
+RFA: Si
+R1: Muchas gracias ahora ha llegado el tiempo de irnos
+RMA: Si está bien
+R3: Muchas gracias hasta luego

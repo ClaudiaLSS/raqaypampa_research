@@ -1,0 +1,54 @@
+user_ID: 52
+name: Santos Zurita
+interviewee: Santos Zurita
+gender: Male
+community: Tetilla
+date: 26/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R3: Buenos días, estamos viniendo de parte de la universidad para ver el estado de los paneles solares 
+R1: Buenos días ¿Cuál es tu nombre?
+RMA: Buenos días mi nombre es Santos Zurita 
+R1: ¿El panel solar le dio alguna dificultad, el alumbrado está bien? 
+RMA: Sí está muy bien el alumbrado respecto al panel está bien también
+R1: ¿La radio tiene un buen funcionamiento?
+RMA: La radio no funciona muy bien no sale nada nítido la sintonía así es como está la situación de la radio 
+R1: Lo que más hacen cargar es el ¿celular? 
+RMA: Si de hecho estoy haciendo cargar 
+R1: En cuánto tiempo más o menos ¿carga? 
+RMA: Casi en todo el día carga 
+R1: Los focos les ¿abastece? 
+RMA: Sí solo que un cuarto ya no lo ocupo mucho y un cuarto nomás así que un foco nomás está por el momento activo 
+R1: ¿y en qué horarios más o menos utiliza el alumbrado? 
+RMA: En la madrugada y en la noche estamos usando nomás a veces también lo hago amanecer 
+R1: ¿Cuántos viven aquí? 
+RMA: Ah yo solo vivo 
+R1: ¿La luz utiliza para algún otro trabajo? 
+RMA: No solo utilizamos para alumbrarme 
+R1: ¿Cómo haces para sustentarte tienes algún animal o algo o solo trabaja en la agricultura?
+RMA: Yo no tengo ningún animal solamente trabajo en la agricultura nada más cosecho papá maíz eso es lo que más cultivo a veces suelo vender maíz para sustentarme 
+R1: ¿Y vendiendo generas un recurso económico para ahorrar? 
+RMA: No no se gana mucho solamente veces a algún lado voy me gano como jornalero con eso me compro alguna cosa que me falta para mi alimentación así cuando yo vendo maíz por generalmente la producción no hay buen rendimiento económico 
+R1: ¿Cuándo vas a comprar algo en que van en auto en bicicleta en moto? 
+RMA: Yo generalmente solo camino a pie 
+R1: ¿Entonces van a pie lejitos 
+RMA: Sí estoy acostumbrada a caminar a pie 
+R1: ¿Usted apaga la luz?
+RMA: Como le decía yo toda la noche utilizo a veces lo apago
+R1: ¿Usted se cocina siempre en fogón o gas también?
+RMA: Yo siempre cocino en un fogón con leña 
+R1: ¿El panel lo trajines a algún lado? 
+RMA: No, está constantemente aquí 
+R1: ¿Para mantener el panel lo limpias o algo? 
+RMA: Yo pienso que la lluvia nomás tiene que lavarlo muy poco lo limpio
+R3: Sí así tiene que limpiarlo cuando se empolva o algo es mejor que usted lo limpie con un trapo limpio y así en caso de que empolve mucho por favor le vas a ir limpiando con un trapo 
+RMA: Sí está bien 
+R3: Así también podrás optimizar la carga 
+R1: ¿Usted no se traslada a algún lado por ejemplo algunos fueron a Chile o algún familiar?
+RMA: Yo vivo aquí permanentemente no voy a veces cuando voy a ayudar a mis vecinos, a mi familia es por aquí cerca de una semana llego, pero no viajo a ningún lado 
+R1: Aquí hemos concluido con toda las preguntas y gracias por recibirnos 
+R3: Si muchas gracias hasta otro momento 
+RMA: Muchas gracias sí hasta luego
+

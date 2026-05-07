@@ -1,0 +1,23 @@
+user_ID: 13
+name: Bonifacio Molina
+gender: Male
+community: Ichuqata
+date: 21/11/2023
+category: user
+interviewer: Virginia
+
+
+[R1]: Buenas tardes, ¿Cuál es tu nombre? 
+[RMA]: Mi nombre es Bonifacio Molina Pardo 
+[R1]: ¿Bueno, como esta esté SHS para ti? 
+[RMA]: Este sistema está en buenas condiciones, excepto por la radio, cuyo sonido no reproduce desde que me la entregaron. Quisiera que me la cambien por otra radio. Me gustaría que no nos engañen, ya que invertimos el dinero solicitado, y parece que la radio está ahí en vano. Sin embargo, la iluminación LED está bien y nos beneficia mucho.
+[R1]: ¿Eso no más son las fallas? ¿El celular carga bien?
+[RMA]: El celular esta cargando bien, no está fallando, Ha pasado más de un año y todo sigue estable en la carga de celular.
+[R1]: ¿Este sistema solar o panel solar para ti es bueno o no es bueno? 
+[RMA]: A mí me gusta, es bueno la ayuda que hubo, antes solo teníamos mechero que tenía desprendía mucho humo, también lo usábamos para hacer las tareas de la escuela, desde eso nos enfermamos porque es mucho humo, pero mucho más antes cuando nuestro abuelos vivían usaban wira  pero yo no conocí mucho de eso, después hubo el querosén, el mechero y vela, ese humo creo que nos afectó, porque sentíamos que nos ponía mal, ahora esta ayuda del panel solar realmente me gusta, ahora no existe el mechero ni querosén.
+[R1]: ¿Solo la radio falla verdad?
+[RMA]: Si solo la radio esta fallando 
+[R1]: Esta bien nosotros eso vamos a informar
+[RMA]: Ya, pero yo quisiera que me cambien la radio, no quiero ser engañado. 
+[R1]: Esta bien, gracias 
+[RMA]:  A ustedes las gracias.

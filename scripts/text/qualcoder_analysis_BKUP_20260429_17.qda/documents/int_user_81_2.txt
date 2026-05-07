@@ -1,0 +1,45 @@
+user_ID: 81
+name: Moises Acosta
+interviewee: Moises Acosta y Genara Flores
+gender: Female
+community: Molle Orcko
+date: 25/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+
+RFA: Está ahí adentro.
+R2: ¿Podemos ingresar?
+RFA: Sí, sí, por favor, ingrese. La radio ya no funciona; a ver si me lo revisan.
+R2: A ver, veamos la luz. Este de aquí... ¿Hay dos focos?
+RFA: Sí.
+R1: ¿Cuántos hijos tienes?
+RFA: Somos en total 12.
+R1: ¿Cuántos están en la escuela?
+RFA: Dos. Esos son pequeños todavía. Mis hijos mayores están en el Chapare; aquí estamos casi todos juntos: tres mujeres y tres varones.
+R1: ¿Cuáles son sus ocupaciones?
+RFA: El trabajo en la agricultura y crianza de animales; nuestros hijos nos ayudan también. Hay 15 ganados que tenemos solamente para arar, porque es muy trabajoso cuidarlos y sostenerlos con el alimento. La radio se malogró; acabo de comprarme una radio con 200 bolivianos, ya que necesito informarme y poder escuchar, es buena compañía también.
+R1: Sí, qué bueno. ¿Qué frecuencia escuchan?
+RFA: La frecuencia de Raqaypampa y de Mizque.
+R1: ¿Tiene celular?
+RFA: Sí, ahí.
+R1: ¿Hace cargar?
+RFA: Sí, a veces en el día hago cargar, a veces en la noche, entre 4 o 6 horas.
+R1: ¿Van a comprar a algún lugar? ¿En qué van: en bicicleta, moto o bus?
+RFA: Lo que nos hace falta, cuando sea necesario algo, generalmente nosotros vamos a pie. Es que aquí no puede ingresar ningún móvil; no conocen bien, a veces, el camino y cuando llueve es resbaloso también. Nosotros generalmente andamos bastante.
+R1: ¿En cuánto tiempo llegan a Raqaypampa?
+RFA: 4 horas.
+R1: ¿Su alimentación la cocinan en fogón con leña o con gas?
+RFA: A leña con más frecuencia.
+R1: ¿Aquí hacen algún tejido o algún trabajo?
+RFA: Sí.
+R1: ¿Vendes tus tejidos?
+RFA: No, no vendemos.
+R1: ¿Y utilizas la luz para hacer esta actividad?
+RFA: No, generalmente en el día tejemos; no es tan fácil el tejido.
+R1: ¿Qué es lo que más cosechan?
+RFA: Trigo, maíz, papa, haba. Es trabajosa la agricultura, ya que el agua también la traemos cargando. En esta época de lluvia hay bastante agua; es trabajoso vivir aquí.
+R3: Doña Genara Flores García, Don Moisés.
+R1: Hasta otro día, que estén bien. Nos despedimos.
+R3: Sí, hasta otro momento.
+RFA: Sí, está bien, gracias. La radio se la van a llevar... ¿nos la van a cambiar? No creo, ¿verdad?.
+R2: No.

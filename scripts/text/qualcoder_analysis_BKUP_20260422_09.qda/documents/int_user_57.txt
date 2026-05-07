@@ -1,0 +1,92 @@
+user_ID: 57
+name: German Calderon
+interviewee: Benedicta, esposa de Don Germán
+gender: Female
+community: Ichuqata
+date: 25/03/2026
+category: user
+interviewer: Mariela, José, Claudia
+Nota: Encontramos a la señora pasteando los animales
+
+R3: Buenas tardes ¿Cómo están todos? 
+R2: Estamos viniendo de parte de la universidad para revisar los paneles solares 
+RFA: Así buenas tardes 
+R1: ¿cómo se llama usted?
+RFA: No es mío es de mi esposo, de Germán Calderón 
+R1: esos paneles solares ¿está funcionando bien?
+RFA: Sí es solo que la anterior vez estaba como que se malograba me parece y después estaba normal también 
+R1: y tienen ¿radio? 
+RFA: No, no tenemos 
+R1: ¿Tiene celular y hace cargar? 
+RFA: No, no tenemos celular en casa de mi esposo si hay un celular pequeñito 
+R1: Entonces eso deben hacer cargar ¿verdad? 
+RFA: Si hacemos cargar 
+R1: ¿Cuántos focos tienen en casa?
+RFA: Nosotros, Aunque tenemos dos solo uno ocupamos 
+R1: ¿y cuántos viven en su casa? 
+RFA: Solo estamos los dos todos mis hijos se fueron 
+R2:  Buenas tardes cómo están ¿Están bien no más? 
+RFA: Estamos bien sí 
+R2: ¿Había habido tantas ovejas? 
+RFA: Sí 
+R2: ¿Nos puedes vender uno? ¿A cuánto cuesta?
+RFA: No sé muy bien cuánto cuesta yo no vendo mucho la vez anterior he vendido una oveja a 400 bolivianos 
+R1: ¿Desde qué horario encienden la luz o en qué horarios?
+RFA: a nosotros en la mañana desde la madrugada y en la noche desde las 7 desde la noche algo así hasta las 9 luego dormimos le apagamos antes de dormir 
+R1: ¿y por la madrugada cuánto tiempo ocupan más o menos la luz?
+RFA: Aproximadamente de 6 a 7 a.m a veces usamos estando mayores ya tenemos flojera algo así entonces casi no ocupamos en las madrugadas 
+R1: Entonces solo en las noches ocupan y por las noches usted ¿realiza tejido? 
+RFA: No nuestras vistas ya no ve tan claro 
+R1: Ese panel solar para ustedes ¿está bien o quisieran algo más grande?
+RFA:  Quisiéramos tener uno más grande así para cargar celular o cuando llegue mis hijos también puedan hacer cargar sus celulares 
+R1: Ah entonces te vienen a visitar también ¿tus nietos tus hijos? 
+RFA: Si vienen no ha estado lloviendo este tiempo por esa situación no han estado llegando todavía
+R1: Hemos estado buscando y allá hemos gritado por su nombre “Don Germán…” 
+RFA: ¿Así y cómo saben su nombre o quien les aviso?
+R2: Es que tenemos en los registros a quienes tenemos que visitar para revisar los paneles sola 
+R3: No conocemos muy bien, pero sabemos los nombres 
+RFA: ¿Ah entonces ustedes no saben venir aquí? Aún no han venido para ver cómo está el equipo
+R3: Venimos, pero no hemos abarcado toda la anterior vez 
+RFA: Ah sí aquí no nos visitaron ni una vez es la primera vez que nos visitan para revisar los paneles o arreglarlos este panel solar solo hay momentos en los que está en buen funcionamiento y otros momentos no funciona muy bien lo pueden arreglar 
+R1: ¿También tienen ovejas o ganado? 
+RFA: Hay algunos ganados que tenemos están abajo 
+R1: y alguna vez ustedes ¿venden sus ganados? 
+RFA: Si alguna vez pero generalmente es para nuestro consumo tengo muchos hijos 
+R1: ¿Y cuántos hijos tienes? ¿Son como 10 hijos que tiene?
+RFA: No tengo ocho hijos son varios 
+R2: Hoy en día solo algunos tienen un hijo dos hijos, pero ocho ya no quieren tener hoy en día
+RFA: Podrían tener muchos hijos yo creo es solo que en este tiempo con inyecciones y todo método de control ya no tienen muchos hijos dicen ¿verdad? 
+R2: Sí, hoy en tiempo hay de todo ¿ustedes solo viven aquí o van a chapare? 
+RFA: No vamos a ningún lado nosotros vivimos aquí el problema mayor que tenemos es que hay bastantes escases de agua y sufrimos bastante, mis vecinos también tienen paneles solares escuché que ya no funciona ahí abajo 
+R2: Ya fuimos, pero no está nadie 
+RFA: Ah bueno, pero decían que ninguno había llegado para revisarlos 
+R1: Sí queríamos revisarlo, pero no hemos encontrado a nadie en su casa ¿ahora está bien ese panel solar para ustedes? 
+RFA: SI ahí abajo deben estar, claro que sí está bien antes nosotros teníamos que ocupar querosene es decir mechero para la luz 
+R2: ¿En Qué cocinas en un fogón a leña o en gas?
+RFA: Yo cocino en fogón 
+R2: Lo que cancelaste la contraparte del panel ¿está bien o tiene alguna dificultad sobre eso? 
+RFA: No no tengo ninguna está bien para mí en lugar de ir a comprar kerosene y estar usando mechero es mejor el panel solar
+R2: ¿Ustedes limpian el panel? Tienen que limpiar de arriba 
+RFA: Si comprendo entonces tenemos que limpiar
+R2: Qué bueno no hay que dejar que se descargue en su totalidad la batería 
+RFA: Sí 
+R2: Así así con el mantenimiento les va a durar más años la batería siempre debe cargar 
+R1: ¿Cuántas veces al año vienen tus hijos?
+RFA: Siempre vienen por turnos uno y el otro viene siempre, aqui de agua se sufre mucho a veces viene un auto y me estaban diciendo que me lo van a comprar de ahí o mejor me decían que van a comprar un tanque es Loma quizás por eso no pueden gestionar nuestros representantes como autoridades para para algún material de riego 
+R1: ¿Ustedes viven solo aquí o van a algún lado?
+RFA: Nosotros vivimos solo aquí 
+R1: ¿En caso de que pueda ser un panel grande para su abastecimiento desearían comprar algo más o usted puede querer una televisión por ejemplo?
+RFA: Quizá en caso de que pudiera abastecer y pueda ser más grande o amplio si quisiera, pero cuántos tendría que ver la parte económica también 
+R1: ¿Aquí hacen cargar la linterna?
+RFA: No generalmente hacemos cargar a través de la luz solar directo la linterna 
+R2: y la radio ¿está funcionando bien? 
+RFA: No funciona aquella radio es otra hace tiempo nosotros compramos, pero no no lo abastece para cargar no funciona por eso ahí nomás está 
+R1: Ya muchas gracias nos vamos a retirar 
+R3: Sí está bien 
+RFA: Usted ¿Cómo te llamas? 
+R1: Mi nombre es Mariela es muy parecido a mi nieta eres en un momento pensé que mi nieta llego
+R2: ¿Cómo te llamas?
+RFA: Doña Benedicta 
+R3: Doña Benedicta esposa de Don Germán 
+R2: Se van a cuidar van a estar muy bien nomás ya nos vamos
+RFA: Si hasta luego, muchas gracias

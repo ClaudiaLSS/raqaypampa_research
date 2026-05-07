@@ -1,0 +1,144 @@
+user_ID: 76
+name: Florencio Rivera
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[R2]: Cuatro mujeres y un hombre
+[RFA]: si
+[R2]: ¿y vienen a visitarles?
+[RFA]: sí vienen a visitar de vez en cuando
+[R1]: ah ya ¿desde qué hora hacen alumbrar esto?
+[RFA]: desde las 7 de la noche hasta las 9 o 10 de la noche hasta ahí nomás
+[R2]: ¿y tus hijos sus tareas no hacen en la noche?
+[RFA]: si hacen, pero solo demora media hora nada más
+[RFA]: No, lo cuidamos mucho porque nos costó dinero
+[R1]: ah ya, pero ¿funciona bien no les hace renegar nada?
+[R2]: ¿Quién es el que utiliza más el panel tú o tu esposo o tus hijos?
+[RFA]: todos utilizamos
+[R2]: ¿quién es el que más se encarga en supervisar el panel en mirar, si está bien?
+[RFA]: yo nomás pues, pero también mi esposo los dos
+[R1]: ¿cada que tiempo limpian el panel?
+[RFY]: cada semana lo limpiamos siempre
+[RFA]: sí cada vez limpiamos y cuidamos cada semana casi, porque ustedes igual no pueden venir seguido
+[R2]: si más adelante logran tener un panel grande más grande, ¿cuál sería el uso que ustedes le darían?
+[RFA]: para la televisión lo quisiera para ver
+[R1]: ¿en tiempo de frío hace mucho frío?
+[RFA]: sí grave frío hace
+[R2]: entonces quieren tener televisión, pero aquí no creo que entra la televisión por los cerros
+[RFA]: si pues es muy adentro, pero una de mis casas esta abajo, tengo dos casas.
+[R1]: ¿la radio como esta? ¿lo querremos revisar?
+[RFY]: más bien la radio estaba queriendo fallar no estaba funcionando bien suena medio raro
+[R2]: ¡wao! aquí hay muchos celulares cargando
+[RFA]: sí a veces mis hijos y mis nietos vienen a hacer cargar sus celulares aquí luego lo dejan, algunos celulares no dan.
+[R2]: para eso no más creo que trabajan ustedes, para comprarse
+[RFY]: uno de los celulares la pantalla está roto porque mucho lo hacen caer los niños, cuando lo hacen caer y se rompe la pantalla compran otro celular
+[R2]: ¿y de dónde sacan dinero pues?
+[RFA]: se trabajan y con eso compran
+[R2]: ah ya
+[R1]: en qué horario más o menos van a trabajar durante el día o solo aquí nomás paran
+[RFA]: desde las 9 de la mañana ya empieza a salir y regresamos como a las 3 o 4 de la tarde
+[R1]: dos veces al día cocinan
+[RFY]: dos, sí
+[R1]: ¿En la mañana al amanecer y cuando llegan en la tarde?
+[RFA]: sí
+[R1]: ¿y para tejer utilizan la luz?
+[RFY]: no durante el día tejemos no utilizamos la luz
+[R1]: esto es para ustedes o para vender
+[RFA]: No, es para la minca, es para ganarnos algo de dinero
+[R2]: ¿ella es tu nieta?
+[RFA]: no ella es mi hija es la mayor
+[R2]: más o menos ¿cuánto cuesta una frazada con este tejido?
+[RFA]: más o menos cuesta Bs. 200
+[R2]: ¿no me lo puedes hacer uno para mí?
+[R1]: ¿antes cuando no había panel con qué hacían iluminar?
+[RFA]: solo utilizábamos mechero o vela más pero ahora ya no compramos eso porque ya tenemos el panel y por eso lo cuidamos
+[R1]: entonces esto le sirve de mucho ¿haces algo para ahorrar la energía?
+[RFA]: sí cuando no estamos utilizando la pagamos para no malgastar la energía hasta a veces riño a mis hijos para que cuiden muy bien y no malgasten
+[R1]: es mejor cargar durante el día, en la noche no es favorable, podrías hacer cargar desde las 7 de la mañana hasta las 5 de la tarde, durante ese periodo.
+[RFA]: sí hago cargar durante el día también, cuando llueve pues no hago cargar
+[R1]: ah ya muy bien ¿lo utilizan sábado y domingo también?
+[RFA]: no solo hasta el día sábado el domingo hacemos descansar
+[R1]: ¿y esta radio conectando lo usan o conectan el cargador?
+[RFA]: a la esposa la radio lo utilizamos todos los días sin parar, ¿en qué tiempo van a volver?
+[R1]: al año vamos a volver, el mes de enero más o menos
+[RFA]: durante ese mes yo me voy a ir allá abajo a mi otra casa
+[R1]: ay ¿quién se queda aquí? ¿quién lo cuida? ¿o lo llevan?
+[RFA]: ah no, lo voy a guardar
+[R1]: Pero ¿dónde van a ir, no lo van a necesitar?
+[RFA]: no, porque allá igual tenemos otro, eso es lo que está aquí no lo movemos aquí nomás se queda
+[R1]: entonces está bien, ¿necesitan más focos?
+[RFA]: sí necesitamos más
+[R1]: si el ventilador funcionaria en este sistema ¿puedes usarlo?
+[RFA]: claro que lo puedo usar
+[R1]: ya te agradezco por la información, gracias
+[RFA]: Yaya
+[R2]: ellos vieron la modalidad de cuidarlo muy bien todo el sistema
+[R3]: si, está bien cuidado nomas, dicen que si no hay nadie no dejan la luz prendida, tampoco no cargan en la noche el celular porque está prohibido
+[R2]: sí, bien
+[R3]: si, bien cuidado esta
+[RFA]: si pues lo cuido siempre bien
+[R2]: bonito este hecho esto
+[RFY]: eso vale, porque compramos polvo para teñir, hilamos la lana, tejemos
+[R2]: ¿en la noche hacen?
+[RFY]: no, en la mañana nomas hilamos la lana
+[R2]: ¿y cuánto tiempo los lleva hacerlo?
+[RFY]: Empezamos el miércoles de la anterior semana ya llevamos una semana haciendo, lleva tiempo hacerlo
+[R2]: ¿fueron a bloquear?
+[RFY]: no, solo nuestros esposos
+[R2]: ¿cuál es su nombre don Florencio y su apellido cuál es?
+[RFY]: Rivera
+[R2]: ¿qué es lo que no está funcionando de esta radio?
+[RFY]: se apaga ahorita está hablando no ve cuando prendes, pero después se va a pagar
+[R2]: ¿cuánto tiempo carga su radio?
+[RFY]: nos han dicho que tenemos que hacer cargar una noche entera no más y por eso hago cargar una noche entera
+[R2]: ah ya entonces los hombres son los que más manejan la radio ustedes las mujeres no
+[RFA]: No nosotros no manejamos tanto, los hombres son los que más manejan
+[R1]: ahora no se está apagando
+[RFY]: sí a veces así bien da, pero a veces se apaga de repente la radio
+[R3]: La sintonía puede ser que este fallando
+[R2]: está funcionando bien nomás todos los equipos, pero tienen que saber que, usando se va a ir fregando de poco a poco no les va a durar para siempre.
+[RFY]: Si
+[RFA]: está bien
+[R2]: ya entonces vamos a ir a Don pascual y vamos a ver cómo está funcionando el panel de los demás, de ustedes está bien muy bien mantenido hicieron muy buen trabajo y así les va a durar mucho más tiempo el panel, a veces igual los hijos, el cable lo pellizca, juegan con él, eso se tienen que fijar bien
+[RFA]: sí no de nosotros no hacen eso
+[R2]: A veces los hijos igual tienen que hacer cargar su celular pues
+[RFY]: ah no de mí yo solo tengo un hijo y hace cargar, pero a veces nomás
+[R2]: ¿Y en qué curso está tu hijo?
+[RFA]: mi nieto está en sexto de primaria
+[R2]: ¿cómo se llama?
+[RFA]: su apodo es chinela (todos empiezan a reírse)
+[R2]: ah ya entonces nos vemos, pero ya está llegando tu esposo no vamos a hablar un rato con tu esposo
+[RFA]: ya
+[RMA]: buenas tardes
+[R1]: buenas tardes
+[R2]: ¿creo que estas cansado, estás llegando de trabajar no?
+[RMA]: sí estoy llegando de trabajar,
+[R2]: hemos venido de la universidad para hablar cómo están funcionando el panel, sí está muy bien mantenido como está bien les va a durar varios años nomás, pero si en caso de que llegara no a funcionar pues se tendrían que comprar otro panel más.
+[RMA]: ah si si
+[R2]: si estuvimos viendo alguno lo manejan, como don Guillermo
+[RMA]: ah, si nosotros igual a veces lo manejamos
+[R2]: ¿durante qué mes sabe manejar o cuántos meses?
+[RMA]: ahorita estamos en el mes de diciembre después vamos a llevar abajo hasta el mes de
+junio, después lo regresamos aquí, abajo para trabajar sirve pues
+[R2]: ¿entonces cuando llevan abajo le dan el mismo uso?
+[RMA]: sí le damos el mismo uso utilizamos radio, hacer cargar celular e iluminación también
+[R2]: ¿Don Florencio que tiempo mantienen la luz prendida?
+[RMA]: desde las 6 de la mañana hasta las 8 de la noche
+[R1]: ¿y en las mañanas de qué hora a qué hora encienden la luz?
+[RMA]:no hacemos alumbrar, lo único que utilizamos el celular. En la mañana solo utilizamos el celular, la radio y en la noche utilizamos celular radio y la luz los tres
+[R1]: hacer cargar el celular es recomendable solo durante el día la radio también, para que te dure más tiempo, porque si es en la noche solo la batería del panel lo va lo va a absorber
+[RMA]: ah ya
+[R2]: ya don Florencio entonces está bien
+[RMA]: ya, ¿cuándo van a volver?
+[R2]: al año nomás, volveremos para añadir un controlador donde nos va ayudar a monitorear el sistema, eso nos sirve para ver el estado del panel y nos va a decir igual si el panel va a durar mucho más tiempo
+[RMA]: claro está bien
+[R2]: ya Don Florencio está bien felicidades porque mantiene muy bien el panel y ¿qué siembras?
+[RMA]: yo siempre siembro trigo otras cosas más, pero depende si hay lluvia produce bien
+[R1]: ¿produce quinua?
+[RMA]: Si da la quinua aquí
+[R1]: Ya Don Florencio nos vamos a ir nosotros se van a cuidar ya
+[RMA]: ya está bien muchas gracias
+[R3]: ¡Gracias!

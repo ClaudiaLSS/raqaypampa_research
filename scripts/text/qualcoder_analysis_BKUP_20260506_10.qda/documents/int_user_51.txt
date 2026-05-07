@@ -1,0 +1,78 @@
+user_ID: 51
+name: Lucio Zurita
+interviewee: Lucio Zurita y Luis (suegro de don Lucio)
+gender: Male
+community: Tetilla
+date: 26/02/2026
+category: user
+interviewer: Marisol, José, Claudia
+Nota: 
+
+R2: Este es su casa de don Zenón ¿verdad? 
+Sí es ese 
+R2: Hemos venido a ver los paneles y a controlar también está bien ¿podemos ver y revisar? 
+Sí claro, sí pasen  
+R2: Gracias está aquí adentro ¿verdad? 
+Sí 
+R1: ¿Cuántos viven en esta casa? 
+RFA: Somos 9, mi madre, mi padre, yo tengo mi hijo y el resto son mis hermanos
+R1: ¿Cuántos están en el colegio? 
+RFA: Son dos los que están en la escuela
+R1: ¿Esté alumbrado es muy bueno? 
+RFA: Sí está bien a veces 
+R1: ¿No se apaga o se apaga? 
+RFA: Sí antes de ayer estaba nublado y se apagó no sé qué es lo que pasó precisamente, pero se apagó quizás porque se nubló bastante porque de repente se apagó como 10 a 20 minutos 
+R1: ¿Qué es lo que hacen cargar y cuantos focos usan en funcionamiento?
+RFA: Hacemos cargar radio no más como los que tenemos aquí dos celulares, pero no carga no levanta esas pequeñas celulares como dicen de LG eso sí carga, aquí solo los dos focos abastecen
+R1: Entonces solo la radio carga y ¿con este alumbrado hacen sus tareas o algún trabajo? 
+RFA: Sus tareas y algunos trabajos como tejer u otras lo realizamos en nuestra otra casa generalmente ahí hacemos nuestros trabajos y ahí nosotros no solo hacemos algunos trabajos ahí también vamos a hacer cargar nuestros celulares.
+ R1: Comprendo si ¿Cuándo cocinan usan gas o simplemente en fogón cocinan? 
+RFA: Aquí cocinamos constantemente en fogón cocinamos aquí para sustentar a veces dos o tres veces por día
+R1: ¿Para su sustento que trabajos realizan?
+RFA: Tenemos sembradíos, cosechas y cuidado de algunos animales
+R1: ¿Que sembradíos tienen aquí?
+RFA: Tenemos maíz y en mi otra casa ya hemos sembrado papá 
+R1: ¿Así cuando salen a comprarse algo a dónde van?
+RFA: Generalmente nosotros salimos a Rajay Pampa mis padres van los días jueves 
+R1: ¿Van para vender o para comprar algunas necesidades? 
+RFA: Solo van para comprar algunos abarrotes y algunas cosas que se necesita 
+R1: ¿y tienen animales que cuidar? 
+RFA: Si hay ovejas mi hermana fue a pastorear en mi caso mi niño está delicado de salud así que no fui mi bebé está enfermo y no sé qué hacer 
+R1: ¿y tienen al mes como cuanto perciben ganancia? 
+RFA: Muchas veces la producción es para nuestro sustento, y algunas veces vendemos oveja también para nuestro sustento así de percibir sueldo al mes fijo no lo tenemos estimado todo lo que tenemos o trabajamos es para nuestro sustento
+R1: ¿Los paneles solares lo limpian para mantenerlos? 
+RFA: Si lo limpiamos 
+R1: Buenos días ¿cómo están? 
+RFA: Bien estamos bien aquí 
+R3: ¿y aquí está contigo él es tu papá? 
+RFA: Es mi abuelito 
+R3: ¿Con este alumbrado ustedes hacen alguna actividad por ejemplo ese de tejer camas o algo así? 
+RFA: Como les esplique no aquí no hacemos ninguna actividad solo para prepararnos cena y comer y luego dormir lo usamos la radio hacemos cargar a veces, pero si en la otra casa donde hay luz ELFEC ahí nos vamos para hacer ahí también hacemos esos tejidos 
+R3: Ah esa luz que tienen es de ELFEC, entonces aquí los que viven son tus hermanitos y también tú tienes un hijito 
+RFA: Sí así es
+R3: Tus vecinos ¿tienen así paneles solares?
+RFA: Si tienen paneles solares más allá arribita y el otra allá abajo no sé si estuvieran ahí a veces se salen a pastorear sus animales desde temprano 
+R3: y de la luz de la otra casa que tienen ¿cuánto pagan al mes? 
+RFA: De la luz de mi otra casa no lo sé exacto mis padres saben ellos son los que pagan
+R1: De este panel solar qué es lo que más les gusta o piensa que es bueno
+RFA: Lo que nos brinda el alumbramiento nada más 
+R1: a comparación de la luz del panel solar ¿cuál ves lo más conveniente? 
+RFA: La luz el que es más conveniente para mí a lo que veo
+R2: ¿Cómo te llamas? 
+RMA: Luis ¿de dónde vino ella? 
+R3: De Bélgica vino para ver y también de parte de la universidad parte de su formación ¿El panel solar lo limpia?
+RMA: Don Lucio Zurita es el único que lo ve este panel para limpiarlo 
+R3: Don Lucio es tu yerno entonces ¿aquí dos focos no más abastecen? 
+RMA: Son solo dos focos sí han cambiado focos creo que cambiaron no no me doy cuenta 
+R1: ¿El panel solar lo trajinan a algún lado? 
+RMA: No, solo está aquí solo lo usamos para escucharlo la radio nada más 
+R1: ¿Aquí todo el año viven? 
+RMA: Si todo el año no vamos a ningún lado 
+R3: ¿Tus vecinos tienen paneles solares por aquí? 
+RMA: Sí tienen 
+R1: Aquí vienen a hacer cargar algo 
+RMA: No 
+R3: Hemos concluido es lo que queríamos preguntar muchas gracias nosotros vamos a ir retornando hasta otro momento 
+RMA: Sí muchas gracias 
+R3: Hasta otro momento 
+R2: Sí hasta otro momento muchas gracias
