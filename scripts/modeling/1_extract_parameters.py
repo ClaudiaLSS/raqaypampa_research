@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import json
 import argparse
 from pathlib import Path
@@ -85,12 +86,177 @@ def extract_parameters(filename):
             'LED_2_Prob': round((daily_all['p_led_2'] > 0.5).mean(), 2),
             'USB_Prob': round((daily_all['p_usb'] > 0.5).mean(), 2)
         }
+        
+        # 4. Calculate RAMP-specific parameters for each appliance
+        def calculate_ramp_params(power_series, col_name, daily_threshold=0.0):
+            """
+            Calculate RAMP parameters: num_windows, windows, func_time,
+            time_fraction_random_variability, random_var_w
+            
+            Args:
+                power_series: The power data series
+                col_name: Original column name in df (e.g., 'p_led_1')
+                daily_threshold: Threshold for active detection (0 = any power > 0)
+            """
+            # Add hour and minute to dataframe for this calculation
+            df_temp = pd.DataFrame({
+                'timestamp': df['timestamp'],
+                'date_only': df['date_only'],
+                'power': power_series,
+                'hour': df['timestamp'].dt.hour,
+                'minute': df['timestamp'].dt.minute
+            })
+            
+            # Find active periods (power > threshold)
+            df_temp['active'] = df_temp['power'] > daily_threshold
+            
+            # Calculate daily functioning time (minutes per day)
+            # Data is in 5-minute intervals, so multiply by 5
+            INTERVAL_MINUTES = 5
+            daily_minutes = []
+            for date in df_temp['date_only'].unique():
+                day_data = df_temp[df_temp['date_only'] == date]
+                if day_data['active'].any():
+                    # Count active 5-minute intervals and convert to actual minutes
+                    active_intervals = day_data['active'].sum()
+                    active_minutes = active_intervals * INTERVAL_MINUTES
+                    daily_minutes.append(active_minutes)
+            
+            daily_minutes = np.array(daily_minutes)
+            
+            # Average functioning time (in minutes per day)
+            func_time = round(daily_minutes.mean(), 1) if len(daily_minutes) > 0 else 0.0
+            
+            # Find shortest contiguous usage period to set as func_cycle
+            # This identifies the minimum duration the appliance stays on
+            usage_periods = []  # Will store duration of each contiguous "on" period
+            
+            for date in df_temp['date_only'].unique():
+                day_data = df_temp[df_temp['date_only'] == date]
+                day_active = day_data['active'].values
+                
+                # Find contiguous blocks of True values
+                if day_active.any():
+                    # Add a False at the start and end to simplify edge detection
+                    day_active_padded = np.concatenate(([False], day_active, [False]))
+                    changes = np.diff(day_active_padded.astype(int))
+                    
+                    # starts[i] is where a True block starts, ends[i] is where it ends
+                    starts = np.where(changes == 1)[0]
+                    ends = np.where(changes == -1)[0]
+                    
+                    # Duration of each contiguous period (in intervals, multiply by 5 min)
+                    for start, end in zip(starts, ends):
+                        period_duration = (end - start) * INTERVAL_MINUTES
+                        usage_periods.append(period_duration)
+            
+            # Find 5th percentile usage period as func_cycle (much smaller, more robust)
+            # This gives a realistic minimum usage duration while being very RAMP-compatible
+            if usage_periods:
+                func_cycle = np.percentile(usage_periods, 5)
+            else:
+                func_cycle = 5.0  # Default to 5 minutes if no data
+            
+            # Time fraction random variability (coefficient of variation)
+            if func_time > 0 and len(daily_minutes) > 1:
+                time_fraction_random_variability = round(daily_minutes.std() / daily_minutes.mean(), 2)
+            else:
+                time_fraction_random_variability = 0.0
+            
+            # Print daily usage breakdown for inspection
+            print(f"\n    Daily usage breakdown for {col_name}:")
+            print(f"      Mean: {func_time:.1f} min/day")
+            print(f"      Std Dev: {daily_minutes.std():.1f} min")
+            print(f"      Min: {daily_minutes.min():.1f} min")
+            print(f"      Max: {daily_minutes.max():.1f} min")
+            print(f"      Variability (CV): {time_fraction_random_variability:.2f}")
+            print(f"      Sample size: {len(daily_minutes)} days")
+            print(f"      5th percentile usage period (func_cycle): {func_cycle:.1f} min")
+            print(f"      Longest usage period: {max(usage_periods):.1f} min" if usage_periods else "      No usage periods found")
+            print(f"      Total usage periods detected: {len(usage_periods)}")
+            
+            # Show distribution in bins
+            if len(daily_minutes) > 0:
+                bins = [0, 30, 60, 120, 240, 480, 1440]
+                bin_labels = ['0-30', '30-60', '60-120', '120-240', '240-480', '480+']
+                hist, _ = np.histogram(daily_minutes, bins=bins)
+                print(f"      Distribution (minutes/day):")
+                for label, count in zip(bin_labels, hist):
+                    pct = 100 * count / len(daily_minutes)
+                    print(f"        {label:>8} min: {count:3d} days ({pct:5.1f}%)")
+            
+            # Detect usage windows from hourly probabilities
+            # A window is a contiguous set of hours where probability > 0.1
+            windows = []
+            in_window = False
+            window_start = None
+            
+            hour_probs = []
+            for hour in range(24):
+                # Use the original column name from df
+                hour_data = df[df['timestamp'].dt.hour == hour]
+                if len(hour_data) > 0:
+                    daily_hour = hour_data.groupby('date_only')[col_name].max()
+                    hour_prob = (daily_hour > daily_threshold).mean()
+                else:
+                    hour_prob = 0
+                hour_probs.append(hour_prob)
+            
+            for hour in range(24):
+                if hour_probs[hour] > 0.1:  # Threshold for window detection
+                    if not in_window:
+                        window_start = hour * 60  # Convert to minutes
+                        in_window = True
+                elif in_window:
+                    window_end = hour * 60  # End of previous hour
+                    windows.append([window_start, window_end])
+                    in_window = False
+            
+            # Close last window if still open
+            if in_window:
+                windows.append([window_start, 24 * 60])
+            
+            num_windows = len(windows)
+            
+            # Random variability in window size (std of window sizes / mean window size)
+            if num_windows > 0:
+                window_sizes = [w[1] - w[0] for w in windows]
+                if len(window_sizes) > 1 and sum(window_sizes) > 0:
+                    random_var_w = round(np.std(window_sizes) / np.mean(window_sizes), 2)
+                else:
+                    random_var_w = 0.0
+            else:
+                random_var_w = 0.0
+            
+            # Create RAMP-style window naming: window_1, window_2, etc.
+            ramp_result = {
+                'num_windows': num_windows if num_windows > 0 else 1,
+                'func_time': func_time,
+                'func_cycle': func_cycle,
+                'time_fraction_random_variability': time_fraction_random_variability,
+                'random_var_w': random_var_w
+            }
+            
+            # Add individual windows with RAMP naming convention
+            windows_to_add = windows if windows else [[0, 24*60]]
+            for idx, window in enumerate(windows_to_add, start=1):
+                ramp_result[f'window_{idx}'] = window
+            
+            return ramp_result
+        
+        # Calculate parameters for each appliance
+        ramp_params = {}
+        for appliance, col_name in [('LED_1', 'p_led_1'), 
+                                     ('LED_2', 'p_led_2'), 
+                                     ('USB', 'p_usb')]:
+            ramp_params[appliance] = calculate_ramp_params(df[col_name], col_name)
 
         params = {
             'hardware': hardware,
             'daily_event_probs': daily_event_probs,
             'hourly_probs': hourly_probs,
-            'peak_hours': peak_hours
+            'peak_hours': peak_hours,
+            'ramp_params': ramp_params
         }
         
         # Extract user ID from filename (e.g., "tpdin_user_74.csv" -> "74")
