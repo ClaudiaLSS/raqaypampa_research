@@ -115,6 +115,7 @@
             country={Bolivia}}
 
 \author[inst3]{Jaime Zambrana}
+\author[inst1]{José Espinoza}
 \author[inst1]{Sergio Balderrama}
 \author[inst2]{Silvain Quoilin}
 \begin{abstract}
@@ -147,19 +148,27 @@ Rural electrification \sep Solar Home Systems \sep Energy Culture \sep Developin
 \section{Introduction}
 \label{sec:sample1}
 
-\begin{itemize}
-    \item Set the scene: context and background (global energy use scenario, etc).
-    Energy use around the world keeps evolving in time as a product of a broad range of factors that involve external conditions, technological advancements and personal decisions. Naturally, this evolution is heterogeneous and highly dependent on contexts. As a result, the energy consumption disparities persist
-    \item Why to focus on energy use/energy behavior? Rural communities! Justify it
-    Focus on energy demand drivers and evolution remains a crucial topic, specially if we think about the societal groups that fall out of the common energy consumption patterns. These can be rural settlements with different cultural backgrounds
-    \item Literature review as a narrative of existing knowledge on energy behavior and energy culture.
-    \item Identify the Gap
-    Lack of social and human dimension?
-    Interdisciplinary approaches
-    Methodological challenges
-    Using of sensors on research demonstrated bias ob self-reported energy use, with bigger gaps in specific situations, however, they are not enough by themselves when trying to understand behavior dynamics, they are a complement for surveys \cite{rom_using_2020}.
-\subsection{Study Objectives and Structure}
+\subsection{The global context}
+Set the scene: context and background (global energy use scenario, etc).
+Energy use around the world keeps evolving in time as a product of a broad range of factors that involve external conditions, technological advancements and personal decisions. Naturally, this evolution is heterogeneous and highly dependent on contexts. As a result, the energy consumption disparities persist
+
+\subsection{The Techno-Social Gap}
+Engineers rely on generic stochastic models; social scientists explain why energy is used, but rarely mathematically parameterize it.
+Use literature to prove that standard engineering models are failing.
+What you cite here: Papers about Solar Home System (SHS) sizing, standard stochastic modeling (like standard RAMP papers), and articles discussing the high failure rate of off-grid systems.
+The Goal: You aren't just summarizing these papers; you are using them to say, "Look at all these brilliant engineers who built models, but their models still have high uncertainty because they ignored human culture."
+Lack of social and human dimension?
+Interdisciplinary approaches
+Methodological challenges
+Using of sensors on research demonstrated bias ob self-reported energy use, with bigger gaps in specific situations, however, they are not enough by themselves when trying to understand behavior dynamics, they are a complement for surveys \cite{rom_using_2020}.
+Explain that engineers rely on generic stochastic models that assume uniform, Western behaviors. Conversely, social scientists explain why energy is used, but rarely translate those insights into mathematical parameters engineers can use.
+
+\subsection{The problem}
+Standard, culture-blind stochastic modeling creates the "Pancake Effect" (averaging out realistic peaks).
+
+\subsection{Study Objectives and Paper Structure}
 \label{sec:objectives}
+Explicitly state the goal to operationalize indigenous knowledge to fix simulation parameters, followed by a brief roadmap of the paper's sections.
 
     \item Research question and objectives
     
@@ -167,7 +176,7 @@ Rural electrification \sep Solar Home Systems \sep Energy Culture \sep Developin
     Option 2: How do socio-economic conditions, cultural norms, and material realities shape energy behavior in an indigenous territory, and how can these insights be operationalized to support bottom-up energy demand modeling for inclusive electrification planning?
     
     The aim of this paper is to investigate how socioeconomic conditions, cultural norms, energy practices, and material factors shape energy behavior in rural communities. By exploring these dynamics, the study seeks to generate insights that can enhance the modeling of energy demand, ultimately contributing to the development of sustainable and context-sensitive energy solutions. A case study in Raqaypampa, Bolivia is considered.
-    
+        \item The Proposed Solution: Introduce your novel mixed-methods pipeline. State clearly that you are operationalizing indigenous Quechua knowledge into hard algorithmic boundary conditions (RAMP) to eliminate demand uncertainty
     \item Brief description of the Approach and methodology
     \item Contributions and significance
     
@@ -192,12 +201,24 @@ Rural electrification \sep Solar Home Systems \sep Energy Culture \sep Developin
     The study operationalizes qualitative and behavioral insights into the RAMP bottom-up model, illustrating how demand modeling can be made more context-sensitive. This contributes to the development of energy models that support sufficiency-oriented and culturally grounded rural electrification planning.
     \end{itemize}
 
-\end{itemize}
 
-\section{Methods}
+\section{Theoretical Framework}
+\begin{itemize}
+
+\subsection{The energy cultures framework} 
+(Briefly explain how material culture, norms, and practices interact in Raqaypampa (referencing your uploaded PDF presentation)
+\subsection{The "Say-Do" Gap} 
+Acknowledge the difference between self-reported behavior and empirical reality, justifying why you need both interviews and dataloggers.
+\subsection{Conceptualizing "Virtual Appliances"}
+Define this novel methodological concept. Explain that a physical device (e.g., a 3W LED) is actually multiple Virtual Appliances (e.g., "Morning Prep Light" vs. "Evening Cooking Light"), each governed by totally different sociological probabilities.
+\end{itemize}
+Use literature to justify your mixed-methods approach. What you cite here: Papers by sociologists and anthropologists. You will cite Stephenson et al. for the Energy Cultures Framework, and you will cite mixed-methods researchers who discuss the "Say-Do" Gap (the dissonance between surveys and reality).
+The Goal: You are using this literature to prove to the engineers reading your paper that qualitative anthropology is a valid, rigorous science that can solve their modeling problems.
+
+
+\section{Methodology}
 \label{sec:methodology} 
-\subsection{Research Design}
-\label{sec:research_design}
+
 According to \cite{zou_mixed_2018}, studies addressing building occupant energy behavior use mainly quantitative methods. However, while these methods hold a solid background, it has been demonstrated that qualitative approaches are needed to understand better social phenomena involving people energy behavior. To address this gap, several studies explored the use of mixed-methods in the context of energy, from technology adoption \cite{university_of_augsburg_adoption_2019, palm_peer_2017} to understand energy practices \cite{rosenberg_evidence_2019, guerra-santin_mixed_2016, wolff_tackling_2017}. Mixed methods involves the use of qualitative and quantitative data, from rigorous collection procedures and analysis, to creative forms of integrating them \cite{creswell_research_nodate}. 
 
 A pragmatic worldview is adopted for this work, under the method of a Case Study. The framework of the Energy Cultures proposed by Stephenson et al. \cite{stephenson_energy_2010} is used. Due to the nature of the dimensions of this framework previously explained, the choice of a mixed methods research design is strongly justified. Table \ref{tab:variables} shows the operationalization of each \ac{EC} dimension. Figure \ref{fig:methods} shows the methods flowchart.
@@ -282,7 +303,7 @@ A pragmatic worldview is adopted for this work, under the method of a Case Study
 \label{tab:variables}
 \end{table}
 
-\subsection{Case Study: An Indigenous Originary Peasant Territory}
+\subsection{Study Area: An Indigenous Originary Peasant Territory}
 \label{sec:case_study}
 
 The study area is located within the Indigenous Originary Peasant Autonomous Territory (TIOC) of Raqaypampa in Bolivia, inhabited by Quechua communities. Officially recognized as the first TIOC in the country on July 12, 2016, Raqaypampa marked a milestone in indigenous self-determination. Its Autonomy Statute was approved by referendum in November 2016, with over 91\% voter support, followed by the first elections of autonomous authorities in June 2017. Grounded in ancestral values and the principle of Sumaq Kawsay (Living Well), the territory is governed through holistic, culturally rooted practices aimed at managing the land in harmony with Pachamama (Mother Earth). Today, Raqaypampa serves as a national reference for community-led governance. The territory encompasses 43 communities across approximately 556 square kilometers, with elevations ranging from 1,600 to 3,300 meters above sea level (See Figure \ref{fig:raq_map}) \cite{oep_estatuto_2016, plan de gestion territorial}. Between 2001 and 2012, the territory experienced a significant population decline, dropping from approximately 10,230 to 7,340 inhabitants. This decrease was largely attributed to permanent migration driven by economic hardship and the absence of basic services. However, according to the most recent national census conducted in 2024, the population has increased slightly, reaching 8,007 inhabitants. The territory’s main economic activities revolve around small-scale agriculture and livestock farming, primarily for household consumption, with surplus production sold in local markets. Key crops include potatoes, maize, wheat, and a variety of vegetables. Livestock such as cattle, goats, and sheep are raised for milk, meat, and wool, contributing both to family subsistence and local trade.
@@ -322,7 +343,19 @@ Battery    & \begin{tabular}[c]{@{}l@{}}LiFePO4\\ 12.8V \\ 7000mAh, 89Wh\end{tab
 \label{tab:shs_characteristics}
 \end{table}
 
-\subsection{Data collection and analysis}
+Socioeconomic Profile
+
+Household sizes in the targeted communities range from 1 to 12 members, with 66 households located in Zone A and 32 in Zone B. Families are predominantly organized as nuclear (parents and children), extended (including grandparents or other relatives), or large extended households (multiple related families living together). Household heads are most often male (75\%).Household walls are typically constructed from mud bricks, with roofs made of clay tiles, corrugated metal sheets, or straw. Floors are generally earthen. Living spaces are shared for sleeping, while in some cases a separate room is designated for cooking. Additional structures are often built for food storage, known locally as \textit{trofas}, usually made of straw, and for cooking purposes such as ovens. An example of structure distribution is shown in \ref{fig:typical_household}.
+
+Agriculture is the primary economic activity, practiced mainly for subsistence, with surpluses occasionally sold in local markets. Livelihoods remain precarious: at least 60\% of households report earning less than USD 35 per month or having no direct income. Approximately 46\% of households reported that at least one family member engages in temporary migration for work, primarily during the summer months.
+
+Quechua is the dominant language, while Spanish is spoken by a smaller portion of the population, mainly those who have attended school. About half of the households have children currently enrolled in school.
+
+The population relies on natural sources such as springs and rivers for water, as there is no access to potable water infrastructure. In years of drought, water scarcity becomes particularly severe, posing significant challenges for daily life and livelihoods. Cooking is primarily carried out with firewood, and diets are largely based on maize, potatoes, rice, and locally grown vegetables.
+
+The agricultural production cycle is closely tied to the rainy season, as most crops are rain-fed and depend exclusively on rainfall due to the region’s limited access to irrigation water. The cycle typically follows this sequence: soil preparation takes place in August–September, sowing occurs in October–November, cultural practices and crop maintenance extend from October through March, and harvesting takes place in May–June.
+
+\subsection{Multi-Stream Data Collection}
 \label{sec:data_collection_analysis} 
 Outline the methods used, such as:
 
@@ -338,15 +371,17 @@ Outline the methods used, such as:
 \toprule
 \textbf{Method} & \textbf{Sample size / participants} & \textbf{Timing} & \textbf{Purpose} \\ 
 \midrule
-Structured household survey I & 100 household heads & February 2023 (baseline) & Collect socioeconomic data, household characteristics, and energy access conditions. \\
+Structured household survey I & 100 household heads & Feb 2023 (baseline) & Collect socioeconomic data, household characteristics, and energy access conditions. \\
 
-Structured household survey II & 53 household members & Nov 2023--December 2025 & Collect self-reported energy practices data. \\
+Structured household survey II & 53 household members & Nov 2023--Dec 2025 & Collect self-reported energy practices data. \\
 
-Semi-structured interviews & 25 participants (household heads and key informants) & March--June 2023 & Explore household energy practices, cultural norms, and perceptions of sufficiency. \\
+Semi-structured interviews & 36 participants (household heads and key informants) & Mar 2023--Feb 2026 & Explore household energy practices, cultural norms, and perceptions of sufficiency. \\
 
-Focus group discussions & 2 groups (10--15 participants each) & April 2023 & Validate survey findings, discuss gender roles, energy-sharing norms, and aspirations. \\
+Focus group discussions & 2 groups (10--15 participants each) & Apr 2023 & Validate survey findings, discuss gender roles, energy-sharing norms, and aspirations. \\
 
-Electricity data loggers & 10 SHS-installed households & Continuous, Apr 2023--Dec 2025 & Record real-time electricity generation and consumption to validate demand modeling. \\ 
+Electricity data loggers & 14 SHS-installed households & Continuous, Apr 2023--Mar 2026 & Record real-time electricity generation and consumption to validate demand modeling. \\ 
+
+
 \bottomrule
 \end{tabular}
 \begin{tablenotes}
@@ -359,55 +394,86 @@ Electricity data loggers & 10 SHS-installed households & Continuous, Apr 2023--D
     Qualitative and quantitative data are integrated through a narrative-based approach, in which quantitative energy-use profiles derived from survey responses and measured data are contextualized and explained using qualitative insights from interviews and focus groups. This mixed-methods integration allows for a deeper understanding of not only what energy is used and how much, but also why these patterns emerge, capturing the socio-cultural drivers behind energy behaviors.
     In the final stage, the developed energy-use profiles are incorporated into an electricity demand model to simulate household consumption patterns, and the modeling results are subsequently validated against measured data.
 
-\subsection{Modeling approach: Using RAMP}
+    Coding:
+    To move beyond simple thematic description, this study employed a relationship-based analysis within QualCoder. Rather than reporting code frequencies—which are inherently limited by the semi-structured nature of the interviews—the analysis focused on the co-occurrence of Energy Culture dimensions. Specifically, overlapping segments between 'Norms' and 'Practices' were used to extract the decision-making logic required for bottom-up modeling. These qualitative insights were then operationalized as stochastic inputs for the RAMP tool, allowing for a demand simulation that reflects the socio-cultural specificities of the Raqaypampa territory.
+
+\subsection{Data integration and modeling}
 \label{sec:modeling}
-    In the final stage, the developed energy-use profiles are incorporated into an electricity demand model to simulate household consumption patterns, and the modeling results are subsequently validated against measured data. 
-    
+This is where you explain the "Virtual Appliance" method and how you set up RAMP.
+The Stochastic Engine: Briefly introduce RAMP. State that it is a bottom-up stochastic engine that requires daily probabilities and time windows.
+The Virtual Appliance Concept: Explain your Python algorithm here. Describe how you took physical hardware (e.g., a 3W LED) and used the sociological data to split it into "Virtual Appliances" (e.g., Morning Light vs. Evening Light).
+Parameter Calibration: Explain how you calculated the math (e.g., how you extracted thermal\_p\_var to account for battery voltage drops).
+DO NOT PUT RESULTS HERE: Do not list the actual probabilities (like the 0.23 vs 0.94 split) or the actual wattages here. Just explain the mathematical formulas and code logic you used to find them.
+
+\subsection{Simulation and validation strategy}
+This is the new section! This is where you explain how you plan to prove your model works, before you actually show the results.
+
+The Experimental Setup: Explain that to isolate the value of the qualitative research, you designed an A/B test.
+
+    Define Model A (The Status Quo): RAMP programmed using raw, unsegmented survey averages.
+
+    Define Model B (The Socio-Technical Approach): RAMP programmed using your newly created Virtual Appliances.
+
+The Validation Metrics: Explain the mathematical tools you will use to compare the simulated load curves against the Stream A physical datalogger curves.
+
+    Briefly define why you are using RMSE (Root Mean Square Error) and LCSS (Longest Common Subsequence).
+
+    Define MPDADA (Mean Peak Demand Absolute Difference Average) and explain why it is the most critical metric for proving you fixed the "Pancake Effect."
 \section{Results}
 \label{sec:results}
 
-\subsection{Socioeconomic Profile}
-\label{sec:raqaypampa}
+\subsection{The Energy Culture of Raqaypampa}
+The Goal: Establish the human reality before introducing the math.
 
-Household sizes in the targeted communities range from 1 to 12 members, with 66 households located in Zone A and 32 in Zone B. Families are predominantly organized as nuclear (parents and children), extended (including grandparents or other relatives), or large extended households (multiple related families living together). Household heads are most often male (75\%).Household walls are typically constructed from mud bricks, with roofs made of clay tiles, corrugated metal sheets, or straw. Floors are generally earthen. Living spaces are shared for sleeping, while in some cases a separate room is designated for cooking. Additional structures are often built for food storage, known locally as \textit{trofas}, usually made of straw, and for cooking purposes such as ovens. An example of structure distribution is shown in \ref{fig:typical_household}.
+What to write: Introduce the qualitative findings. Briefly mention the 17 Socio-Technical Rules (like the Agricultural Dictate and Kitchen Dictate). Then, use your statistical "Splitter Variables" to introduce the 4 Energy Behavior Profiles (Sedentary Core, Migrants, Isolated Elderly, System Breakers).
 
-Agriculture is the primary economic activity, practiced mainly for subsistence, with surpluses occasionally sold in local markets. Livelihoods remain precarious: at least 60\% of households report earning less than USD 35 per month or having no direct income. Approximately 46\% of households reported that at least one family member engages in temporary migration for work, primarily during the summer months.
+Suggested Visual: A grid or panel showing the baseline daily routines of your 4 different profiles.
 
-Quechua is the dominant language, while Spanish is spoken by a smaller portion of the population, mainly those who have attended school. About half of the households have children currently enrolled in school.
-
-The population relies on natural sources such as springs and rivers for water, as there is no access to potable water infrastructure. In years of drought, water scarcity becomes particularly severe, posing significant challenges for daily life and livelihoods. Cooking is primarily carried out with firewood, and diets are largely based on maize, potatoes, rice, and locally grown vegetables.
-
-The agricultural production cycle is closely tied to the rainy season, as most crops are rain-fed and depend exclusively on rainfall due to the region’s limited access to irrigation water. The cycle typically follows this sequence: soil preparation takes place in August–September, sowing occurs in October–November, cultural practices and crop maintenance extend from October through March, and harvesting takes place in May–June.
-
-\subsection{Energy Practices}
+\subsection{The Cognitive Dissonance in Rural Energy Data}
 \label{sec:energy_practices}
-Findings on self-reported energy practices, actual electricity consumption, and their interplay.
-Present interesting indicators to compare real and modeled load curves.
+The Goal: Prove that standard engineering surveys are fundamentally flawed without dataloggers.
 
-\subsection{Material Culture}
+What to write: Present the clash. Detail the "Say-Do Gap" showing the 150\% error margin between Stream B (what users reported) and Stream A (what sensors measured). Highlight the concept of "Invisible Loads" (standby power, night security) that users forgot to report. Finish by proving that hardware nameplates (3W) do not match reality (2.56W).
+
+Suggested Visual: A side-by-side bar chart showing Reported Daily Minutes vs. Measured Daily Minutes for key tasks.
+
+\subsection{Translating Anthropology to Algorithms: The Virtual Appliance}
 \label{sec:material_culture}
-Findings on the role of technologies and infrastructure in shaping energy use.
+The Goal: The methodology payoff. Show how you combined Section 4.1 and 4.2.What to write: Explain the shift from "Engineering Guesses" to "Empirical Probabilities." Show how you translated the qualitative routines (from 4.1) into the Hourly Probability Matrix. Explain how this creates "Virtual Appliances" (e.g., setting a rigid probability of $P=0.99$ for evening cooking vs. $P=0.23$ for morning prep).Suggested Visual: The Thematic Translation Matrix (A table showing: Qualitative Quote $\rightarrow$ Social Rule $\rightarrow$ RAMP Parameter). 
 
-\subsection{Norms and Perceptions}
-\label{sec:norms_perceptions}
-Finding on how norms and perceptions shape energy practices. 
-
-\subsection{Interplay of Energy Culture Dimensions and External Influences}
-\label{sec:external_influence}
-
-
-\subsection{Energy Demand Model for Raqaypampa Indigenous Territory}
+\subsection{Energy Demand Modeling: Socio-Technical Validation}
 \label{sec:energy_demand_model}
-Results on simulating an energy demand model for all the territory using insights from results in previous sections.
+The Goal: The climax. Prove your mixed-methods approach generates a better physical load curve.
 
-\section{Discussion}
-\begin{itemize}
-    \item How results are related with the aim of this study?
-    \item Comparison of findings to previous studies, highlighting unique contributions, particularly in rural or indigenous contexts.
-    \item Implications for Sustainable Energy Planning: Discuss how insights can guide policy and practice, emphasizing the integration of socio-cultural aspects into energy demand modeling. How the model is improved by introducing other aspects? 
-    \item Methodological Contributions: Reflect on the mixed-methods approach and its value in data-scarce settings. Is it worth to keep using surveys and traditional methods for data gathering on energy practices? 
-\end{itemize}
+What to write: Compare the two simulations.
 
+    Show how Model A (Status Quo using raw averages) creates the flat "Pancake Effect" (averaging 3.88W) because it ignores social timing.
+
+    Show how Model B (Your Socio-Technical Virtual Appliances) accurately concentrates the power to hit the true Mean Daily Peak (5.63W). Report your hard metrics (RMSE, LCSS, MPDADA).
+
+Suggested Visual: The Validation Plot. A massive, high-resolution line chart showing the Black empirical line, the flat Red line of Model A, and the accurate Blue line of Model B overlaying perfectly.
+
+\section{Discussion: Indigeous knowledge as a technical asset}
+
+
+\subsection{Temporal Dynamics and the Limits of Static Load Modeling}
+1. The "Static Model" Problem (The Hook)
+    • Start by explaining that traditional off-grid sizing models (including standard RAMP applications) treat user profiles as static. If a household draws 15Wh/day in Year 1, the model assumes they will draw 15Wh/day in Year 10.
+    • Argue that this purely technical assumption ignores socio-technical evolution.
+2. The Evidence (Your 5 Cases)
+Introduce your longitudinal micro-cases: "While our primary modeling relied on a saturated cross-sectional snapshot (N=73), longitudinal follow-up interviews with a subset of households (N=5) over [Insert Timeframe] revealed three critical temporal dynamics:"
+A. The Evolution of Aspirations: Describe how initial exposure to the SHS changed users. (e.g., In initial interviews, users were content with basic lighting replacing candles. Upon follow-up, exposure to the technology had normalized the baseline, shifting aspirations toward entertainment (TVs) and productivity (blenders).).
+B. Hardware Attrition & Resignation: Use the broken radios/cables as an example. Explain that technical degradation is not just an engineering failure, but a behavioral shift. When the radio breaks and they cannot afford to fix it, the household's load profile permanently shrinks.
+C. Demographic Fluidity: Mention the reality of rural out-migration (children moving to the Chapare). Explain that an "Educational Aspirant" profile will naturally age out into an "Isolated Elderly" profile, fundamentally altering the time windows of the load curve.
+3. The Conclusion / Call to Action
+Conclude by stating that while your current methodology successfully captures a highly accurate "snapshot" of community demand, future open-source modeling tools must incorporate stochastic degradation factors (e.g., a 20\% chance an appliance breaks per year) and latent demand multipliers to truly capture the reality of rural electrification over a 10-to-20-year project lifespan.
+
+\subsection{System sizing impacts and grid resilience}
+How does the accurate peak detection of Model B prevent NGOs from undersizing inverters?
+How does the existence of "System Breakers" (from your archetypes) force engineers to build more resilient microgrids?
+
+\subsection{Scalability of the Socio-Technical Pipeline}
+How other researchers can use your open-source Python/QualCoder methodology (Phase 1-6) in other data-scarce regions of the Global South.
 
 \section{Conclusion}
 \label{sec:conslusion}
