@@ -1,0 +1,231 @@
+{
+    "hardware": {
+        "led_1_W": 2.56,
+        "led_2_W": 2.6,
+        "usb_W": 1.88
+    },
+    "daily_event_probs": {
+        "LED_1_Prob": 0.99,
+        "LED_2_Prob": 0.98,
+        "USB_Prob": 0.96
+    },
+    "hourly_probs": {
+        "hour_00": {
+            "LED_1_Prob": 0.03,
+            "LED_2_Prob": 0.06,
+            "USB_Prob": 0.42
+        },
+        "hour_01": {
+            "LED_1_Prob": 0.03,
+            "LED_2_Prob": 0.06,
+            "USB_Prob": 0.41
+        },
+        "hour_02": {
+            "LED_1_Prob": 0.04,
+            "LED_2_Prob": 0.06,
+            "USB_Prob": 0.42
+        },
+        "hour_03": {
+            "LED_1_Prob": 0.07,
+            "LED_2_Prob": 0.09,
+            "USB_Prob": 0.41
+        },
+        "hour_04": {
+            "LED_1_Prob": 0.08,
+            "LED_2_Prob": 0.09,
+            "USB_Prob": 0.42
+        },
+        "hour_05": {
+            "LED_1_Prob": 0.23,
+            "LED_2_Prob": 0.23,
+            "USB_Prob": 0.44
+        },
+        "hour_06": {
+            "LED_1_Prob": 0.27,
+            "LED_2_Prob": 0.39,
+            "USB_Prob": 0.43
+        },
+        "hour_07": {
+            "LED_1_Prob": 0.19,
+            "LED_2_Prob": 0.35,
+            "USB_Prob": 0.38
+        },
+        "hour_08": {
+            "LED_1_Prob": 0.14,
+            "LED_2_Prob": 0.26,
+            "USB_Prob": 0.47
+        },
+        "hour_09": {
+            "LED_1_Prob": 0.09,
+            "LED_2_Prob": 0.16,
+            "USB_Prob": 0.49
+        },
+        "hour_10": {
+            "LED_1_Prob": 0.06,
+            "LED_2_Prob": 0.08,
+            "USB_Prob": 0.45
+        },
+        "hour_11": {
+            "LED_1_Prob": 0.03,
+            "LED_2_Prob": 0.04,
+            "USB_Prob": 0.46
+        },
+        "hour_12": {
+            "LED_1_Prob": 0.02,
+            "LED_2_Prob": 0.03,
+            "USB_Prob": 0.44
+        },
+        "hour_13": {
+            "LED_1_Prob": 0.02,
+            "LED_2_Prob": 0.04,
+            "USB_Prob": 0.48
+        },
+        "hour_14": {
+            "LED_1_Prob": 0.02,
+            "LED_2_Prob": 0.02,
+            "USB_Prob": 0.47
+        },
+        "hour_15": {
+            "LED_1_Prob": 0.01,
+            "LED_2_Prob": 0.03,
+            "USB_Prob": 0.51
+        },
+        "hour_16": {
+            "LED_1_Prob": 0.02,
+            "LED_2_Prob": 0.03,
+            "USB_Prob": 0.52
+        },
+        "hour_17": {
+            "LED_1_Prob": 0.03,
+            "LED_2_Prob": 0.13,
+            "USB_Prob": 0.52
+        },
+        "hour_18": {
+            "LED_1_Prob": 0.77,
+            "LED_2_Prob": 0.65,
+            "USB_Prob": 0.54
+        },
+        "hour_19": {
+            "LED_1_Prob": 0.94,
+            "LED_2_Prob": 0.94,
+            "USB_Prob": 0.42
+        },
+        "hour_20": {
+            "LED_1_Prob": 0.69,
+            "LED_2_Prob": 0.77,
+            "USB_Prob": 0.33
+        },
+        "hour_21": {
+            "LED_1_Prob": 0.37,
+            "LED_2_Prob": 0.39,
+            "USB_Prob": 0.31
+        },
+        "hour_22": {
+            "LED_1_Prob": 0.17,
+            "LED_2_Prob": 0.17,
+            "USB_Prob": 0.38
+        },
+        "hour_23": {
+            "LED_1_Prob": 0.08,
+            "LED_2_Prob": 0.07,
+            "USB_Prob": 0.39
+        }
+    },
+    "peak_hours": {
+        "LED_1": {
+            "hour": 19,
+            "probability": 0.94
+        },
+        "LED_2": {
+            "hour": 19,
+            "probability": 0.94
+        },
+        "USB": {
+            "hour": 18,
+            "probability": 0.54
+        }
+    },
+    "power_variation": {
+        "LED_1": {
+            "mean_power_W": 2.1,
+            "std_power_W": 0.63,
+            "coeff_variation": 0.3,
+            "min_power_W": 1.04,
+            "max_power_W": 2.86,
+            "range_power_W": 1.82,
+            "median_power_W": 2.56,
+            "q25_power_W": 1.29,
+            "q75_power_W": 2.58
+        },
+        "LED_2": {
+            "mean_power_W": 2.55,
+            "std_power_W": 0.24,
+            "coeff_variation": 0.09,
+            "min_power_W": 1.21,
+            "max_power_W": 3.75,
+            "range_power_W": 2.54,
+            "median_power_W": 2.6,
+            "q25_power_W": 2.58,
+            "q75_power_W": 2.6
+        },
+        "USB": {
+            "mean_power_W": 2.05,
+            "std_power_W": 0.66,
+            "coeff_variation": 0.32,
+            "min_power_W": 0.94,
+            "max_power_W": 5.52,
+            "range_power_W": 4.58,
+            "median_power_W": 1.88,
+            "q25_power_W": 1.44,
+            "q75_power_W": 2.35
+        }
+    },
+    "thermal_p_var": {
+        "LED_1": 0.3,
+        "LED_2": 0.09,
+        "USB": 0.32
+    },
+    "ramp_params": {
+        "LED_1": {
+            "num_windows": 2,
+            "func_time": 150.2,
+            "func_cycle": 40.0,
+            "time_fraction_random_variability": 0.72,
+            "random_var_w": 0.11,
+            "window_1": [
+                300,
+                540
+            ],
+            "window_2": [
+                1080,
+                1380
+            ]
+        },
+        "LED_2": {
+            "num_windows": 2,
+            "func_time": 199.8,
+            "func_cycle": 60.0,
+            "time_fraction_random_variability": 0.73,
+            "random_var_w": 0.09,
+            "window_1": [
+                300,
+                600
+            ],
+            "window_2": [
+                1020,
+                1380
+            ]
+        },
+        "USB": {
+            "num_windows": 1,
+            "func_time": 601.6,
+            "func_cycle": 50.0,
+            "time_fraction_random_variability": 0.51,
+            "random_var_w": 0.0,
+            "window_1": [
+                0,
+                1440
+            ]
+        }
+    }
+}

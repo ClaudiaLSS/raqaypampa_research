@@ -1,0 +1,2 @@
+user_id,file,led_1_W,led_2_W,usb_W,thermal_p_var_LED_1,LED_1_daily_prob,LED_1_peak_hour,LED_1_peak_prob
+74,tpdin_user_74.csv,2.56,2.6,1.88,0.3,0.99,19,0.94

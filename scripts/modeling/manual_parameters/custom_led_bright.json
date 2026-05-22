@@ -1,0 +1,89 @@
+{
+  "LED_1": {
+    "power_W": 2.56,
+    "periods": {
+      "morning_prep": {
+        "occasional_use": 0.39,
+        "avg_minutes": 35.4,
+        "std_minutes": 63.2,
+        "rand_var": 0.3
+      },
+      "daytime": {
+        "occasional_use": 0.1,
+        "avg_minutes": 5.8,
+        "std_minutes": 25.8,
+        "rand_var": 0.3
+      },
+      "evening_school_cooking": {
+        "occasional_use": 1.0,
+        "avg_minutes": 150.0,
+        "std_minutes": 50.0,
+        "rand_var": 0.3
+      },
+      "night_security": {
+        "occasional_use": 0.13,
+        "avg_minutes": 3.0,
+        "std_minutes": 19.1,
+        "rand_var": 0.3
+      }
+    }
+  },
+  "LED_2": {
+    "power_W": 2.6,
+    "periods": {
+      "morning_prep": {
+        "occasional_use": 0.48,
+        "avg_minutes": 59.8,
+        "std_minutes": 81.5,
+        "rand_var": 0.3
+      },
+      "daytime": {
+        "occasional_use": 0.15,
+        "avg_minutes": 14.7,
+        "std_minutes": 53.8,
+        "rand_var": 0.3
+      },
+      "evening_school_cooking": {
+        "occasional_use": 0.98,
+        "avg_minutes": 118.0,
+        "std_minutes": 63.5,
+        "rand_var": 0.3
+      },
+      "night_security": {
+        "occasional_use": 0.5,
+        "avg_minutes": 30.0,
+        "std_minutes": 30.1,
+        "rand_var": 0.3
+      }
+    }
+  },
+  "USB": {
+    "power_W": 1.88,
+    "periods": {
+      "morning_prep": {
+        "occasional_use": 0.79,
+        "avg_minutes": 95.9,
+        "std_minutes": 89.7,
+        "rand_var": 0.3
+      },
+      "daytime": {
+        "occasional_use": 0.78,
+        "avg_minutes": 166.8,
+        "std_minutes": 121.7,
+        "rand_var": 0.3
+      },
+      "evening_school_cooking": {
+        "occasional_use": 0.77,
+        "avg_minutes": 93.1,
+        "std_minutes": 83.2,
+        "rand_var": 0.3
+      },
+      "night_security": {
+        "occasional_use": 0.46,
+        "avg_minutes": 92.4,
+        "std_minutes": 109.5,
+        "rand_var": 0.3
+      }
+    }
+  }
+}

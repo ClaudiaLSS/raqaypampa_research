@@ -1,0 +1,110 @@
+{
+  "LED_1": {
+    "power_W": 2.56,
+    "thermal_p_var": 0.3,
+    "periods": {
+      "morning_prep": {
+        "occasional_use": 0.39,
+        "avg_minutes": 60,
+        "func_cycle": 30,
+        "std_minutes": 63.2,
+        "thermal_p_var": 0.3,
+        "rand_var": 0.2,
+        "windows": [[300, 420]],
+        "window_var": 0.35
+      },
+      "daytime": {
+        "occasional_use": 0.10,
+        "avg_minutes": 10,
+        "func_cycle": 5,
+        "std_minutes": 25.8,
+        "thermal_p_var": 0.3,
+        "rand_var": 0.30,
+        "windows": [[421, 1079]],
+        "window_var": 0.35  
+      },
+      "evening_school_cooking": {
+        "occasional_use": 1,
+        "avg_minutes": 100,
+        "func_cycle": 60,
+        "std_minutes": 61.7,
+        "thermal_p_var": 0.3,
+        "rand_var": 0.2,
+        "windows": [[1080, 1260]],
+        "window_var": 0.3
+      },
+      "night_security": {
+        "occasional_use": 0.13,
+        "avg_minutes": 240,
+        "func_cycle": 120,
+        "std_minutes": 19.1,
+        "thermal_p_var": 0.3,
+        "rand_var": 0.3,
+        "windows": [[0, 240], [1260, 1440]],
+        "window_var": 0.35
+      }
+    }
+  },
+  "LED_2": {
+    "power_W": 2.6 ,
+    "thermal_p_var": 0.09,
+    "periods": {
+      "morning_prep": {
+        "occasional_use": 0.48,
+        "avg_minutes": 60,
+        "func_cycle": 30,
+        "std_minutes": 81.5,
+        "rand_var": 0.3,
+        "thermal_p_var": 0.09,
+        "windows": [[300, 420]],
+        "window_var": 0.35
+      },
+      "daytime": {
+        "occasional_use": 0.15,
+        "avg_minutes": 20,
+        "func_cycle": 5,
+        "std_minutes": 25.8,
+        "rand_var": 0.3,
+        "thermal_p_var": 0.09,
+        "windows": [[421, 1079]], 
+        "window_var": 0.35 
+      },
+      "evening_school_cooking": {
+        "occasional_use": 1,
+        "avg_minutes": 120,
+        "func_cycle": 80,
+        "std_minutes": 61.7,
+        "rand_var": 0.3,
+        "thermal_p_var": 0.09,
+        "windows": [[1080, 1260]],
+        "window_var": 0.3
+      },
+      "night_security": {
+        "occasional_use": 0.18,
+        "avg_minutes": 240,
+        "func_cycle": 120,
+        "std_minutes": 30.1,
+        "rand_var": 0.3,
+        "thermal_p_var": 0.09,
+        "windows": [[0, 240], [1260, 1440]],
+        "window_var": 0.35
+      }
+    }
+  },
+  "USB": {
+    "power_W": 2.05,
+    "thermal_p_var": 0.32,
+    "periods": {
+      "daily": {
+        "occasional_use": 1,
+        "avg_minutes": 500,
+        "func_cycle": 180,
+        "std_minutes": 120,
+        "rand_var": 0.3,
+        "thermal_p_var": 0.32,
+        "windows": [[0, 1440]],
+        "window_var": 0
+      }
+    }
+  }
+}

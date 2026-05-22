@@ -1,0 +1,180 @@
+{
+    "hardware": {
+        "led_1_W": 1.31,
+        "led_2_W": 2.62,
+        "usb_W": 2.35
+    },
+    "daily_event_probs": {
+        "LED_1_Prob": 0.45,
+        "LED_2_Prob": 0.51,
+        "USB_Prob": 0.76
+    },
+    "hourly_probs": {
+        "hour_00": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.02,
+            "USB_Prob": 0.18
+        },
+        "hour_01": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.01,
+            "USB_Prob": 0.17
+        },
+        "hour_02": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.01,
+            "USB_Prob": 0.16
+        },
+        "hour_03": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.14
+        },
+        "hour_04": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.14
+        },
+        "hour_05": {
+            "LED_1_Prob": 0.04,
+            "LED_2_Prob": 0.04,
+            "USB_Prob": 0.15
+        },
+        "hour_06": {
+            "LED_1_Prob": 0.05,
+            "LED_2_Prob": 0.07,
+            "USB_Prob": 0.27
+        },
+        "hour_07": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.39
+        },
+        "hour_08": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.38
+        },
+        "hour_09": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.28
+        },
+        "hour_10": {
+            "LED_1_Prob": 0.01,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.25
+        },
+        "hour_11": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.22
+        },
+        "hour_12": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.25
+        },
+        "hour_13": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.32
+        },
+        "hour_14": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.33
+        },
+        "hour_15": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.37
+        },
+        "hour_16": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.36
+        },
+        "hour_17": {
+            "LED_1_Prob": 0.0,
+            "LED_2_Prob": 0.0,
+            "USB_Prob": 0.35
+        },
+        "hour_18": {
+            "LED_1_Prob": 0.11,
+            "LED_2_Prob": 0.22,
+            "USB_Prob": 0.33
+        },
+        "hour_19": {
+            "LED_1_Prob": 0.31,
+            "LED_2_Prob": 0.43,
+            "USB_Prob": 0.33
+        },
+        "hour_20": {
+            "LED_1_Prob": 0.36,
+            "LED_2_Prob": 0.41,
+            "USB_Prob": 0.29
+        },
+        "hour_21": {
+            "LED_1_Prob": 0.18,
+            "LED_2_Prob": 0.13,
+            "USB_Prob": 0.27
+        },
+        "hour_22": {
+            "LED_1_Prob": 0.07,
+            "LED_2_Prob": 0.03,
+            "USB_Prob": 0.24
+        },
+        "hour_23": {
+            "LED_1_Prob": 0.01,
+            "LED_2_Prob": 0.02,
+            "USB_Prob": 0.18
+        }
+    },
+    "peak_hours": {
+        "LED_1": {
+            "hour": 20,
+            "probability": 0.36
+        },
+        "LED_2": {
+            "hour": 19,
+            "probability": 0.43
+        },
+        "USB": {
+            "hour": 7,
+            "probability": 0.39
+        }
+    },
+    "ramp_params": {
+        "LED_1": {
+            "num_windows": 1,
+            "func_time": 77.6,
+            "time_fraction_random_variability": 0.77,
+            "random_var_w": 0.0,
+            "window_1": [
+                1080,
+                1320
+            ]
+        },
+        "LED_2": {
+            "num_windows": 1,
+            "func_time": 84.4,
+            "time_fraction_random_variability": 0.64,
+            "random_var_w": 0.0,
+            "window_1": [
+                1080,
+                1320
+            ]
+        },
+        "USB": {
+            "num_windows": 1,
+            "func_time": 354.6,
+            "time_fraction_random_variability": 0.66,
+            "random_var_w": 0.0,
+            "window_1": [
+                0,
+                1440
+            ]
+        }
+    }
+}

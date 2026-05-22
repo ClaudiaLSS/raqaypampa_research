@@ -37,19 +37,8 @@ def load_parameters(user_id):
     return params
 
 
-def get_hourly_profile(hourly_probs, appliance_name):
-    """Convert hourly probabilities to a daily profile for RAMP"""
-    # Extract probabilities for the appliance across all hours
-    profile = []
-    for hour in range(24):
-        key = f'hour_{hour:02d}'
-        prob = hourly_probs[key][f'{appliance_name}_Prob']
-        profile.append(prob)
-    return profile
-
-
 def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
-    """Run RAMP simulation for a specific user
+    """Run RAMP simulation for a specific user using empirical RAMP parameters
     
     Args:
         user_id: User ID to simulate
@@ -60,12 +49,18 @@ def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
     print(f"\nLoading parameters for user {user_id}...")
     params = load_parameters(user_id)
     
-    hardware = params['hardware']
+    hardware = params['hardware'] # Power ratings (W)
     daily_event_probs = params['daily_event_probs']
-    peak_hours = params['peak_hours']
-    ramp_params = params.get('ramp_params', {})  # Get RAMP-specific parameters
+    ramp_params = params.get('ramp_params', {})
+    thermal_p_var = params.get('thermal_p_var', {})  # Power variability (for post-processing)
     
-    # Default appliance numbers (can be overridden)
+    print(f"Using RAMP parameters extracted from empirical data")
+    print(f"  Thermal power variability (CV) by device (for post-processing):")
+    print(f"    LED_1: {thermal_p_var.get('LED_1', 0.0):.2f}")
+    print(f"    LED_2: {thermal_p_var.get('LED_2', 0.0):.2f}")
+    print(f"    USB: {thermal_p_var.get('USB', 0.0):.2f}")
+    
+    # Default appliance numbers
     if appliance_numbers is None:
         appliance_numbers = {
             'LED_1': 1,
@@ -73,60 +68,43 @@ def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
             'USB': 1
         }
     
-    np.random.seed(seed)
+    appliances_config = {}
     
-    print("Creating RAMP use case...")
-    
-    # Create RAMP use case
-    use_case = UseCase()
-    
-    # Create a user/household
-    user = User()
-    
-    # Define appliances with all RAMP parameters
-    appliances_config = {
-        'LED_1': {
-            'power': hardware['led_1_W'],
-            'daily_prob': daily_event_probs['LED_1_Prob'],
-            'number': appliance_numbers.get('LED_1', 1),
-        },
-        'LED_2': {
-            'power': hardware['led_2_W'],
-            'daily_prob': daily_event_probs['LED_2_Prob'],
-            'number': appliance_numbers.get('LED_2', 1),
-        },
-        'USB': {
-            'power': hardware['usb_W'],
-            'daily_prob': daily_event_probs['USB_Prob'],
-            'number': appliance_numbers.get('USB', 1),
+    # Create appliance configuration using RAMP parameters
+    for appliance_name in ['LED_1', 'LED_2', 'USB']:
+        power_key = f'{appliance_name.lower()}_W'
+        power = hardware[power_key]
+        
+        appliances_config[appliance_name] = {
+            'power': power,
+            'daily_prob': daily_event_probs[f'{appliance_name}_Prob'],
+            'number': appliance_numbers.get(appliance_name, 1),
+            'thermal_p_var': thermal_p_var.get(appliance_name, 0.0),
         }
-    }
-    
-    # Add RAMP-specific parameters if available
-    for appliance_name in appliances_config:
+        
+        # Add RAMP-specific parameters if available
         if appliance_name in ramp_params:
             ramp_p = ramp_params[appliance_name]
             num_windows = ramp_p.get('num_windows', 1)
             windows_list = []
             
-            # Extract individual windows from RAMP naming (window_1, window_2, etc.)
+            # Extract individual windows from RAMP naming
             for i in range(1, num_windows + 1):
                 window_key = f'window_{i}'
                 if window_key in ramp_p:
-                    # Convert to integers - RAMP expects integer minutes
                     window = ramp_p[window_key]
                     windows_list.append([int(window[0]), int(window[1])])
             
             appliances_config[appliance_name].update({
                 'num_windows': num_windows,
                 'windows': windows_list if windows_list else [[0, 1440]],
-                'func_time': int(round(ramp_p.get('func_time', 60))),  # Convert to int
-                'func_cycle': int(round(ramp_p.get('func_cycle', 5))),  # Convert to int
+                'func_time': int(round(ramp_p.get('func_time', 60))),
+                'func_cycle': int(round(ramp_p.get('func_cycle', 5))),
                 'time_fraction_random_variability': float(ramp_p.get('time_fraction_random_variability', 0.2)),
                 'random_var_w': float(ramp_p.get('random_var_w', 0.35))
             })
         else:
-            # Use defaults if not in extracted parameters
+            # Use defaults
             appliances_config[appliance_name].update({
                 'num_windows': 1,
                 'windows': [[0, 1440]],
@@ -135,6 +113,16 @@ def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
                 'time_fraction_random_variability': 0.2,
                 'random_var_w': 0.35
             })
+    
+    np.random.seed(seed)
+    
+    print("\nCreating RAMP use case...")
+    
+    # Create RAMP use case
+    use_case = UseCase()
+    
+    # Create a user/household
+    user = User()
     
     # Create and configure appliances
     for appliance_name, config in appliances_config.items():
@@ -145,98 +133,88 @@ def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
             number=config['number']
         )
         
-        # RAMP will generate profiles automatically based on Appliance configuration
-        # The parameters are stored in the appliance object for reference
-        # Note: func_time in RAMP is the duration of a single usage cycle, not total daily time
-        # We reduce it to ~5-10 minutes per cycle to fit within windows
-        appliance.daily_prob = config['daily_prob']
+        # Set RAMP parameters from empirical data
+        appliance.occasional_use = config['daily_prob']
+        appliance.func_time = config.get('func_time', 60)
+        appliance.func_cycle = config.get('func_cycle', 5)
+        appliance.num_windows = config.get('num_windows', 1)
         
-        # Set func_time and func_cycle FIRST
-        appliance.func_time = config['func_time']
-        appliance.func_cycle = config['func_cycle']
-        
-        # Set num_windows
-        appliance.num_windows = config['num_windows']
-        
-        # Set individual windows as window_1, window_2, etc. (RAMP format)
-        for i, window in enumerate(config['windows'], start=1):
+        # Set individual windows
+        for i, window in enumerate(config.get('windows', [[0, 1440]]), start=1):
             setattr(appliance, f'window_{i}', window)
         
-        # Cap time_fraction_random_variability to prevent RAMP errors
-        # Since func_cycle is now based on 5th percentile (very robust),
-        # we can allow moderate variability up to 0.30
-        time_variability = min(config['time_fraction_random_variability'], 0.30)
-        appliance.time_fraction_random_variability = time_variability
+        appliance.time_fraction_random_variability = config.get('time_fraction_random_variability', 0.2)
+        appliance.random_var_w = config.get('random_var_w', 0.35)
         
-        appliance.random_var_w = config['random_var_w']
-        
-        # Explicitly add appliance to user (important!)
+        # Add appliance to user
         user.add_appliance(appliance)
         
         # Print appliance configuration
         print(f"\n  {appliance_name}:")
         print(f"    Power: {config['power']} W x {config['number']} units")
-        print(f"    Daily probability: {config['daily_prob']}")
-        print(f"    Functioning time: {appliance.func_time} min/day (total, distributed across windows)")
-        print(f"    Functioning cycle: {appliance.func_cycle:.1f} min/cycle (5th percentile from data)")
+        print(f"    Occasional_use: {appliance.occasional_use:.2f}  [from time_period_probs]")
+        print(f"    Functioning time: {appliance.func_time} min/day")
+        print(f"    Functioning cycle: {appliance.func_cycle:.1f} min/cycle")
         print(f"    Windows: {config['num_windows']}")
         for i, w in enumerate(config['windows'][:config['num_windows']]):
             print(f"      Window {i+1}: {w[0]:.0f}-{w[1]:.0f} minutes ({w[0]/60:.1f}-{w[1]/60:.1f} hours)")
-        print(f"    Time variability: {appliance.time_fraction_random_variability:.2f} (capped from {config['time_fraction_random_variability']:.2f})")
-        print(f"    Window variability: {config['random_var_w']}")
+        print(f"    Time variability: {appliance.time_fraction_random_variability:.2f}")
+        print(f"    Window timing variability: {config['random_var_w']:.2f}")
+        print(f"    Power variability (CV): {config.get('thermal_p_var', 0.0):.2f}  [for post-processing]")
     
     # Add user to use case
     use_case.add_user(user)
+    
+    # Save appliance configuration to CSV
+    config_df = pd.DataFrame([
+        {
+            'Appliance': name,
+            'Power_W': config['power'],
+            'Number': config['number'],
+            'Occasional_Use': config['daily_prob'],
+            'Func_Time_min': config.get('func_time', 60),
+            'Func_Cycle_min': config.get('func_cycle', 5),
+            'Num_Windows': config.get('num_windows', 1),
+            'Windows': str(config.get('windows', [[0, 1440]])),
+            'Time_Variability': config.get('time_fraction_random_variability', 0.2),
+            'Window_Variability': config.get('random_var_w', 0.35),
+            'Thermal_P_Var_PostProcess': config.get('thermal_p_var', 0.0)
+        }
+        for name, config in appliances_config.items()
+    ])
+    
+    config_csv = OUTPUT_DIR / f"ramp_config_user_{user_id}.csv"
+    config_df.to_csv(config_csv, index=False)
+    print(f"✓ RAMP configuration saved to: {config_csv.name}")
     
     print(f"\nRunning RAMP simulation for {days} days...")
     
     # Run RAMP simulation
     try:
-        # Initialize the use case with number of days
         use_case.initialize(num_days=days)
+        load_profile = use_case.generate_daily_load_profiles(flat=True)
         
-        # Generate load profiles
-        use_case.generate_daily_load_profiles()
-        
-        # Extract and save RAMP configuration (for tracking)
-        config_df = use_case.export_to_dataframe()
-        config_csv = OUTPUT_DIR / f"ramp_config_user_{user_id}.csv"
-        config_df.to_csv(config_csv, index=False)
-        print(f"✓ RAMP configuration saved to: {config_csv.name}")
-        
-        # Extract load profile from user object
-        # The load profile is stored as an array (1D or 2D depending on RAMP version)
-        load_profile = user.load
-        
-        # Create DataFrame with timestamps and power values
+        # Create timestamped dataframe (RAMP generates 1-minute resolution)
         timestamps = []
         power_values = []
         start_date = datetime(2026, 5, 8)
         
-        # Handle 1D array (flattened across all days and minutes)
-        if len(load_profile.shape) == 1:
-            # 1D array: total_minutes = days * 1440
-            total_minutes = load_profile.shape[0]
-            for minute_idx in range(total_minutes):
-                timestamp = start_date + timedelta(minutes=minute_idx)
-                timestamps.append(timestamp)
-                power_values.append(load_profile[minute_idx])
-        else:
-            # 2D array: [day, minute]
-            for day_idx in range(load_profile.shape[0]):
-                for minute_idx in range(load_profile.shape[1]):
-                    timestamp = start_date + timedelta(days=day_idx, minutes=minute_idx)
-                    timestamps.append(timestamp)
-                    power_values.append(load_profile[day_idx, minute_idx])
+        total_minutes = load_profile.shape[0]
+        for minute_idx in range(total_minutes):
+            timestamp = start_date + timedelta(minutes=minute_idx)
+            timestamps.append(timestamp)
+            power_values.append(load_profile[minute_idx])
         
-        # Create DataFrame
         load_profile_df = pd.DataFrame({
             'DateTime': timestamps,
             'Total Load [W]': power_values
         })
         
-        # Extract and save results
-        print(f"\n✓ Simulation complete for user {user_id}")
+        # Resample from 1-minute to 5-minute intervals (to match real data)
+        load_profile_df.set_index('DateTime', inplace=True)
+        load_profile_df = load_profile_df.resample('5T').mean()
+        load_profile_df.reset_index(inplace=True)
+        print(f"  Resampled from 1-minute to 5-minute intervals: {len(load_profile_df)} rows")
         
         # Save load profile
         output_csv = OUTPUT_DIR / f"simulated_profile_user_{user_id}.csv"
@@ -247,7 +225,7 @@ def run_simulation(user_id, days=365, seed=42, appliance_numbers=None):
         if 'Total Load [W]' in load_profile_df.columns:
             total_load = load_profile_df['Total Load [W]']
             print(f"\nSimulation Summary (User {user_id}):")
-            print(f"  Total energy: {total_load.sum() / 60:.2f} kWh")  # Convert Wmin to Wh to kWh
+            print(f"  Total energy: {total_load.sum() / 60 / 1000:.2f} kWh")
             print(f"  Peak power: {total_load.max():.2f} W")
             print(f"  Average power: {total_load.mean():.2f} W")
             print(f"  Number of data points: {len(load_profile_df)}")
@@ -311,4 +289,5 @@ if __name__ == "__main__":
         'USB': args.usb
     }
     
-    run_simulation(args.user, days=args.days, seed=args.seed, appliance_numbers=appliance_numbers)
+    run_simulation(args.user, days=args.days, seed=args.seed, 
+                   appliance_numbers=appliance_numbers)

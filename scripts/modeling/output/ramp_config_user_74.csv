@@ -1,0 +1,4 @@
+Appliance,Power_W,Number,Occasional_Use,Func_Time_min,Func_Cycle_min,Num_Windows,Windows,Time_Variability,Window_Variability,Thermal_P_Var_PostProcess
+LED_1,2.56,1,0.99,150,40,2,"[[300, 540], [1080, 1380]]",0.72,0.11,0.3
+LED_2,2.6,1,0.98,200,60,2,"[[300, 600], [1020, 1380]]",0.73,0.09,0.09
+USB,1.88,1,0.96,602,50,1,"[[0, 1440]]",0.51,0.0,0.32
