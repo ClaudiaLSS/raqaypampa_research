@@ -1,3 +1,11 @@
+"""
+DEPRECATED: Use extract_empirical_baseline.py instead (modular architecture)
+
+This script is kept for reference only. The new pipeline supports both
+OLD and TPDIN datalogger types automatically with a flexible architecture.
+
+See README.md for the new modular design.
+"""
 import pandas as pd
 import numpy as np
 import json
@@ -182,6 +190,131 @@ def extract_parameters(filename):
         power_variation = {app: calculate_power_variation(df[col], col) for app, col in [('LED_1', 'p_led_1'), ('LED_2', 'p_led_2'), ('USB', 'p_usb')]}
         thermal_p_var = {app: power_variation[app]['coeff_variation'] for app in ['LED_1', 'LED_2', 'USB']}
 
+        # 6. Calculate TIER 2: Structural Profiling & Resilience Metrics
+        def calculate_structural_metrics(df, threshold=0.5):
+            """Calculate structural profiling and resilience metrics for total system."""
+            total_power = df['p_total']
+            
+            # Modal Peak Hour: hour with highest median power (system-wide)
+            hourly_medians = df.groupby(df['timestamp'].dt.hour)['p_total'].median()
+            modal_peak_hour = int(hourly_medians.idxmax()) if len(hourly_medians) > 0 else 0
+            
+            # Base Load: 10th percentile of non-zero power (system idle but on)
+            active_periods = total_power[total_power > threshold]
+            if len(active_periods) > 0:
+                base_load_W = round(active_periods.quantile(0.1), 2)
+            else:
+                base_load_W = 0.0
+            
+            # MRSD (Mean Relative Standard Deviation) - Chaos Index
+            # Calculate coefficient of variation for each day, then take mean
+            daily_cv_list = []
+            for date in df['date_only'].unique():
+                day_power = df[df['date_only'] == date]['p_total']
+                day_mean = day_power.mean()
+                day_std = day_power.std()
+                if day_mean > 0:
+                    daily_cv_list.append(day_std / day_mean)
+            
+            mrsd_chaos_index = round(np.mean(daily_cv_list), 3) if daily_cv_list else 0.0
+            
+            # Relative Mean Power by time-of-day (morning, daytime, evening, night)
+            # Morning: 06:00-11:59, Daytime: 12:00-17:59, Evening: 18:00-23:59, Night: 00:00-05:59
+            time_periods = {
+                'morning': df[(df['timestamp'].dt.hour >= 6) & (df['timestamp'].dt.hour < 12)]['p_total'].mean(),
+                'daytime': df[(df['timestamp'].dt.hour >= 12) & (df['timestamp'].dt.hour < 18)]['p_total'].mean(),
+                'evening': df[(df['timestamp'].dt.hour >= 18) & (df['timestamp'].dt.hour < 24)]['p_total'].mean(),
+                'night': df[(df['timestamp'].dt.hour >= 0) & (df['timestamp'].dt.hour < 6)]['p_total'].mean()
+            }
+            
+            overall_mean_power = df['p_total'].mean()
+            relative_mean_power = {}
+            for period, mean_val in time_periods.items():
+                if overall_mean_power > 0:
+                    relative_mean_power[period] = round(mean_val / overall_mean_power, 3)
+                else:
+                    relative_mean_power[period] = 0.0
+            
+            return {
+                'modal_peak_hour': modal_peak_hour,
+                'base_load_W': base_load_W,
+                'mrsd_chaos_index': mrsd_chaos_index,
+                'relative_mean_power': relative_mean_power,
+                'overall_mean_power_W': round(overall_mean_power, 2)
+            }
+        
+        structural_metrics = calculate_structural_metrics(df)
+
+        # 7. Calculate RELIABILITY METRICS: Blackout Frequency, Climatic vs Behavioral Rates
+        def calculate_reliability_metrics(df, threshold=0.5):
+            """Calculate blackout and reliability metrics."""
+            # Identify blackouts: gaps in timestamp data (data logger stopped recording)
+            df_copy = df.copy()
+            df_copy['time_diff_minutes'] = df_copy['timestamp'].diff().dt.total_seconds() / 60
+            
+            # Define blackout as a gap > 7 minutes (expected interval is 5 min)
+            EXPECTED_INTERVAL = 5
+            BLACKOUT_THRESHOLD = 7
+            df_copy['is_blackout'] = df_copy['time_diff_minutes'] > BLACKOUT_THRESHOLD
+            
+            # Group consecutive blackouts
+            df_copy['blackout_block'] = (df_copy['is_blackout'] != df_copy['is_blackout'].shift()).cumsum()
+            bo_blocks = df_copy[df_copy['is_blackout'] == True].groupby('blackout_block')
+            
+            total_bo_events = bo_blocks.ngroups
+            
+            # Mean Outage Duration (in minutes)
+            mean_outage_duration = 0.0
+            if total_bo_events > 0:
+                outage_durations = []
+                for _, group in bo_blocks:
+                    duration = group['time_diff_minutes'].iloc[0]  # Duration of the gap
+                    outage_durations.append(duration)
+                mean_outage_duration = round(np.mean(outage_durations), 1)
+            
+            # Reliability Index: % of time with data (system operational)
+            total_time_minutes = (df['timestamp'].max() - df['timestamp'].min()).total_seconds() / 60
+            if total_time_minutes > 0:
+                ri_percent = ((total_time_minutes - (bo_blocks.size().sum() * EXPECTED_INTERVAL if total_bo_events > 0 else 0)) / total_time_minutes) * 100
+            else:
+                ri_percent = 0.0
+            
+            # Climatic vs Behavioral Blackout Rate
+            climatic_events = 0
+            df_copy['hour'] = df_copy['timestamp'].dt.hour
+            
+            for _, group in bo_blocks:
+                blackout_start = group['timestamp'].min()
+                # Look back 24 hours before blackout
+                lookback_start = blackout_start - pd.Timedelta(hours=24)
+                prev_data = df[(df['timestamp'] >= lookback_start) & (df['timestamp'] < blackout_start)]
+                
+                if len(prev_data) > 0:
+                    # Check if sufficient sun during peak hours (10:00-15:00)
+                    sun_hours = prev_data[(prev_data['hour'] >= 10) & (prev_data['hour'] <= 15)]
+                    if len(sun_hours) > 0 and sun_hours['v_pv'].mean() < 15.0:
+                        # Low PV voltage = climatic failure
+                        climatic_events += 1
+            
+            behavioral_events = total_bo_events - climatic_events
+            
+            # Calculate rates as events per 100 days
+            num_days = max((df['timestamp'].max() - df['timestamp'].min()).days, 1)
+            cbr = round((climatic_events / num_days) * 100, 2) if num_days > 0 else 0.0
+            bbr = round((behavioral_events / num_days) * 100, 2) if num_days > 0 else 0.0
+            
+            return {
+                'bo_freq_events': total_bo_events,
+                'mean_outage_duration_min': mean_outage_duration,
+                'ri_percent': round(ri_percent, 2),
+                'climatic_blackout_events': climatic_events,
+                'behavioral_blackout_events': behavioral_events,
+                'cbr_events_per_100days': cbr,
+                'bbr_events_per_100days': bbr
+            }
+        
+        reliability_metrics = calculate_reliability_metrics(df)
+
         # Pack final params
         params = {
             'hardware': hardware,
@@ -190,7 +323,9 @@ def extract_parameters(filename):
             'peak_hours': peak_hours,
             'power_variation': power_variation,
             'thermal_p_var': thermal_p_var,
-            'ramp_params': ramp_params
+            'ramp_params': ramp_params,
+            'structural_metrics': structural_metrics,
+            'reliability_metrics': reliability_metrics
         }
         
         user_id = filename.stem.split('_')[-1]
@@ -228,6 +363,22 @@ def extract_parameters(filename):
             for window_idx in range(1, ramp_data['num_windows'] + 1):
                 window = ramp_data[f'window_{window_idx}']
                 print(f"      Window {window_idx}: {window[0]:.0f} - {window[1]:.0f} minutes")
+        
+        print(f"\n📊 TIER 2: STRUCTURAL PROFILING & RESILIENCE METRICS:")
+        print(f"   Modal Peak Hour: {structural_metrics['modal_peak_hour']:02d}:00")
+        print(f"   Base Load: {structural_metrics['base_load_W']:.2f} W")
+        print(f"   MRSD Chaos Index: {structural_metrics['mrsd_chaos_index']:.3f}")
+        print(f"   Overall Mean Power: {structural_metrics['overall_mean_power_W']:.2f} W")
+        print(f"   Relative Mean Power by Time-of-Day:")
+        for period, rel_power in structural_metrics['relative_mean_power'].items():
+            print(f"      {period.capitalize()}: {rel_power:.3f}x overall mean")
+        
+        print(f"\n🔋 RELIABILITY METRICS: BLACKOUT ANALYSIS:")
+        print(f"   Blackout Frequency: {reliability_metrics['bo_freq_events']} events")
+        print(f"   Mean Outage Duration: {reliability_metrics['mean_outage_duration_min']:.1f} minutes")
+        print(f"   Reliability Index: {reliability_metrics['ri_percent']:.2f}%")
+        print(f"   Climatic Blackouts: {reliability_metrics['climatic_blackout_events']} events ({reliability_metrics['cbr_events_per_100days']:.2f} per 100 days)")
+        print(f"   Behavioral Blackouts: {reliability_metrics['behavioral_blackout_events']} events ({reliability_metrics['bbr_events_per_100days']:.2f} per 100 days)")
         
         print(f"\n{'='*70}\n")
         
@@ -281,6 +432,21 @@ def batch_process(input_pattern=None):
                 'LED_1_daily_prob': result['params']['daily_event_probs']['LED_1_Prob'],
                 'LED_1_peak_hour': result['params']['peak_hours']['LED_1']['hour'],
                 'LED_1_peak_prob': result['params']['peak_hours']['LED_1']['probability'],
+                'modal_peak_hour': result['params']['structural_metrics']['modal_peak_hour'],
+                'base_load_W': result['params']['structural_metrics']['base_load_W'],
+                'mrsd_chaos_index': result['params']['structural_metrics']['mrsd_chaos_index'],
+                'overall_mean_power_W': result['params']['structural_metrics']['overall_mean_power_W'],
+                'relative_mean_power_morning': result['params']['structural_metrics']['relative_mean_power']['morning'],
+                'relative_mean_power_daytime': result['params']['structural_metrics']['relative_mean_power']['daytime'],
+                'relative_mean_power_evening': result['params']['structural_metrics']['relative_mean_power']['evening'],
+                'relative_mean_power_night': result['params']['structural_metrics']['relative_mean_power']['night'],
+                'bo_freq_events': result['params']['reliability_metrics']['bo_freq_events'],
+                'mean_outage_duration_min': result['params']['reliability_metrics']['mean_outage_duration_min'],
+                'ri_percent': result['params']['reliability_metrics']['ri_percent'],
+                'climatic_blackout_events': result['params']['reliability_metrics']['climatic_blackout_events'],
+                'behavioral_blackout_events': result['params']['reliability_metrics']['behavioral_blackout_events'],
+                'cbr_events_per_100days': result['params']['reliability_metrics']['cbr_events_per_100days'],
+                'bbr_events_per_100days': result['params']['reliability_metrics']['bbr_events_per_100days'],
             }
             # (Truncated other appliance appending for brevity)
             summary_data.append(row)
