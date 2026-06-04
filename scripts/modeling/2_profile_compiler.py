@@ -5,202 +5,316 @@ import sys
 
 # Define structural paths
 SCRIPT_DIR = Path(__file__).parent
-PROJECT_ROOT = SCRIPT_DIR.parent.parent
 OUTPUT_DIR = SCRIPT_DIR / "output"
+OUTPUT_DIR.mkdir(exist_ok=True)
 
-def calculate_user_profile_deterministic(metrics_row):
-    """
-    Step 1: Deterministic Classification 
-    Sorts households using strict mathematical thresholds derived from qualitative triangulation.
-    """
-    base_load = metrics_row['Real_Base_Load_Watts']
-    mrsd = metrics_row['Real_MRSD_Chaos']
-    peak_hour = metrics_row['Real_Modal_Peak_Hour']
-    
-    # Triangulated Threshold: Continuous overnight lighting indicates Profile 2
-    if base_load >= 1.0:
-        return "EBP_2_Isolated_Elderly"
-    
-    # Triangulated Threshold: High structural chaos indicates Profile 4
-    elif mrsd >= 0.70:
-        return "EBP_4_System_Breakers"
-        
-    # Triangulated Threshold: Early morning synchronization indicates Profile 1
-    elif 4 <= peak_hour <= 6:
-        return "EBP_1_Agricultural_Core"
-        
-    # Default fallback based on high-density family structures
-    else:
-        return "EBP_3_Extended_Hub"
+# Path for your direct input file
+SCENARIOS_FILE = SCRIPT_DIR / "scenarios.csv"
 
-def transform_parameters_to_ramp(user_id, profile_type, empirical_data):
+def get_virtual_appliances(profile_type):
     """
-    Step 2: Algorithmic Appliance Splitting & Parameter Transformation
-    Maps fuzzy social rules to crisp RAMP parameters using empirical data as the baseline magnitude.
+    Maps the explicitly requested Energy Behavior Profile to its predefined 
+    Virtual Appliances (from virtual_appliances.md).
     """
-    hardware = empirical_data['hardware']
-    thermal_var = empirical_data['thermal_p_var']
-    period_usage = empirical_data['appliance_period_usage']
-    
     compiled_appliances = []
-    
+
     # =========================================================================
-    # EBP 1: THE AGRICULTURAL CORE
+    # EBP 1: THE EDUCATIONAL / AGRICULTURAL CORE
     # =========================================================================
     if profile_type == "EBP_1_Agricultural_Core":
+        compiled_appliances.extend([
+            {
+                "name": "Indoor_Task_Light_LED2",
+                "power": 3.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [1080, 1290],
+                "func_time": 100.0,
+                "func_cycle": 60.0,
+                "time_fraction_random_variability": 0.2,
+                "random_var_w": 0.3
+            },
+            {
+                "name": "Outdoor_Night_Transit_Light",
+                "power": 2.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [1080, 1260],
+                "func_time": 80.0,
+                "func_cycle": 50.0,
+                "time_fraction_random_variability": 0.3,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_Safety_Light_night",
+                "power": 3.0,
+                "occasional_use": 0.25,
+                "num_windows": 2,
+                "window_1": [1260, 1440], 
+                "window_2": [0, 420], 
+                "func_time": 480.0,               
+                "func_cycle": 140.0,              
+                "time_fraction_random_variability": 0.1,
+                "random_var_w": 0.1
         
-        # Virtual Appliance 1: Morning Livelihood Routine
-        morning_time = period_usage['LED_1']['morning_block']['avg_minutes']
-        if morning_time > 0:
-            compiled_appliances.append({
-                "name": "LED_1_Morning_AgriPrep",
-                "power": hardware['led_1_W'],
-                "power_fraction_variability": thermal_var['LED_1'],
+            },
+            {
+                "name": "Indoor_Morning_Light",
+                "power": 3.0,
+                "occasional_use": 0.30,
                 "num_windows": 1,
-                "window_1": [240, 360],  # Rigid constraint: 04:00 - 06:00
-                "func_time": morning_time,  # Objective magnitude from data
-                "func_cycle": 15,
-                "random_var_w": 0.05,    # High socio-temporal rigidity
-                "time_fraction_random_variability": 0.15
-            })
-            
-        # Virtual Appliance 2: Evening Domestic Routine
-        evening_time = period_usage['LED_1']['evening_block']['avg_minutes']
-        if evening_time > 0:
-            compiled_appliances.append({
-                "name": "LED_1_Evening_Domestic",
-                "power": hardware['led_1_W'],
-                "power_fraction_variability": thermal_var['LED_1'],
+                "window_1": [400, 480],
+                "func_time": 50.0,
+                "func_cycle": 30.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_occasional_daytime_Light",
+                "power": 3.0,
+                "occasional_use": 0.15,
                 "num_windows": 1,
-                "window_1": [1080, 1320], # Cultural boundary: 18:00 - 22:00
-                "func_time": evening_time,
-                "func_cycle": 30,
-                "random_var_w": 0.10,
-                "time_fraction_random_variability": 0.20
-            })
+                "window_1": [420, 1080],
+                "func_time": 20.0,
+                "func_cycle": 5.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Outdoor_Morning_Light",
+                "power": 2.0,
+                "occasional_use": 0.30,
+                "num_windows": 1,
+                "window_1": [300, 420],
+                "func_time": 50.0,
+                "func_cycle": 30.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Cellphone_Charging_USB",
+                "power": 2.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [0, 1440],
+                "func_time": 470.0,
+                "func_cycle": 180.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.0
+            }
+        ])
 
     # =========================================================================
     # EBP 2: THE ISOLATED ELDERLY
     # =========================================================================
     elif profile_type == "EBP_2_Isolated_Elderly":
-        # Force a rigid, continuous overnight lighting draw
-        compiled_appliances.append({
-            "name": "LED_2_Night_Safety_Baseline",
-            "power": max(hardware['led_2_W'], 1.5), 
-            "power_fraction_variability": 0.02,     
-            "num_windows": 1,
-            "window_1": [0, 240],    # Bounded exclusively to the overnight block
-            "func_time": 240.0,      # Continuous baseline
-            "func_cycle": 240,       
-            "random_var_w": 0.0,     # Absolute socio-temporal rigidity
-            "time_fraction_random_variability": 0.0
-        })
-        
-        # Daytime Companionship (Fuzzy Rule -> Handled by Data)
-        day_time = period_usage['USB']['daytime_block']['avg_minutes']
-        if day_time > 0:
-            compiled_appliances.append({
-                "name": "USB_Daytime_Companionship_Radio",
-                "power": hardware['usb_W'],
-                "power_fraction_variability": thermal_var['USB'],
+        compiled_appliances.extend([
+            {
+                "name": "Indoor_Task_Light_LED2",
+                "power": 3.0,
+                "occasional_use": 0.26,
+                "num_windows": 2,
+                "window_1": [1140, 1440],
+                "window_2": [0, 60],
+                "func_time": 100.0,
+                "func_cycle": 60.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.20
+            },
+            {
+                "name": "Indoor_Safety_Light_LED1",
+                "power": 3.0,
+                "occasional_use": 0.70,
                 "num_windows": 1,
-                "window_1": [540, 1020], # Broad daytime window: 09:00 - 17:00
-                "func_time": day_time,
-                "func_cycle": 60,        
-                "random_var_w": 0.30,    # High elasticity (highly shiftable)
-                "time_fraction_random_variability": 0.25
-            })
+                "window_1": [0, 300],
+                "func_time": 300.0,
+                "func_cycle": 240.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.20
+            },
+            {
+                "name": "Outdoor_Night_Transit_Light",
+                "power": 2.0,
+                "occasional_use": 0.10,
+                "num_windows": 1,
+                "window_1": [1200, 1320],
+                "func_time": 50.0,
+                "func_cycle": 10.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.20
+            },
+            {
+                "name": "Cellphone_Radio_Charging_USB",
+                "power": 3.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [0, 1440],
+                "func_time": 550.0,
+                "func_cycle": 85.0,
+                "time_fraction_random_variability": 0.40,
+                "random_var_w": 0.0
+            }
+        ])
 
     # =========================================================================
-    # EBP 3: THE EXTENDED HUB
+    # EBP 3: THE EXTENDED / MULTI-TASKING HUB
     # =========================================================================
     elif profile_type == "EBP_3_Extended_Hub":
-        # Chaotic phone charging throughout the entire waking day
-        day_time = period_usage['USB']['daytime_block']['avg_minutes'] + period_usage['USB']['evening_block']['avg_minutes']
-        compiled_appliances.append({
-            "name": "USB_Chaotic_Communal_Charging",
-            "power": hardware['usb_W'],
-            "power_fraction_variability": thermal_var['USB'],
-            "num_windows": 1,
-            "window_1": [360, 1320], # Maximize window: 06:00 - 22:00
-            "func_time": min(day_time, 480.0), 
-            "func_cycle": 15,
-            "random_var_w": 0.40,    # Maximum window elasticity
-            "time_fraction_random_variability": 0.45 
-        })
-        
-        # Extended cooking window
-        evening_time = period_usage['LED_1']['evening_block']['avg_minutes']
-        compiled_appliances.append({
-            "name": "LED_1_Extended_Evening_Cooking",
-            "power": hardware['led_1_W'],
-            "power_fraction_variability": thermal_var['LED_1'],
-            "num_windows": 1,
-            "window_1": [1020, 1380], # Broadened cooking window: 17:00 - 23:00
-            "func_time": max(evening_time, 180.0), 
-            "func_cycle": 45,
-            "random_var_w": 0.15,
-            "time_fraction_random_variability": 0.20
-        })
+        compiled_appliances.extend([
+            {
+                "name": "Indoor_Task_Communal_Light",
+                "power": 3.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [1020, 1440],
+                "func_time": 240.0,
+                "func_cycle": 180.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_Safety_Light",
+                "power": 3.0,
+                "occasional_use": 0.85,
+                "num_windows": 1,
+                "window_1": [0, 420],
+                "func_time": 420.0,
+                "func_cycle": 300.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Outdoor_Social_Transit_Light",
+                "power": 2.0,
+                "occasional_use": 0.60,
+                "num_windows": 1,
+                "window_1": [1080, 1260],
+                "func_time": 45.0,
+                "func_cycle": 20.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Stacked_Phone_Charging_USB",
+                "power": 5.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [0, 1440],
+                "func_time": 900.0,
+                "func_cycle": 300.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.0
+            }
+        ])
 
     # =========================================================================
     # EBP 4: THE SYSTEM BREAKERS
     # =========================================================================
     elif profile_type == "EBP_4_System_Breakers":
-        # Wildly unpredictable spikes across the entire cycle
-        total_time = period_usage['LED_1']['evening_block']['avg_minutes'] + period_usage['USB']['daytime_block']['avg_minutes']
-        compiled_appliances.append({
-            "name": "System_Breaker_Unpredictable_Load",
-            "power": hardware['led_1_W'] * 1.5, # Simulates parallel battery hacks
-            "power_fraction_variability": 0.35,
-            "num_windows": 1,
-            "window_1": [0, 1440],   # Permitted at any minute of the day
-            "func_time": max(total_time, 60.0),
-            "func_cycle": 10,
-            "random_var_w": 0.50,    # Pure stochastic freedom
-            "time_fraction_random_variability": 0.80 
-        })
+        compiled_appliances.extend([
+            {
+                "name": "Erratic_Indoor_Evening_Task_Light_LED2",
+                "power": 3.0,
+                "occasional_use": 0.90,
+                "num_windows": 1,
+                "window_1": [1080, 1380],
+                "func_time": 100.0,
+                "func_cycle": 70.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.30
+            },
+            {
+                "name": "Indoor_Morning_Light",
+                "power": 3.0,
+                "occasional_use": 0.30,
+                "num_windows": 1,
+                "window_1": [300, 420],
+                "func_time": 60.0,
+                "func_cycle": 40.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_Safety_Light_LED1",
+                "power": 2.0,
+                "occasional_use": 0.35,
+                "num_windows": 2,
+                "window_1": [0, 419],
+                "window_2": [1381, 1440],
+                "func_time": 350.0,
+                "func_cycle": 240.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Outdoor_Transit_Light",
+                "power": 2.0,
+                "occasional_use": 0.10,
+                "num_windows": 1,
+                "window_1": [1080, 1320],
+                "func_time": 60.0,
+                "func_cycle": 75.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Burst_Phone_Radio_Charging_USB",
+                "power": 3.0,
+                "occasional_use": 0.44,
+                "num_windows": 1,
+                "window_1": [0, 1440],
+                "func_time": 300.0,
+                "func_cycle": 180.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            }
+        ])
+    else:
+        print(f"[-] Unknown profile: {profile_type}")
 
     return compiled_appliances
 
+
+def create_template_csv():
+    """Generates a default scenarios.csv file if it does not exist."""
+    print(f"[*] {SCENARIOS_FILE.name} not found. Generating a template...")
+    template_data = {
+        "Scenario_ID": ["Sim_Standard_Farmer", "Sim_Isolated_Elder", "Sim_Busy_Hub", "Sim_Nomad"],
+        "Target_Profile": ["EBP_1_Agricultural_Core", "EBP_2_Isolated_Elderly", "EBP_3_Extended_Hub", "EBP_4_System_Breakers"]
+    }
+    pd.DataFrame(template_data).to_csv(SCENARIOS_FILE, index=False)
+    print(f"[+] Template created at {SCENARIOS_FILE}. You can edit this file to run different scenarios.")
+
+
 def main():
-    metrics_file = PROJECT_ROOT / "results" / "timeseries" / "metrics" / "validation_metrics_dual_tier.csv"
-    if not metrics_file.exists():
-        print("[-] Error: Run Script 3 first to generate the dual-tier validation metrics file.")
-        sys.exit(1)
-        
-    df_metrics = pd.read_csv(metrics_file)
+    # If the scenarios file doesn't exist, create it automatically
+    if not SCENARIOS_FILE.exists():
+        create_template_csv()
     
-    for _, row in df_metrics.iterrows():
-        user_id = str(int(row['User_ID']))
+    # Read the direct configuration file
+    df_scenarios = pd.read_csv(SCENARIOS_FILE)
+    
+    # Process each explicitly requested scenario
+    for _, row in df_scenarios.iterrows():
+        scenario_id = str(row['Scenario_ID']).strip()
+        target_profile = str(row['Target_Profile']).strip()
         
-        # Step 1: Objective Classification
-        assigned_profile = calculate_user_profile_deterministic(row)
+        # Pull the predefined appliances
+        ramp_appliances = get_virtual_appliances(target_profile)
         
-        # Step 2: Load Raw Empirical Parameters from Script 1
-        json_input_path = OUTPUT_DIR / f"empirical_parameters_user_{user_id}.json"
-        if not json_input_path.exists():
-            print(f"[-] Warning: Missing raw JSON for user {user_id}. Skipping.")
-            continue
-            
-        with open(json_input_path, 'r') as f:
-            empirical_params = json.load(f)
-            
-        # Step 3: Algorithmic Transformation (Virtual Appliances)
-        ramp_appliances = transform_parameters_to_ramp(user_id, assigned_profile, empirical_params)
-        
-        # Step 4: Package into standard RAMP Configuration
+        # Package into standard RAMP Configuration
         ramp_config = {
-            "user_id": user_id,
-            "socio_technical_profile": assigned_profile,
+            "scenario_id": scenario_id,
+            "socio_technical_profile": target_profile,
             "appliances": ramp_appliances
         }
         
-        output_json_path = OUTPUT_DIR / f"ramp_input_config_user_{user_id}.json"
+        # Save output
+        output_json_path = OUTPUT_DIR / f"ramp_config_{scenario_id}.json"
         with open(output_json_path, 'w') as f:
             json.dump(ramp_config, f, indent=4)
             
-        print(f"[+] User {user_id} classified as {assigned_profile} -> Virtual Appliances Compiled.")
+        print(f"[+] Scenario '{scenario_id}' -> Configured as {target_profile} -> JSON Generated.")
 
 if __name__ == "__main__":
     main()
