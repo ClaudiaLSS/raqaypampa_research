@@ -80,23 +80,51 @@ FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def load_user_data(user_id):
-    """Load measured data for a specific user."""
-    data_file = INPUT_DIR / f"tpdin_user_{user_id}.csv"
+    """Load measured data dynamically for TPDIN, BLUE, or OLD loggers."""
     
-    if not data_file.exists():
-        print(f"Error: Data file not found: {data_file}")
+    # 1. Auto-detect the correct hardware logger file
+    possible_prefixes = ["tpdin", "blue", "old"]
+    data_file = None
+    logger_type = "UNKNOWN"
+    
+    for prefix in possible_prefixes:
+        temp_file = INPUT_DIR / f"{prefix}_user_{user_id}.csv"
+        if temp_file.exists():
+            data_file = temp_file
+            logger_type = prefix.upper()
+            break
+            
+    if data_file is None:
+        print(f"[-] Error: Data file not found for User {user_id} in {INPUT_DIR}")
+        print(f"    (Looked for tpdin_, blue_, and old_ prefixes)")
         sys.exit(1)
     
     df = pd.read_csv(data_file)
     df['timestamp'] = pd.to_datetime(df['corrected_timestamp'], errors='coerce')
     df = df.dropna(subset=['timestamp'])
     
-    # Calculate total power
-    df['p_total'] = (df['v_led_1'] * df['c_led_1']).clip(lower=0) + \
-                    (df['v_led_2'] * df['c_led_2']).clip(lower=0) + \
-                    (df['v_usb'] * df['c_usb']).clip(lower=0)
+    # 2. Safely calculate total power (Hardware Agnostic)
+    # This prevents crashes if an OLD logger is missing a specific USB or LED_2 column
+    zero_series = pd.Series(0.0, index=df.index)
     
-    # Extract temporal features
+    v_usb = df.get('v_usb', zero_series)
+    c_usb = df.get('c_usb', zero_series)
+    
+    # Check for led_1, or fallback to generic led (for OLD loggers)
+    v_led_1 = df.get('v_led_1', df.get('v_led', zero_series))
+    c_led_1 = df.get('c_led_1', df.get('c_led', zero_series))
+    
+    v_led_2 = df.get('v_led_2', zero_series)
+    c_led_2 = df.get('c_led_2', zero_series)
+    
+    # Calculate watts and clip negative noise to 0
+    p_led_1 = (v_led_1 * c_led_1).clip(lower=0)
+    p_led_2 = (v_led_2 * c_led_2).clip(lower=0)
+    p_usb = (v_usb * c_usb).clip(lower=0)
+    
+    df['p_total'] = p_led_1 + p_led_2 + p_usb
+    
+    # 3. Extract temporal features
     df['year'] = df['timestamp'].dt.year
     df['month'] = df['timestamp'].dt.month
     df['month_name'] = df['timestamp'].dt.strftime('%B')
@@ -109,7 +137,7 @@ def load_user_data(user_id):
     df['date'] = df['timestamp'].dt.date
     df['time_decimal'] = df['hour'] + df['minute'] / 60.0
     
-    print(f"✓ Loaded {len(df)} measurements from {data_file}")
+    print(f"✓ Loaded {len(df)} measurements from {data_file.name} ({logger_type} logger)")
     print(f"  Date range: {df['timestamp'].min()} to {df['timestamp'].max()}")
     print(f"  Total days: {(df['timestamp'].max() - df['timestamp'].min()).days + 1}")
     
