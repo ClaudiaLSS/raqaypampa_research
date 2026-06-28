@@ -29,13 +29,13 @@
 - LED_2: Outdoor light 
 - USB (phone chargers, radio charging and flashlight charging)
 
-## **Daily social practices and antropological windows**
-*This section defines the culturally bounded timeframes during which specific energy-consuming social practices occur for the Educational/Agricultural Core profile. These windows form the strict temporal boundaries ($W$) for the RAMP Virtual Appliances.*
+## **Daily social practices and anthropological windows**
+*This section defines the socio-temporal envelopes that govern energy use for the Extended Hub profile. These are not periods of continuous power consumption; rather, they represent the broadest possible timeframes during which a specific social practice might occur. The RAMP algorithm is strictly constrained to generate the actual usage events only within these cultural boundaries.*
 
 ### Window 1: Morning agricultural and school preparation
 **timeframe:** [300, 480] (05:00 – 08:00)
 **Qualitative narrative:** Pre-dawn waking for indoor preparation (gathering tools, preparing food for the day, preparing children for school, brief morning tasks) before leaving the house. The routine is quick and efficient. Indoor lighbulb use is limited to brief, task-specific illumination. Outdoor lighting is used for brief, pre-dawn outdoor chores before the sun provides adequate visibility.
-**Key soacial practices:**
+**Key social practices:**
 - Preparing food for the day
 - Preparing children for school
 - Brief morning tasks before leaving the house
@@ -71,7 +71,7 @@
 - **w_1:** [300, 420] (05:00 – 07:00)
 - **func_time:** 90 minutes (1.5 hours)
 - **func_cycle:** 60 minutes (1 hour, strict. Bounded by sunrise.)
-- **occasional_use:** 0.5 (Casual/Seasonal, three times a week. It does not happen every day, suggesting this specific indoor morning routine might shift depending on the agricultural season or day of the week)
+- **occasional_use:** 0.42 (Casual/Seasonal, three times a week. It does not happen every day, suggesting this specific indoor morning routine might shift depending on the agricultural season or day of the week)
 
 
 ### **Virtual Appliance 2: Indoor occasional daytime light** 
@@ -90,7 +90,7 @@
 - **power:** 3 W (nominal power)
 - **w_1:** [1020, 1320] (17:00 – 22:00)
 - **func_time:** 120 minutes (2 hours)
-- **func_cycle:** 100 minutes (Non-negotiable / Highly Strict. The usage is continuous and essential, meaning the coefficient of variation for the duration will be extremely low.)
+- **func_cycle:** 100 minutes (Non-negotiable / Highly Strict. The usage is continuous and essential)
 - **occasional_use:** 1 (daily)
 
 ### **Virtual Appliance 4: Indoor safety light** 
@@ -101,7 +101,7 @@
 - **w_2:** [0, 300] (00:00 – 05:00)
 - **func_time:** 360 minutes (6 hours)
 - **func_cycle:** 100 minutes (Strict / Continuous. When utilized, the light is left on for extremely long, uninterrupted blocks while the household sleeps.)
-- **occasional_use:** 0.5 (Intermittent. Used roughly half the time, likely dependent on external factors like weather, perceived security, or remaining battery state of charge.)
+- **occasional_use:** 0.43 (Intermittent. Used roughly three times a week, likely dependent on external factors like weather, perceived security, or remaining battery state of charge.)
 
 ### **Virtual Appliance 5: Outdoor transit morning light** 
 - **Narrative:** Similar to the indoor morning routine, this represents brief, pre-dawn outdoor chores (e.g., feeding animals, preparing equipment in the yard) before the sun provides adequate visibility.
@@ -123,7 +123,7 @@
 
 
 ### **Virtual Appliance 7: Outdoor night transit light** 
-- **Narrative:** During the evening, family members move between structures (main room, secondary, latrine) or secure animals for the night. This light is used daily but operates in intermittent bursts rather than a continuous draw, reflecting transient outdoor movement rather than prolonged outdoor labor.
+- **Narrative:** During the evening, family members move between structures (main room, secondary, latrine) or secure animals for the night. This light is used daily but operates in intermittent bursts rather than a continuous draw, reflecting transient outdoor movement rather than prolonged outdoor labor. People will remain often outside even for eating during summer or spring.
 - **Anthropological window:** [1020, 1440] (17:00 – 23:59)
 - **Rigidity:** Moderate. While the overall window is wide, the usage happens in distinct blocks (around 40 minutes at a time) as people move about before resting.
 - **Frequency:** Daily
@@ -155,7 +155,56 @@
 
 - **power:** 2 W (nominal power)
 - **w_1:** [0, 1440] (00:00 – 23:59)
-- **func_time:** 480 minutes (8 hours)
-- **func_cycle:** 240 minutes (Changing cycles for the phones are around 4 hours, but the total daily time spent charging is estimated to be nearly 8 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios).)
+- **func_time:** 420 minutes (7 hours)
+- **func_cycle:** 180 minutes (Changing cycles for the phones are around 3 hours, but the total daily time spent charging is estimated to be nearly 8 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios).)
 - **occasional_use:** 1 (daily)
 
+## Seasonality and Agricultural Calendar in Raqaypampa
+
+PLANTING SEASON (October-January):
+        - Planting begins Oct-Nov (staple crops: potatoes, maize)
+        - Wheat sowing in January
+        - Mama Rosario festival (October) marks seasonal beginning
+        - Livestock actively controlled to protect newly sown fields
+        - High labor demands, families stay home to tend crops
+        - Expected Energy Impact: MODERATE-HIGH (field work, animal tending)
+
+    GROWING & EARLY HARVEST (February-April):
+        - Constant labor and crop care throughout rainy season
+        - Carnival (Feb-Mar): rituals to thank Mother Earth for growing crops
+        - Harvesting begins in March, continues through season
+        - Peak labor intensity beginning
+        - Expected Energy Impact: HIGH (ongoing field work, harvest preparation)
+
+    HARVESTING SEASON (May-June):
+        - Heavy harvesting work across the entire community
+        - Ends June 24 with San Juan festival (marks end of harvest, start of Andean New Year)
+        - Chhalaku: traditional bartering of highland products for valley goods
+        - Highest physical labor demands
+        - Expected Energy Impact: VERY HIGH (intensive harvesting)
+
+    FREE GRAZING & MIGRATION (July-September):
+        - June 24-October: Territory becomes communal pasture
+        - Animals released to graze freely on crop stubble (rastrojos)
+        - Temporary migration to regions like Chapare for supplementary income
+        - Families may be absent for extended periods
+        - Lowest agricultural labor demands
+        - Expected Energy Impact: LOW (minimal field work, household absence possible)
+
+According to observations, the energy consumption from the Solar Home Systems cannot vary significantly due to its technical limitations. However, seasonality is primarily friven by family mobility and the agricultural calendar. In the specific case of Profile 1, the above parametrization corresponds to the baseline, where family remains in the household and the energy consumption is stable. However, during the Growing and Grazing season, the family may be absent for extended periods, which would result in a significant reduction of energy consumption. Families tend to move temporarily near to the lands where they are working or if not moving, they stay longer periods of time there. These periods of absense are highly constrained by children attending to school, which is a non-negotiable priority for the family, causing partial absence. Therefore, the energy consumption during these periods of absense is expected to be lower than the baseline, but not zero. To achieve this representation in the model, the Virtual Appliances 1, 2, 3, 5, 6 and 7 will be parametrized with a lower occasional_use value during the Growing and Grazing season. The Virtual Appliances 4 and 8 will be parametrized with a the same occasional_use value as the baseline during the Growing and Grazing season. The Virtual Appliance 9 will be parametrized with a lower func_time value during the Growing and Grazing season.
+
+Parameters that change during the Growing and Grazing season:
+- Virtual Appliance 1: Indoor morning light
+    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+- Virtual Appliance 2: Indoor occasional daytime light
+    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+- Virtual Appliance 3: Indoor task light for homework and dinner
+    - occasional_use: 0.71 (Casual / Seasonal, five times a week)
+- Virtual Appliance 5: Outdoor transit morning light
+    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+- Virtual Appliance 6: Outdoor rare daytime light
+    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+- Virtual Appliance 7: Outdoor night transit light
+    - occasional_use: 0.71 (Casual / Seasonal, five times a week)
+- Virtual Appliance 9: Portable devices charging
+    - func_time: 300 minutes (5 hours)
