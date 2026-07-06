@@ -72,10 +72,12 @@
 - **Narrative:** Isolated elders frequently exhibit altered sleep architectures, which can include waking well before dawn for unhurried indoor routines such as warmth preparation (e.g., lighting a stove) or basic navigation. However, qualitative interviews explicitly reveal that physical limitations, fatigue, and environmental factors (like cold weather) often prevent them from rising early. Because this household completely lacks external structural constraints—such as communal harvesting shifts or school start times—they can accommodate these physical limitations. Consequently, morning lighting is not a daily guarantee; it is dictated by the intersection of biological rhythm and day-to-day physical capacity.
 
 - **power:** 3 W (nominal power)
-- **w_1:** [360, 480] (06:00 – 08:00)
-- **func_time:** 60 minutes (1 hours)
-- **func_cycle:** 30 minutes (High Chaos. The absence of strict external deadlines, compounded by fluctuating physical health, means the exact waking hour drifts significantly.)
-- **occasional_use:** 0.42 (Intermittent. three times a week. It does not happen every day, suggesting this specific indoor morning routine might shift depending on natural light conditions, physical health, or day of the week)
+- **w_1:** [180, 480] (03:00 – 08:00)
+- **func_time:** 120 minutes (2 hours)
+- **time_fraction_random_variability:** 0.2 
+- **random_var_w:** 0.3
+- **func_cycle:** 60 minutes (High Chaos. The absence of strict external deadlines, compounded by fluctuating physical health, means the exact waking hour drifts significantly.)
+- **occasional_use:** 0.28 (Intermittent. Two times a week. It does not happen every day, suggesting this specific indoor morning routine might shift depending on natural light conditions, physical health, or day of the week. Elders normally wake up after sunrise.)
 
 ### **Virtual Appliance 2: Indoor occasional daytime light** 
 - **Narrative:** Unlike active agricultural families who spend the majority of the day outdoors, isolated elders experience prolonged indoor residency. While natural daylight is generally sufficient, their specific physical needs (e.g., declining visual acuity) and specific localized tasks (e.g., sewing, sorting seeds, cooking) necessitate occasional supplementary lighting during the day. Furthermore, overcast weather significantly drives this load, as elders are more likely to remain indoors and require light for safety and comfort. However, energy poverty legacy limits the usage of lights during the day, and they are used only when absolutely necessary. This is a highly variable, non-daily practice, reflecting the intersection of physical health, task requirements, and environmental conditions.
@@ -83,33 +85,33 @@
 - **power:** 3 W (nominal power)
 - **w_1:** [480, 1080] (08:00 – 18:00)
 - **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.3
 - **func_cycle:** 30 minutes (High Chaos. Usage is inherently reactive—triggered by fluctuating daylight conditions, specific visual tasks, or intermittent indoor chores rather than a rigid daily schedule.)
-- **occasional_use:** 0.28 (Rare/intermitent, twice a week.)
+- **occasional_use:** 0.28 (Rare/intermitent, trice a week.)
 
 ### **Virtual Appliance 3: Indoor evening task light** 
 - **Narrative:** Active late-night task lighting is generally uncharacteristic for this demographic, as their daily rhythms are anchored by early resting times. However, this baseline is punctuated by high behavioral variability. Occasional usage spikes are driven by two distinct sociological factors: disrupted sleep architectures (such as waking briefly in the night for specific necessities) and, crucially, intermittent visits from out-migrated family members. During these social visits, the elder's standard isolated routine is temporarily disrupted, significantly extending both the duration and the temporal window of lighting use as the household momentarily mimics the energy behavior of a larger, active family unit.
-- **Anthropological window:** [1020, 1440] (17:00 – 23:59)
-- **Rigidity:** High Chaos. The start times and durations are highly variable, representing unpredictable wakefulness rather than a scheduled routine.
-- **Frequency:** Daily, but highly variable.
 
 - **power:** 3 W (nominal power)
 - **w_1:** [1060, 1260] (18:00 – 21:00)
 - **func_time:** 120 minutes (2 hours)
+- **time_fraction_random_variability:** 0.2
+- **random_var_w:** 0.2
 - **func_cycle:** 60 minutes (High Chaos. The start times and durations are highly variable, representing unpredictable wakefulness rather than a scheduled routine.)
-- **occasional_use:** 1 (daily)
+- **occasional_use:** 0.71 (daily)
 
 ### **Virtual Appliance 4: Indoor safety light** 
 - **Narrative:** There is a deep psychological need for overnight visibility for safety, comfort, and early morning navigation (due to altered sleep architectures common in elderly populations). The light acts as a constant nighttime companion. Lights are not used for morning tasks since there is no need for early wake-up.
-- **Anthropological window:** [0, 300] (00:00 – 05:00)
-- **Rigidity:** Strict. The usage is massive and continuous, running in solid 4-hour blocks while the user rests or wakes early.
-- **Frequency:** Highly frequent
 
 - **power:** 3 W (nominal power)
 - **w_1:** [1260, 1440] (21:00 – 23:59)
 - **w_2:** [0, 360] (00:00 – 06:00)
 - **func_time:** 480 minutes (8 hours)
+- **time_fraction_random_variability:** 0.1
+- **random_var_w:** 0.2
 - **func_cycle:** 150 minutes (Strict. The usage is massive and continuous, running in solid 7-hour blocks while the user rests or wakes early.)
-- **occasional_use:** 0.57 (Highly frequent, 4 times a week)
+- **occasional_use:** 0 (Highly frequent, 1 time a week)
 
 ### **Virtual Appliance 5: Outdoor transit morning light** 
 
@@ -118,6 +120,8 @@
 - **power:** 2 W (nominal power)
 - **w_1:** [390, 480] (06:30 – 08:00) (it starts a bit later than the indoor morning light, as the household first completes indoor preparation before moving outside)
 - **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.3
 - **func_cycle:** 15 minutes (Moderate. While the window is tight, the usage is extremely brief, cycles of only 15 minutes)
 - **occasional_use:** 0.14 (Very rare, once a week. Since elders wake up later than younger populations, this outdoor light is used only when absolutely necessary, and not every day.)
 
@@ -125,42 +129,47 @@
 - **Narrative:** not reported as a regular or daily habit. Not needed for standard agricultural work, but may be used during rare, specific daytime events (e.g., severe weather forcing outdoor tasks to be performed in low-light conditions, or a specific seasonal chore that requires outdoor illumination).
 
 - **power:** 2 W (nominal power)
-- **w_1:** [480, 1020] (08:00 – 17:00)
+- **w_1:** [480, 1110] (08:00 – 18:30)
 - **func_time:** 30 minutes (0.5 hours)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.3
 - **func_cycle:** 10 minutes (High Chaos. Because the usage is triggered by unpredictable external factors (weather, health, specific chores) rather than scheduled daily habits, both the start times and the durations will exhibit extreme variability.)
-- **occasional_use:** 0.14 (Super rare  / Intermittent, once a week)
+- **occasional_use:** 0 (Super rare  / Intermittent, once a week)
 
 
 ### **Virtual Appliance 7: Outdoor night transit light** 
 - **Narrative:** In stark contrast to active agricultural or extended households, isolated elders exhibit minimal outdoor mobility after dusk due to heightened physical vulnerability, declining visual acuity, and general safety concerns. Consequently, the utilization of outdoor illumination is entirely divested from social gathering or evening chores. It functions strictly as a necessity-driven transit light. When triggered, it is exclusively for very brief, essential movements (such as a short, necessary trip to an outdoor latrine or to secure an exterior door) before retiring early for the night.
 
 - **power:** 2 W (nominal power)
-- **w_1:** [1020, 1260] (17:00 – 21:00) (Stopped at 21:30 because the household is generally settled for the night by this time before going to sleep)
-- **func_time:** 90 minutes (1,5 hour)
+- **w_1:** [1110, 1230] (18:30 – 20:30) (Stopped at 21:30 because the household is generally settled for the night by this time before going to sleep)
+- **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.2
+- **random_var_w:** 0.3
 - **func_cycle:** 30 minutes (Moderate. While the overall window is wide, the usage happens in distinct blocks (around 30 minutes at a time) as people move about before resting.)
-- **occasional_use:** 1 (daily)
+- **occasional_use:** 0.28 (not daily because they normally sleep earlier.)
 
 ### **Virtual Appliance 8: Outdoor safety light** 
 - **Narrative:** Not reported as a consistent, daily habit, but some families will occasionally leave an outdoor light on during the night for security or comfort. This is not active task lighting; it is a passive, continuous background load.
-- **Anthropological window:** [0, 300] (00:00 – 05:00)
-- **Rigidity:** Strict / Continuous. When utilized, the light is left on for extremely long, uninterrupted blocks while the household sleeps.
-- **Frequency:** Rare 
 
 - **power:** 2 W (nominal power)
 - **w_1:** [1260, 1440] (21:00 – 23:59)
 - **w_2:** [0, 360] (00:00 – 06:00)
 - **func_time:** 480 minutes (8 hours)
+- **time_fraction_random_variability:** 0.1
+- **random_var_w:** 0.2
 - **func_cycle:** 150 minutes (Strict. The usage is massive and continuous, running in solid 7-hour blocks while the user rests or wakes early.)
 - **occasional_use:** 0 (Extremely rare, once a month or less. This is not a daily habit, but rather an occasional practice driven by specific security concerns or comfort needs.)
 
 
 ### **Virtual Appliance 9: Radio Companionship & Phone Charging** 
-- **Narrative:** For isolated elders, the radio and/or the phone serves as a critical socio-psychological lifeline, providing constant background noise, news, and virtual companionship. Mobile phones are used to communicate with family. These devices are occasionally charged at any tiem of they, when needed. The time of use of phones or radios is reduced mainly due to health problems related to vision and hearing. Regarding phones, simpler hardware is reported, compared with younger populations.
-- **power:** 2 W (nominal power)
-- **w_1:** [0, 1440] (00:00 – 23:59)
-- **func_time:** 240 minutes (4 hours)
-- **func_cycle:** 210 minutes (Changing cycles for the phones are around 3.5 hours, but the total daily time spent charging is estimated to be nearly 4 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios))
-- **occasional_use:** 1 (daily)
+- **Narrative:** For isolated elders, the radio and/or the phone serves as a critical socio-psychological lifeline, providing constant background noise, news, and virtual companionship. Mobile phones are used to communicate with family. These devices are occasionally charged at any time of they, when needed. The time of use of phones or radios is reduced mainly due to health problems related to vision and hearing. Regarding phones, simpler hardware is reported, compared with younger populations.
+- **power:** 2.5 W (nominal power)
+- **w_1:** [540, 1440] (09:00 – 23:59)
+- **func_time:** 180 minutes (3 hours)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0
+- **func_cycle:** 90 minutes (Changing cycles for the phones are around 1.5 hours, but the total daily time spent charging is estimated to be nearly 4 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios))
+- **occasional_use:** 0.5 (non-daily because since they only use the phone with communication purposes)
 
 
 ## Seasonality and Agricultural Calendar in Raqaypampa
