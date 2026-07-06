@@ -70,6 +70,8 @@
 - **power:** 3 W (nominal power)
 - **w_1:** [300, 420] (05:00 – 07:00)
 - **func_time:** 90 minutes (1.5 hours)
+- **time_fraction_random_variability:** 0.2
+- **random_var_w:** 0.3
 - **func_cycle:** 60 minutes (1 hour, strict. Bounded by sunrise.)
 - **occasional_use:** 0.42 (Casual/Seasonal, three times a week. It does not happen every day, suggesting this specific indoor morning routine might shift depending on the agricultural season or day of the week)
 
@@ -80,8 +82,10 @@
 - **power:** 3 W (nominal power)
 - **w_1:** [420, 1020] (07:00 – 17:00)
 - **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.3
+- -**random_var_w:** 0.3
 - **func_cycle:** 30 minutes (High Chaos. Because the usage is triggered by unpredictable external factors (weather, health, specific chores) rather than scheduled daily habits, both the start times and the durations will exhibit extreme variability.)
-- **occasional_use:** 0.28 (Rare / Intermittent, twice a week)
+- **occasional_use:** 0.57 (Rare / Intermittent, four times a week)
 
 
 ### **Virtual Appliance 3: Indoor task light for homework and dinner** 
@@ -89,8 +93,10 @@
 
 - **power:** 3 W (nominal power)
 - **w_1:** [1020, 1320] (17:00 – 22:00)
-- **func_time:** 120 minutes (2 hours)
-- **func_cycle:** 100 minutes (Non-negotiable / Highly Strict. The usage is continuous and essential)
+- **func_time:** 180 minutes (3 hours)
+- **time_fraction_random_variability:** 0.1
+- **random_var_w:** 0.2
+- **func_cycle:** 150 minutes (Non-negotiable / Highly Strict. The usage is continuous and essential)
 - **occasional_use:** 1 (daily)
 
 ### **Virtual Appliance 4: Indoor safety light** 
@@ -98,66 +104,70 @@
 
 - **power:** 3 W (nominal power)
 - **w_1:** [1320, 1440] (22:00 – 23:59)
-- **w_2:** [0, 300] (00:00 – 05:00)
+- **w_2:** [0, 330] (00:00 – 05:30)
 - **func_time:** 360 minutes (6 hours)
+- **time_fraction_random_variability:** 0.1
+- **random_var_w:** 0.2
 - **func_cycle:** 100 minutes (Strict / Continuous. When utilized, the light is left on for extremely long, uninterrupted blocks while the household sleeps.)
-- **occasional_use:** 0.43 (Intermittent. Used roughly three times a week, likely dependent on external factors like weather, perceived security, or remaining battery state of charge.)
+- **occasional_use:** 0.28 (Intermittent. Used roughly two times a week, likely dependent on external factors like weather, perceived security, or remaining battery state of charge.)
 
 ### **Virtual Appliance 5: Outdoor transit morning light** 
 - **Narrative:** Similar to the indoor morning routine, this represents brief, pre-dawn outdoor chores (e.g., feeding animals, preparing equipment in the yard) before the sun provides adequate visibility.
 
 - **power:** 2 W (nominal power)
-- **w_1:** [330, 480] (05:30 – 08:00) (it starts a bit later than the indoor morning light, as the household first completes indoor preparation before moving outside)
+- **w_1:** [270, 450] (04:30 – 07:30) (it starts a bit later than the indoor morning light, as the household first completes indoor preparation before moving outside)
 - **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.2
+- **random_var_w:** 0.3
 - **func_cycle:** 50 minutes (Strict. Bounded by the sunrise.)
-- **occasional_use:** 0.33 (Casual/Seasonal)
+- **occasional_use:** 0.28 (highly frequent)
 
 ### **Virtual Appliance 6: Outdoor rare daytime light** 
 - **Narrative:** not reported as a regular or daily habit. Not needed for standard agricultural work, but may be used during rare, specific daytime events (e.g., severe weather forcing outdoor tasks to be performed in low-light conditions, or a specific seasonal chore that requires outdoor illumination).
 
 - **power:** 2 W (nominal power)
-- **w_1:** [420, 1020] (07:00 – 17:00)
+- **w_1:** [450, 1050] (07:00 – 17:30)
 - **func_time:** 60 minutes (1 hour)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.3
 - **func_cycle:** 30 minutes (High Chaos. Because the usage is triggered by unpredictable external factors (weather, health, specific chores) rather than scheduled daily habits, both the start times and the durations will exhibit extreme variability.)
 - **occasional_use:** 0.14 (Rare / Intermittent, once a week)
 
 
 ### **Virtual Appliance 7: Outdoor night transit light** 
 - **Narrative:** During the evening, family members move between structures (main room, secondary, latrine) or secure animals for the night. This light is used daily but operates in intermittent bursts rather than a continuous draw, reflecting transient outdoor movement rather than prolonged outdoor labor. People will remain often outside even for eating during summer or spring.
-- **Anthropological window:** [1020, 1440] (17:00 – 23:59)
-- **Rigidity:** Moderate. While the overall window is wide, the usage happens in distinct blocks (around 40 minutes at a time) as people move about before resting.
-- **Frequency:** Daily
 
 - **power:** 2 W (nominal power)
-- **w_1:** [1020, 1260] (17:00 – 21:00) (Stopped at 21:00 because the household is generally settled for the night by this time, and outdoor movement is minimal after this hour.)
+- **w_1:** [1050, 1290] (17:30 – 21:30) (Stopped at 21:30 because the household is generally settled for the night by this time, and outdoor movement is minimal after this hour.)
 - **func_time:** 90 minutes (1,5 hour)
-- **func_cycle:** 30 minutes (Moderate. While the overall window is wide, the usage happens in distinct blocks (around 30 minutes at a time) as people move about before resting.)
+- **time_fraction_random_variability:** 0.2
+- **random_var_w:** 0.3
+- **func_cycle:** 70 minutes (Moderate. While the overall window is wide, the usage happens in distinct blocks (around 30 minutes at a time) as people move about before resting.)
 - **occasional_use:** 1 (daily)
 
 ### **Virtual Appliance 8: Outdoor safety light** 
 - **Narrative:** Not reported as a consistent, daily habit, but some families will occasionally leave an outdoor light on during the night for security or comfort. This is not active task lighting; it is a passive, continuous background load.
-- **Anthropological window:** [0, 300] (00:00 – 05:00)
-- **Rigidity:** Strict / Continuous. When utilized, the light is left on for extremely long, uninterrupted blocks while the household sleeps.
-- **Frequency:** Rare 
 
 - **power:** 2 W (nominal power)
-- **w_1:** [1320, 1440] (22:00 – 23:59)
+- **w_1:** [1230, 1440] (21:30 – 23:59)
 - **w_2:** [0, 300] (00:00 – 05:00)
 - **func_time:** 30 minutes (0.5 hours)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.3
 - **func_cycle:** 15 minutes (Moderate. It is used for very specific, brief tasks (e.g., checking on animals, securing doors) rather than continuous illumination.  )
-- **occasional_use:** 0.14 (Rare / Intermittent, once a week. It is not a daily habit, but rather a sporadic precautionary measure.)
+- **occasional_use:** 0 (Rare / Intermittent, once a week. It is not a daily habit, but rather a sporadic precautionary measure.)
 
 ### **Virtual Appliance 9: Portable devices charging** 
 - **Narrative:** Information and communication are constant background needs, recently increased for education purposes. Devices are plugged in opportunistically whenever power is available. Because charging is passive, it is entirely decoupled from strict human behavioral windows and occurs throughout the entire day. In the surveys, people strugled to estimate the total time spent charging, but it was clear that it was a significant portion of the day. The total daily time spent charging is estimated to be nearly 7 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios).
-- **Anthropological window:** [0, 1440] (24 Hours)
-- **Rigidity:** [300, 420] (05:00 – 07:00)
-- **Frequency:** Daily, drawing significant total daily time (nearly 8 hours of total charging spread across multiple cycles/devices including mobile phones, flashlights and radio).
 
-- **power:** 2 W (nominal power)
-- **w_1:** [0, 1440] (00:00 – 23:59)
+- **power:** 3 W (nominal power)
+- **w_1:** [240, 1440] (00:00 – 23:59)
 - **func_time:** 420 minutes (7 hours)
-- **func_cycle:** 180 minutes (Changing cycles for the phones are around 3 hours, but the total daily time spent charging is estimated to be nearly 8 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios).)
+- **time_fraction_random_variability:** 0.3
+- **random_var_w:** 0.2
+- **func_cycle:** 120 minutes (Changing cycles for the phones are around 2 hours, but the total daily time spent charging is estimated to be nearly 6 hours, spread across multiple cycles and devices (including mobile phones, flashlights, and radios).)
 - **occasional_use:** 1 (daily)
+
 
 ## Seasonality and Agricultural Calendar in Raqaypampa
 
@@ -195,13 +205,13 @@ According to observations, the energy consumption from the Solar Home Systems ca
 
 Parameters that change during the Growing and Grazing season:
 - Virtual Appliance 1: Indoor morning light
-    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+    - occasional_use: 0.28 (Rare / Intermittent, twice a week)
 - Virtual Appliance 2: Indoor occasional daytime light
     - occasional_use: 0.14 (Rare / Intermittent, once a week)
 - Virtual Appliance 3: Indoor task light for homework and dinner
-    - occasional_use: 0.71 (Casual / Seasonal, five times a week)
+    - occasional_use: 1 (Casual / Seasonal, five times a week)
 - Virtual Appliance 5: Outdoor transit morning light
-    - occasional_use: 0.14 (Rare / Intermittent, once a week)
+    - occasional_use: 0.71 (Rare / Intermittent, once a week)
 - Virtual Appliance 6: Outdoor rare daytime light
     - occasional_use: 0.14 (Rare / Intermittent, once a week)
 - Virtual Appliance 7: Outdoor night transit light
