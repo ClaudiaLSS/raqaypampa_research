@@ -1,80 +1,36 @@
 """
 validate_simulation.py
 ======================
-Validates RAMP-simulated load profiles against real datalogger telemetry
-for the Raqaypampa profiles.
+Validates RAMP-simulated load profiles against empirical baseline profiles
+(built by build_baseline_profiles.py) for the Raqaypampa profiles.
 
-It reuses the exact metric set and plot types from the first-approach
-validation engine, but reads the file format produced by the current
-run_simulation.py:
+  Simulated (per profile):  simulation_results/profile_<pid>_minute.csv/parquet
+                             (per household; averaged -> representative household)
 
-  Simulated  (per profile):  <sim_dir>/profile_<pid>_minute_aggregated.csv
-                             columns: timestamp, power_w
-             (per household, if you prefer): profile_<pid>_minute.csv/parquet
-                             columns: timestamp, power_w, household_id, ...
+  Baseline  (per profile):  baseline_results/baseline_profile_<id>.csv
+                             columns: timestamp, power_w, n_users_contributing
 
-  Real       (per user):     <real_dir>/tpdin_user_<user>.csv
-                             (falls back to old_user_<user>.csv)
-                             raw datalogger channels v_/c_ per appliance
-
-The real total power is reconstructed the same way as the first engine:
-    p_total = (v_led_1*c_led_1) + (v_led_2*c_led_2) + (v_usb*c_usb)   [clipped >= 0]
-
-Time filtering
---------------
-You can restrict the comparison to:
-  --days N            first N days present in each dataset
-  --months 1 2 3      specific calendar months only
-These mirror the original engine's behaviour exactly.
-
-Simulated data source
-----------------------
---sim_source controls which simulated file is used for comparison:
-  minute      (DEFAULT) per-household minute file, averaged across
-              households -> one representative household. This is the
-              only option directly comparable to a single real user and
-              is now the default to avoid accidentally comparing one
-              real household against a summed multi-household load.
-  aggregated  the group-aggregated file (SUM across households). Only
-              meaningful if you are deliberately comparing a real user
-              against the total load of a simulated household cluster
-              (e.g. for a mini-grid sizing exercise), not for standard
-              per-household validation. Must be requested explicitly.
-  auto        kept for backwards compatibility: behaves like 'minute'.
-
-Metrics (unchanged from the first approach)
--------------------------------------------
+Metrics
+-------
 Tier 1 (Error):        RMSE, LCSS score, MPDADA ratio
 Tier 2 (Structure):    Modal peak hour, average-curve peak, absolute max power,
                        MRSD chaos index
 Tier 2 (Energy/Var):   Overall mean power, daily energy (Wh), base load 00-04h
 Tier 2 (Macro windows):Morning / Daytime / Evening / Night mean loads
 
-Plots (unchanged from the first approach)
------------------------------------------
+Plots
+-----
 1. Shadow + mean:  all daily curves faint, mean curve bold (real | sim panels)
 2. Overlaid means: real vs sim average curves on one axis
 3. Random week:    a continuous 7-day slice, real over sim
 
 Usage
 -----
-    # validate simulated Profile 1 against real user 74, whole overlap
-    # (uses the per-household minute file, averaged -> representative household)
-    python validate_simulation.py --user 74 --profile 1
-
-    # first 30 days only
-    python validate_simulation.py --user 74 --profile 1 --days 30
+    # validate simulated profile 1 against baseline profile 1, whole overlap
+    python validate_simulation.py --baseline 1 --profile 1
 
     # only January, February, March
-    python validate_simulation.py --user 74 --profile 1 --months 1 2 3
-
-    # explicitly compare against the SUMMED group load instead
-    # (only meaningful for cluster/mini-grid sizing comparisons)
-    python validate_simulation.py --user 74 --profile 1 --sim_source aggregated
-
-    # point at custom folders
-    python validate_simulation.py --user 74 --profile 1 \
-        --real_dir data/clean/timeseries --sim_dir simulation_results
+    python validate_simulation.py --baseline 1 --profile 1 --months 1 2 3
 """
 
 from __future__ import annotations
@@ -93,8 +49,8 @@ import matplotlib.pyplot as plt
 # Paths (overridable from the CLI)
 # ---------------------------------------------------------------------------
 
-DEFAULT_REAL_DIR = Path("data") / "clean" / "timeseries" / 'baseline_results'
-DEFAULT_SIM_DIR  = Path("simulation_results")
+DEFAULT_BASELINE_DIR = Path("..") / ".." / "data" / "clean" / "timeseries" / "baseline_results"
+DEFAULT_SIM_DIR       = Path("simulation_results")
 
 # Expected real-data sampling intervals (minutes). Used only to sanity-check
 # the inferred interval_hours in calculate_structural_metrics; a real value
@@ -116,28 +72,6 @@ def ensure_output_dirs(sim_dir: Path) -> tuple[Path, Path]:
 # ---------------------------------------------------------------------------
 # Data loading
 # ---------------------------------------------------------------------------
-
-def _reconstruct_real_power(df_real: pd.DataFrame) -> pd.Series:
-    """
-    Reconstruct total real power from raw datalogger voltage/current
-    channels, exactly as the first-approach engine did. Missing channels
-    default to zero, and the OLD single-LED format (c_led) is handled.
-    """
-    zero = pd.Series(0.0, index=df_real.index)
-
-    v_usb   = df_real.get("v_usb",   zero)
-    c_usb   = df_real.get("c_usb",   zero)
-    v_led_1 = df_real.get("v_led_1", zero)
-    c_led_1 = df_real.get("c_led_1", df_real.get("c_led", zero))  # OLD format fallback
-    v_led_2 = df_real.get("v_led_2", zero)
-    c_led_2 = df_real.get("c_led_2", zero)
-
-    p_led_1 = (v_led_1 * c_led_1).clip(lower=0)
-    p_led_2 = (v_led_2 * c_led_2).clip(lower=0)
-    p_usb   = (v_usb   * c_usb).clip(lower=0)
-
-    return p_led_1 + p_led_2 + p_usb
-
 
 def load_real_baseline(baseline_profile_id: str, baseline_dir: Path) -> pd.DataFrame:
     """
@@ -195,99 +129,6 @@ def load_real_baseline(baseline_profile_id: str, baseline_dir: Path) -> pd.DataF
     return df[["timestamp", "p_total", "date_only", "time_decimal"]]
 
 
-def load_real(user_id: str, real_dir: Path) -> pd.DataFrame:
-    """Load and prepare one real user's telemetry."""
-    print(f"\n[*] Loading real data for user: {user_id}")
-
-    real_file = real_dir / f"tpdin_user_{user_id}.csv"
-    if not real_file.exists():
-        real_file = real_dir / f"old_user_{user_id}.csv"
-        if not real_file.exists():
-            print(f"[-] Error: real data file not found for user {user_id} in {real_dir}")
-            sys.exit(1)
-
-    df = pd.read_csv(real_file)
-    n_raw = len(df)
-
-    # The first engine used the 'corrected_timestamp' column.
-    ts_col = "corrected_timestamp" if "corrected_timestamp" in df.columns else "timestamp"
-    print(f"[*] Using timestamp column: '{ts_col}'")
-    df["timestamp"] = pd.to_datetime(df[ts_col], errors="coerce")
-
-    n_bad_ts = df["timestamp"].isna().sum()
-    df = df.dropna(subset=["timestamp"])
-    n_kept = len(df)
-    if n_bad_ts > 0:
-        print(
-            f"[!] Warning: {n_bad_ts}/{n_raw} rows ({n_bad_ts / n_raw:.1%}) had an "
-            f"unparseable or missing '{ts_col}' and were dropped. "
-            f"{n_kept} rows remain."
-        )
-    else:
-        print(f"[*] Loaded {n_kept} rows, all timestamps parsed successfully.")
-
-    df["p_total"]      = _reconstruct_real_power(df)
-    df["date_only"]    = df["timestamp"].dt.date
-    df["time_decimal"] = df["timestamp"].dt.hour + df["timestamp"].dt.minute / 60.0
-
-    # Quick sanity print of the reconstructed power channels, so an obvious
-    # unit mismatch (e.g. mV/mA vs V/A) is visible up front rather than
-    # silently shifting every downstream metric by a constant factor.
-    sample = df[["p_total"]].head(5)
-    print("[*] Sample of reconstructed real power (first 5 rows, W):")
-    print(sample.to_string(index=False))
-    print(
-        f"[*] Real power range: min={df['p_total'].min():.2f} W, "
-        f"max={df['p_total'].max():.2f} W, mean={df['p_total'].mean():.2f} W"
-    )
-
-    print(f"[*] Loaded real file: {real_file.name}")
-    return df[["timestamp", "p_total", "date_only", "time_decimal"]]
-
-
-def load_sim(profile_id: str, sim_dir: Path) -> tuple[pd.DataFrame, str]:
-    """
-    Load the simulated profile produced by run_simulation.py, using the
-    per-household minute file averaged across households. This is the
-    only simulated source directly comparable to a single real user.
-    """
-    return load_sim_minute_average(profile_id, sim_dir)
-
-
-def load_sim_aggregated(profile_id: str, sim_dir: Path) -> tuple[pd.DataFrame, str]:
-    """
-    Explicit group-aggregated path: reads the SUM across households.
-    Only meaningful for comparing a real user against the total load of
-    a simulated household cluster (e.g. mini-grid sizing), NOT for
-    standard one-real-user-vs-one-simulated-household validation. Must
-    be requested explicitly via --sim_source aggregated.
-    """
-    profile_name = f"PROFILE_{profile_id}"
-    agg_path = sim_dir / f"profile_{profile_id}_minute_aggregated.csv"
-
-    if not agg_path.exists():
-        print(f"[-] Error: aggregated file not found for profile {profile_id}: {agg_path}")
-        print("    Run run_simulation.py first.")
-        sys.exit(1)
-
-    print(f"[*] Found simulated data: {agg_path.name}  (group-aggregated / SUMMED across households)")
-    print(
-        "[!] IMPORTANT: this file is the SUM of power across all simulated households "
-        "in this profile. Comparing it directly to a single real user's load is only "
-        "valid for cluster/mini-grid-sizing style comparisons, not standard per-household "
-        "validation. Use --sim_source minute (the default) for a like-for-like comparison."
-    )
-
-    df = pd.read_csv(agg_path)
-    df["timestamp"] = pd.to_datetime(df["timestamp"])
-    df = df[["timestamp", "power_w"]].copy()
-
-    df["p_total"]      = df["power_w"]
-    df["date_only"]    = df["timestamp"].dt.date
-    df["time_decimal"] = df["timestamp"].dt.hour + df["timestamp"].dt.minute / 60.0
-    return df[["timestamp", "p_total", "date_only", "time_decimal"]], profile_name
-
-
 def load_sim_minute_average(profile_id: str, sim_dir: Path) -> tuple[pd.DataFrame, str]:
     """
     Default / explicit per-household path: always read the minute-level
@@ -329,23 +170,15 @@ def load_sim_minute_average(profile_id: str, sim_dir: Path) -> tuple[pd.DataFram
 def apply_time_filters(
     df_real: pd.DataFrame,
     df_sim: pd.DataFrame,
-    num_days: int | None,
     target_months: list[int] | None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Apply month or first-N-days filtering, mirroring the first engine."""
+    """Apply optional calendar-month filtering, mirroring the first engine."""
     if target_months is not None:
         print(f"[*] Limiting validation strictly to months: {target_months}")
         df_real = df_real[df_real["timestamp"].dt.month.isin(target_months)]
         df_sim  = df_sim[df_sim["timestamp"].dt.month.isin(target_months)]
         if df_real.empty or df_sim.empty:
             print("[-] Warning: missing data for selected months.")
-
-    elif num_days is not None and num_days > 0:
-        print(f"[*] Limiting validation to first {num_days} days...")
-        real_days = sorted(df_real["date_only"].unique())[:num_days]
-        sim_days  = sorted(df_sim["date_only"].unique())[:num_days]
-        df_real = df_real[df_real["date_only"].isin(real_days)]
-        df_sim  = df_sim[df_sim["date_only"].isin(sim_days)]
 
     print(f"[+] Real data active: {df_real['date_only'].nunique()} days")
     print(f"[+] Sim data active:  {df_sim['date_only'].nunique()} days")
@@ -675,87 +508,32 @@ def calculate_validation_metrics(
 
 def main():
     ap = argparse.ArgumentParser(
-        description="Validate RAMP-simulated profiles against real user telemetry."
+        description="Validate a RAMP-simulated profile against an empirical baseline profile."
     )
-    ap.add_argument("--user", type=str, default=None,
-                    help="Real user ID for the baseline (e.g. '74'). Required when "
-                         "--real_source is 'user' (the default).")
+    ap.add_argument("--baseline", type=str, required=True,
+                    help="Baseline profile id to validate against (e.g. '1'), "
+                         "from baseline_results/baseline_profile_<id>.csv")
     ap.add_argument("--profile", type=str, required=True,
-                    help="Simulated profile id to validate against (e.g. '1')")
-    ap.add_argument("--days", type=int, default=None,
-                    help="Limit validation to the first N days present in each dataset")
+                    help="Simulated profile id to validate (e.g. '1')")
     ap.add_argument("--months", type=int, nargs="+", choices=range(1, 13), default=None,
-                    help="Limit validation to specific months (e.g. --months 1 2 3)")
-    ap.add_argument("--real_dir", type=str, default=str(DEFAULT_REAL_DIR),
-                    help=f"Directory with real telemetry CSVs (default: {DEFAULT_REAL_DIR})")
-    ap.add_argument("--sim_dir", type=str, default=str(DEFAULT_SIM_DIR),
-                    help=f"Directory with run_simulation.py output (default: {DEFAULT_SIM_DIR})")
-    ap.add_argument(
-        "--real_source", choices=["user", "baseline"], default="user",
-        help=(
-            "Where the 'real' comparison data comes from. 'user' (DEFAULT): a single "
-            "raw datalogger file for --user, reconstructed from its v_/c_ channels. "
-            "'baseline': a pre-built multi-user empirical baseline produced by "
-            "build_baseline_profiles.py (baseline_profile_<id>.csv), useful when you "
-            "want to validate against several real households averaged together "
-            "rather than just one."
-        ),
-    )
-    ap.add_argument("--baseline_dir", type=str, default="baseline_results",
-                    help="Directory with build_baseline_profiles.py output "
-                         "(used when --real_source baseline; default: baseline_results)")
-    ap.add_argument("--baseline_profile", type=str, default=None,
-                    help="Baseline profile id to load when --real_source baseline "
-                         "(default: same as --profile, i.e. compare profile N's "
-                         "simulation against profile N's empirical baseline)")
-    ap.add_argument(
-        "--sim_source", choices=["minute", "aggregated", "auto"], default="minute",
-        help=(
-            "Which simulated file to use for comparison. 'minute' (DEFAULT): "
-            "per-household file averaged across households -> one representative "
-            "household, directly comparable to a single real user. 'aggregated': "
-            "the SUMMED group load across all simulated households - only valid "
-            "for cluster/mini-grid-sizing comparisons, must be requested explicitly. "
-            "'auto' is kept for backwards compatibility and behaves like 'minute'."
-        ),
-    )
-    ap.add_argument("--week_seed", type=int, default=None,
-                    help="Seed for the random-week plot (for reproducible figures)")
+                    help="Limit validation to specific months (e.g. --months 1 2 3). "
+                         "Default: use the full overlap between datasets.")
     args = ap.parse_args()
 
-    if args.real_source == "user" and not args.user:
-        print("[-] Error: --user is required when --real_source is 'user' "
-              "(the default). Pass --user, or use --real_source baseline instead.")
-        sys.exit(1)
+    figures_dir, metrics_dir = ensure_output_dirs(DEFAULT_SIM_DIR)
 
-    real_dir = Path(args.real_dir)
-    sim_dir  = Path(args.sim_dir)
-    baseline_dir = Path(args.baseline_dir)
-    figures_dir, metrics_dir = ensure_output_dirs(sim_dir)
+    df_real = load_real_baseline(args.baseline, DEFAULT_BASELINE_DIR)
+    real_label = f"baseline_p{args.baseline}"
 
-    # Load real/baseline comparison data, and decide the label used in
-    # filenames, plot titles, and the metrics CSV name.
-    if args.real_source == "baseline":
-        baseline_profile_id = args.baseline_profile or args.profile
-        df_real = load_real_baseline(baseline_profile_id, baseline_dir)
-        real_label = f"baseline_p{baseline_profile_id}"
-    else:
-        df_real = load_real(args.user, real_dir)
-        real_label = args.user
-
-    if args.sim_source == "aggregated":
-        df_sim, profile_name = load_sim_aggregated(args.profile, sim_dir)
-    else:
-        # 'minute' and 'auto' both resolve to the representative-household path
-        df_sim, profile_name = load_sim_minute_average(args.profile, sim_dir)
+    df_sim, profile_name = load_sim_minute_average(args.profile, DEFAULT_SIM_DIR)
 
     # Filter
-    df_real, df_sim = apply_time_filters(df_real, df_sim, args.days, args.months)
+    df_real, df_sim = apply_time_filters(df_real, df_sim, args.months)
 
     # Plots
     plot_shadows_and_average(df_real, df_sim, real_label, profile_name, figures_dir)
     plot_overlaid_averages(df_real, df_sim, real_label, profile_name, figures_dir)
-    plot_random_week(df_real, df_sim, real_label, profile_name, figures_dir, seed=args.week_seed)
+    plot_random_week(df_real, df_sim, real_label, profile_name, figures_dir)
 
     # Metrics
     calculate_validation_metrics(df_real, df_sim, real_label, profile_name, metrics_dir)
