@@ -14,6 +14,7 @@ Usage:
     $ python socioeconomic_profile.py
 """
 
+import argparse
 import pandas as pd
 import os
 import csv
@@ -31,7 +32,19 @@ OUTPUT_CATEGORICAL = os.path.join(OUTPUT_DIR, "categorical_summary.csv")
 
 OUTPUT_STRAT_NUMERICAL = os.path.join(OUTPUT_DIR, "stratified_numerical_summary.csv")
 OUTPUT_STRAT_CATEGORICAL = os.path.join(OUTPUT_DIR, "stratified_categorical_summary.csv")
-OUTPUT_CLASSIFICATIONS = os.path.join(OUTPUT_DIR, "user_classifications.csv")
+
+# EBP classification is computed separately by user_classification.py; this
+# script only consumes its output to stratify the summaries by profile.
+DEFAULT_CLASSIFICATIONS_PATH = os.path.join(
+    BASE_DIR, "../../data/clean/surveys/classifications_oficial.csv")
+
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--classifications", type=str, default=DEFAULT_CLASSIFICATIONS_PATH,
+                     help="CSV produced by user_classification.py, with 'id' and "
+                          "'ebp_profile' columns, used to stratify the summaries "
+                          f"(default: {DEFAULT_CLASSIFICATIONS_PATH})")
+args = parser.parse_args()
+CLASSIFICATIONS_PATH = args.classifications
 
 # === Load data ===
 df = pd.read_csv(DATA_PATH, na_values=["-1"], encoding="latin1")
@@ -82,77 +95,21 @@ for _, row in selected_codebook.iterrows():
             labeled_df[new_col] = df[var].map(mapping)
 
 # =============================================================================
-# === EBP CLASSIFICATION ALGORITHM (Stratification Rules) ===
+# === EBP CLASSIFICATION (loaded from user_classification.py output) ===
 # =============================================================================
 
-# Initialize everyone as Unclassified
-labeled_df["ebp_profile"] = "Unclassified"
+classifications = pd.read_csv(CLASSIFICATIONS_PATH)[["id", "ebp_profile"]]
+labeled_df = labeled_df.merge(classifications, on="id", how="left")
+labeled_df["ebp_profile"] = labeled_df["ebp_profile"].fillna("Unclassified")
 
-# Define the exact logical conditions based on the methodology
-# 1. First, define the Behavioral Override (System Breakers)
-#cond_prof4 = ((df["occupation"] == 4)) | ((df["occupation"] == 3)) | ((df["migration"] == 1) & (df["portability_shs"] == 1)) & ~df["family_type"].isin([1, 4]) 
-
-
-# 2. Define the Demographic Profiles, explicitly EXCLUDING System Breakers (~cond_prof4)
-#cond_prof1 = df["family_type"].isin([2, 3, 5, 6, 7]) & (df["children_in_school"] == 1) & df["occupation"].isin([1, 2]) & ~cond_prof4
-#cond_prof2 = df["family_type"].isin([1, 4]) & ~cond_prof4
-#cond_prof3 = df["family_type"].isin([8, 9, 10]) & (df["portability_shs"] == 0) | df["family_type"].isin([8, 9, 10]) & (df["migration"] == 0) | df["family_type"].isin([8, 9, 10, 5, 6]) & (df["children_in_school"] == 0)& ~cond_prof4
-
-# Initialize everyone as Unclassified
-labeled_df["ebp_profile"] = "Unclassified"
-
-# Identify System Breaker Occupations (Miners = 4, Students = 3)
-is_breaker_occ = df["occupation"].isin([3, 4])
-
-# 1. Define Profile 2: Isolated Elderly / Couples
-# Unipersonal (1) and Pareja nuclear (4) -- EXCEPT breaker occupations
-cond_prof2 = df["family_type"].isin([1, 4]) & ~is_breaker_occ
-
-# 2. Define Profile 1: Educational/Agricultural Core
-# Group A: Nuclear families WITH children in school (Codes 2, 3, 5, 6)
-prof1_nuclear = df["family_type"].isin([2, 3, 5, 6, 7]) & (df["children_in_school"] == 1)
-
-# Group B: Extended families WITH children in school AND stable (Codes 7, 8, 9, 10)
-prof1_extended_stable = (
-    df["family_type"].isin([ 8, 9, 10]) & 
-    (df["children_in_school"] == 1) & 
-    (df["migration"] != 1) & 
-    (df["portability_shs"] == 1)
-)
-
-# Combine for Profile 1, excluding breaker occupations
-cond_prof1 = (prof1_nuclear | prof1_extended_stable) & ~is_breaker_occ
-
-# 3. Define Profile 3: Extended Hubs ("Numerous" and "Extended" families)
-# All numerous (3, 6, 9, 10) and extended (7, 8) families that didn't fit into Profile 1
-cond_prof3 = df["family_type"].isin([3, 6, 7, 8, 9, 10]) & ~cond_prof1 & ~is_breaker_occ
-
-# 4. Define Profile 4: System Breakers (All the rest)
-# Anyone who does not fit into Profiles 1, 2, or 3 (including ALL breaker occupations)
-cond_prof4 = ~(cond_prof1 | cond_prof2 | cond_prof3)
-
-# Apply the conditions to assign profiles
-labeled_df.loc[cond_prof1, "ebp_profile"] = "Profile 1: Educational/Agricultural Core"
-labeled_df.loc[cond_prof2, "ebp_profile"] = "Profile 2: Isolated Elderly"
-labeled_df.loc[cond_prof3, "ebp_profile"] = "Profile 3: Extended Hub"
-labeled_df.loc[cond_prof4, "ebp_profile"] = "Profile 4: System Breakers"
-
-# === Validation Check & Export ===
 unclassified_count = (labeled_df["ebp_profile"] == "Unclassified").sum()
 print("\n" + "="*50)
-print("EBP CLASSIFICATION RESULTS")
+print("EBP CLASSIFICATION (from user_classification.py)")
 print("="*50)
 print(labeled_df["ebp_profile"].value_counts())
 if unclassified_count > 0:
-    print(f"\n⚠️  WARNING: {unclassified_count} households did not match any profile criteria and remain 'Unclassified'.")
-else:
-    print("\n✅ SUCCESS: 100% of households successfully classified into an EBP!")
-
-# Export user classifications to CSV
-cols_to_export = ["id", "name", "family_type_label", "occupation_label", "children_in_school_label", "migration_label", "portability_shs_label", "ebp_profile"]
-existing_cols = [col for col in cols_to_export if col in labeled_df.columns]
-labeled_df[existing_cols].to_csv(OUTPUT_CLASSIFICATIONS, index=False)
-print(f"📄 Detailed user classification list saved to: {OUTPUT_CLASSIFICATIONS}")
+    print(f"\n⚠️  WARNING: {unclassified_count} households have no matching "
+          f"classification in {CLASSIFICATIONS_PATH}.")
 print("="*50 + "\n")
 
 # =============================================================================
