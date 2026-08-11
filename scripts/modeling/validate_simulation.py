@@ -13,6 +13,8 @@ Validates RAMP-simulated load profiles against empirical baseline profiles
 Metrics
 -------
 Tier 1 (Error):        RMSE, LCSS score, MPDADA ratio
+LDC (Duration-sorted):  LDC-RMSE (Tier 1's RMSE, computed on the duration-sorted
+                       curve instead of the chronological one), P95 power (W)
 Tier 2 (Structure):    Modal peak hour, average-curve peak, absolute max power,
                        MRSD chaos index
 Tier 2 (Energy/Var):   Overall mean power, daily energy (Wh), base load 00-04h
@@ -23,6 +25,9 @@ Plots
 1. Shadow + mean:  all daily curves faint, mean curve bold (real | sim panels)
 2. Overlaid means: real vs sim average curves on one axis
 3. Random week:    a continuous 7-day slice, real over sim
+4. Load Duration Curve: real and sim daily curves, each sorted descending
+   independently, plotted against fraction of day at or above that power
+   level -- discards timing to isolate demand-level distribution fit
 
 Usage
 -----
@@ -312,6 +317,53 @@ def plot_random_week(df_real, df_sim, real_label, profile_name, figures_dir, see
     plt.close()
 
 
+def plot_load_duration_curve(df_real, df_sim, real_label, profile_name, figures_dir):
+    """
+    Plot 4: Load Duration Curve (LDC).
+
+    Takes the same 15-minute-binned representative daily curve used for
+    Tier 1 (real_profile / sim_profile in calculate_validation_metrics),
+    sorts each independently in descending order, and plots power (W)
+    against the fraction of the day at or above that level. Unlike the
+    chronological overlay (Plot 2), timing is discarded entirely here --
+    this isolates whether the model reproduces the overall *distribution*
+    of demand levels a household sits at, independent of when each level
+    occurs during the day.
+
+    Because each series is sorted independently, the two curves are not
+    directly comparable minute-by-minute (see calculate_ldc_metrics for the
+    LDC-RMSE statistic, which quantifies that comparison numerically).
+    """
+    real_profile = df_real.groupby("time_bin", observed=True)["p_total"].mean().fillna(0).values
+    sim_profile  = df_sim.groupby("time_bin", observed=True)["p_total"].mean().fillna(0).values
+
+    real_sorted = np.sort(real_profile)[::-1]
+    sim_sorted  = np.sort(sim_profile)[::-1]
+
+    pct_real = np.linspace(0, 100, len(real_sorted)) if len(real_sorted) else np.array([])
+    pct_sim  = np.linspace(0, 100, len(sim_sorted))  if len(sim_sorted)  else np.array([])
+
+    plt.figure(figsize=(10, 6))
+    plt.plot(pct_real, real_sorted, color="black", linewidth=3, label="Measured Load Duration Curve")
+    plt.plot(pct_sim, sim_sorted, color="darkblue", linewidth=3, linestyle="--",
+             label="Simulated Load Duration Curve")
+
+    plt.title(f"Load Duration Curve: Measured vs Simulated\n{real_label} | {profile_name}",
+              fontsize=14, fontweight="bold")
+    plt.xlabel("Fraction of Day at or Above Power Level (%)", fontsize=12)
+    plt.ylabel("Power Demand (W)", fontsize=12)
+    plt.xticks(np.arange(0, 101, 10))
+    plt.grid(True, linestyle="--", alpha=0.6)
+    plt.legend(loc="upper right", fontsize=12)
+    plt.ylim(bottom=0)
+
+    plt.tight_layout()
+    out = figures_dir / f"val_ldc_{real_label}_{profile_name.lower()}.png"
+    plt.savefig(out, dpi=300)
+    print(f"[+] Saved LDC plot: {out.name}")
+    plt.close()
+
+
 # ---------------------------------------------------------------------------
 # Metrics (identical formulas to the first approach)
 # ---------------------------------------------------------------------------
@@ -398,6 +450,33 @@ def _lcss(real_profile: np.ndarray, sim_profile: np.ndarray, epsilon: float) -> 
     return dp[n][m] / max(n, m) if max(n, m) > 0 else 0.0
 
 
+def calculate_ldc_metrics(real_profile: np.ndarray, sim_profile: np.ndarray) -> dict:
+    """
+    LDC (Load Duration Curve) metrics, computed on the same 15-minute-binned
+    representative daily curve as Tier 1, but sorted descending on each
+    series independently before comparison.
+
+    - ldc_rmse: same statistic as Tier 1's RMSE, computed on the
+      duration-sorted curve instead of the chronological one. Comparing
+      this against Tier 1 RMSE separates how much of a profile's error is
+      attributable to *when* demand occurs (chronological RMSE) versus how
+      well the model reproduces the *distribution* of demand levels
+      regardless of timing (LDC-RMSE).
+    - p95_real / p95_sim: the power level exceeded only 5% of the day for
+      each series -- the quantity most directly relevant to sizing
+      decisions (inverter rating, peak dispatch capacity), reported
+      separately from the aggregate curve-fit statistic above.
+    """
+    real_sorted = np.sort(real_profile)[::-1]
+    sim_sorted  = np.sort(sim_profile)[::-1]
+
+    ldc_rmse = float(np.sqrt(np.mean((real_sorted - sim_sorted) ** 2))) if len(real_sorted) else 0.0
+    p95_real = float(np.percentile(real_profile, 95)) if len(real_profile) else 0.0
+    p95_sim  = float(np.percentile(sim_profile, 95))  if len(sim_profile)  else 0.0
+
+    return {"ldc_rmse": ldc_rmse, "p95_real": p95_real, "p95_sim": p95_sim}
+
+
 def calculate_validation_metrics(
     df_real, df_sim, real_label, profile_name, metrics_dir, epsilon_watts=0.5
 ) -> pd.DataFrame:
@@ -420,6 +499,9 @@ def calculate_validation_metrics(
     )
     lcss_score = _lcss(real_profile, sim_profile, epsilon_watts)
 
+    # LDC — duration-sorted complement to Tier 1 (see calculate_ldc_metrics docstring)
+    ldc = calculate_ldc_metrics(real_profile, sim_profile)
+
     # TIER 2 — structural profiling
     r = calculate_structural_metrics(df_real, label="real")
     s = calculate_structural_metrics(df_sim, label="simulated")
@@ -441,6 +523,12 @@ def calculate_validation_metrics(
          "Real (Mean ± Std)": "—", "Sim (Mean ± Std)": f"{lcss_score:.3f}", "Mean Abs Error": "—"},
         {"Metric Group": "Tier 1: Error", "Metric": "MPDADA Ratio",
          "Real (Mean ± Std)": "—", "Sim (Mean ± Std)": f"{mpdada:.3f}", "Mean Abs Error": "—"},
+
+        {"Metric Group": "LDC: Duration-Sorted", "Metric": "LDC-RMSE (Watts)",
+         "Real (Mean ± Std)": "—", "Sim (Mean ± Std)": f"{ldc['ldc_rmse']:.3f}", "Mean Abs Error": "—"},
+        {"Metric Group": "LDC: Duration-Sorted", "Metric": "P95 Power (W)",
+         "Real (Mean ± Std)": f"{ldc['p95_real']:.2f}", "Sim (Mean ± Std)": f"{ldc['p95_sim']:.2f}",
+         "Mean Abs Error": fmt_err(ldc['p95_real'], ldc['p95_sim'], "W")},
 
         {"Metric Group": "Tier 2: Structure", "Metric": "Modal Peak Hour",
          "Real (Mean ± Std)": f"{r['modal_peak']:02d}:00",
@@ -534,6 +622,7 @@ def main():
     plot_shadows_and_average(df_real, df_sim, real_label, profile_name, figures_dir)
     plot_overlaid_averages(df_real, df_sim, real_label, profile_name, figures_dir)
     plot_random_week(df_real, df_sim, real_label, profile_name, figures_dir)
+    plot_load_duration_curve(df_real, df_sim, real_label, profile_name, figures_dir)
 
     # Metrics
     calculate_validation_metrics(df_real, df_sim, real_label, profile_name, metrics_dir)
