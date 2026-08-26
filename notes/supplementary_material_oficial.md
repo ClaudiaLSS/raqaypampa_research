@@ -351,7 +351,7 @@ The extracted Socio-Technical rules are listed below, organized into four main t
 
 - **RAMP Modeling Implication (Temporal):** Shifts the charging load profile to perfectly coincide with the solar generation curve (e.g., 10:00 to 16:00), effectively "clipping" demand off the battery.
 
-##### *Rule 7: The Safety Baseline*
+*Rule 7: The Safety Baseline*
 
 - **Formula:** [`NOR_safety` / `DEMO_female_adult` & `DEMO_female_senior`] drives [`PR_lights_extreme_night_usage`] under [`IMP_health_and_safety` / presence of venomous insects and physical hazards].
 
@@ -421,7 +421,7 @@ The extracted Socio-Technical rules are listed below, organized into four main t
 
 - **RAMP Modeling Implication (Shape/Magnitude Constraint):** Prevents the algorithm from artificially extending the evening lighting load window for productive tasks. It proves that simply providing a basic 2 W bulb does *not* automatically trigger nighttime economic productivity in the simulation.
 
-*Rule 15: The Thermal Weather Switch (Fuel Stacking)*
+*Rule 15: Fuel Stacking*
 
 - **Formula:** [`MAT_geographical_infrastructure_gap` / lack of roads] drives [`PR_fuel_stacking_cooking`] under [`MAT_environmental_vulnerability` / Rain].
 
@@ -459,21 +459,210 @@ Using a single bilingual translator throughout ensured consistent handling of re
 
 *This section corresponds to the items explicitly placed in "Supplementary Material S1" within the main manuscript.*
 
-**S2.1 Population Counts per Profile**
-*Insert your data detailing the population counts for each profile here.* 
-These counts must be split by survey-derived and interviewed subpopulations.
+### **S2.1 Population Counts per Profile**
 
-**S2.2 Crosswalk Tables**
-*Insert your complete crosswalk tables here.* 
-These tables should demonstrate how you mapped respondent language onto quantitative bins for activation probability and rigidity.
+Each behavioral profile is defined over two nested subpopulations: the full survey-derived set of households assigned to the profile (N_survey), and the subset of those households for which a qualitative interview was conducted (N_interview). All qualitative parameters are inferred from N_interview and applied uniformly to N_survey at simulation time.
 
-**S2.3 Worked Parameter Derivations and Anchor Quotes**
-*Insert your parameter derivations here.* 
-Include the exact anchor quotes drawn from multiple profiles used to validate the crosswalk bins. Explicitly flag any parameters that rest on evidence pooled across interviewed households rather than triangulated per household.
+| Profile | Description | N_survey | N_interview | Interview coverage |
+|---------|-------------|:--------:|:-----------:|:------------------:|
+| 1 | Educational and Agricultural Core | 28 | 18 | 64% |
+| 2 | Isolated Elderly | 11 | 9 | 82% |
+| 3 | Extended Hub | 14 | 9 | 64% |
+| 4 | System Breakers | 12 | 6 | 50% |
+| **Total** | — | **65** | **42** | **65%** |
 
-**S2.4 Protocol Revision History**
-*Insert the revision history of your protocol here.* 
-Document the evolution of your extraction-and-translation procedure.
+*Coverage is the share of survey-derived households in each profile that were also interviewed (N_interview / N_survey). Profile 2 is the best-covered profile in the study; Profile 4 carries the thinnest qualitative base.*
+
+Households are identified by anonymous survey ID (matching `data_0.csv`). For
+each profile, the interviewed subpopulation (N_interview) is a subset of the
+survey-derived population (N_survey); the remaining IDs are survey-only.
+
+| Profile | Survey-derived households (N_survey) | Interviewed subset (N_interview) | Survey-only (not interviewed) |
+|---------|--------------------------------------|----------------------------------|-------------------------------|
+| 1 — Educational and Agricultural Core | 6, 8, 16, 17, 19, 20, 21, 26, 28, 32, 34, 44, 51, 53, 58†, 62, 63, 72, 74, 80, 81, 83†, 88, 90, 94, 95, 99, 100 | 6, 8, 19, 20, 44, 58†, 62, 63, 72, 74, 80, 81, 83†, 88, 90, 94, 95, 99 | 16, 17, 21, 26, 28, 32, 34, 51, 53, 100 |
+| 2 — Isolated Elderly | 4, 11, 14, 37, 48, 50, 52, 57, 84, 86, 91 | 4, 11, 14, 37, 48, 52, 57, 84, 91 | 50, 86 |
+| 3 — Extended Hub | 7, 13, 15, 29, 30, 31, 33, 38, 49, 61, 67, 69, 75, 78 | 7, 13, 29, 33, 38, 61, 67, 69, 78 | 15, 30, 31, 49, 75 |
+| 4 — System Breakers | 23, 25, 27, 40, 42, 54‡, 64‡, 65, 71, 76, 92, 96 | 23, 40, 54‡, 64‡, 76, 96 | 25, 27, 42, 65, 71, 92 |
+
+† IDs 58 and 83 are placed in Profile 4 by the canonical classification source
+(`classifications_oficial.csv`) but are held in Profile 1 by an analyst
+override (Profile 1 truth file, §8).
+
+‡ IDs 54 and 64 are placed in Profile 1 by the canonical classification source
+but are held in Profile 4 by an analyst override (Profile 4 truth file, §2,
+Rule 9).
+
+*The four profiles together cover 65 of the 100 surveyed households; the
+remaining 35 are unclassified or excluded and are not represented above.*
+
+### **S2.2 Crosswalk Tables**
+To understand the parameter derivation protocol, the crosswalks designed to translate qualitative evidence into quantitative simulation parameters are provided below. These are used to derive two main characteristics of appliance use: the probability of being used (occasiona_use) and the rigidity of each activity (main source for the randomization parameters).
+
+This crosswalk was built inductively from the interview corpus and refined against it, in the following steps:
+
+1. **Parameter-driven extraction.** Starting from what RAMP actually requires (`occasional_use`, `time_fraction_random_variability`, `random_var_w`), the interview transcripts for each of the four EBP profiles were searched for the language respondents use to express *frequency* (how often a practice occurs) and *temporal variability* (how stable its timing is). This yielded a corpus of naturally-occurring frequency and timing expressions in the respondents' own words (Spanish/Quechua-Spanish), each tied to a specific respondent, profile, and interview date.
+   
+2. **Inductive binning.** Recurring expressions were grouped into a small number of bins. Where respondents gave an explicit countable frequency ("tres veces por semana," "cada tres días"), these were handled by a direct formula rather than a bin (see Table 1). Where language was qualitative only ("a veces," "de vez en cuando," "siempre"), it was grouped into ordinal bins and assigned a representative probability/variability value.
+
+3. **Cross-profile validation.** Each bin was checked against anchor quotes drawn from *multiple* profiles, not a single one, to confirm that a given expression carries approximately the same meaning regardless of who says it (e.g., that "a veces" implies a similar frequency whether spoken by an elderly single resident or a school-age household).
+
+4. **Iterative refinement where bins broke.** The scheme was revised wherever transcript evidence contradicted an initial definition. Two substantive revisions are recorded rather than hidden, because they demonstrate the crosswalk was tested against the data:
+   - The **"Chaos" bin was redefined** from an outcome-based criterion (timing varies day to day) to an *epistemic* one (the respondent's own account signals they cannot specify a stable pattern — hedging language, self-contradiction, explicitly unanchored windows).
+   - **Household-level structural absence** (dual residence, extended absence) was distinguished from practice-level variability and made a separate axis, triggered by **explicit dual-household or extended-absence language in the interview narrative** — not by the survey's `migration_label`, which is too common across the sample to discriminate (most households show some migration), and not by EBP profile membership either — because multi-month absence was found in a Profile 3 household, not only in Profile 4.
+  
+5. **Priority-override layer.** Practices anchored to a profile's non-negotiable social rules (education, subsistence cooking) are assigned Daily/Fixed frequency and Strict variability by default, overriding isolated hedging language, since such hedging typically concerns incidental detail rather than whether the practice occurs (see override note in Table 1).
+
+**Provenance.** Every value applied in a truth file traces back through these tables to at least one anchor quote (respondent ID, profile, interview date). Anchor quotes shown here are representative; a full quote-by-quote mapping is maintained in the supplementary provenance file. This crosswalk is the single canonical source for both parameters; profile truth files reference it rather than reproducing it, so revisions propagate consistently.
+
+---
+
+**Table 1 — Frequency Language → `occasional_use`**
+
+**Priority override (apply before any other rule below):** if a practice is anchored to an established non-negotiable social rule for the profile (e.g., education, subsistence cooking, or any other rule the profile's truth file defines as non-negotiable), default to **Daily/Fixed** frequency (`occasional_use` ≈ 1) and, on the variability table, **Strict** (0.1) — regardless of hedging language ("a veces," "depende") appearing in isolated quotes about that practice. Such hedging is almost always about an incidental detail (which exact task, whether the light stays on the full duration), not about whether the practice occurs that day. Override this default only with specific, explicit evidence of exception (a stated skip pattern — e.g., "solo cuando no hay tarea" — not just soft phrasing).
+
+Example: Zenón García's *"la necesitamos cada día por las noches; los chicos van haciendo sus tareas"* (P1, 26/02/2026) already reflects this correctly — homework light is `occasional_use: 1`, Strict variability — because it is anchored to the Educational rule, not because every quote about it used "siempre."
+
+**Primary rule (use whenever an explicit count is given, and the priority override doesn't apply):**
+
+> occasional_use = active_days ÷ interval_days
+
+This generalizes the simple weekly case (e.g., "tres veces por semana" → 3/7 = 0.42) to any stated interval (e.g., "cada tres días" → 1/3 = 0.33; "una vez al mes" → 1/30 ≈ 0.03).
+
+**Fallback bins (use only when language is qualitative, with no explicit count to compute from):**
+
+| Bin | Value | Markers | Example anchors |
+|---|---|---|---|
+| Daily / Fixed | 0.85–1.0 | "siempre," "todos los días," "cada día," "constantemente" | *"Nosotros cargamos siempre el celular"* — Edelfrida Jiménez Salazar, P1, 26/02/2026; *"Yo hago cargar mi celular siempre"* — Felipe Rivera, P3, 20/11/2024 |
+| High frequency | 0.6–0.8 | "con frecuencia," "generalmente," "casi siempre" | *"con frecuencia usamos el fogón"* — Guillermo Negrete, P1, 25/02/2026; *"generalmente usamos la luz en casa"* — Isabel Zurita, P3, 24/02/2026 |
+| Occasional / Moderate | 0.35–0.5 | "a veces," "depende" (standalone, no explicit count) | *"A veces lo cargamos en el día o en la noche"* — Dionisio Vargas Castro, P1, 25/02/2026 |
+| Low / Sporadic | 0.15–0.3 | "de vez en cuando," "no muy seguido" | *"Lo limpiamos de vez en cuando"* — Domingo Vallejos, P1, 20/11/2024 |
+
+**Documented exception — capacity-driven decline (resolved from B7):** where reduced frequency is attributed to the respondent's own physical capacity (age, hearing, mobility) rather than to the practice's inherent regularity, apply the same bins above based on the *resulting* frequency described, with an explicit narrative note on cause (for interpretive transparency, not a separate numeric treatment). E.g., *"estando mayores... casi no ocupamos en las madrugadas"* — Germán Calderón (esposa), P2, 25/03/2026 → Low/Sporadic, with a note that the driver is age-related, not seasonal or task-related.
+
+---
+
+**Table 2 — Rigidity → window-timing variability parameters (`time_fraction_random_variability` **and** `random_var_w`)**
+
+**Scope and definitions (per RAMP documentation):** these are two *distinct* parameters, both driven by the same underlying rigidity judgment (Strict/Flexible/Chaos) but randomizing different things:
+- `time_fraction_random_variability` — randomness applied to the appliance's **total functioning time** (`func_time`); i.e., how much the *quantity of daily use* varies.
+- `random_var_w` — randomness applied to the **size of the functioning window** (the w_1/w_2 bounds); i.e., how much the *permissible time-envelope* stretches or contracts.
+
+A single rigidity assessment sets a *pair* of values (one for each parameter), not one shared value. A more rigid practice receives lower values on both; a more chaotic one, higher on both — which is why the Strict evening practice (VA3) carries both a low `time_fraction_random_variability` and a low `random_var_w`. But the two values are recorded separately per appliance.
+
+Representative paired values (`time_fraction_random_variability` / `random_var_w`):
+- **Strict** → ~0.1 / ~0.2
+- **Flexible** → ~0.2 / ~0.3
+- **Chaos** → ~0.3 / ~0.35+
+
+The bin criteria and anchor quotes below apply to the rigidity judgment itself; the paired values above follow from it.
+
+| Bin | Value | Markers | Example anchors |
+|---|---|---|---|
+| Strict | 0.1 | Anchored to external, non-negotiable constraint (school, sunrise/sunset, fixed task) | *"la necesitamos cada día por las noches; los chicos van haciendo sus tareas"* — Zenón García (hija), P1, 26/02/2026; *"Desde las 6 de la tarde alumbra por mis hijos, hasta las 10 de la noche"* — Felipe Rivera, P3, 20/11/2024 |
+| Flexible | 0.2 | Bounded window, shifts with daily circumstance; "depende," "algo así" | *"Dependiendo. A veces desde las 6:00... depende de a qué hora nos levantamos"* — Edelfrida Jiménez Salazar, P1, 26/02/2026 |
+| Chaos | 0.3 | Practice's timing is genuinely unstable *and the respondent's own account signals this* — hedging/vague language ("es muy variado," "no se sabe," "depende de tantas cosas"), self-contradictory statements about timing, or an explicitly wide, unanchored window. Epistemic marker: low confidence visible in how the person describes it, not just variation in outcome | *"Dependiendo. A veces en las mañanas, una hora o algunas veces dos horas también. Por las noches usamos de 7:00 a 8:00, o a veces de 6:00 a 10:00 de la noche; es muy variado"* — Calixto Agreda Inturias, P2, 25/02/2026 |
+
+
+**Chaos vs. Flexible boundary:** Flexible = respondent *can* describe a bounded pattern that shifts with circumstance ("depende de a qué hora nos levantamos"). Chaos = respondent *cannot* reliably describe a pattern at all. The distinguishing signal is in the report itself, not in the objective outcome.
+
+---
+
+### **S2.3 Parameter derivation protocol**
+
+This section is the source describing how each RAMP parameter in the Model B (socio-technical) parametrization is derived. Profile truth files reference this section rather than reproducing it, so revisions propagate consistently.
+
+Every parameter falls into one of six derivation sources, stated explicitly so that no value is left without a declared basis. Five of the six derive a **per-appliance** parameter; two of those five are **crosswalks** — classification steps that sort respondent language into bins. The sixth derives the one **household-level** parameter, which is not a property of any appliance:
+
+- **[SPEC]** — technical hardware specification (not behavioral; no qualitative translation)
+- **[WINDOW]** — derived from the Anthropological Window (interview × survey triangulation)
+- **[FREQ-XW]** — frequency crosswalk (Table 1, Section S2.2): respondent frequency language → `occasional_use`
+- **[RIG-XW]** — rigidity crosswalk (Table 2, Section S2.2): the qualitative account → a rigidity bin (Strict / Flexible / Chaos), which *is* the variability classification
+- **[DECLARED DEFAULT]** — a stated, reasoned value used when neither qualitative nor quantitative data directly speaks to a parameter; flagged as pending real data, never presented as derived.
+- **[OCC]** — occupancy derivation: stated absence durations → `prob_home`, the probability a household of the profile is present on a given day. Household-level, not per-appliance: one value per profile (optionally per season), gating *every* VA of that household at once.
+
+A note on the two crosswalks, since they are the same kind of object: both **[FREQ-XW]** and **[RIG-XW]** are classification steps that read respondent language and assign a bin. The rigidity crosswalk (Table 2, Section S2.2) directly yields `time_fraction_random_variability` and `random_var_w` (they are the bin's assigned values). One parameter, `func_cycle`, is a **second-order derivation**: it takes the rigidity bin and applies a further rule (fraction of `func_time`), so it is marked [RIG-XW → func_time] to show it is one step removed rather than a direct crosswalk output.
+
+**A further distinction governs citation, not derivation, and sits underneath [WINDOW]/[FREQ-XW]/[RIG-XW] rather than beside them.** §2.3.1 below defines a three-tier auditability hierarchy for the *qualitative material itself* — interview transcript, field memo, conversational recall. This hierarchy does not add a new kind of RAMP-parameter derivation; it governs how solidly a given [WINDOW]/[FREQ-XW]/[RIG-XW] value is sourced, and is recorded in the `— source:` trailer, not in the derivation tag.
+
+One phenomenon is handled *outside* the per-appliance parameters: **household-level structural absence** (migration/dual-residence), which since 2026-08-18 is an applied model parameter rather than a documented-but-deferred one — it is derived via **[OCC]** into `prob_home` and simulated as RAMP's household-level occupancy mask. 
+
+---
+
+**Population and generalization (who the qualitative parameters actually describe)**
+
+The `ebp_profile` classification is itself survey-derived (family_type, occupation, children_in_school, migration, portability_shs). This means **every classified household has survey data**, but only a subset was also interviewed. Each profile therefore has two population sizes, not one:
+
+- **N_survey** — everyone classified into the profile (defines who counts as that EBP)
+- **N_interview** — the subset also interviewed (the only source of qualitative material)
+
+| Truth-file output | Population it draws from | Why |
+|---|---|---|
+| Windows (`window1`, `window2`) | **N_interview + N_survey** (triangulated) | Anthropological Windows are derived by triangulating interview accounts of practice timing with survey time-use data and hard physical anchors (sunrise/sunset) — survey and physical data alone can't supply the cultural framing, and interview accounts alone can't supply population-scale timing or fixed astronomical anchors |
+| Rigidity classification (incl. Extreme/Structural), narrative, frequency-language `occasional_use` | **N_interview only** | Requires actual quotes — a household with no transcript can't supply timing statements, hedging language, or evidence of a dual-household strategy |
+| `prob_home` — [OCC], household-level occupancy (§10) | **N_interview only** as the numerator *and* the denominator | Requires a stated absence duration, which only a transcript supplies. The denominator is the full interviewed base, so the value describes the profile rather than its mobile subset — and `migration_label` cannot substitute for the missing survey households |
+| Ownership/appliance-count parameters | **N_survey (full)**, where the survey captured them | Structural, not behavioral |
+
+#### S2.3.1 Evidence tiers within Stream A (QUAL): transcript, field memo, conversational recall
+
+Not all qualitative material carries the same auditability. Three tiers, ranked by how independently checkable the claim is:
+
+1. **Interview transcript** (`all_transcripts.txt`) — verbatim, dated, attributable to a named respondent. The primary source underlying N_interview and the sole source for Table A/B crosswalk anchors, since those require the respondent's *own phrasing* (hedging language, frequency markers, timing statements), not a paraphrase.
+2. **[FIELD MEMO: caseid, date]** — a written, dated field note (`memos.csv`, authored by the field researcher, Claudia). Close to interview transcript in auditability — it is a specific, attributable, dated document, not recall — but it is a *summary*, not a verbatim quote, so it does not carry a respondent's own frequency/timing language. Field memos are the right evidence for **structural and demographic facts**: household composition, migration/dual-residence pattern, hardware inventory and ownership history, occupation. They should **corroborate or independently establish structural claims**, not substitute for a transcript anchor in Table A/B.
+3. **[FIELD OBS: conversational]** — an undocumented exchange recalled by a researcher, with no dated written record. The weakest tier. Never used as the sole basis for a parameter; flag explicitly wherever it appears, and prefer corroboration from tier 1 or 2 before treating it as evidence at all.
+
+**Practical rule:** a `— source:` trailer citing a field memo takes the form `[FIELD MEMO: caseid NN, DD/MM/YYYY]`; a trailer citing undocumented recall takes the form `[FIELD OBS: conversational]`. Do not fold the two into one tag — the split exists precisely so a reader can see which claims rest on a citable document and which rest on memory.
+
+**Coverage check (this dataset).** Cross-referencing `memos.csv` (household `name` field = `user_<id>`) against `all_transcripts.txt` (`user_ID`) shows that in every profile, **every household with a field memo also has an interview transcript** — there is no household in this dataset whose only qualitative evidence is a memo. (The single near-exception is id 67, Dionisio Vargas Castro, Profile 3: interviewed, no memo on file — the reverse direction, not a memo-only case.) This means field memos do not, in this dataset, expand N_interview beyond what transcripts already establish; a hypothetical **N_memo** population (memo but no transcript) is currently empty and the population table below does not need a third column for it.
+
+**Extreme/Structural is not a survey-derived exception.** The diagnostic signal is a **dual-household strategy** — a household genuinely alternating between two residences with two different energy setups (the clearest case being Guillermo Romero: off-grid panel at one residence, paying ELFEC at a second) — and that can only be identified from what a respondent describes in an interview, not from a survey checkbox. So Extreme/Structural assignment requires N_interview evidence, the same as every other rigidity-derived parameter, with **no exception**.
+
+**Concrete example:** if household #50 in Profile 2 was never interviewed, you cannot know whether it practices dual-residence — there is no survey field that reliably tells you this. Its Extreme/Structural status, like its Windows and Rigidity, must be inherited from the profile's interviewed pattern (the generalization described below) rather than individually assigned.
+
+**The honest consequence:** Windows and Rigidity — the qualitative heart of the model — describe a pattern inferred from N_interview, then applied as parametrization for the *entire* N_survey population at simulation time. This is standard qualitative practice (representative-case inference), but it must be stated explicitly rather than left implicit, so a reviewer sees how many actual voices stand behind each profile's model rather than assuming every simulated household was individually evidenced.
+
+Each truth file requieres a header block formt shown bellow:
+
+```
+Population: N_survey = [X] (classified via family_type/occupation/migration/portability_shs)
+            N_interview = [Y] (subset with transcript; source of all qualitative parameters,
+            including Windows, Rigidity/variability bin — including Extreme/Structural —
+            and occasional_use)
+Generalization: all qualitative parameters below (Windows, Rigidity, occasional_use,
+Extreme/Structural bin assignment, and the household-level prob_home) are inferred from
+N_interview and applied uniformly to all N_survey households in this profile at simulation
+time. There is no survey-only shortcut for any of these — dual-household/structural-absence
+status requires interview evidence, the same as ordinary timing and frequency parameters.
+```
+
+Note what "applied uniformly" means for `prob_home` specifically: it is one probability per profile, so every one of the N_survey households carries the same *chance* of being absent, and each then draws independently day by day. A category of 30 households at `prob_home = 0.7` therefore has roughly nine absent households on a given day — not a 30% chance of all thirty emptying at once. The parameter generalizes a rate, not a schedule, which is the correct treatment given that the interviews establish how much absence occurs in the profile but not which of the un-interviewed households it belongs to.
+
+Where a household's transcript is corroborated by a written field memo, cite both: `— source: [respondent, date; FIELD MEMO caseid NN]`.
+
+## Data-completeness tiers (what to do when a source is missing or vague, per practice)
+
+Not every interview mentions explicit time boundaries for every practice, and not every respondent gives comparable detail. This determines *which row* of the interview×survey crossing table is usable for a given practice:
+
+| Data situation | What to do | Confidence / `random_var_w` |
+|---|---|---|
+| Both interview and survey give explicit clock times | Apply the 3-tier crossing rule as defined in §3 | As specified there |
+| Only one source gives explicit times | Use that source's bounds directly | Moderate–high — one notch less confident than an agreeing pair, since there's nothing to corroborate against |
+| Neither source gives clock times, only time-of-day language ("por la mañana") | Anchor to the Window's own pre-defined outer bounds (already grounded in physical anchors) rather than inventing precision from vague language | High (widest bin) |
+| No timing information at all for this respondent, this practice | Do not derive an individual window from nothing. Pool across other N_interview respondents in the same profile who did report timing for that practice; use the pooled range | High, and explicitly flagged **pooled evidence** — a different epistemic status (profile-level generalization) than the other three (household-level triangulation) |
+
+The pooled-evidence flag matters because it's a second, independent axis of "how much do we actually know" — distinct from the N_survey/N_interview generalization above. A VA can rest on solid individual evidence from a well-covered profile, or on pooled evidence from a thinly-covered one; both should be visible in the file.
+
+**A related, more fundamental limitation: single-period survey questions structurally capture typical behavior, not occasional behavior.** A categorical period-code question (e.g., "when do you use light_1 at night?") can only record one representative window per respondent — it has no way to express "usually X, but sometimes Y under specific circumstances." This is not a data-quality problem or a respondent error; it is a structural limit of the question format itself. When a respondent's interview account describes something that appears to exceed or diverge from their own survey answer (e.g., an occasional, trigger-driven practice layered on top of an ordinary routine), the two sources are often not actually in conflict — they are answering different questions the survey was never built to distinguish. This is precisely the kind of layer interview material is positioned to add, and it should be read as *enrichment revealing an additional layer*, not as a Say-Do contradiction requiring the tier-4 "survey wins" tiebreak (§3). The tier-4 rule still applies to genuine disagreements about a practice's *typical* pattern; it should not be invoked reflexively whenever an interview describes something a survey's single-code answer could never have captured in the first place.
+
+**Practical consequence:** a practice that is normally dormant and activates only around an identifiable trigger (a recent fear-inducing incident, a specific social event, an environmental condition) should not be forced into a flat `occasional_use` value that pretends the trigger doesn't exist. But — see the retirement note below — this does **not** mean building a separate conditional-trigger mechanism. Unless the trigger is itself a systematically measured study variable, the honest treatment is **Chaos**: the practice's variability is real and may even have a nameable real-world cause, but the study has no quantified basis for modeling that cause, so it is treated as unpredictable from the data's perspective.
+
+
+
+
+
+
+**S2.4 Truth files**
+*Insert the four final truth files here* 
+
 
 ---
 
