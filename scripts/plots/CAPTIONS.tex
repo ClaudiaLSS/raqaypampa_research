@@ -1,0 +1,146 @@
+% =====================================================================
+% Paste-ready captions for Figures 4-7, revised against the current run.
+%
+% Generated alongside scripts/plots/. Every number below was computed from
+% the rebuilt community_results/ aggregate (build_community.py, 2026-08-31
+% 18:16). Regenerate if the runs change:
+%   cd scripts/plots && python run_all.py
+%
+% ALL Load Duration Curve numbers here are on the "mean_day" basis: the
+% representative daily curve (96 fifteen-minute bins) sorted descending.
+% That is what validate_simulation.py's plot_load_duration_curve and
+% calculate_ldc_metrics use, and what validate_community.py uses via
+% representative_daily_curve(), so the figures match the draft
+% val_ldc_*.png panels and the metrics tables.
+%
+% Do NOT quote these alongside a --ldc-basis pooled figure. Pooling every
+% sample instead of averaging to a daily curve gives a much wider curve:
+% P1 measured reaches 7.50 W with a P95 of 4.66 W, against 4.90 W and
+% 4.22 W on the mean_day basis.
+%
+% Figure files produced by run_all.py:
+%   figure4_profile_load_curves.png
+%   figure5_profile_ldc.png
+%   figure6_community_load_curve.png
+%   figure7_community_ldc_envelope.png
+%
+% WHAT TO REMOVE FROM main.tex
+% ----------------------------
+%  1. fig:tier1_overlay  — drop the \fbox placeholder, point
+%     \includegraphics at figure4_profile_load_curves.png, and add "for
+%     May" to the caption (the prose at l.839 already fixes the window to
+%     May; the caption currently omits it).
+%  2. fig:ldc — drop the four \begin{subfigure} blocks pointing at
+%     validate_simulation.py's val_ldc_*.png. figure5_profile_ldc.png is a
+%     single 2x2 figure and replaces all four. Delete the "Provisional
+%     styling — to be replaced with journal-formatted version" note; these
+%     panels are journal-styled and generated against this run.
+%  3. fig:surveybased_vs_sociotechnical — this is a Profile-2 three-way
+%     comparison (Measured vs Survey-Based vs Socio-Technical). The
+%     community-aggregate Figures 6 and 7 do not exist in main.tex yet, so
+%     they need new figure environments; decide whether Fig. 6/7 replace
+%     the Profile-2 figure or sit alongside it.
+%  4. fig:tier2_heatmap is still a placeholder and is not in the Fig. 4-7
+%     set. Either generate it or cut it — it currently shifts the figure
+%     numbering relative to the numbering used here.
+%
+% WINDOW WARNING — applies to Figures 6 and 7
+% -------------------------------------------
+% Figures 4 and 5 are May panels. Figures 6 and 7 default to the FULL
+% YEAR, and the strength of their contrast depends heavily on that choice
+% (evening-peak error is +13.6% over the year but -4.4% in May, i.e. it
+% changes sign). Whichever you choose, state the window in the caption —
+% the captions below do. Do not silently mix windows across the four.
+% =====================================================================
+
+
+% ---------------------------------------------------------------- Fig. 4
+\caption{Measured versus simulated (Socio-Technical Model) mean daily load
+curves for May, by Energy Behavior Profile. Measured telemetry is shown as
+a solid black line, the Socio-Technical Model as a dashed navy line. May is
+the month with continuous telemetry across the logger set, and falls between
+the community's two principal mobility peaks (growing season, February--April;
+free-grazing and migration, July--September), which minimises the confounding
+effect of household absence. Panels are not equally weighted: P1, P3 and P4
+each pool two instrumented households and P2 a single one, and each panel
+states its own sample size and number of measured days. Note that P2 rests on
+30 rather than 31 days, its telemetry being absent for 31 May and most of
+30 May.}
+\label{fig:tier1_overlay}
+
+
+% ---------------------------------------------------------------- Fig. 5
+\caption{Load Duration Curve by Energy Behavior Profile for May: measured
+(solid black) and Socio-Technical simulated (dashed navy) power, each sorted
+in descending order against the fraction of the day spent at or above that
+level. Discarding timing isolates how well the model reproduces the
+distribution of demand levels a household occupies, independent of when each
+level occurs --- the quantity that governs inverter and battery sizing. Each
+series is the representative daily curve (96 fifteen-minute bins, averaged
+across the days of the window) sorted descending, the same construction as
+the LDC-RMSE and P95 values in Table~\ref{tab:ldc_summary}, so figure and
+table describe the same object. Annotations give the P95 level, the demand
+exceeded only 5\% of the day.}
+\label{fig:ldc}
+
+
+% ---------------------------------------------------------------- Fig. 6
+\caption{Community-aggregate mean daily load over the full simulated year:
+Socio-Technical (heterogeneous, solid black) reference versus Survey-Based
+(homogeneous, dashed blue) Model. Both models place the evening peak at
+20:00, so peak \emph{timing} is not what separates them; what separates them
+is how each distributes demand across the rest of the day. The Survey-Based
+Model understates the overnight base load by 48.5\% (77.5~W against 39.9~W
+for 00:00--04:00), overstates the morning window by 80.0\% (54.9~W against
+98.9~W for 04:00--10:00) and the daytime window by 54.8\% (44.6~W against
+69.0~W for 10:00--17:00), and roughly doubles the morning peak of the mean
+curve (84.0~W at 05:45 against 169.7~W at 06:00). Because it is built from a
+single static year-round average, its curve is nearly identical in every
+month, whereas the heterogeneous reference varies seasonally; the
+overstatement of aggregate mean power is therefore 22.1\% across the year but
+only 3.1\% within May alone.}
+\label{fig:community_mean_load}
+
+
+% ---------------------------------------------------------------- Fig. 7
+\caption{Community aggregate over the full simulated year, heterogeneous
+reference versus homogeneous Model. (a) Load Duration Curve, each series
+sorted descending against the fraction of the day at or above that level: the
+homogeneous Model sits above the reference across most of the distribution,
+with a P95 of 259.7~W against 204.6~W and a maximum of 293.6~W against
+229.5~W. (b) Individual daily traces (thin lines) with the mean curve and the
+5th--95th percentile envelope across days. The two communities' day-to-day
+\emph{spread} is comparable in magnitude (mean envelope width 51.1~W
+heterogeneous against 38.5~W homogeneous over the year, and 34.2~W against
+35.5~W within May); what distinguishes them is the tail. Correlating each day
+against the mean normalised daily shape, the most atypical heterogeneous day
+reaches 0.911 whereas the homogeneous Model never falls below 0.959: the
+heterogeneous community generates genuinely aberrant days, and the
+homogeneous one does not.}
+\label{fig:community_ldc_envelope}
+
+
+% =====================================================================
+% CLAIMS THAT DID NOT SURVIVE THE CURRENT RUN — do not reinstate
+% =====================================================================
+% "the heterogeneous reference spreads across a wide day-to-day band, the
+%  homogeneous Model a narrow, near-deterministic one"
+%
+% Not supported. Mean p5-p95 envelope widths, rebuilt heterogeneous vs
+% homogeneous: 51.1 vs 38.5 W over the full year (1.33x) and 34.2 vs
+% 35.5 W within May (0.96x, i.e. reversed). Level-normalised shape
+% coherence is likewise close: mean correlation to the mean daily shape
+% 0.975 vs 0.985 over the year, 0.984 vs 0.986 in May.
+%
+% The rebuild does not rescue the claim: the stale aggregate gives 52.6 W
+% and 1.37x, essentially the same answer.
+%
+% The likely origin of the error is MRSD (0.150 heterogeneous vs 0.016
+% homogeneous, Table \ref{tab:...}). MRSD measures WITHIN-day roughness,
+% not across-day spread. The homogeneous Model is indeed smooth within a
+% day, but RAMP redraws switch-on times for every household on every day,
+% so its day-to-day envelope does not collapse. MRSD cannot be cited in
+% support of a day-to-day variability claim.
+%
+% Fig. 7(b) above therefore claims the tail (min shape correlation), which
+% the data does support, rather than the band width, which it does not.
