@@ -37,6 +37,9 @@ data/raw/
 # Ignore the scratch folder so your messy drafts stay local
 scratch/
 
+# Ignore results folder
+results/
+
 # --- External Repositories & Tools ---
 # Prevent tracking nested Git repositories (e.g., RAMP library installations)
 RAMP/
