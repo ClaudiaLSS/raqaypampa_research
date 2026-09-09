@@ -92,6 +92,7 @@ def plot_figure5(
                 ax,
                 f"P95: {p95['measured']:.2f} → {p95['socio_technical']:.2f} W "
                 f"({gap:+.2f})",
+                loc="right",
             )
 
     for ax in axes[:, 0]:

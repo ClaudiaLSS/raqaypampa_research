@@ -81,7 +81,7 @@ def get_community_minutes(n_days=120, n_households=40):
 
     Both sides sum n_households independent households, so per-household
     jitter cancels as sqrt(n) in both. What makes the heterogeneous band
-    wide in Fig. 7b is the part that does NOT cancel: a shared day-level
+    wide in Fig. 6a is the part that does NOT cancel: a shared day-level
     common mode (season/weather shifting the whole community together) and
     occasional whole-household dropouts. The homogeneous side has neither —
     identical representative households with community-average windows

@@ -13,12 +13,11 @@ PREMISE NOTES
   free-grazing/migration Jul-Sep), which minimises the confounding effect
   of household absence. main.tex states this in the section prose but its
   figure caption omits it — the caption should say "for May".
-* Sample sizes are small and unequal: 2 households for P1/P3/P4, 1 for P2.
-  Pass n_households so each panel states its own n rather than leaving a
-  reader to assume the panels are comparable in weight.
-* P2's measured baseline has a real gap — 245 NaN samples covering all of
-  31 May and most of 30 May — so its panel rests on 30 days, not 31. The
-  annotation reports the actual count per panel.
+* Sample sizes are small and unequal: 2 households for P1/P3/P4, 1 for P2,
+  and P2's measured baseline has a real gap (245 NaN samples covering all
+  of 31 May and most of 30 May), so its panel rests on 30 days, not 31.
+  The panels no longer state this — the caption must carry it, or a reader
+  will assume they are comparable in weight.
 
 Input: load_profile_minutes() — profile, series, day, time_min, power_w.
 """
@@ -31,7 +30,6 @@ from style import (
     PROFILES,
     PROFILE_LABELS,
     PROFILE_SERIES,
-    annotate,
     apply_style,
     figure_legend,
     line_kwargs,
@@ -44,15 +42,11 @@ def plot_figure4(
     df,
     out_path,
     profiles=PROFILES,
-    n_households=None,
     share_y=False,
     month_label="May",
 ):
     """
     df            long table from data_io.load_profile_minutes()
-    n_households  optional {profile: n} shown in each panel corner. The
-                  measured pools are small and unequal, so stating them in
-                  the figure is more honest than leaving it to the caption.
     share_y       False by default. Mean power differs by roughly a factor
                   of three across profiles, so a shared y axis would flatten
                   P2 into the baseline. Set True only if the manuscript
@@ -78,18 +72,6 @@ def plot_figure4(
         ax.set_ylim(bottom=0)
         minutes_to_hhmm_ticks(ax, step_min=360)
 
-        if n_households:
-            # Count days on the measured series alone. The two series are
-            # stamped in different years, so a nunique() over the whole
-            # subset would double-count.
-            n_days = sub.loc[sub["series"] == "measured", "day"].nunique()
-            n_hh = n_households.get(profile)
-            hh = (
-                f"{n_hh} household" + ("s" if n_hh != 1 else "")
-                if n_hh is not None else "? households"
-            )
-            annotate(ax, f"n = {hh} · {n_days} days measured", loc="upper left")
-
     for ax in axes[:, 0]:
         ax.set_ylabel("Mean power (W)")
     for ax in axes[1, :]:
@@ -110,5 +92,4 @@ if __name__ == "__main__":
     plot_figure4(
         data_io.load_profile_minutes(),
         "out/figure4_profile_load_curves.png",
-        n_households=data_io.N_HOUSEHOLDS,
     )

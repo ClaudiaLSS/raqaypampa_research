@@ -1,5 +1,5 @@
 % =====================================================================
-% Paste-ready captions for Figures 4-7, revised against the current run.
+% Paste-ready captions for Figures 4-6, revised against the current run.
 %
 % Generated alongside scripts/plots/. Every number below was computed from
 % the rebuilt community_results/ aggregate (build_community.py, 2026-08-31
@@ -21,8 +21,7 @@
 % Figure files produced by run_all.py:
 %   figure4_profile_load_curves.png
 %   figure5_profile_ldc.png
-%   figure6_community_load_curve.png
-%   figure7_community_ldc_envelope.png
+%   figure6_community_ldc_envelope.png
 %
 % WHAT TO REMOVE FROM main.tex
 % ----------------------------
@@ -37,20 +36,20 @@
 %     panels are journal-styled and generated against this run.
 %  3. fig:surveybased_vs_sociotechnical — this is a Profile-2 three-way
 %     comparison (Measured vs Survey-Based vs Socio-Technical). The
-%     community-aggregate Figures 6 and 7 do not exist in main.tex yet, so
-%     they need new figure environments; decide whether Fig. 6/7 replace
-%     the Profile-2 figure or sit alongside it.
-%  4. fig:tier2_heatmap is still a placeholder and is not in the Fig. 4-7
+%     community-aggregate Figure 6 does not exist in main.tex yet, so it
+%     needs a new figure environment; decide whether Fig. 6 replaces the
+%     Profile-2 figure or sits alongside it.
+%  4. fig:tier2_heatmap is still a placeholder and is not in the Fig. 4-6
 %     set. Either generate it or cut it — it currently shifts the figure
 %     numbering relative to the numbering used here.
 %
-% WINDOW WARNING — applies to Figures 6 and 7
-% -------------------------------------------
-% Figures 4 and 5 are May panels. Figures 6 and 7 default to the FULL
-% YEAR, and the strength of their contrast depends heavily on that choice
+% WINDOW WARNING — applies to Figure 6
+% ------------------------------------
+% Figures 4 and 5 are May panels. Figure 6 defaults to the FULL YEAR, and
+% the strength of its contrast depends heavily on that choice
 % (evening-peak error is +13.6% over the year but -4.4% in May, i.e. it
 % changes sign). Whichever you choose, state the window in the caption —
-% the captions below do. Do not silently mix windows across the four.
+% the captions below do. Do not silently mix windows across the three.
 % =====================================================================
 
 
@@ -85,38 +84,33 @@ exceeded only 5\% of the day.}
 
 
 % ---------------------------------------------------------------- Fig. 6
-\caption{Community-aggregate mean daily load over the full simulated year:
-Socio-Technical (heterogeneous, solid black) reference versus Survey-Based
-(homogeneous, dashed blue) Model. Both models place the evening peak at
-20:00, so peak \emph{timing} is not what separates them; what separates them
-is how each distributes demand across the rest of the day. The Survey-Based
-Model understates the overnight base load by 48.5\% (77.5~W against 39.9~W
-for 00:00--04:00), overstates the morning window by 80.0\% (54.9~W against
-98.9~W for 04:00--10:00) and the daytime window by 54.8\% (44.6~W against
-69.0~W for 10:00--17:00), and roughly doubles the morning peak of the mean
-curve (84.0~W at 05:45 against 169.7~W at 06:00). Because it is built from a
-single static year-round average, its curve is nearly identical in every
-month, whereas the heterogeneous reference varies seasonally; the
+\caption{Community aggregate over the full simulated year: Socio-Technical
+(heterogeneous, solid blue) reference versus Survey-Based (homogeneous, dashed
+green) Model. (a) Mean daily load curve for each community (heavy lines) drawn
+over its individual daily traces (thin lines) and its 5th--95th percentile
+envelope across days. Both models place the evening peak of the mean curve at
+20:00, so peak \emph{timing} is not what separates them, though the
+Survey-Based Model overstates its height by 27.9\% (229.5~W against 293.6~W);
+what separates them is how each distributes demand across the rest of the day.
+The Survey-Based Model understates the overnight base load by 48.5\% (77.5~W
+against 39.9~W for 00:00--04:00), overstates the morning window by 80.0\%
+(54.9~W against 98.9~W for 04:00--10:00) and the daytime window by 54.8\%
+(44.6~W against 69.0~W for 10:00--17:00), and roughly doubles the morning peak
+of the mean curve (84.0~W at 05:45 against 169.7~W at 06:00). Because it is
+built from a single static year-round average, its curve is nearly identical
+in every month, whereas the heterogeneous reference varies seasonally; the
 overstatement of aggregate mean power is therefore 22.1\% across the year but
-only 3.1\% within May alone.}
-\label{fig:community_mean_load}
-
-
-% ---------------------------------------------------------------- Fig. 7
-\caption{Community aggregate over the full simulated year, heterogeneous
-reference versus homogeneous Model. (a) Load Duration Curve, each series
-sorted descending against the fraction of the day at or above that level: the
-homogeneous Model sits above the reference across most of the distribution,
-with a P95 of 259.7~W against 204.6~W and a maximum of 293.6~W against
-229.5~W. (b) Individual daily traces (thin lines) with the mean curve and the
-5th--95th percentile envelope across days. The two communities' day-to-day
-\emph{spread} is comparable in magnitude (mean envelope width 51.1~W
-heterogeneous against 38.5~W homogeneous over the year, and 34.2~W against
-35.5~W within May); what distinguishes them is the tail. Correlating each day
-against the mean normalised daily shape, the most atypical heterogeneous day
-reaches 0.911 whereas the homogeneous Model never falls below 0.959: the
-heterogeneous community generates genuinely aberrant days, and the
-homogeneous one does not.}
+only 3.1\% within May alone. The two communities' day-to-day \emph{spread}, by
+contrast, is comparable in magnitude (mean envelope width 51.1~W heterogeneous
+against 38.5~W homogeneous over the year, and 34.2~W against 35.5~W within
+May); what distinguishes them is the tail. Correlating each day against the
+mean normalised daily shape, the most atypical heterogeneous day reaches 0.911
+whereas the homogeneous Model never falls below 0.959: the heterogeneous
+community generates genuinely aberrant days, and the homogeneous one does not.
+(b) Load Duration Curve, each series sorted descending against the fraction of
+the day at or above that level: the homogeneous Model sits above the reference
+across most of the distribution, with a P95 of 259.7~W against 204.6~W and a
+maximum of 293.6~W against 229.5~W.}
 \label{fig:community_ldc_envelope}
 
 
@@ -142,5 +136,5 @@ homogeneous one does not.}
 % so its day-to-day envelope does not collapse. MRSD cannot be cited in
 % support of a day-to-day variability claim.
 %
-% Fig. 7(b) above therefore claims the tail (min shape correlation), which
+% Fig. 6(a) above therefore claims the tail (min shape correlation), which
 % the data does support, rather than the band width, which it does not.

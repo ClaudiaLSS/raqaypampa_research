@@ -4,11 +4,11 @@ The reductions behind Fig. 4-7, kept out of the plotting code.
 Every figure script consumes one of two long-format tables (see data_io.py
 for the schema contract) and reduces it here. Keeping the reductions in one
 module means Fig. 4 and Fig. 5 are guaranteed to describe the same
-underlying samples, and likewise Fig. 6 and Fig. 7.
+underlying samples, and likewise both panels of Fig. 6.
 
-  mean_daily_curve   minute-of-day mean            -> Fig. 4, Fig. 6
-  ldc                duration-sorted curve         -> Fig. 5, Fig. 7a
-  daily_envelope     across-day percentile band    -> Fig. 7b
+  mean_daily_curve   minute-of-day mean            -> Fig. 4
+  ldc                duration-sorted curve         -> Fig. 5, Fig. 6b
+  daily_envelope     across-day percentile band    -> Fig. 6a
 """
 
 import numpy as np
@@ -52,7 +52,7 @@ def check_common_resolution(df, group_cols=("series",), tolerance=0.05):
     """
     Warn when series compared in one panel were sampled at different rates.
 
-    This matters far more for Fig. 5 and Fig. 7a than for the chronological
+    This matters far more for Fig. 5 and Fig. 6b than for the chronological
     curves. A 1-minute simulated series genuinely contains sharper extremes
     than a 10-minute measured average of the same load, so its LDC sits
     above the measured one at the top end for reasons that have nothing to
@@ -224,9 +224,9 @@ def shape_coherence_summary(df, series):
         min_r    the most atypical day; the tail matters more than the mean
         shape_band  mean p5-p95 width of the level-normalised traces
 
-    Why this exists: Fig. 7b was originally premised on the homogeneous
+    Why this exists: Fig. 6a was originally premised on the homogeneous
     Model producing a narrow, near-deterministic band. That does not hold
-    (see the CAVEAT in figure7_community_ldc_envelope.plot_figure7), so the
+    (see the CAVEAT in figure6_community_ldc_envelope.plot_figure6), so the
     panel needs a statistic that reports what IS there rather than one
     chosen to confirm the caption. Use these numbers to write the caption.
     """

@@ -16,7 +16,7 @@ load_profile_minutes()  -> Fig. 4, Fig. 5
     time_min   int, 0-1439, minute-of-day at the start of the bin
     power_w    float, mean power over the bin
 
-load_community_minutes()  -> Fig. 6, Fig. 7
+load_community_minutes()  -> Fig. 6
     series     "heterogeneous" | "homogeneous"
     day, time_min, power_w   as above
 
@@ -40,10 +40,11 @@ KNOWN CAVEATS
   --homogeneous_pid 0 --homogeneous_n 65, so they now agree with the
   current sim_community/ per-profile runs. If the profile parameter JSONs
   change, re-run run_community.py and then build_community.py again —
-  otherwise Fig. 6/7 would describe an older parameterisation than
+  otherwise Fig. 6 would describe an older parameterisation than
   Fig. 4/5 do.
-* Measured pools are small: 2 households for P1/P3/P4 and 1 for P2. Pass
-  the counts to the figures via N_HOUSEHOLDS so the panels state them.
+* Measured pools are small: 2 households for P1/P3/P4 and 1 for P2.
+  N_HOUSEHOLDS records the counts; the panels no longer state them, so
+  they have to be stated in the Fig. 4 caption instead.
 * SIM_DIR points at simulation_results/, whose per-profile runs contain
   exactly ONE household each. profile_<pid>_minute_aggregated.csv is the
   SUM across a profile's households, so with one household it equals that
@@ -70,7 +71,7 @@ HETEROGENEOUS_FILE = "community_heterogeneous_minute.csv"
 HOMOGENEOUS_FILE = "community_homogeneous_minute.csv"
 
 # --- Validation window ----------------------------------------------------
-# Fig. 4 and Fig. 5 are May panels. Fig. 6 and Fig. 7 use the full year by
+# Fig. 4 and Fig. 5 are May panels. Fig. 6 uses the full year by
 # default; pass month=5 to restrict them too.
 VALIDATION_MONTH = 5
 BIN_MINUTES = 15
@@ -137,7 +138,7 @@ def load_profile_minutes(
 
 
 def load_community_minutes(month=None, bin_minutes=BIN_MINUTES):
-    """Heterogeneous reference and homogeneous Model aggregates. Fig. 6, 7."""
+    """Heterogeneous reference and homogeneous Model aggregates. Fig. 6."""
     frames = [
         _load_series(
             COMMUNITY_DIR / HETEROGENEOUS_FILE,
