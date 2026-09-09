@@ -37,6 +37,11 @@ data/raw/
 # Ignore the scratch folder so your messy drafts stay local
 scratch/
 
+# --- External Repositories & Tools ---
+# Prevent tracking nested Git repositories (e.g., RAMP library installations)
+RAMP/
+.git/
+
 # --- Exceptions ---
 # Keep the folder structure even if empty
 !data/.gitkeep

@@ -1,0 +1,56 @@
+
+user_ID: 90
+name: Adrian Felipes
+gender: Male
+community: Sillar
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: ¿Cómo te llamas?
+[RMA]: Mi nombre es Adrian Felipes
+[R1]: ¿Tiene hijos en el colegio?
+[RMA]: No, solo hermano menor
+[R1]: ¿en qué curso esta tu hermanito?
+[RMA]: En 3ro de primaria
+[R1]: ¿Cuántos viven aquí?
+[RMA]: 4 personas, tres mayores y un niño
+[R1]: ¿No tienen otra radio, quien utilizaba más la radio?
+[RMA]: yo nomas, pero de vez en cuando.
+[R1]: ¿Pero es importante no? ¿O no usan mucho?
+[RMA]: Lo utilizo porque es necesario, para escuchar.
+[R1]: ¿todo el año se quedan a aquí o viajan a algunos lados?
+[RMA]: todo el año nos quedamos aquí.
+[R1]: ¿van a trabajar a otro lugar, o llevan a lado?
+[RMA]: yo nomas voy, pero de vez en cuando
+[R1]: ¿Tu hermano menor puede realizar sus deberes escolares con luz, les sirve?
+[RMA]: si
+[R1]: ¿antes de que traigan el panel a qué hora dormían?
+[RMA]: A las 8 o 7 de la noche
+[R1]: ¿Ahora con el panel, más tarde?
+[RMA]: si, antes no había luz y solo usábamos vela
+[R1]: ¿Ahora cambio, ah mejorado un poco la vida?
+[RMA]: si
+[R1]: ¿viven mujeres aquí?
+[RMA]: si, solo mi mamá
+[R1]: ¿Y cómo usa tu mama todo?
+[RMA]: si ella también usa
+[R1]: ¿Carga celulares?
+[RMA]: No ella no tiene celular, su luz nomas tiene, para cocinar usa
+[R1]: ¿solo hay un foco o dos?
+[RMA]: solo uno nomas el otro lo saque, porque no mantiene los dos
+[R1]: ¿se ha caído alguna vez la batería?
+[RMA]: no
+[R1]: ¿a tu nombre sacaron u otro nombre?
+[RMA]: Si a mi nombre sacaron
+[R1]: Les vamos a cambiar la radio, no les va a costar nada, lo van a cuidar bien, solo por esta ocasión haremos el cambio, vamos a probarlo ahora, funciona sin problemas, vas a cargarlo durante todo el día la primera vez para que puedas usarlo. Ahora para ver que está funcionando lo voy a encender, tú lo enciendes una vez que haya completado la carga. ¿Ya? Todo el día hasta las 5 y si se puede mañana en la mañana más, hasta medio
+día.
+[R1]: ¿Cuántos celulares tienen?
+[RMA]: Solo un celular
+[R1]: Es bueno cargarlo durante el periodo de 17:00 a 19:00 de la tarde. Al manejar lo cuidaran siempre,
+[RMA]: Si, puede entrar también tierra o polvo, al llover también lo apagamos.
+[R1]: A qui hay 3 puertos, tu foco debes conectar a un puerto, tiene que durar, si no dura nos llamarán nosotros y vendrán arreglar, nosotros no venimos a arreglar, venimos a inspeccionar si todo está funcionando, bien.
+[RMA]: si, está bien.
+[R1]: ella está haciendo un formulario donde indica que estamos cambiando la radio. A qui firmármelo por
+favor, gracias, regresaremos al año
+[RMA]: ya

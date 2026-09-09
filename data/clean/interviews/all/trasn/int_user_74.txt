@@ -1,0 +1,60 @@
+
+user_ID: 74
+name: Jose Acosta Inturias
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[R2]: ¿cuántos hijos tiene don José? ¿tus hijos totales? ¿o son ellos?
+[RMA]: en total son siete hijos
+[R1]: Esta con tres rayitas ¿todo está cargando normal verdad?
+[RMA]: si todo está cargando normal, pero a veces la luz se apaga, se prende asi
+[R1]: Debe ser la batería ¿en qué horario cargas durante el día o durante la noche?
+[RMA]: durante la noche lo hago cargar, pero no carga bien
+[R2]: si, pero es mejor hacerlo cargar de día, durante la noche no carga bien
+[R1]: ¿no se ha caído?
+[RMA]: no
+[R3]: ¿pero el celular carga no?
+[R1]: Si, pero está calentando
+[R3]: talvez es su interfaz
+[R2]: ¿linterna carga?
+[RMA]: si
+[R2]: ¿Y esos de aquí también cargan?
+[RMA]: si carga siempre, con este cable de aquí
+[R2]: Ah ya, ¿de aquí? ¿Desde qué hora prendes la luz cuando lo prendes dejas que aún alumbre hasta que amanezca?
+[RMA]: no, lo prendo o hacemos alumbrar desde las 6 de la tarde hasta las 10 de la noche, no amanezco con la luz prendida
+[R2]: ¿y en la mañana?
+[RMA]: desde las 4 de la mañana
+[R1]: ¿a qui nomas paras o vas a otro lugar?
+[RMA]: Si aquí nomas se quedan, tampoco lo llevo a otros lugares como otros lo hacen
+[R1]: otros lo saben trajinar
+[RMA]: si, pero yo no lo hago, solo lo único que hice fue estirar el cable de allá.
+[R1]: Ya, ¿y viene a hacer cargar aquí sus celulares algunas personas?
+[RMA]: no, mayoría creo que tiene panel
+[R1]: ¿compras pilas?
+[RMA]: no desde esa vez ya no compro pilas, ya no gasto dinero en eso me ahorro
+[R1]: ¿tienes una vida mejor con esto?
+[RMA]: Si vivo mejor es muy bueno, ya no compro velas igual
+[R2]: ¿Quién es la que o el que más utiliza la luz vos o tu mujer?
+[RMA]: yo nomás también mis hijos al hacer sus tareas y también al hacer cargar sus celulares
+[R2]: ¿y todos tus hijos están en la escuela o algunos ya salieron bachiller?
+[RMA]: tres de mis hijos están en el colegio
+[R2]: ¿otros fueron al colegio de Raqaypampa?
+[RMA]: No, porque queda lejos, fueron, pero solo hasta segundo de secundaria, es muy lejos
+[R2]: si, lejos es para ir o si no es quedarse a vivir ahí
+[RMA]: si
+[R2]: ¿ha mejorado tu vida con esto?
+[RMA]: si, por eso puedo comer con luz antes no había era todo oscuro, no se veía bien, que gusanos igual talvez habia
+[R2]: Esto no vas a mover por nada
+[RMA]: No, no hago mover, ahora ¿cuándo van a volver?
+[R2]: Al año no masía
+[RMA]: ¿Cuánto tiempo duraba su garantía no recuerdo?
+[R2]: esto te va durar años, los focos solo tienen un periodo útil digamos 100 horas, Si tu no apagas la luz al dormir y amaneces con luz prendida, eso hará que te dure menos tiempo, si tu apagas al dormir y solo lo usas cuando sea necesario pues te durara un buen tiempo
+[RMA]: si otros dicen tenemos garantía y por eso enciende la luz innecesariamente, yo no amanezco con la luz prendida, al menos que haya una fiesta ahí sí, pero después no
+[R2]: si, pero otras personas están acostumbradas a caminar con la luz
+[RMA]: ah si
+[R2]: ya don José todo está bien, te vas a cuidar, vas a limpiar el panel, cuidarlo para que te dure más tiempo
+[RMA]: si pues si el dueño no cuida, quien va cuidar, nosotros no más tenemos que cuidarlo.
+[R2]: si pues así es, ya nos iremos

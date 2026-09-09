@@ -88,7 +88,7 @@ light_2_morning,categorical,practices,Period of use of light_2 during the mornin
 light_3_morning,categorical,practices,Period of use of light_3 during the morning,,1=0306; 2=0406; 3=0407; 4=0408; 5=0409; 6=0506; 7=0507; 8=0508; 9=0509; 10=0510; 11=0607; 12=0608; 13=0610,,,-1,,,,,,,,,
 radio_morning,categorical,practices,Period of use of radio during the morning,,1=0306; 2=0406; 3=0407; 4=0408; 5=0409; 6=0506; 7=0507; 8=0508; 9=0509; 10=0510; 11=0607; 12=0608; 13=0610,,,-1,,,,,,,,,
 light_1_night,categorical,practices,Period of use of light_1 during the night,,1=1720; 2=1722; 3=1819; 4=1820; 5=1821; 6=1822; 7=1823; 8=1824; 9=1921; 10=1922; 11=2022; 12=2023; 13=1805,,,-1,,,,,,,,,
-Light_2_night,categorical,practices,Period of use of light_2 during the night,,1=1720; 2=1722; 3=1819; 4=1820; 5=1821; 6=1822; 7=1823; 8=1824; 9=1921; 10=1922; 11=2022; 12=2023; 13=1805,,,-1,,,,,,,,,
+light_2_night,categorical,practices,Period of use of light_2 during the night,,1=1720; 2=1722; 3=1819; 4=1820; 5=1821; 6=1822; 7=1823; 8=1824; 9=1921; 10=1922; 11=2022; 12=2023; 13=1805,,,-1,,,,,,,,,
 light_3_night,categorical,practices,Period of use of light_3 during the night,,1=1720; 2=1722; 3=1819; 4=1820; 5=1821; 6=1822; 7=1823; 8=1824; 9=1921; 10=1922; 11=2022; 12=2023; 13=1805,,,-1,,,,,,,,,
 radio_night,categorical,practices,Period of use of radio during the night,,1=1720; 2=1722; 3=1819; 4=1820; 5=1821; 6=1822; 7=1823; 8=1824; 9=1921; 10=1922; 11=2022; 12=2023; 13=1805,,,-1,,,,,,,,,
 quality,categorical,quality,The quality of the energy supply perceived by the user,,1=excellent; 2=good; 3=bad,,,-1,,,,,,,,,

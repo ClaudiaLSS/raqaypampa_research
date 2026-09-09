@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['scripts/socioeconomic_profile.py', 'scripts/clustering.py', 'scripts/energy_practices.py', 'scripts/logger_processing.py', 'scripts/plot_impact.py', 'scripts/plot_improvements.py']
+recent_files = ['scripts/timeseries/preprocess/correct_timeseries.py', 'scripts/timeseries/preprocess/merge_logs.py', 'scripts/timeseries/preprocess/clean_timeseries.py', 'scripts/timeseries/analysis/ELC_indicators.py', 'scripts/timeseries/preprocess/generate_metadata.py', 'scripts/timeseries/plots/measured_lc.py', 'scripts/text/generate_metadata_int.py']
 
 [main]
 version = 0.2.0

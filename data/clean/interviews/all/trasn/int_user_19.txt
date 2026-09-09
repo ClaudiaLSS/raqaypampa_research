@@ -1,0 +1,88 @@
+user_ID: 19
+name: Domingo Vallejos
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[RFA]: está funcionando normal la radio
+[R1]: ¿El celular carga normal?
+[RFA]: sí el celular carga normal
+[R1]: ¿y la luz no se apaga durante la noche o cuando está prendido?
+[RFA]: si se gasta y al gastarse pues se apaga
+[R1]: si ustedes hacen cargar en la noche va a apagarse es mejor cargarlo durante la mañana y así durante la
+noche cuando esté alumbrando pues no se va a pagar ¿cuántos viven aquí?
+[RFA]: viven seis personas
+[R1]: ¿cuántos van a la escuela?
+[RFA]: tres van a la escuela
+[R1]: ¿ya no utilizan mecheros ni velas cierto?
+[RFA]: no ya no lo utilizamos, linterna nomas cuando salimos
+[R1]: ¿ahora duermen durante las 09 o 10 de la noche cierto?
+[RFA]: si
+[R1]: ¿antes cuando no tenían el panel igual dormir en ese horario?
+[RFA]: si dormíamos en el mismo horario
+[R1]: ¿cómo esta su vida ahora con este sistema? ¿entonces ustedes dicen que funciona bien?
+[RFA]: sí funciona bien, no estaba funcionando bien un cable así que he hecho poner un cable
+con 50 bolivianos
+[R1]: ¿quiénes te lo han hecho ese cambio del cable?
+[RFA]: los que vinieron la anterior vez
+[R1]: Ah ya ¿la ingeniera Rocío?
+[RFA]: sí creo que ellos fueron
+[R1]: ¿y esto no carga no?
+[RFA]: si no carga, con esto nomás funciona
+[R1]: ¿tienen otra radio en la casa?
+[RFA]: no, solo tenemos esa radio
+[R2]: ya no carga no, si ya no carga
+[R1]: podemos cambiarlo el cable, pero ustedes están de acuerdo
+[RMA]: ¿y cuánto nos va a cobrar?
+[R1]: no les costará nada lo cambiaremos, pero lo deben cuidar
+[RMA]: ya está bien, gracias
+[RFA]: ¿la radio lo van a cambiar cierto?
+[R1]: te voy a cambiar esta vez, pero después ya no va a haber más cambios, deben cuidar
+[RFA]: ah ya
+[R1]: esto todito hay que hacerlo cargar solo durante el día, ahora voy a hacer la prueba si funciona o no
+[RMA]: sí está bien, en la mañana lo hare cargar
+[R1]: ahí está con su batería está conectado. para poderlo usar, todo el día debes hacerlo cargar desde la mañanita
+hasta la tarde para poder usarlo, aquí igual tiene su watito para que puedas colgarlo
+[RMA]: ya
+[R1]: ¿cuántas veces limpian el panel solar?
+[RMA]: lo limpiamos de vez en cuando
+[R1]: ¿quién es el que utiliza más la radio, lo llevan cuando van a trabajar?
+[RFA]: No aquí nomás utilizamos la radio
+[R1]: ¿qué es lo que más utilizan. la radio, o cargar el celular o la luz?
+[RMA]: utilizamos más para cargar el celular porque es importante
+[R1]: ¿si aquí puede funcionar la tele, lo puedes utilizar?
+[RMA]: sí lo usaría
+[R1]: ¿cuántos celulares tienen aquí dos o tres?
+[RMA]: tenemos dos celulares
+[R2]: ¿Domingo vallejos no?
+[RMA]: Si
+[R1]: aquí me lo puedes firmar por favor
+[RMA]: Ya
+[R1]: ¿en estas fechas van a otros lugares?
+[RFA]: No, no
+[RMA]: mi mujer solamente se queda aquí y yo a veces voy a trabaja
+[R1]: ¿y el panel aquí nomás se queda no?
+[RFA]: sí, aquí nomás se queda
+[R1]: Al año que viene vamos a traer un equipo para que se vea todos los días cómo funciona la radio, la luz
+eso todo lo va a ver
+[RMA]: Esta bien
+[RFA]: entonces hay que hacerlo cargar durante el día la radio ¿está funcionando bien cierto?
+[R1]: sí mejor hágalo cargar durante el día, también el celular cuando esté un 20% ya deben hacerlo cargar no
+esperar hasta que se descargue por completo porque los celulares duran 8 o 7 años, pero si ustedes esperan
+hasta que se baje la batería por completo pues no les va a durar mucho tiempo va a durar como dos años o tres
+años
+[RFA]: ah ya está bien sí
+[R1]: ¿hacen algo para ahorrar la energía?
+[RFA]: sí cuidamos, si no lo utilizamos pues lo apagamos la luz
+[R1]: ah muy bien entonces es así pues les va a durar por un buen tiempo
+[RFA]: ¿el panel cuánto tiempo va a durar?
+[R1]: ese panel puede llegar a durar como 10 años, pero si lo mantienen bien, pero si le hacen caer ya no
+[RFA]: ah ya, de aquella casa un muchacho manejaba mucho su batería y lo han malogrado ya
+no sirve
+[R1]: ¿Dónde es esa casa?
+[RMA]: Pasaron creo por su casa ustedes, o cuando salgan ahí es, no estaban, pero ya llegaron
+[R1]: ah ya ya vamos a ir entonces, te agradezco mucho, gracias al año vamos a volver
+[RFA]: Ya, está bien, por la radio nos vamos a enterar
+[RMA]: ya muy bien nos vemos al año.

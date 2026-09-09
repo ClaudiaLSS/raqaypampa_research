@@ -1,0 +1,86 @@
+user_ID: 83
+name: Pascual Zurita
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[RMA]: el celular carga normal, la radio funciona bien, ambos cargan al 100%, esto estaba flojo y lo he atado
+[R2]: está bien ¿hace tiempo ya te compraste?
+[RMA]: si, hace tiempo ya me compré y sigue alumbrando, esto estaba torcido, con bolsa plástico lo envolví y lo até
+[R1]: ¿cuántas veces limpiaste el panel?
+[RMA]: No, solo la lluvia limpia
+[R2]: ¿Cuántos viven aquí? ¿tú y tu mujer y tus hijos cuantos son?
+[RMA]: Aquí vivimos seis personas, pero tengo 11 hijos, los mayores están en Chapare
+[R2]: ¿Todos viven?
+[RMA]: Solo uno falleció, mis hijos hombres están en chapare, mi hija está en Mizque, el menor es mi hijo y el otro es mi nieto
+[R2]: está bien
+[RMA]: Mis hijos están trabajando, están llevando abono que ahora mismo están cargando
+[R1]: ¿desde qué hora encienden la luz?
+[RMA]: prendemos de vez en cuando, porque queremos cuidar, ¿O no es bueno cuidar?
+[R2]: No, tienen que utilizar, esto tiene su tiempo de duración, como 3 años de duración, cuando pase los tres años deja de funcionar, si una sola vez al mes haces alumbrar estás haciendo mal uso, tienes que hacer alumbrar cada vez.
+[RMA]: Esta bien, este no masía es mi nieto menor solo tiene 3 años y faltan 3 años para que vaya al colegio.
+[R2]: Entonces, en la reunión de Molle Orcko nosotros dijimos, que el panel solar solo tenía que llegar a las personas que tenían sus hijos en el colegio
+[RMA]: Pero ahora se acabó, en ese tiempo mi hija estaba en el colegio cuando ustedes dijeron que el panel solo era para familias que tiene hijos en el colegio, la que llevo a pastorear las ovejas es una jovencita alta, ahora ni uno de mis hijos van al colegio todos terminaron.
+[R2]: ¿Y ustedes cuantos años viven aquí o van a otro lugar?
+[RMA]: No vamos a otro lugar, vivimos aquí todo el año, yo nací en este lugar
+[R2]: ¿Pero de ustedes nadie va?
+[RMA]: En otro lado no voy a sembrar; solo siembro aquí, tengo una casita de adobe con techo de paja, aquí siempre me quedo
+[R2]: ¿En la mañana a partir de qué hora prenden la luz a las 4 o 5 de la mañana?
+[RMA]: por la noche prendo a las 6 de la tarde y en las madrugadas a las 4 de la mañana
+[R2]: ¿y en la noche?
+[RMA]: prendo desde las 6 de la tarde hasta las 10 de la noche
+[R2]: ¿Qué hacen en ese tiempo con luz?
+[RMA]: Cuando hay luz comemos con tranquilidad aqui adentro; ya no pasamos frio en afuera, nos tendemos la cama para dormir
+[R1]: está bien, esto para cargar es recomendable cargarlo de día, si cargas de noche solo succiona del mismo foco de día carga mejor
+[R2]: si esto tienes que aprender bien, porque la gente dice que de noche no aguanta porque se descarga rápido, pero es mejor de día cargarlo
+[RMA]: ¿entonces solo tiene que cargar de día no?
+[R2]: si, es mucho mejor solo debe de cargar de día, va a cargar de aquí y de esto
+[RMA]: entonces el sol va a cargar bien de aquí
+[R1]: así es
+[RMA]: claro de noche no hay sol
+[R1]: es recomendable hacer cargar hasta las 5 de la tarde
+[RMA]: está bien
+[R1]: ¿Si el sistema tendría más capacidad, podrías usar televisión u otros equipos?
+[RMA]: ¿puede hacer funcionar la televisión?
+[R2]: No, si más después quieres que funcione la televisión seria comprar un panel más grande, su batería seria como esto, pero más potente.
+[R1]: ¿Tu quisieras?
+[RMA]: yo solo me quiero comprar un panel del tamaño de mi cuaderno pequeño, pero ¿será que le puede dar a esto me pregunto?
+[R1]: ¿Aquí? Va a tardar más tiempo pero
+[RMA]: ah ya entonces mejor no compro, mi celular nomas hare cargar ahí
+[R2]: ¿tienes todavía su mechero o ya no?
+[RMA]: Había, pero ahora se perdió, después de comprar ese pico lo bote y ya no tengo
+[R2]: ¿No hay ni para mostrar?
+[RMA]: No, no hay
+[R2]: ¿pero querosén tampoco ya hay pues?
+[RMA]: si tampoco hay, ya no hay como antes
+[R2]: ¿entonces no compras pilas no?
+[RMA]: No, para que compraría
+[R1]: ¿entonces les es útil el panel solar cierto?
+[RMA]: si, estamos felices y contentos, porque antes cuando era niño y hacia las tareas era todo oscuro no se veía nada, también me hacía humear solo con mechero.
+[R2]: ese tiempo también no había colegio pues
+[RMA]: Si no había aquí, yo iba al colegio del pueblo de Raqaypampa, demoraba dos horas, aunque yo iba por las rutas más directas.
+[R1]: ¿Quién toca guitarra?
+[RMA]: mis hijos que se fueron a chapare, ellos se compraron la guitarra, pero se fueron jóvenes a chapare
+[R2]: ¿tú no sabes tocar charango?
+[RMA]: no yo no sé tocar
+[R1]: ¿para ti cual es mejor que cargue el celular que haya luz o que cargue la radio?
+[RMA]: para mi es igual, solo quiero que todo funcione bien
+[R1]: ¿funciona también el día sábado y domingo o salen a otro lugar?
+[RMA]: si, funciona normal, no salimos a ningún lado solo estamos aquí, tampoco voy a visitar a mis hijos a chapare, ellos vienen a visitarme a mí, no me muevo de aquí, tengo puro hijos que viven en chapare hasta algunos ya tienen familias.
+[R2]: Si estoy viendo que tienes paltas aquí, ni me estas invitando, estoy bromeando (empiezan a reir todos)
+[RMA]: si jajajaja están un poco crudos
+[R2]: ¿tienes lotes allá en chapare?
+[RMA]: si, mis hijos tienen sus lotes, sus casas, sus autos son puro varones, no tengo ni una hija que viva en chapare
+[R2]: ah ya ¿deben venir cuando hay fiestas aquí?
+[RMA]: si viene siempre pues también me visitan, porque es el lugar donde nacieron y quieren ver las fiestas que se hacen pues, después ya se vuelven a chaparé
+[R1]: ya ¿esta batería en la noche se termina?
+[RMA]: no se termina, alumbra normal cuando prendo
+[R2]: ya don pascual muy bien
+[R1]: te agradecemos Don Pascual
+[RMA]: yo les agradezco, muchas gracias
+[R1]: hasta luego, nos vamos
+[R3]: Gracias
+[RMA]: ya está bien gracias
+

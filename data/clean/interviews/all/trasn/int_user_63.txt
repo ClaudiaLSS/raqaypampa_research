@@ -1,0 +1,53 @@
+user_ID: 63
+name: Carlos Negrete
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[R1]: Antes de poner el panel solar ¿cómo hacían alumbrar? o ¿con qué alumbraban?
+[RMA]: Antes solo con querosén o vela o picolámpara
+[R2]: Ahora Don Carlos contame ¿a qué hora te levantas y al levantarte utilizar el panel? ¿A qué hora hacen alumbrar?
+[RMA]: me levanto 4 o 5 de la mañana no utilizo el panel, hago alumbrar desde las 6 de la de la tarde hasta las 10 de la noche
+[R2]: ¿A qué hora hacen cargar el celular?
+[RMA]: solo durante el día o en la mañanita, depende
+[R2]: entonces no tienes un horario fijo, ¿la radio lo utilizas o no lo prendes y desde que hora lo prendes?
+[RMA]: sí lo prendo la radio y escucho desde las 5 de la mañana todo el día hasta la noche
+[R2]: ¿pero solo cuando estás aquí o cuando sales a trabajar?
+[RMA]: igual lo utilizo, lo llevo conmigo
+[R2]: ah ya.
+[R1]: ¿todo el día completo trabajas?
+[RMA]: Depende, a veces dos horas, a veces hasta estas horas
+[R2]: ¿y cuando llegas prendes la luz desde que hora 6 o 7?
+[RMA]: si, desde las 6 de la tarde prendo hasta las 10 de la noche
+[R1]: ¿y funciona bien y abastece durante el horario que tú utilizas el panel o se apaga?
+[RMA]: depende de vez en cuando a veces cuando se pone como bien caliente se apaga
+[R2]: ¿a veces haces alumbrar toda la noche hasta que amanezca?
+[RMA]: no
+[R1]: ¿y solo limpias cuando no funciona?
+[RMA]: sí solo cuando no está funcionando lo limpio
+[R1]: Ah ya ¿sábado y domingo lo usas de diferente manera o lo usas de manera normal como todos los días de la semana?
+[RMA]: sábado y domingo lo utilizo como los demás días normal
+[R2]: Ahora dime ¿quién es el que más utiliza? el celular, la radio o la luz
+[RMA]: Mis hijos son las que más utilizan la luz para realizar sus deberes escolares yo la radio
+[R1]: Ah ya, ¿durante el tiempo del frío será que puedes utilizar calefactor?
+[RMA]: ¿qué es eso?
+[R1]: existen equipos para la época de invierno, para mantener un clima adecuado ¿lo utilizarías?
+[RMA]: sí lo utilizaría
+[R1]: ¿en la época de verano hace demasiado calor? ¿y ventilador será que pueden utilizar?
+[RMA]: si traen sí, claro que sí utilizaríamos el ventilador, si tendríamos
+[R1]: ¿si en caso llegaras a tener ventilador calefactor, crees que, para la luz, para cargar el celular y la radio aguantara el panel?
+[RMA]: Dudo mucho que aguante
+[R1]: ¿A qué hora más o menos cocinas y cuántas veces al día?
+[RMA]: cocinamos dos veces al día en la mañanita y en la tarde
+[R1]: ¿hay algo que te moleste del panel?
+[RMA]: no, no hay algo que me moleste o me haga enojar del panel
+[R1]: ¿tienes vecinos?
+[RMA]: No, no hay tantos a veces se pierden
+[R1]: ¿algunos hacen cargar su celular aquí?
+[RMA]: si, vienen a veces a hacer cargar aquí
+[R1]: ¿y los que vienen a hacer cargar querrán este sistema, si quieren cierto?
+[RMA]: Si quieren siempre pues, las señoritas están constantemente con el celular entonces necesitan.
+[R1]: eso nomas es, te agradezco mucho don Carlos
+[RMA]: ya

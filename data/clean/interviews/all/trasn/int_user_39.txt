@@ -1,0 +1,116 @@
+user_ID: 39
+name: Raymundo Zurita
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: ¿cómo se encuentra Don Raymundo está bien?
+[RMA]: sí estoy bien
+[R3]: ¿cómo está Don Raymundo?
+[R1]: vamos a revisar los paneles cómo están funcionando ¿podemos ver no?
+[RMA]: sí adelante
+[R1]: entonces está cumpliendo su función, el panel, la radio o celular ¿carga bien?
+[RMA]: sí todo en orden
+[R1]: está a 50% ¿los dos están funcionando?
+[RMA]: sí
+[R1]: ¿el celular bien nomás carga o tarda mucho?
+[RMA]: a veces carga lento y a veces normal
+[R1]: ¿cargas durante el día o durante la noche?
+[RMA]: usualmente por la mañana, al amanecer hago cargar a veces
+[R1]: ah ya ¿el foco no se apaga no?
+[RMA]: no, funciona normal en la noche solo encendemos como 2 horas no más
+[R1]: ¿son dos focos o solo uno?
+[RMA]: uno nada más
+[R1]: ah ya, ¿dónde es el interruptor? Aquí había estado
+[RMA]: ahí arribita está
+[R1]: ¿y la radio funciona normal no?
+[RMA]: sí
+[R3]: ¿qué otras cosas más cargan aparte de sus focos?
+[RMA]: celular, portátiles y linternas eso nomás
+[R1]: ¿ya no utilizas velas, mecheros?
+[RMA]: No, ya no utilizamos
+[R1]: entonces está bien
+[RMA]: sí está muy bien la verdad no sirve de mucho el panel
+[R1]: te puedo preguntar ¿algo?, ese sombrero como lo hacen
+[RMA]: de la lana de oveja, no lo hice yo lo compré en Cliza ahí venden
+[R1]: ah ¿qué es lo que más utilizas la radio, la luz o haces cargar más celular?
+[RMA]: más hago cargar el celular, linternas, portátiles, radio, luz todo
+[R1]: ¿quién es el que más utiliza? ¿tu esposa usa más?
+[RMA]: toda la familia utilizamos
+[R1]: ¿tus hijos utilizan más para sus tareas?
+[RMA]: no ya no tenemos hijos en la escuela
+[R1]: ¿cuántos viven aquí?
+[RMA]: cuatro personas vivimos aquí
+[R3]: otro sistema más tiene, eso se lo veremos
+[RMA]: sí
+[R1]: está al 100%
+[R3]: ¿el otro estaba a 50% no? ¿le limpian el panel y cada cuánto más o menos?
+[RMA]: sí, cada tres meses o dos meses
+[R1]: ese es el traje típico y cuesta muy caro, una vez preguntamos aquí en la plaza porque quería comprar un español y nos dijo Bs. 5000, ¿y qué significan estas cositas porque he visto que unos llevan y otros no me han dicho una vez que solteros tienen y los casados no algo así es?
+[RMA]: sí
+[R1]: aquí atrás los jóvenes utilizan tienen una como unas bolitas atrás
+[RMA]: esto sale casi 500 o 600 bolivianos
+[R1]: Ah qué bonito, pero tiene muchos detalles, con razón cuesta mucho, no puedo creer cómo se endura tanto la lana de la oveja le deben poner algo, esto se ponen en la cintura no para poner la coca
+[RMA]: si algo le deben poner, para eso es
+[R1]: tiene fotos lindas ¿hay todavía muchos vestidos así no?
+[RMA]: sí
+[R1]: ¿ustedes se visten así cuando hay reuniones importantes no?
+[RMA]: si nos vestimos así, pero no quieren usar las jovencitas, también cuesta muy caro
+[R1]: si pues carito
+[RMA]: antes nosotros mismos hacíamos el pantalón, todo, y no gastamos tanto
+[R1]: sí
+[RMA]: ahora todos quieren comprar, ya no quieren hacer
+[R1]: eso duraba más el tejido y era más calientito, no pasaba el frio
+[RMA]: es muy bueno para el invierno
+[R3]: ¿en invierno hace mucho frío aquí?
+[RMA]: sí hace mucho frío
+[R1]: si quisieras usar más cosas, como el ventilador, televisión si hubiera la posibilidad ¿lo utilizarías? Con un sistema más grande
+[RMA]: sí, claro si se puede
+[R1]: en estas épocas de frío te serviría digamos, los calefactores
+[RMA]: casi no tanto solo televisor nomás
+[R1]: ¿en verano, hace mucho calor aquí?
+[RMA]: en ese tiempo de ahorita nomás está haciendo calor después ya no tanto, en la punta ya hace más frío en ahí
+[R1]: tal vez ahí pueden querer calefactor
+[R3]: ¿y todo el año se quedan aquí Don Raymundo o van a otro lugar?
+[RMA]: sí casi todo el año nos quedamos, antes no bajábamos al monte, pero ahora vamos en enero y febrero
+[R3]: ¿los paneles la batería lo llevan o aquí nomás ¿
+[RMA]: Si es que vamos a necesitar lo llevamos
+[R1]: ¿y eso has hecho por vos?
+[RMA]: sí
+[R3]: ¿y utilizan la luz para hacer esto, en la noche o de día no más lo hacen?
+[RMA]: esto en la noche con la luz, también hacer esas frazadas se hacen, cuestan como Bs. 400 o 500
+[R1]: ayer en Molle Orcko, estaba haciendo una señora y me dijo Bs. 350
+[RMA]: es más caro cuando es a pedido, porque igual hay que comprar tinta y se tarda hacer dos semanas ahora nosotros hacemos solo para nuestro uso
+[R1]: aquello me gusta más eso es más antigüito, no ese café más o menos así es el tejido del pantalón ¿no?
+[RMA]: si más o menos así es, aguayo también hacemos pues
+[R1]: ¿eso ah qué bonito, eso cuánto sale?
+[RMA]: eso no sabemos todavía el precio solo es para nuestro uso, caro sale porque es costoso hacer debemos analizar el material que invertimos, el tiempo, todo eso.
+[R1]: si pues es mucho trabajo, ya gracias
+[R3]: ya gracias Don Raymundo se cuida
+[R1]: se cuida, gracias
+[RFS]: ya no hago no puedo ver bien de mi vista mis ojos me arden no puedo ni hilar la lana
+[R1]: ah ya
+[R3]: Buen día
+[R1]: ¿para poder hilar la lana en la noche utilizas el panel?
+[RFS]: no, hilo la lana en la mañana cuando hay un poco de sol
+[R1]: ¿para qué usan el panel? ¿para cocinar, para cargar celular?
+[RFS]: sí para cocinar para estar dentro de la casa, ya que antes solo caminábamos con vela con mecherito, yo cuando era niña solo conocía el mecherito y con eso alumbraba para hacer las tareas del colegió
+[R1]: ¿con esa hacían alumbrar no? ahora ya no utilizas velas ni querosén
+[RFS]: ¿ahora ya no hay nadie que utilice el mechero las velas no?
+[R1]: si ya no utilizan velas, ahora solo linterna con pilas
+[RFS]: si para caminar durante la noche y alumbrar
+[R1]: ¿de la cabra sale leche o no?
+[RFS]: cuando come pasto sí da leche
+[R1]: y esta leche para queso es
+[RFS]: sí de eso también se hace queso, ordeñamos y ponemos cuaja
+[R1]: Ah, y con K’allu es rico ¿no?
+[RFS]: si rico es, pero tenemos que ser paciente, en épocas de lluvias se debe cuidar mas
+[R1]: si pues, ¿y no tiene vacas?
+[RFS]: sí, pero están en el monte
+[R1]: antes mi mamá hacia eso, pero con tijera
+[RFS]: ¿así sabes cortar?
+[R1]: si, estaba muy afilado, he que tener cuidado ¿no? Es muy cansador también
+[RFS]: si así es
+[R1]: bueno, muchas gracias

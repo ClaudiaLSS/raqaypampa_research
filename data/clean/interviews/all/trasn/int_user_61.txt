@@ -1,0 +1,62 @@
+user_ID: 61
+name: Basilio Salazar
+gender: Male
+community: Molle Orcko
+date: 19/11/2024
+category: user
+interviewer: Jose
+
+[R2]: Venimos a ver los paneles, ¿cómo está funcionando? ¿cuántas personas viven aquí?
+[RMA]: con mi mujer nomas vivo somos dos
+[R2]: ¿y los hijos?
+[RMA]: Viven en otro lugar
+[R2]: ¿usas celular don Basilio, haces cargar, carga bien?
+[RMA]: si normal carga siempre
+[R2]: ¿y la radio?
+[RMA]: no, la radio no carga hace tiempo, su cable no da hace tiempo lo cortaron para poner pilas
+[R1]: ¿ese otro radio carga normal o también tiene pilas?
+[RMA]: si, ese radio tiene pilas, es antiguo
+[R3]: ahora que hacemos, está cortado porque seguro no cargaba pues por eso lo corto
+[R1]: ¿no carga siempre, y porque no carga porque lo cortaste?
+[RMA]: es que cuando lo lleve allá como no había cargador, quería hacer funcionar la radio con las pilas, lo corte para poner pilas
+[R1]: ¿Desde qué hora alumbra esto?
+[RMA]: Hago alumbrar desde las 8 de la noche hasta que amanezca
+[R1]: ¿y no se apaga mientras alumbra?
+[RMA]: No, no se apaga amanece alumbrando
+[R2]: y tu celular ¿A qué hora haces cargar?
+[RMA]: el celular lo hago cargar durante el día
+[R1]: ¿las pilas compras ahora para la radio?
+[RMA]: Sí compro pilas para esa radio no más
+[R2]: ¿no tienes hijos pequeños?
+[RMA]: No, no hay
+[R2]: ¿Cuántos hijos tienes?
+[RMA]: son 6 pero están en la ciudad, todos, y vienen a visitarme después se van nomas
+[R2]: ¿a las fiestas deben venir pues no?
+[RMA]: si
+[R1]: ¿tu mujer igual hace cargar el celular?
+[RMA]: sí todos hacemos cargar el celular cuando mis hijos vienen de visita también hacen cargar el celular, ¿en ese auto blanco vinieron?
+[R2]: si, en esa camioneta blanca vinimos
+[RMA]: Ah ya
+[R1]: ¿cada qué tiempo limpias?
+[RMA]: Limpié anteayer pero ahora que llovió la lluvia también lo limpio, pero sé limpiarlo de vez en cuando
+[R1]: ah ya muy bien ¿no lo manejas por otros lados?
+[RMA]: aquí nomás lo tengo, no se manejarlo cuando salgo
+[R1]: ¿Y aquí nomás vives o a veces vas a otros lugares?
+[RMA]: sí voy a otros lugares, pero no lo dejo cargando, lo dejo el panel aquí, no llevo al lugar donde voy
+¿Pero sí lo dejo cargando un buen tiempo se puede arruinar no ve?
+[R1]: De cargar puede cargar, pero si es mucho tiempo se puede llegar a desgastar, no hay que descargarlo por completo, el panel cuando tiene una o dos rayitas ya hay que hacerlo cargar, no hay que hacerlo bajar por completo la batería.
+[RMA]: ah ya está bien, si no lo hago bajar la batería por completo
+[R1]: o si no ya no va a funcionar
+[RMA]: igual cuando ya carga completamente lo desenchufo para que no se arruine
+[R1]: Así cargado por completo lo puedes llevar a cualquier lugar, pero tienes que cuidar que no se baje por completo la batería
+[RMA]: si no gasto por completo la batería
+[R1]: ¿no se cae?
+[RMA]: no se cae, es fijo
+[R2]: ya don Basilio entonces todo está bien, al año vamos a volver para ver cómo está, si está alumbrando bien si está cumpliendo su función, también veremos si podemos poner también datalogger, pero si están todo
+el tiempo aquí, vamos a poner un equipo donde indicara como esta funcionan el panel ese equipo es el que va
+a controlar todo, ya don Basilio nos vamos a ir hasta luego muchas gracias.
+[R2]: ¿tienes trabajos en otros lugares o no?
+[RMA]: mis hijos son los que tienen, de agricultura en Saipina, ahí voy de vez en cuando.
+[R2]: Ya don Basilio nos vamos
+[R3]: Ya gracias don Basilio
+[RMA]: ya está bien

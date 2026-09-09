@@ -1,0 +1,234 @@
+user_ID: 94
+name: Eugenia Chambi
+gender: Female
+community: Sillar
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: Si, queremos controlar
+[RFS]: allá al frente esta.
+[R1]: Ah yaya, vamos a entrar
+[RFS]: ¿esto es no?
+[R1]: ¿si esto es?
+[RFS]: No sé cómo estará, si estará bien o no
+[R1]: Haber lo vamos a revisar
+[RFS]: está bien velo
+[R1]: la batería esta 100%
+[R3]: 100% bien
+[RFS]: ¿está bien?
+[R1]: Si, está cargando de forma correcta, ¿cargan los celulares?
+[RFS]: Si está cargando normal, ese mi otro panel grande, lo queríamos poner allá pero no sabíamos con qué hacer parar, pero lo pusimos ahí
+[R1]: ah es otro
+[RFS]: Ese panel grande salió hace tiempo, con esa grande bomba, pero la bomba se arruinó, ¿se puede arruinar la bomba o qué será?
+[R1]: puede volver a funcionar yo creo
+[RFS]: ha, Es que ahí nomás se está con su batería
+[R1]: ¿su batería está ahí?
+[RFS]: si aquí esta su batería
+[R1]: esta batería, pero si sigue guardado se va a arruinar mas
+[RFS]: eso pues donde va digo, de mi hijo en su nombre esta Carlos Inturias así se llama
+[R1]: ha está funcionando
+[R2]: si todo está funcionando esto
+[RFS]: si está funcionando siempre pues, como, pero se habrá arruinado su batería será o eso se habrá terminado, se coloca un agua ¿cómo se llama?
+[R1]: agua destilada se llama
+[RFS]: eso faltara me pregunto, hemos comprado igual
+[R1]: esto vas a desconectar, todo esto está funcionando de forma correcta
+[RFS]: esto hemos conectado pues, para poner ahí, mi panel pequeño lo que está a ese lado no funciona tan bien, pero que van a venir a arreglar
+[R1]: ha
+[RFS]: esto le he hecho sacar pues y al sacar ahí le hemos puesto la batería pequeña
+[R1]: pero esto está bien está sano, esta batería nomas hay que cambiar su liquido después va a funcionar con normalidad
+[RFS]: donde puedo ir a hacer cambiar
+[R1]: hay que traer de allá, agua acidulada se llama
+[RFS]: ah ya hay que traer de allá
+[R1]: si, porque si llevas más costoso es, ahí te van a vender un galón hay que cambiarlo y hacer cargar.
+[RFS]: así se va a arreglar
+[R1]: si así ya va a funcionar
+[RFS]: será que ellos pueden venir o como podría ser
+[R1]: o sino tu hijo puede llevar la batería cargando, le pueden hacer mantenimiento y así puede funcionar, esto hay que llevar arriba después conectar y así va a dar pues
+[RFS]: entonces hay que hacer cargar la batería
+[R1]: si, pero mantenimiento lo tienen que hacer el mantenimiento consiste en cambiar el líquido talvez esto ya no está funcionando
+[RFS]: si ya no, hace tres años que no funciona
+[R1]: si, por eso hay que echar esa agua y echar otra agua para que pueda cargar y así puedes llevar
+[RFS]: ¿Dónde puedo llevar Raqaypampa?
+[R1]: en Raqaypampa no sé si habrá baterías, en Cochabamba o en Mizque debe haber pues
+[RFS]: si en Mizque debe haber puedo preguntar o sino
+[R1]: si o sino tu hijo que vaya a averiguar si hay
+[RFS]: si le voy a decir
+[R1]: pero si se puede arreglar, si esta batería no es igual
+[RFS]: esto lo puse con 250
+[R1]: a esta bien
+[RFS]: si está bien carga bien 8 años ya funciono
+[R1]: o si no puedes comprar otra batería igual
+[RFS]: caro es
+[R1]: si caro nomas
+[RFS]: 3000 por ahí maso menos
+[R1]: ¿batería?
+[RFS]: si
+[R1]: la batería pequeña este costado como 800bs
+[RFS]: ¿y de esto cuanto puede costar?
+[R1]: no creo que cueste 3000 debe costar para eso la batería como 1500 o 1700 así debe costar esa batería es grande
+[RFS]: si grande es
+[R1]: yo pienso que puedes ir a hacer mantenimiento y puede funcionar
+[RFS]: si puedo ir
+[R1]: ¿esto está funcionando?
+[RFS]: eso no está funcionando igual
+[R1]: haber
+[RFS]: han venido a controlar, no funcionaba
+[R1]: ¿pero necesitas?
+[RFS]: no, solo funciono como dos meses, no aguanto casi nada, quería hacer arreglar, pero ya no vienen por aquí no hay arregladores
+[R1]: ah
+[RFS]: ¿ustedes no vienen no?
+[R1]: yo he venido, pero ellos nos, pero hemos venido dos grupos y nos hemos dividido por grupos para visitar las casas, el otro grupo debió venir aquí
+[RFS]: ellos me dijeron que eso ya no sirve
+[R1]: ¿tienes hijos en el colegio?
+[RFS]: si hay mi nieto esta
+[R1]: ¿tienen otra radio?
+[RFS]: si otro nos hemos comprado, de eso su batería calienta, por eso hemos comprado otro
+[R1]: ah ya
+[RFS]: ¿mi hermano está bien? No ve bien de sus ojos
+[R1]: si nomas están ahí
+[RFS]: si y en ese otro lado vive su hijo que se llama Guillermo Romero él vive en Raqaypampa
+[R1]: ¿ah si, con su mamá no, o con quien vive?
+[RFS]: no, su mama se murió con su mujer vive, mi sobrino es
+[R1]: ¿ah ya con su mujer allá abajo vive?
+[RFS]: si, pero esta echado llave su casa
+[R1]: si
+[RFS]: si una vez yo he pasteado sus ovejas y cuando me fije su casa estaba echado llave
+[R1]: ¿solo un nieto tienes? ¿en qué curso esta tu nieto?
+[RFS]: no se bien, pero él ya está en secundaria. para que termine falta 4 años
+[R1]: en 4 años va a terminar dice
+[R3]: ah ya
+[RFS]: ¿antes no había escuela no?
+[R1]: si
+[RFS]: ahora todos van a la escuela a estudiar, algunos de los que estudian va a estudiar a chapare, mizque
+[R1]: ¿Quién usa más la radio tu?
+[RFS]: si yo nomas uso más la radio, tengo un hijo de 19 años a veces cuando viene haces sonar la radio, pero él está en Chapare no para aquí
+[R1]: ¿cuántos vives aquí?
+[RFS]: 3 nomas vivimos aquí, unos tres, en Mizque esta uno, en Chapare igual uno
+[R1]: todos se han ido dice
+[R3]: ya
+[RFS]: tienen sus mujeres y sus maridos, solito me quede, porque ellos buscan su vida, mi sobrino me dejo sus ovejas eso estoy mirando, él está el Raqaypampa ahí se compró una casa y vive ahí
+[R1]: ha ya ¿y tú te quedas aquí todo el año o sales a algún lugar?
+[RFS]: si aquí nomas me quedo, aquí tengo agua igual me lo han puesto tanque, pero no tengo agua en mi tanque no sale, allá de mi hijo tienen de ahí nomas yo tomo agua
+[R1]: ¿aquí no sale agua?
+[RFS]: si no sale todo seco
+[R1]: ¿la luz está funcionando normal?
+[RFS]: si, hago alumbras hasta las 8 o 9 de la noche
+[R1]: ¿en la mañana?
+[RFS]: no prendo
+[R1]: ¿y para cocinar no utilizas?
+[RFS]: no, no utilizo, solo utilizo para prender la luz y hacer cargar, allá seguro van a ir ¿no?
+[R1]: si vamos a ir a ese lado
+[RFS]: si, ahí nomas hay creo que aquí arriba no hay eso ya no sirve ¿para votar no masía a la basura no?
+[R1]: hay que ver primero
+[RFS]: ¿o se pude arreglar será?
+[R3]: ¿Cuánto tiempo a usado?
+[R1]: dos meses dijo que uso y de ahí ya no dio más ¿será que se pude arreglar dice?
+[R3]: ¿le dejaremos nomás no?
+[R1]: ya, esto lo vamos a cambiar ya
+[RFS]: ya cámbialo
+[R1]: si vamos a cambiar, solo esta vez nomas, pero después ya no
+[RFS]: solo una vez
+[R1]: si, vas a cuidar
+[RFS]: ya
+[R3]: vamos a ver si esto se puede hacer arreglar
+[RFS]: ni siquiera les han debido invitar comida
+[R1]: si, pero nos hemos traído pan eso estamos comiendo
+[RFS]: ha ya
+[R3]: Lo ha mojado incluso esto, esta ensarrado aquí
+[R1]: si, por eso no debe dar
+[R3]: a qui le podemos traer un datalogger
+[R1]: si va a estar así si
+[R3]: que lo haga cargar pero
+[R1]: ahí está funcionando
+[RFS]: ¿está funcionando?
+[R1]: si todo el día vas a hacer cargar
+[RFS]: ya
+[R1]: está preparando comida para nosotros dice que comamos aquí dice
+[R3]: si ¿ella se llama Eugenia Chambi nove?
+[R1]: si creo
+[R3]: voy a dejar allá adentro mis cosas un rato
+[RFS]: yo nomas trabajo pues solita
+[R1]: te agradezco muchas gracias
+[R3]: ¡gracias!
+[RFS]: eso nomas he cocinado, aquí hay asiento
+[R1]: ha ya, gracias tienes gallinas
+[RFS]: si tengo crio, en la mañana hay venido y ahí he vendido
+[R1]: ha ya bien
+[RFS]: acérquense para comer aquí hay mote les he traído
+[R3]: ya gracias
+[R1]: si nos vamos a acercar
+[RFS]: si
+[R3]: gracias
+[RFS]: yo voy a ir a ver un momento las ovejas
+[R1]: ya nosotros vamos a estar comiendo hasta mientras
+[RFS]: si estén comiendo
+[R1]: ¿esta buena la sopa?
+[R4]: esta buena la sopa
+[R3]: ¿Cómo esta tu hijo le has preguntado?
+[R1]: ¿está mejor dice, en la noche se ponen mal no?
+[R3]: en la noche todo ataca
+[R4]: que es
+[R1]: mi hijo estaba un poco delicado
+[R4]: ha
+[R1]: ahora está bien, pero a veces en la noche se ponen un poco mal
+[R3]: ¿ha ido al colegio?
+[R1]: si
+[R3]: ya pronto estará de vacaciones
+[RFS]: esto han traído, pero no aguanto nada rápido de termino
+[R1]: ha ya
+[RFS]: a qui a lado hay una escuela de ahí han traído eso
+[R1]: ¿ahí es? Aquí al subir
+[RFS]: allá
+[R1]: de allá nosotros hemos venido
+[RFS]: no aquí a lado es escuela
+[R1]: ¿estás diciendo la escuela allá de Ichuqata?
+[RFS]: no, la escuela que está aquí
+[R1]: ¿a qui hay otra escuela?
+[RFS]: si, aquí ya es sillar y hay otor escuela y ahí está mi nieta en ese colegio ya no está en el otro
+[R1]: ha ya ¿entonces estamos en el sillar?
+[RFS]: si
+[R1]: ha yo estaba pensando que estaba en Ichuqata
+[RFS]: no en sillar esta ahora
+[R3]: es que las otras de Ichuqata está muy lejos
+[RFS]: ya ha debido pasar por ahí
+[R1]: si ahí ya hemos revisado
+[RFS]: allá al frente van a llegar
+[R1]: si, conocemos eso allá están viniendo nos han dicho
+[RFS]: si, ahí se estaban preguntando que estarán viendo el tanque o el panel aso se preguntaban
+[R1]: ha a qui arriba hemos ido ya han venido nos han dicho
+[RFS]: ha ya
+[R1]: ¿quieres más mote?
+[R4]:no, estoy bien
+[R1]: ya
+[R4]: muy rico
+[R1]: dice que estaba muy rico tu sopa
+[RFS]: si eso ha cocinado mi hijita
+[R1]: ha muy bien
+[RFS]: cocina hija le dije, quien nos va a ayuda o quien trabajar de cuenta de nosotros, después de cocinar se fue a la escuela
+[R1]: ¿a qué hora va a volver?
+[RFS]: a las 5 de la tarde va a volver
+[R1]: ha ya
+[RFS]: si hasta tarde pasan clases
+[R1]: ¿todos los días va a la escuela?
+[RFS]: no, ayer no fue porque quería que me ayude a trabajar
+[R1]: si pues
+[RFS]: si
+[R1]: ¿pero todos los días funciona la escuela?
+[RFS]: si
+[R1]: ha ya todos los días
+[RFS]: pero no todos van por que ayudan a trabajar A sus familias, no son artos tampoco a veces van, a veces no, es trabajado igual vivir en el campo quien nos va a dar
+[R1]: si pues si no trabajas quien él va a dar ¿y también todo ha subido pues?
+[RFS]: si todo ha subido, ¿la cuartilla igual a 38 o 40bs a llegado no?
+[R1]: si
+[RFS]: antes nosotros estábamos a costumbrados a comer maíz, trigo, pero ahora los niños no quieren, tampoco ni comer lawa, a veces decimos vamos a volver lawa porque todo esta caro ellos se preocupan
+[R1]: si, ¿dicen vamos a volver a comer la lawa no?
+[RFS]: si, antes nosotros comíamos phiri con queso, con mote
+[R1]: ¿antes, pero eran muchas familias no?
+[RFS]: si
+[R1]: ahora son como dos por familia o tres nomas
+[RFS]: si, nos dejan pues
+[R1]: te agradezco muchas gracias estaba muy rico
+[RFS]: ya, aunque sea esito pues
+[R1]: si muchas gracias
+[RFS]: ya

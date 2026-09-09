@@ -1,0 +1,38 @@
+
+user_ID: 95
+name: Guillermo Cordova
+gender: Male
+community: Sillar
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: ¿cuántos viven aquí, tres no más?
+[RMA]: sí tres no más vivimos aquí, algunos no están porque se fueron a otro lugar.
+[R1]: se fueron a otro lugar
+[RMA]: sí
+[R1]: 75% está la batería y ¿haces cargar celular?
+[RMA]: de vez en cuando no muy seguido, este panel de aquí solo lo utilizo para la luz, ese otro panel grande que he comprado, con eso hago cargar el celular
+[R1]: ¿desde qué hora prendes la luz?
+[RMA]: desde las 7 de la noche hasta el amanecer toda la noche está prendido
+[R1]: ah ya está bien y ¿solo un foco da o dos?
+[RMA]: los dos funcionan
+[R1]: ¿la radio está funcionando con normalidad? y ¿haces cargar?
+[RMA]: sí aquí está cargando
+[R1]: está muy bien guardado para que no le entre polvo, ¿esto es del grande no?
+[RMA]: si, no tiene batería por eso no funciona, pero a veces lo pongo la batería de la moto así lo uso
+[R1]: En total tiene tres paneles, este es mucho más antes que es de su ti, este otro le dio un sindicato
+[RMA]: si el panel grande, es de uno de mis tíos que se ha muerto lo estoy utilizando yo
+[R1]: ah ya, ¿pero tiene tiempo que te dieron el panel?
+[RMA]: sí tiempo ya es, no tiene batería
+[R1]: ¿con esto haces cargar todo, pero no tiene batería no?
+[RMA]: sí con esta hago cargar todo, pero no tiene batería, esto no está funcionando tanto porque no tienen batería y el otro que está ahí me dio un sindicato y a veces le conecto directo a la batería de la moto para que cargue
+[R1]: ¿y cuántos son todos en total en tu familia?
+[RMA]: somos seis
+[R1]: ¿todo el año paras aquí o a veces vas a otros lugares?
+[RMA]: sí todo el año he parado aquí, pero mi mujer es de Aiquile a veces vamos ahí
+[R1]: ¿cuándo te vas te lo llevas el panel hasta a Aiquile?
+[RMA]: sí, ¿puedo llevármelo no?
+[R1]: claro, como es tuyo puedes disponer
+[RMA]: si pues
+[R1]: bueno, gracias eso es todo, ya me voy a ir nomás muchas gracias

@@ -1,0 +1,129 @@
+user_ID: 40
+name: Severino Agreda (hermano de Rodolfo)
+gender: Male
+community: Ichuqata
+date: 20/11/2024
+category: user
+interviewer: Jose
+
+[R1]: esto es más recomendable, que en vez de echado este parado
+[RMA]: un clavo me lo ha puesto aquí, pero se lo ha sacado mi hermano menor, para meter al clavo de lo así tiene que ser me dijo
+[R3]: ah ya si
+[R1]: así debería de estar
+[RMA]: ¿a dónde puedo meter aquí?
+[R3]: si donde esté bien fijo, para que no se caiga
+[R1]: a cualquier parte, pero parado
+[RMA]: ya voy a traer entonces un clavo y lo voy a meter
+[R3]: ya
+[R1]: ¿la radio está funcionando?
+[RMA]: ya no funciona
+[R1]: ¿no funciona nada?
+[RMA]: nada no da, o si no hagan prueba sus cables no sé dónde lo habrán botado
+[R3]: ¿y desde cuando no funciona?
+[RMA]: cuando me dieron solo funciono un mes nomas
+[R3]: ¿y otra radio no tienen?
+[RMA]: no
+[R3]: ¿Quién usa más la radio?
+[RMA]: a todos les gusta escuchar, pero como no funciona no lo utilizan pues, para estar informados de lo que sucede
+[R3]: ya ¿a nombre de quien han recibido?
+[RMA]: ¿esto? A nombre de Rodolfo Agrega es el mi hermano menor, él ha ido por el momento a trabajar
+[R3]: ¿Cuánto tiempo va más o menos?
+[RMA]: hace dos semanas recién se fue y se quedará un mes después se vendrá, en enero ya va a estar aquí
+[R1]: esto te voy a cambiar, después ya no se podrá cambiar más y debes cuidarlo ya
+[RMA]: ya, está bien espero que sea una herramienta mejor de calidad, una vez un ingeniero me dijo que nos traen chino y no de calidad
+[R1]: ¿has encontrado la dirección que te di de la ingeniera Rocio?
+[RMA]: es que quería comprar otro para mi tía, allá arriba vive y se han separado con su marido y le quito el panel, por ese motivo queríamos comprar otro.
+[R3]: pero ahí debe haber, pero creo que ya no estaba llegando mucho
+[R1]: es que le di una dirección
+[RMA]: ella me dijo te voy a enviar la cuenta del banco unión y le llame, pero no me responde nada, quería depositar a su cuenta y quería el accesorio pues
+[R3]: ¿tu hermano vive solo?
+[RMA]: no, tiene concubina y dos hijitos
+[R3]: ¿sus hijitos van a la escuela?
+[RMA]: si uno está en prekinder mi sobrina de 5 años y mi otro sobrino tiene 3 años
+[R1]: ¿y esto de dónde enciende?
+[RMA]: de aquí
+[R1]: ya ahora está funcionando y esto es de afuera entonces
+[RMA]: Si, eso de la cocina es
+[R3]: ¿y del prekinder les dan tarea seguro no?
+[RMA]: Si, les da siempre pues
+[R3]: ¿usa esta luz para hacer?
+[RMA]: si
+[R3]: eso no los vamos a llevar ya
+[R1]: ahora no hay el duplicador ¿funcionaba o no?
+[RMA]: no sé
+[R3]: ¿y se fue con sus dos hijos?
+[RMA]: si, donde será lo puso el duplicador
+[R1]: no hay duplicador
+[R3]: ya está bien
+[R1]: ¿celular toda carga no?
+[RMA]: si carga, lo arruinan pues
+[R3]: si con calma lo tiene que conectar, al sacar también de aquí deben jalarlo.
+[RMA]: si
+[R1]: ¿desde qué hora encienden?
+[RMA]: mi hermano enciende a partir de las 6 de la tarde hasta las 10 de la noche, después en la madrugada
+desde las 3 de la mañana hasta las 6 de la mañana
+[R1]: ¿en el día se van a trabajar no?
+[RMA]: si, vamos a trabajar
+[R1]: ¿La radio llevan?
+[RMA]: si llevamos, yo, pero llevo mi batería para cortar palo, toda la noche corto con motosierra da bien
+[R3]: ¿da?
+[RMA]: si
+[R1]: aguanta
+[RMA]: hace 5 años ya tengo mi batería, al monte con mi papá vamos, metemos a un palito y todo ahí amanezco cortando, listones cortos, soy campeón para hacer listones, vigas con motosierra
+[R1]: a que bien ¿y casa haces de madera?
+[RMA]: si hago
+[R1]: ¿esto no lleva tu hermano no?
+[RMA]: no, aquí sé queda de forma permanente, yo llevo pues meto a mi mochila
+[R1]: ¿el panel está aquí?
+[RMA]: el panel esta afuera ¿te hago ver?
+[R3]: creo que no se va a mover un poco soldado esta
+[R1]: si hay que soltar un poco
+[RMA]: ese panel que está ahí ¿está bien?
+[R3]: si ese está bien
+[R1]: si
+[RMA]: los dos está bien
+[R1]: no, este está un poco hacia allá
+[RMA]: aquí tiene que estar
+[R3]: me lo puedes firmar aquí por favor por lo de la radio
+[RMA]: ya está bien
+[R3]: vamos a poner que estas recibiendo por tu hermano ¿cuál era su nombre de tu hermano?
+[RMA]: Rodolfo Agreda Vargas
+[R3]: ya
+[RMA]: esto le voy hacer vuelta, no soy flojo voy a cavar de nuevo, el palito le voy hacer llegar hasta allá
+[R1]: ya o sino aquí para no hacer mucho trabajo, solo aquí hay un perno y gira todo lo de arriba nomas y lo aflojas y luego lo giras
+[RMA]: ya listo
+[R3]: entonces aquí nomas hay panel no
+[R1]: es propio dice
+[R3]: ya ¿y que usan más en tu casa la radio o la luz?
+[RMA]: el celular usamos mas
+[R3]: ya ¿y las mujeres?
+[RMA]: solo para cocinar utilizan la luz y radio también
+[R3]: ¿desde que tiene panel ha cambiado sus actividades de su casa?
+[R1]: ¿o duermen más tarde sé que dan?
+[RMA]: no, dormimos a las 9 de la noche y despertamos 3 de la mañana ya para ir a trabajar
+[R1]: ¿y antes cuando no había panel igual 9 dormían?
+[RMA]: si, igual nomas porque la vida en el campo es escasa hay que trabajar mucho, los flojos no creo que puedan vivir aquí.
+[R3]: ya
+[R1]: ¿pero sintieron que ahora con el panel mejoro?
+[RMA]: si pues a mejorado ahora ya no utilizamos velas
+[R3]: ¿y tiene linternas para cargar?
+[RMA]: si tengo, para acceder a uno nuevo deme su numero
+[R3]: le podemos decir ¿quieren comprar uno nove?
+[RMA]: si para mi tía sus hijitos, grave quieren
+[R3]: haber te voy a preguntar a la Rocio porque ellos son los proveedores, nosotros de ellos hemos comprado
+[RMA]: entonces me das tu numero
+[R3]: ya es 79758767 ese es mi numero
+[RMA]: listo
+[R3]: ¿Dónde es la sede allá?
+[RMA]: aquí es donde las yuntas, mi abuelo ha dado terreno para el sindicato y así hemos construido, yo he hecho hacer construir, yo no doy para su traguito a los dirigentes de eso me tiene bronca, soy bien transparente, yo no saco dinero sin previa autorización de sindicato.
+[R1]: que bueno así se trabaja pues
+[RMA]: si hay que ser rectos así se trabaja en la vida
+[R3]: ¿Quién es ahora el dirigente?
+[RMA]: Don Binancio, luego lo revocaremos, yo quiero estudiar ciencias políticas
+[R3]: ah, está bien estudia anímate, había becas el doctor Jaime es el encargado, pero habla con él
+[R1]: si conversa con él porque hay opción de becas
+[RMA]: ya le conozco le hablare
+[R3]: ya vamos a estar yendo, gracias
+[RMA]: Dios les bendiga
+[R1]: hasta luego
+[R3]: al año vamos a volver, ya chau
