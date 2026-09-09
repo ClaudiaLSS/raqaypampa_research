@@ -567,7 +567,7 @@ The bin criteria and anchor quotes below apply to the rigidity judgment itself; 
 
 ---
 
-### **S2.3 Parameter derivation protocol**
+## Section S3: Parameter derivation protocol
 
 This section is the source describing how each RAMP parameter in the Model B (socio-technical) parametrization is derived. Profile truth files reference this section rather than reproducing it, so revisions propagate consistently.
 
@@ -660,27 +660,18 @@ The pooled-evidence flag matters because it's a second, independent axis of "how
 
 
 
-**S2.4 Truth files**
+
+## Section S4: Truth files
 *Insert the four final truth files here* 
 
 
 ---
 
-## Section S3: Household Classification Corrections and Overrides
+## Section S3: Household Classification 
 
-*This section corresponds to the items placed in "Supplementary Material S2" within the main manuscript.*
 
-**S3.1 Classification Correction Log**
-*Insert your log of source-code corrections here.* 
-Detail the instances where a coded field was corrected at the source, providing the documented justification, the evidentiary basis, and the exact effect on final population counts.
 
-**S3.2 Analyst Overrides of Survey-Derived Assignments**
-*Insert your override log here.* 
-Document the specific instances where survey-derived assignments were overridden based on corroborated qualitative evidence of a structural condition.
-
----
-
-## Section S4: Survey Instruments and Interview Guides 
+## Section S5: Survey Instruments and Interview Guides 
 
 *Extensive survey instruments and interview guides.*
 
