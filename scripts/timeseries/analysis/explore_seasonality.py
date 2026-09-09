@@ -140,6 +140,7 @@ def load_user_data(user_id):
     print(f"✓ Loaded {len(df)} measurements from {data_file.name} ({logger_type} logger)")
     print(f"  Date range: {df['timestamp'].min()} to {df['timestamp'].max()}")
     print(f"  Total days: {(df['timestamp'].max() - df['timestamp'].min()).days + 1}")
+    print(f"  Median sample interval: {df['timestamp'].diff().median()}")
     
     return df
 
@@ -295,6 +296,121 @@ def compute_raqaypampa_season_statistics(df):
     print("\n  Note: High percentages in Grazing season suggest migration or reduced work.")
     
     return df
+
+def analyze_temporal_dynamics(df, user_id, low_frac=0.10, min_run_days=3):
+    """
+    Section 5.1 analysis: annual stability (P1) and absence-window convergence (P3/P4).
+
+    Produces, per user:
+      - monthly mean daily-energy table + low/high month ratio (stability metric)
+      - absence-run detection: contiguous stretches of low-usage days
+      - the numbers 5.1 cites (run count, median run length, seasonal/temporal
+        concentration of absence)
+
+    Parameters
+    ----------
+    low_frac : fraction of the household's own active-day median daily-energy
+               below which a day counts as "low usage". Applied identically to
+               every user (stated rule, not tuned per household).
+    min_run_days : minimum contiguous low-usage days to count as an absence run
+               (isolated low days => weather/idle, not absence).
+    """
+    print("\n" + "="*80)
+    print(f"TEMPORAL DYNAMICS (§5.1) - User {user_id}")
+    print("="*80)
+
+    # --- 1. Daily energy (Wh/day). Intervals are 5-min, p_total in W. ---
+    daily = (df.set_index('timestamp')['p_total']
+               .resample('D')
+               .apply(lambda s: s.sum() * (5.0/60.0)))   # Wh/day
+    daily = daily.rename('Wh')
+    daily = daily.to_frame()
+    daily['date'] = daily.index.date
+    daily['month'] = daily.index.month
+    daily['year'] = daily.index.year
+
+    # Guard: drop days with too few samples to be a real day (logger gaps)
+    counts = df.set_index('timestamp')['p_total'].resample('D').count()
+    valid = counts[counts >= 200].index          # ~70% of 288 daily 5-min slots
+    daily = daily[daily.index.isin(valid)]
+    print(f"  Valid days (>=200 samples): {len(daily)}")
+
+    # --- 2. Monthly stability table (the P1 claim) ---
+    monthly = daily.groupby('month')['Wh'].agg(['mean', 'std', 'count'])
+    monthly['cv'] = monthly['std'] / monthly['mean']
+    print("\n  Monthly daily-energy (Wh/day):")
+    print(monthly.round(2).to_string())
+
+    if len(monthly) >= 2:
+        lo, hi = monthly['mean'].min(), monthly['mean'].max()
+        ratio = lo / hi if hi > 0 else np.nan
+        print(f"\n  Lowest-month / highest-month mean ratio = {ratio:.2f}")
+        print("  (near 1.0 => annually stable; near 0 => strong seasonal collapse)")
+
+    # --- 3. Low-usage day flag (stated, uniform rule) ---
+    active_median = daily.loc[daily['Wh'] > 0, 'Wh'].median()
+    thresh = low_frac * active_median
+    daily['low'] = daily['Wh'] < thresh
+    print(f"\n  Active-day median = {active_median:.2f} Wh; "
+          f"low-usage threshold ({int(low_frac*100)}%) = {thresh:.2f} Wh")
+    print(f"  Low-usage days: {daily['low'].sum()} / {len(daily)} "
+          f"({100*daily['low'].mean():.1f}%)")
+
+    # --- 4. Run-length analysis: contiguous low-usage stretches ---
+    # This is what separates absence (multi-day runs) from weather (isolated days).
+    runs = []
+    run_start, run_len = None, 0
+    for d, is_low in zip(daily.index, daily['low']):
+        if is_low:
+            if run_start is None:
+                run_start, run_len = d, 1
+            else:
+                run_len += 1
+        else:
+            if run_start is not None and run_len >= min_run_days:
+                runs.append((run_start, run_len))
+            run_start, run_len = None, 0
+    if run_start is not None and run_len >= min_run_days:
+        runs.append((run_start, run_len))
+
+    print(f"\n  Absence runs (>= {min_run_days} contiguous low days): {len(runs)}")
+    if runs:
+        run_lengths = [r[1] for r in runs]
+        print(f"    Run lengths (days): {sorted(run_lengths, reverse=True)}")
+        print(f"    Median run length: {np.median(run_lengths):.0f} days")
+        print(f"    Total absent days in runs: {sum(run_lengths)} "
+              f"({100*sum(run_lengths)/len(daily):.1f}% of valid days)")
+        print("    Run start dates:")
+        for start, length in runs:
+            print(f"      {start.date()}  ({length} days)")
+
+    # --- 5. Where do absence runs fall? (seasonal / windowed concentration) ---
+    if runs:
+        run_months = []
+        for start, length in runs:
+            rng = pd.date_range(start, periods=length, freq='D')
+            run_months.extend(rng.month.tolist())
+        run_months = pd.Series(run_months)
+        by_month = run_months.value_counts().sort_index()
+        print("\n  Absence-day distribution by month (absent days only):")
+        for m in range(1, 13):
+            if m in by_month.index:
+                print(f"    month {m:2d}: {by_month[m]:3d} days")
+        # Dec-Feb concentration (for user 23's Dec-Carnival claim)
+        dec_carnival = run_months.isin([12, 1, 2]).sum()
+        print(f"\n  Absence days in Dec-Feb window: {dec_carnival} / "
+              f"{len(run_months)} ({100*dec_carnival/len(run_months):.0f}%)")
+
+    # --- 6. Periodicity check (for user 64's ~2-week alternation claim) ---
+    # Gap between consecutive run starts; ~14 days => alternating cycle.
+    if len(runs) >= 2:
+        starts = [pd.Timestamp(r[0]) for r in runs]
+        gaps = [(starts[i+1] - starts[i]).days for i in range(len(starts)-1)]
+        print(f"\n  Gaps between absence-run starts (days): {gaps}")
+        print(f"  Median gap: {np.median(gaps):.0f} days "
+              f"(~14 => two-week alternation)")
+
+    return daily, runs
 
 
 def plot_monthly_patterns(df, user_id):
@@ -720,6 +836,8 @@ Examples:
     
     # Add Raqaypampa agricultural seasons
     df = add_raqaypampa_seasons(df)
+
+    analyze_temporal_dynamics(df, args.user)
     
     # Filter by month if specified
     if args.month:
@@ -752,6 +870,8 @@ Examples:
     
     # Raqaypampa season analysis
     df = compute_raqaypampa_season_statistics(df)
+
+  
     
     # Generate plots
     if not args.no_plots:

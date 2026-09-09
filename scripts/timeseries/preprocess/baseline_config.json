@@ -1,0 +1,51 @@
+{
+  "raw_dir": "/home/claudia/Documents/raqaypampa_research/data/clean/timeseries",
+  "output_dir": "/home/claudia/Documents/raqaypampa_research/data/clean/timeseries/baseline_results",
+  "profiles": {
+    "1": {
+      "files": [
+        "tpdin_user_74.csv",
+        "tpdin_user_72.csv"
+      ],
+      "period": {
+        "type": "date_range",
+        "start": "2025-02-12",
+        "end": "2026-02-12"
+      }
+    },
+    "2": {
+      "files": [
+        "old_user_84.csv"
+      ],
+      "period": {
+        "type": "months",
+        "year": 2023,
+        "months": [
+          5
+        ]
+      }
+    },
+    "3": {
+      "files": [
+        "old_user_69.csv",
+        "old_user_63.csv"
+      ],
+      "period": {
+        "type": "date_range",
+        "start": "2023-04-30",
+        "end": "2023-06-30"
+      }
+    },
+    "4": {
+      "files": [
+        "tpdin_user_96.csv",
+        "old_user_64.csv"
+      ],
+      "period": {
+        "type": "date_range",
+        "start": "2023-04-30",
+        "end": "2023-12-31"
+      }
+    }
+  }
+}
