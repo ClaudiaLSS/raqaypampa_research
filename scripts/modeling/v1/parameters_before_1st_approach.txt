@@ -1,0 +1,86 @@
+# =========================================================================
+    # EBP 1: THE EDUCATIONAL / AGRICULTURAL CORE
+    # =========================================================================
+    if profile_type == "EBP_1_Agricultural_Core":
+        compiled_appliances.extend([
+            {
+                "name": "Indoor_Task_Light_LED2",
+                "power": 3.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [1080, 1290],
+                "func_time": 100.0,
+                "func_cycle": 60.0,
+                "time_fraction_random_variability": 0.2,
+                "random_var_w": 0.3
+            },
+            {
+                "name": "Outdoor_Night_Transit_Light",
+                "power": 2.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [1080, 1260],
+                "func_time": 80.0,
+                "func_cycle": 50.0,
+                "time_fraction_random_variability": 0.3,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_Safety_Light_night",
+                "power": 3.0,
+                "occasional_use": 0.25,
+                "num_windows": 2,
+                "window_1": [1260, 1440], 
+                "window_2": [0, 420], 
+                "func_time": 480.0,               
+                "func_cycle": 140.0,              
+                "time_fraction_random_variability": 0.1,
+                "random_var_w": 0.1
+        
+            },
+            {
+                "name": "Indoor_Morning_Light",
+                "power": 3.0,
+                "occasional_use": 0.30,
+                "num_windows": 1,
+                "window_1": [400, 480],
+                "func_time": 50.0,
+                "func_cycle": 30.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Indoor_occasional_daytime_Light",
+                "power": 3.0,
+                "occasional_use": 0.15,
+                "num_windows": 1,
+                "window_1": [420, 1080],
+                "func_time": 20.0,
+                "func_cycle": 5.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Outdoor_Morning_Light",
+                "power": 2.0,
+                "occasional_use": 0.30,
+                "num_windows": 1,
+                "window_1": [300, 420],
+                "func_time": 50.0,
+                "func_cycle": 30.0,
+                "time_fraction_random_variability": 0.20,
+                "random_var_w": 0.35
+            },
+            {
+                "name": "Cellphone_Charging_USB",
+                "power": 2.0,
+                "occasional_use": 1.0,
+                "num_windows": 1,
+                "window_1": [0, 1440],
+                "func_time": 470.0,
+                "func_cycle": 180.0,
+                "time_fraction_random_variability": 0.35,
+                "random_var_w": 0.0
+            }
+        ])
+
