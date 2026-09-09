@@ -54,3 +54,6 @@ RAMP/
 *.sqlite-journal
 *.sqlite-shm
 *.sqlite-wal
+
+#Ignore Qualcoder Backup files
+scripts/text/*_BKUP_*.qda/
