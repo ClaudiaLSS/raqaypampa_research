@@ -4,17 +4,18 @@ ebp_classification.py — EBP (Energy Behavior Profile) stratification
 
 Classifies households into one of four structural profiles using five
 survey-derived fields: family_type, occupation, children_in_school,
-migration, portability_shs. Companion document: EBP_CLASSIFICATION_PROTOCOL.md
-in this repository, which explains the rule logic, the missing-data
-handling strategy, and how to adapt this script to a different dataset or
-profile scheme.
+migration, portability_shs. Companion document: Supplementary Material
+Section S2.2 "Household classification tree"
+(notes/supplementary/s2_profiles_and_parameters.md), which explains the
+rule logic, the missing-data handling strategy, and how to adapt this
+script to a different dataset or profile scheme.
 
 Usage:
     python ebp_classification.py --input data_1.csv --output classifications.csv
     python ebp_classification.py --input data_1.csv --output classifications.csv \
         --previous previous_classifications.csv --audit-log audit_log.csv
 
-Design principles (see protocol doc for full rationale):
+Design principles (see §S2.2.5 and §S2.2.6 for full rationale):
   1. Classification uses ONLY structural/survey fields — never qualitative
      data — so it is a fixed, auditable rule applied identically to every
      household. Qualitative data (interviews, memos) is used separately,
@@ -80,7 +81,7 @@ BREAKER_OCCUPATIONS = (3, 4)
 def classify_one(family_type, occupation, children_in_school, migration,
                   portability_shs):
     """Classify a single household from five concrete (non-missing) field
-    values. See EBP_CLASSIFICATION_PROTOCOL.md for the plain-language
+    values. See Supplementary Material §S2.2.3 for the plain-language
     decision tree this implements."""
     is_breaker = occupation in BREAKER_OCCUPATIONS
 
