@@ -33,14 +33,14 @@ OUTPUT_CATEGORICAL = os.path.join(OUTPUT_DIR, "categorical_summary.csv")
 OUTPUT_STRAT_NUMERICAL = os.path.join(OUTPUT_DIR, "stratified_numerical_summary.csv")
 OUTPUT_STRAT_CATEGORICAL = os.path.join(OUTPUT_DIR, "stratified_categorical_summary.csv")
 
-# EBP classification is computed separately by user_classification.py; this
+# EBP classification is computed separately by ebp_classification.py; this
 # script only consumes its output to stratify the summaries by profile.
 DEFAULT_CLASSIFICATIONS_PATH = os.path.join(
     BASE_DIR, "../../data/clean/surveys/classifications_oficial.csv")
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--classifications", type=str, default=DEFAULT_CLASSIFICATIONS_PATH,
-                     help="CSV produced by user_classification.py, with 'id' and "
+                     help="CSV produced by ebp_classification.py, with 'id' and "
                           "'ebp_profile' columns, used to stratify the summaries "
                           f"(default: {DEFAULT_CLASSIFICATIONS_PATH})")
 args = parser.parse_args()
@@ -95,7 +95,7 @@ for _, row in selected_codebook.iterrows():
             labeled_df[new_col] = df[var].map(mapping)
 
 # =============================================================================
-# === EBP CLASSIFICATION (loaded from user_classification.py output) ===
+# === EBP CLASSIFICATION (loaded from ebp_classification.py output) ===
 # =============================================================================
 
 classifications = pd.read_csv(CLASSIFICATIONS_PATH)[["id", "ebp_profile"]]
@@ -104,7 +104,7 @@ labeled_df["ebp_profile"] = labeled_df["ebp_profile"].fillna("Unclassified")
 
 unclassified_count = (labeled_df["ebp_profile"] == "Unclassified").sum()
 print("\n" + "="*50)
-print("EBP CLASSIFICATION (from user_classification.py)")
+print("EBP CLASSIFICATION (from ebp_classification.py)")
 print("="*50)
 print(labeled_df["ebp_profile"].value_counts())
 if unclassified_count > 0:
