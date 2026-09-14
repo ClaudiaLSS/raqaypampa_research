@@ -65,7 +65,7 @@ Usage
     #
     #    # add a composed empirical reference for a consistency check:
     #    python build_community.py ... --with_empirical \
-    #        --baseline_dir ../../data/clean/timeseries/baseline_results
+    #        --baseline_dir ../../../data/clean/timeseries/baseline_profiles
 """
 
 from __future__ import annotations
@@ -280,7 +280,7 @@ def main():
     ap.add_argument("--with_empirical", action="store_true",
                     help="Also compose the empirical reference daily curve.")
     ap.add_argument("--baseline_dir", type=Path,
-                    default=Path("..") / ".." / "data" / "clean" / "timeseries" / "baseline_results",
+                    default=Path("..") / ".." / ".." / "data" / "clean" / "timeseries" / "baseline_profiles",
                     help="Baseline dir (same as validate_simulation.py).")
     args = ap.parse_args()
 
