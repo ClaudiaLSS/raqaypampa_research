@@ -87,8 +87,223 @@ The pooled-evidence flag matters because it's a second, independent axis of "how
 **Practical consequence:** a practice that is normally dormant and activates only around an identifiable trigger (a recent fear-inducing incident, a specific social event, an environmental condition) should not be forced into a flat `occasional_use` value that pretends the trigger doesn't exist. But — see the retirement note below — this does **not** mean building a separate conditional-trigger mechanism. Unless the trigger is itself a systematically measured study variable, the honest treatment is **Chaos**: the practice's variability is real and may even have a nameable real-world cause, but the study has no quantified basis for modeling that cause, so it is treated as unpredictable from the data's perspective.
 
 
+### S3.3 Crosswalk Tables
+To understand the parameter derivation protocol, the crosswalks designed to translate qualitative evidence into quantitative simulation parameters are provided below. These are used to derive two main characteristics of appliance use: the probability of being used (occasiona_use) and the rigidity of each activity (main source for the randomization parameters).
+
+This crosswalk was built inductively from the interview corpus and refined against it, in the following steps:
+
+1. **Parameter-driven extraction.** Starting from what RAMP actually requires (`occasional_use`, `time_fraction_random_variability`, `random_var_w`), the interview transcripts for each of the four EBP profiles were searched for the language respondents use to express *frequency* (how often a practice occurs) and *temporal variability* (how stable its timing is). This yielded a corpus of naturally-occurring frequency and timing expressions in the respondents' own words (Spanish/Quechua-Spanish), each tied to a specific respondent, profile, and interview date.
+   
+2. **Inductive binning.** Recurring expressions were grouped into a small number of bins. Where respondents gave an explicit countable frequency ("tres veces por semana," "cada tres días"), these were handled by a direct formula rather than a bin (see Table 1). Where language was qualitative only ("a veces," "de vez en cuando," "siempre"), it was grouped into ordinal bins and assigned a representative probability/variability value.
+
+3. **Cross-profile validation.** Each bin was checked against anchor quotes drawn from *multiple* profiles, not a single one, to confirm that a given expression carries approximately the same meaning regardless of who says it (e.g., that "a veces" implies a similar frequency whether spoken by an elderly single resident or a school-age household).
+
+4. **Iterative refinement where bins broke.** The scheme was revised wherever transcript evidence contradicted an initial definition. Two substantive revisions are recorded rather than hidden, because they demonstrate the crosswalk was tested against the data:
+   - The **"Chaos" bin was redefined** from an outcome-based criterion (timing varies day to day) to an *epistemic* one (the respondent's own account signals they cannot specify a stable pattern — hedging language, self-contradiction, explicitly unanchored windows).
+   - **Household-level structural absence** (dual residence, extended absence) was distinguished from practice-level variability and made a separate axis, triggered by **explicit dual-household or extended-absence language in the interview narrative** — not by the survey's `migration_label`, which is too common across the sample to discriminate (most households show some migration), and not by EBP profile membership either — because multi-month absence was found in a Profile 3 household, not only in Profile 4.
+  
+5. **Priority-override layer.** Practices anchored to a profile's non-negotiable social rules (education, subsistence cooking) are assigned Daily/Fixed frequency and Strict variability by default, overriding isolated hedging language, since such hedging typically concerns incidental detail rather than whether the practice occurs (see override note in Table 1).
+
+**Provenance.** Every value applied in a truth file traces back through these tables to at least one anchor quote (respondent ID, profile, interview date). Anchor quotes shown here are representative; a full quote-by-quote mapping is maintained in the supplementary provenance file. This crosswalk is the single canonical source for both parameters; profile truth files reference it rather than reproducing it, so revisions propagate consistently.
+
+---
+
+**Table 1 — Frequency Language → `occasional_use`**
+
+**Priority override (apply before any other rule below):** if a practice is anchored to an established non-negotiable social rule for the profile (e.g., education, subsistence cooking, or any other rule the profile's truth file defines as non-negotiable), default to **Daily/Fixed** frequency (`occasional_use` ≈ 1) and, on the variability table, **Strict** (0.1) — regardless of hedging language ("a veces," "depende") appearing in isolated quotes about that practice. Such hedging is almost always about an incidental detail (which exact task, whether the light stays on the full duration), not about whether the practice occurs that day. Override this default only with specific, explicit evidence of exception (a stated skip pattern — e.g., "solo cuando no hay tarea" — not just soft phrasing).
+
+Example: Zenón García's *"la necesitamos cada día por las noches; los chicos van haciendo sus tareas"* (P1, 26/02/2026) already reflects this correctly — homework light is `occasional_use: 1`, Strict variability — because it is anchored to the Educational rule, not because every quote about it used "siempre."
+
+**Primary rule (use whenever an explicit count is given, and the priority override doesn't apply):**
+
+> occasional_use = active_days ÷ interval_days
+
+This generalizes the simple weekly case (e.g., "tres veces por semana" → 3/7 = 0.42) to any stated interval (e.g., "cada tres días" → 1/3 = 0.33; "una vez al mes" → 1/30 ≈ 0.03).
+
+**Fallback bins (use only when language is qualitative, with no explicit count to compute from):**
+
+| Bin | Value | Markers | Example anchors |
+|---|---|---|---|
+| Daily / Fixed | 0.85–1.0 | "siempre," "todos los días," "cada día," "constantemente" | *"Nosotros cargamos siempre el celular"* — Edelfrida Jiménez Salazar, P1, 26/02/2026; *"Yo hago cargar mi celular siempre"* — Felipe Rivera, P3, 20/11/2024 |
+| High frequency | 0.6–0.8 | "con frecuencia," "generalmente," "casi siempre" | *"con frecuencia usamos el fogón"* — Guillermo Negrete, P1, 25/02/2026; *"generalmente usamos la luz en casa"* — Isabel Zurita, P3, 24/02/2026 |
+| Occasional / Moderate | 0.35–0.5 | "a veces," "depende" (standalone, no explicit count) | *"A veces lo cargamos en el día o en la noche"* — Dionisio Vargas Castro, P1, 25/02/2026 |
+| Low / Sporadic | 0.15–0.3 | "de vez en cuando," "no muy seguido" | *"Lo limpiamos de vez en cuando"* — Domingo Vallejos, P1, 20/11/2024 |
+
+**Documented exception — capacity-driven decline (resolved from B7):** where reduced frequency is attributed to the respondent's own physical capacity (age, hearing, mobility) rather than to the practice's inherent regularity, apply the same bins above based on the *resulting* frequency described, with an explicit narrative note on cause (for interpretive transparency, not a separate numeric treatment). E.g., *"estando mayores... casi no ocupamos en las madrugadas"* — Germán Calderón (esposa), P2, 25/03/2026 → Low/Sporadic, with a note that the driver is age-related, not seasonal or task-related.
+
+---
+
+**Table 2 — Rigidity → window-timing variability parameters (`time_fraction_random_variability` **and** `random_var_w`)**
+
+**Scope and definitions (per RAMP documentation):** these are two *distinct* parameters, both driven by the same underlying rigidity judgment (Strict/Flexible/Chaos) but randomizing different things:
+- `time_fraction_random_variability` — randomness applied to the appliance's **total functioning time** (`func_time`); i.e., how much the *quantity of daily use* varies.
+- `random_var_w` — randomness applied to the **size of the functioning window** (the w_1/w_2 bounds); i.e., how much the *permissible time-envelope* stretches or contracts.
+
+A single rigidity assessment sets a *pair* of values (one for each parameter), not one shared value. A more rigid practice receives lower values on both; a more chaotic one, higher on both — which is why the Strict evening practice (VA3) carries both a low `time_fraction_random_variability` and a low `random_var_w`. But the two values are recorded separately per appliance.
+
+Representative paired values (`time_fraction_random_variability` / `random_var_w`):
+- **Strict** → ~0.1 / ~0.2
+- **Flexible** → ~0.2 / ~0.3
+- **Chaos** → ~0.3 / ~0.35+
+
+The bin criteria and anchor quotes below apply to the rigidity judgment itself; the paired values above follow from it.
+
+| Bin | Value | Markers | Example anchors |
+|---|---|---|---|
+| Strict | 0.1 | Anchored to external, non-negotiable constraint (school, sunrise/sunset, fixed task) | *"la necesitamos cada día por las noches; los chicos van haciendo sus tareas"* — Zenón García (hija), P1, 26/02/2026; *"Desde las 6 de la tarde alumbra por mis hijos, hasta las 10 de la noche"* — Felipe Rivera, P3, 20/11/2024 |
+| Flexible | 0.2 | Bounded window, shifts with daily circumstance; "depende," "algo así" | *"Dependiendo. A veces desde las 6:00... depende de a qué hora nos levantamos"* — Edelfrida Jiménez Salazar, P1, 26/02/2026 |
+| Chaos | 0.3 | Practice's timing is genuinely unstable *and the respondent's own account signals this* — hedging/vague language ("es muy variado," "no se sabe," "depende de tantas cosas"), self-contradictory statements about timing, or an explicitly wide, unanchored window. Epistemic marker: low confidence visible in how the person describes it, not just variation in outcome | *"Dependiendo. A veces en las mañanas, una hora o algunas veces dos horas también. Por las noches usamos de 7:00 a 8:00, o a veces de 6:00 a 10:00 de la noche; es muy variado"* — Calixto Agreda Inturias, P2, 25/02/2026 |
 
 
+**Chaos vs. Flexible boundary:** Flexible = respondent *can* describe a bounded pattern that shifts with circumstance ("depende de a qué hora nos levantamos"). Chaos = respondent *cannot* reliably describe a pattern at all. The distinguishing signal is in the report itself, not in the objective outcome.
+
+---
 
 
+## Derivation map
 
+| RAMP parameter | Source | One-line basis |
+|---|---|---|
+| `power` (w) | [SPEC] | SHS appliance nameplate rating |
+| `number` / counts | [SPEC] | Survey appliance inventory |
+| `w_1` / `w_2` (window bounds) | [WINDOW] | Outer bounds of the Anthropological Window |
+| `func_time` (total daily on-time) | [WINDOW→margin] | Window width × (1 − random_var_w); window from survey duration/period fields where available |
+| `func_cycle` (min. continuous run) | [RIG-XW → func_time] | Rigidity bin → fraction of `func_time` (second-order) |
+| `time_fraction_random_variability` | [RIG-XW] | Rigidity bin's assigned total-on-time variation |
+| `random_var_w` | [RIG-XW] | Rigidity bin's assigned window-width variation |
+| `occasional_use` | [FREQ-XW] | Frequency crosswalk: language → probability |
+| `thermal_P_var` (charging/supply appliances only) | [DECLARED DEFAULT] | Stated, reasoned value pending real measurement; physical mechanism stated explicitly since RAMP's parameter name references thermal variability specifically |
+| `prob_home` (**household-level**, one per profile ± per season) | [OCC] | Stated absence durations ÷ interviewed household-months → P(household present on a given day); gates every VA of the household together (§10) |
+
+**Rigidity is the spine of the model:** a single crosswalk classification of how rigid vs. trigger-driven each practice is (Table B: Strict / Flexible / Chaos) drives *three* distinct parameters — directly for `time_fraction_random_variability` and `random_var_w`, and via a further func_time-fraction rule for `func_cycle`. This is the clearest instantiation of the paper's thesis that qualitative understanding enriches — rather than merely supplements — quantitative modeling: one qualitative classification propagates into three model parameters.
+
+---
+
+## 1. `power` — [SPEC]
+Device wattage is a technical property of the hardware, not a behavioral variable. Taken directly from the appliance nameplate / SHS deployment inventory (LED and radio ratings). Carries none of the qualitative-translation burden and is the most directly verifiable parameter in the model.
+
+## 2. `number` / appliance counts — [SPEC]
+Ownership and quantity per household from the survey appliance inventory. Countable, survey-sourced.
+
+## 3. `w_1` / `w_2` (time-window bounds) — [WINDOW]
+The window bounds are the outer edges of the **Anthropological Window** for the practice. The Anthropological Window is itself a triangulated construct: the practice's timing as described in interviews, **crossed with** the survey time-use data, plus hard physical anchors (sunrise/sunset). The window is therefore not a single self-report but a convergence of two independent sources — which is what makes it auditable rather than interpretive.
+
+*Crossing convention when interview and survey diverge on timing.* Survey and interview timing data sit at different resolutions — the survey gives a coarse, systematically-collected envelope; the interview gives finer situated detail — so they typically *refine* rather than *contradict* each other. The rule is a refinement hierarchy with a defined fallback, and it simultaneously sets `random_var_w` (§7):
+
+1. **Survey sets the coarse envelope; interview refines within it.** The survey time-use response establishes the outer window; interview detail tightens the bounds where it gives a more specific range.
+2. **Interview range nests inside the survey envelope** → use the interview bounds; set `random_var_w` **low** (sources agree, one sharpens the other — high evidential confidence).
+3. **Ranges overlap but do not nest** → take the **union** as the window; set `random_var_w` **higher** (sources bound the practice only loosely — moderate confidence).
+4. **Genuine conflict (non-overlapping ranges)** → default to the **survey** (the instrument applied identically across all households; an outlying interview statement may be idiosyncratic or a recall/transcription artifact); flag in the provenance note; set `random_var_w` **high**. Should be rare — frequent conflict for a given practice is itself a finding to note.
+
+The survey-wins tiebreak in tier 4 is deliberate: it keeps the qualitative contribution as *enrichment* (adding resolution and meaning, the common case) rather than *override* (vetoing structured data, the contested case), which is the defensible position and avoids the "cherry-picked qualitative data" critique. This convention also makes `random_var_w` a rule-governed readout of source agreement rather than a separate judgment (see §7).
+
+**Use the modal code, not a median-of-widths statistic, when grounding a window in survey period-code data.** Survey period-of-use questions are categorical (e.g., "18:00–22:00," "19:00–21:00," not raw clock times). It is tempting to compute a summary statistic across respondents' reported *widths* (e.g., median duration) and center that on an assumed typical start time — but this can silently produce a window that **no respondent actually reported**, since a median width paired with an assumed start time is a constructed artifact, not a real answer. The correct method: take the single most common reported code (the mode) directly, bounds and all. This surfaced as a real error in Profile 1 — VA3's window was originally set from a width-only median (17:00–20:00, nobody's actual answer) and was corrected to the true modal code (18:00–22:00, the single most common reported window, independently corroborated by three interview quotes) once checked directly. The same check caught and corrected two further instances (VA5, VA7) before they were finalized. Treat this as a required verification step for every survey-grounded window, not an occasional spot-check.
+
+## 4. `func_time` (total daily functioning time) — [WINDOW→margin rule]
+
+The survey codebook contains direct duration data (`light_bulb_N_time`, `phone_N_time`, `radio_time` — average daily hours) and direct period-of-use codes (`light_N_morning`/`light_N_night` — categorical windows). Checking these against each other empirically (Profile 1, N=26): reported total daily on-time closely matches the *sum* of reported morning+night window widths (ratio ≈ 1.0) — i.e., respondents report their stated windows as continuously occupied, not sparsely used within a wider span. This is a real empirical finding and should not be diluted by an invented "intensity" fraction.
+
+However, RAMP requires `func_time` to sit strictly below the window width so stochastic placement has room to operate without truncating at the boundary. This is an **engine constraint, not an empirical claim**, and must be handled as a separate, explicitly-labeled step rather than folded into the empirical value:
+
+> `func_time = window_width × (1 − random_var_w)`
+
+This draws the margin from `random_var_w` (already set by the rigidity crosswalk, Table B) rather than an arbitrary constant. It also functions as an implicit bias correction: `random_var_w` is lowest for well-anchored (Strict) practices, which are also the reports least likely to suffer recall/rounding bias, so those reports are trusted closest to their full value; poorly-anchored (Chaos) reports — more likely to be rough estimates — are discounted more. One formula, two justifications (engine constraint + bias correction), both stated rather than left implicit.
+
+Where the direct survey duration/period fields aren't available for a given appliance (e.g., no equivalent field exists), fall back to duration statements in the interview ("dos horas," "hasta las 10") as the window-width source, then apply the same margin formula.
+
+## 5. `func_cycle` (minimum continuous run-time) — [RIG-XW → func_time]
+This is a **second-order derivation**: the rigidity crosswalk (Table B) classifies the practice, then a further rule expresses `func_cycle` as a fraction of `func_time`:
+
+> The more rigid (continuous, non-negotiable) the practice, the closer `func_cycle` is to `func_time` (the activity runs in one unbroken block). The more trigger-driven (intermittent, unpredictable) the practice, the smaller `func_cycle` is relative to `func_time` (the activity fires in short bursts within its window).
+
+Worked reasoning: REVISE THE RIGIDITY VALUES!
+- **Rigid / continuous** (evening homework+dinner light, safety light): people do not get up mid-activity to toggle the light, and cooking/homework does not take less than its multi-hour block — so `func_cycle` ≈ `func_time`. *Anchor: VA3, func_cycle 150 / func_time 180 ≈ 0.83.*
+- **Flexible / bounded-but-shifting** (a practice the respondent can describe, but without a single fixed anchor): sits between the two extremes — the practice isn't as fragmented as a Chaos trigger, but isn't as continuous as a Strict routine either. `func_cycle` ≈ 0.6 of `func_time`, the stated midpoint between Strict's ~0.83 and Chaos's ~0.5. *Anchor: VA1/VA5 (Profile 1), func_cycle ≈50 / func_time 84 ≈ 0.6.*
+- **Trigger-driven / intermittent** (daytime "search for something in the room" light): use is provoked by unpredictable specific needs, so it fires in short fragments — `func_cycle` ≪ `func_time`. *Anchor: VA2, func_cycle 30 / func_time 60 = 0.5.*
+
+Rigidity here is the *same* assessment used for the two variability parameters below (§6–7), so `func_cycle` is not an independent judgment but a third output of one rigidity construct.
+
+## 6. `time_fraction_random_variability` — [RIG-XW]
+Per RAMP documentation, this randomizes the **total functioning time** (`func_time` ± this fraction) — i.e., how much the *quantity of daily use* varies. It is a direct output of the rigidity crosswalk (Table B): Strict ≈ 0.1, Flexible ≈ 0.2, Chaos ≈ 0.3.
+
+## 7. `random_var_w` — [RIG-XW]
+Per RAMP documentation, this randomizes the **size of the functioning window** (the w_1/w_2 bounds) — i.e., how much the *permissible time-envelope* stretches or contracts. A direct output of the rigidity crosswalk (Table B), distinct from §6: one varies *how long the appliance runs*, the other varies *how wide the window is*.
+
+Justification (from rigidity, with an evidential interpretation): a Strict practice is externally anchored (school, sunset), so its window barely moves → low `random_var_w`; a Chaos practice has no firm anchor, so its window floats → high `random_var_w`. Conceptually, `random_var_w` encodes **how confidently the source data bounds the window**, and this is the actual value-setting rule (not a second independent one): it is set directly by the interview×survey crossing tiers in §3 — nested sources → **~0.1–0.2**; overlapping → **~0.2–0.3**; conflicting → **~0.3–0.4**. Rigidity and source-agreement align in practice (rigid practices tend to have well-agreed windows), so Table B's Strict/Flexible/Chaos values (0.2/0.3/0.35) are typical *outcomes* of this rule, not a separate rule — use them as a sanity check: if a VA's rigidity bin and its evidence-confidence tier disagree noticeably, that's worth a second look, since it may mean the rigidity call rode on narrative tone rather than on how well-anchored the timing evidence actually is.
+
+*Why two parameters, not one:* rigidity is the common cause, but the two act on different objects, so a practice can be rigid in one respect and loose in the other. The decisive case is **VA9 (Portable devices charging):** its window is [0, 1440] — the entire day, because charging can occur at any daylight hour — so `random_var_w = 0`, not because timing is certain but because a window already spanning 24h has no width left to randomize (window-flex is undefined for a full-day window). Yet `time_fraction_random_variability = 0.2`, because *how much* charging happens still varies day to day (battery state of charge, number of devices, visitors, supply fluctuation under cloud cover). The two parameters are here **decoupled by construction**: window-flex is driven to zero by a structural fact (the full-day window) that has no bearing on total-time variability. This pair cannot be explained as two labels on one rigidity value — one parameter reports an unbounded/maximal window, the other reports that the quantity of use still varies — which proves the two are not redundant. Supporting transcript evidence for the fixed-window/variable-quantity reading: *"a veces lo cargamos en el día o en la noche"* (timing unconstrained); *"Para dos celulares no abastece; solo abastece para uno"* (Edelfrida Jiménez Salazar, P1 — quantity contested by demand); *"cuando hay bastante sol, hay bastante energía"* (Miguel Meneses, P1 — amount tied to fluctuating supply).
+
+## 8. `occasional_use` — [FREQ-XW]
+Probability that the practice occurs on a given day, from respondent frequency language via the frequency crosswalk (Table A), subject to the priority override for non-negotiable practices.
+
+**"On a given day" means a *home* day wherever the occupancy mask is active (§10).** The two probabilities are independent draws and compose multiplicatively, `P(VA runs on a day) = prob_home × occasional_use`, so once a profile carries a `prob_home` the crosswalk's denominator is home-days rather than calendar-days. This is the correct reading of the source evidence rather than a reinterpretation of it: a respondent describing how often they light the evening meal is describing the evenings they are there, and Table A's markers ("siempre," "a veces") are heard against the household's own presence, not against the calendar. Declare the reading explicitly per profile (`occasional_use_basis`), and never encode absence a second time by lowering `occasional_use` — see §10's double-counting rule.
+
+## 9. `thermal_P_var` — [DECLARED DEFAULT] (used for supply/charging-type appliances)
+Percentage random variability applied to an appliance's power draw, per RAMP's own parameter (confirmed: always a scalar fraction, e.g. 0.2 = 20%, applied as variability around a baseline power — in RAMP's own documented example, a time-varying power series; the mechanism also functions when applied to a plain constant `power`, without requiring a full external time series). RAMP's parameter name references thermal variability specifically, but nothing prevents applying the same mechanism to a different physical source of power variability — e.g., device-charging electronics (CC-CV current taper as a battery approaches full charge) rather than temperature. When repurposed this way, state the actual physical mechanism explicitly rather than letting the parameter's name imply a justification it doesn't have.
+
+Where a specific value isn't grounded in real measurement (lab data, manufacturer specs, or a directly-cited study), it should be recorded as a **declared default**: a stated, reasoned starting value, explicitly flagged as pending real data rather than presented as measured. State the reasoning (e.g., known charging-curve physics, device-type diversity) so the value is defensible even before real data replaces it, and flag any downstream result that turns out to be sensitive to the exact figure chosen.
+
+*§9 is the last per-appliance parameter. The one household-level parameter, `prob_home` — [OCC], is specified in **§10**, which sits further down under "Handled outside per-appliance parameters" because that is what it is: a property of the household, applied to all of its VAs at once.*
+
+
+## Handled outside per-appliance parameters
+
+
+Practices with a nameable-but-unmeasured trigger are treated as **Chaos**, the same bin as practices where the respondent can't name a pattern at all. The two cases differ in *why* the practice is unpredictable (data-availability vs. respondent-epistemic), but they receive the *same treatment*, because both amount to the same fact from the model's perspective: this study has no quantitative basis for a value other than "unpredictable." Chaos's definition is extended accordingly — it now covers both (a) accounts where the respondent cannot describe a stable pattern, and (b) accounts where a cause is named but was never tracked as a study variable, so the study itself cannot quantify it. Weather-linked practices (VA2/VA6 in Profile 1) fall under (b) and are Chaos on that basis, not because the underlying weather-light relationship is inherently random.
+
+**Household-level behavioral heterogeneity (no stated cause) — a distinct pattern, remaining after the conditional-VA mechanism's retirement.** Sometimes the evidence supports *that* a practice happens, consistently, for a small subset of households, without supporting *why*. This is a different phenomenon from the now-retired conditional-VA idea: a (retired) conditional VA would have weighted between two states of the *same* household on different days (rainy vs. clear); this pattern instead describes a stable difference *between* households — some consistently practice it, most never do, with no identified trigger separating them, measured or otherwise. Modeling this as a flat `occasional_use` (as if every household has a small daily chance) is a genuine category mismatch at the *individual household* level — no simulated household actually behaves like either real pattern (the practicing minority or the non-practicing majority).
+
+**Whether this mismatch matters depends on the validation design, and this needs to be checked explicitly for each case, not assumed.** If validation compares simulated output against a **profile-averaged** real load curve, and Tier 2 metrics (including MRSD) are computed on that single averaged curve rather than per-household then averaged, a heterogeneous population and a uniform-probability population converge to the same expected aggregate contribution — the flat value is then a confirmed-adequate simplification, not just an accepted one. (Confirmed for this paper's pipeline: Tier 2 metrics operate on the single profile-averaged curve.) If a future analysis introduces per-household metrics, or if the validation design changes, this simplification should be revisited — it is not adequate in general, only under the averaged-curve design actually in use here.
+
+Example (P1, VA4 — Indoor overnight light, no stated cause): *"La usamos durante toda la noche; apagamos al amanecer"* — Guillermo Negrete, 25/02/2026; *"Desde las 7 de la noche hasta el amanecer; toda la noche está prendido"* — Guillermo Cordova, 20/11/2024; *"Alumbra desde las 6 de la tarde, a veces hasta el amanecer, pero no se apaga"* — Albino Acosta, 20/11/2024. Underlying prevalence: 3 of 20 Profile 1 interviewed households (0.15), or 3 of 30 using the full survey population (0.10) — corroborated by matching survey overnight-period codes and, for Albino, by an independent field memo (caseid 44). **Rounded to 0.14 (1/7)** in the truth file for consistency with the crosswalk's day-fraction convention — a stated practical choice, not a re-derived value; document this distinction (underlying evidence vs. rounded implementation value) explicitly wherever it's applied, so the rounding doesn't get mistaken for the estimate itself.
+
+**Household-level structural absence (dual residence / extended absence).** Distinct from per-appliance variability — it suppresses *every* VA in the household simultaneously. Triggered by **explicit dual-household or extended-absence language in the interview narrative** (a stated second residence, an explicit multi-week/month departure with return timeframe) — **not** by the survey's `migration_label`, which is too common across the sample to discriminate (most households show some migration) and cannot on its own distinguish a structurally-discontinuous household from an ordinary one. Not tied to EBP profile either (multi-month absence appears in a Profile 3 household, e.g. Martín Salazar, not only in Profile 4). Anchors: *"se quedará un mes"* (Rodolfo Agreda, P4); *"a veces seis meses"* (Martín Salazar, P3); dual-residence *"generalmente yo estoy aquí; mi esposa a veces... pagamos [ELFEC]"* (Guillermo Romero, P4). **This axis is no longer deferred** — §10 states how it is quantified and simulated.
+
+---
+
+## 10. `prob_home` — [OCC] (household-level occupancy)
+
+The probability that a household of the profile is **present** on a given day. This is the quantification of the structural-absence axis described immediately above, and the only parameter in this protocol that is not a property of an appliance. One presence draw is made per household per day and gates every VA of that household together, so an absent household produces exactly zero load that day — which is the whole point of deriving it separately. Encoding the same absence in each appliance's `occasional_use` would give every appliance its own independent absence die and produce incoherent days: some VAs of one routine running while others that belong to it do not.
+
+**Eligibility (who enters the arithmetic).** Only households meeting the diagnostic bar stated above **and** carrying a *stated duration* — a specific number of weeks or months, or an explicitly dated window. Three exclusions follow, and each must be named in the profile rather than silently applied:
+
+- **Mobility without a duration is excluded.** A household described as leaving for the *monte* or the mine, with no stated length, contributes nothing to the numerator. It is real absence that the arithmetic cannot see.
+- **Absence without an empty house is excluded.** Where resident kin sustain a load during the household's absence, or where the pattern may be a narrower commute-for-tasks rather than a departure, the occupancy consequence is not established. Check for a resident-baseline offset explicitly; do not assume absence implies zero load.
+- **`migration_label` is never a substitute** for either, per the paragraph above.
+
+Because the first two exclusions only ever remove absence, **a derived `prob_home` is an upper bound on presence, never a point estimate.** State this in the profile. It aligns with the independent directional finding that self-reports overstate presence, which makes the bound the conservative direction rather than an arbitrary one.
+
+**Derivation rule.**
+
+1. Convert each eligible household's stated absence to **household-months**.
+2. **Annual value:** `prob_home = 1 − (Σ absent household-months ÷ (N_interview × 12))`. The denominator is the *full* interviewed base, not the eligible subset — the parameter describes the profile, in which non-absent households are a real and load-bearing majority.
+3. **Seasonal values,** only where the evidence itself places the absence in particular months (a dated window, or a named migration season): distribute each household's months into seasons, capped by each season's own length, and compute `prob_home(season) = 1 − (absent household-months in season ÷ (N_interview × months in season))`. Where a stated duration exceeds the window it is associated with, the excess spills to adjacent months rather than being discarded or double-counted.
+4. Round to two decimals. Check that the month-weighted mean of the seasonal values reproduces the annual value — if it doesn't, the distribution in step 3 has lost or duplicated household-months.
+
+Report the arithmetic in the truth file, not just the result: the household table with each stated duration and its source, the sums, and the division. The step that carries the most interpretive weight is step 3's distribution, and it is the step a reader is most likely to want to redo differently.
+
+**Confidence must be reported separately for level and shape.** These are two different claims resting on different evidence, and one is routinely much weaker than the other. The *level* (annual absent fraction) is carried by every eligible household. The *seasonal shape* is carried only by those whose absence has a dated window — so a profile with one dated household and two aseasonal ones has a well-supported level and a shape resting on a single case. Where that is so, say it, and name the flat-annual alternative as the conservative sensitivity variant.
+
+**Declare `prob_home: null`, never a token value, where no eligible household exists.** This mirrors the retired-VA/placeholder distinction in the structural-requirements section above: continuous occupancy attested by respondents is a substantive finding and should be recorded as one. It is also the numerically safer choice — `null` skips the presence draw entirely rather than drawing against a probability of 1, so a profile declared sedentary keeps a random stream identical to a run predating this parameter, and its already-computed results stay reproducible.
+
+**The double-counting rule.** A profile must represent absence *once*. Where partial absence is already carried by per-VA seasonal `occasional_use` reductions, do not also apply a mask over the same season; where the mask is applied, do not lower `occasional_use` to represent absence. The two are not interchangeable even when tuned to the same mean — reduced frequency trims *every* day a little, while the mask removes *whole days* and leaves the rest at full intensity, so they differ in day-to-day variance and in peak coincidence. Choose per profile, on the evidence, and state which mechanism is carrying the effect and why the other is not.
+
+**Applied values (as of 2026-08-18).**
+
+| Profile | `prob_home` | Basis in brief |
+|---|---|---|
+| 1 — Agricultural Core | `null` | Single thin dual-residence account (≈1 month/yr) computes to ≈0.995, below the resolution of a daily draw; the season's partial absence is already in the per-VA floors, so a mask would double-count |
+| 2 — Isolated Elderly | `null` | Continuous 365-day occupancy, attested by respondents and corroborated by a field memo for all nine interviews. The study's presence baseline |
+| 3 — Extended Hub | 0.96; 0.78 in free grazing | Two eligible households (6 and 3 months); the migration window concentrates two-thirds of those months in Jul–Sep. Four further mobile households are ineligible for want of a stated duration |
+| 4 — System Breakers | 0.69 / 0.61 / 0.61 / 0.78 by season, 0.68 annual | Three eligible households (a dated Dec–June window, a fortnightly alternation, a relocation). Inverts the community's seasonal shape: presence is lowest in growing and harvesting. Level well-supported, shape resting on the one dated window |
+
+**Authoring and implementation.** `prob_home` is authored in each truth file's Seasonality section as a single fenced ```` ```yaml occupancy ```` block (`prob_home`, optional `seasonal_prob_home`, and `occasional_use_basis` declaring the §8 reading), parsed by `extract_parameters.py` into the profile JSON, resolved per season by `season_resolve.py`, and passed to RAMP's `User.prob_home`. Three limitations of the engine-side mechanism affect how a profile may be written:
+
+- The mask gates **every** appliance of the household, including ones declared `flat`. A load that genuinely continues during absence must be assigned to a separate always-present user — the pipeline does this automatically for `flat` VAs, but the modeling decision is the analyst's.
+- It is **not supported with RAMP's parallel processing**, which loses the grouping of appliances into individual households.
+- It is **not part of RAMP's .xlsx model format**, so it exists only in the Python-side parameters — a model round-tripped through .xlsx silently loses it.
+
+
+## How this protocol was derived (methods note)
+
+The crosswalks were built inductively, not imposed: transcripts were searched for the language respondents use to express frequency and timing-stability; recurring expressions were binned; each bin was validated against anchor quotes from *multiple* profiles (licensing a single universal crosswalk, and supporting the transferability claim of §5.4); and the scheme was revised where transcript evidence contradicted an initial definition. Recorded revisions: (1) "Chaos" redefined from an outcome criterion to an epistemic one; (2) a proposed conditional-VA mechanism for weather- and psychological-triggered practices was retired, since no trigger was ever collected as a systematically measured study variable — such practices are Chaos instead, an extension of the epistemic definition to cover data-availability as well as respondent uncertainty; (3) structural absence separated as a household-level axis keyed to migration status rather than profile; (4) window-grounding corrected from a median-of-widths statistic to the true modal survey code, after the former was found to produce windows no respondent had actually reported (caught and fixed in three separate cases during Profile 1's finalization); (5) two VA-set-level structural requirements — window continuity for shared-hardware VAs, and a conservation-logic plausibility check before modeling any VA — were added after being applied ad hoc to Profile 1 without first being stated as general rules; (6) the population table's classification source was updated to `classifications_oficial.csv`, adopted for every household except ids 58 and 83, where a documented qualitative override is retained; ids 7 and 67 move to Profile 3, id 88 to Profile 1, and ids 58 and 83 stay with Profile 1 under the override — all four truth files reflect this membership; (7) field memos (`memos.csv`) were formalized as a distinct, dated evidence tier — `[FIELD MEMO: caseid, date]`, ranked between interview transcript and undocumented conversational recall — after their coverage was checked household-by-household against `all_transcripts.txt` and found to corroborate, not replace, existing transcript-based evidence throughout the sample; (8) 2026-08-18 — the structural-absence axis moved from *documented but deferred* to *applied*, gaining a sixth derivation source **[OCC]** and a quantified parameter, `prob_home` (§10). This was a translation of evidence already collected and already reasoned about, not new fieldwork: the diagnostic bar, the `migration_label` exclusion, and the anchors were all fixed by revision (3), and what §10 adds is the arithmetic that turns stated absence durations into a probability, the eligibility rule that keeps unquantified mobility out of the numerator (making every derived value an upper bound on presence), and the double-counting rule governing when the mask may and may not coexist with per-VA seasonal reductions. Two of the four profiles resolve to `prob_home: null` on their own evidence, which is a recorded finding of continuous occupancy rather than a default. Every applied value traces to ≥1 anchor quote (respondent ID, profile, date); a full quote-by-quote mapping lives in the supplementary provenance file.
