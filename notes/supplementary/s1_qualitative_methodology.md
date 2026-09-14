@@ -18,21 +18,16 @@
     - Objective: Capture unique Andean realities that the EC framework might miss.
     - Procedure: Identify concepts like Minka (communal work), specific rituals, or "expressions of pride/resistance" to technology.
     - Prefixing: Use a specific prefix for new codes (e.g., RQ_ for Raqaypampa) to distinguish them from the deductive framework.
-3. Phase III: Fine-Grained Coding for RAMP Modeling
-    - Objective: Extract precise technical parameters needed for the RAMP bottom-up model.
-    - Targeted Codes:
-        - Appliance Specifics: Create sub-codes for MAT_LED_Lighting, MAT_Radio, and MAT_Phone_Charging.
-        - Time Windows: Code for PRAC_Timing_Morning, PRAC_Timing_Evening, and PRAC_Timing_Seasonal.
-        - Priority: Code for "User narratives on appliance importance" to understand which loads are shed first during constraints.
-4. Phase IV: Thematic Integration and Triangulation
-    - Objective: Compare what people say with what the data loggers measure.
+3. Phase III: Thematic Integration and Triangulation
+    - Objective: Identify thematic groups among the codes
     - Action: Use QualCoder’s Reports to aggregate codes.
     - Mapping: Align qualitative themes (e.g., "Gender roles in energy budgeting") with quantitative load profiles.
     - Verification: Check if self-reported "Activity timing" matches the peaks in the measured electricity data.
-5. Phase V: Quality Control (The Audit Trail)
+4. Phase V: Quality Control (The Audit Trail)
     - Code Consistency: Periodically review the "Code Memos" to ensure a code’s meaning hasn't shifted over the 100-household sample.
     - GitHub Sync: Ensure QualCoder is closed before pushing updates to your repository to avoid database corruption.
     - Final Export: Export the Codebook as a CSV to include as a methodological appendix in your thesis.
+
 
 
 ### S1.2 The Codes
