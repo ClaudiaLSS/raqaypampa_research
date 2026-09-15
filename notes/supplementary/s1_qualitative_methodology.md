@@ -1,38 +1,36 @@
 ## Section S1: Extended Qualitative Methodology
 
-*This section details the qualitative analysis process, bridging the gap between raw data and the quantitative parameters used in the modeling.*
+This section details the qualitative analysis process, focusing on the interviews.
 
 ### S1.1 Thematic coding protocol
 
 1. Preparation and Familiarization
-    - Objective: Immerse yourself in the socio-cultural context of the Indigenous Originary Peasant Territory (TIOC).
-    - Action: Read each transcript fully without coding.
-    - Journaling: Use the Journal tab in QualCoder to record initial impressions of Sumaq Kawsay (Living Well) and how it manifests in energy use.
-    - File Memos: Document specific context for each household (e.g., Zone A vs. Zone B, or family composition).
-1. Phase I: Deductive Coding (Structural)
+    - Objective: To get immersed in the socio-cultural context of the Indigenous Originary Peasant Territory (TIOC).
+    - Action: After cleaning and preraing the text transcripts, read each one of them fully without coding.
+    - Journaling: Use the Journal tab in QualCoder or manual writing to record initial impressions about how energy is used in Raqaypampa. 
+    - File Memos: Document specific context for each household, using the field observation memos gathered during field visits.
+2. Phase I: Deductive Coding (Structural)
     - Objective: Apply the Energy Cultures (EC) framework to categorize data into Material Culture, Norms, and Practices.
-    - Procedure: Use the predefined codes from your operationalization table.
+    - Procedure: Use the predefined codes from the operationalization table (See Suppementary Material S5).
     - Code Memos: Every deductive code must have a definition in the "Edit Memo" section to prevent "code drift".
         - Example: MAT_Cooking: Only for mentions of firewood, traditional ovens, or specific cooking hardware.
-2. Phase II: Inductive Coding (Emergent)
+3. Phase II: Inductive Coding (Emergent)
     - Objective: Capture unique Andean realities that the EC framework might miss.
-    - Procedure: Identify concepts like Minka (communal work), specific rituals, or "expressions of pride/resistance" to technology.
-    - Prefixing: Use a specific prefix for new codes (e.g., RQ_ for Raqaypampa) to distinguish them from the deductive framework.
-3. Phase III: Thematic Integration and Triangulation
-    - Objective: Identify thematic groups among the codes
+    - Procedure: Identify concepts, specific rituals, or "expressions of pride/resistance" to technology.
+    - New codes: Give new codes adequate names and memos.
+4. Phase III: Thematic Integration
+    - Objective: Identify thematic groups among the codes.
     - Action: Use QualCoder’s Reports to aggregate codes.
-    - Mapping: Align qualitative themes (e.g., "Gender roles in energy budgeting") with quantitative load profiles.
-    - Verification: Check if self-reported "Activity timing" matches the peaks in the measured electricity data.
-4. Phase V: Quality Control (The Audit Trail)
-    - Code Consistency: Periodically review the "Code Memos" to ensure a code’s meaning hasn't shifted over the 100-household sample.
+    - Final Code Tree: Observe the code tree with the identified themes and give each theme a short definition.
+5. Phase V: Quality Control
+    - Code Consistency: Periodically review the "Code Memos" to ensure a code’s meaning hasn't shifted over the household sample.
     - GitHub Sync: Ensure QualCoder is closed before pushing updates to your repository to avoid database corruption.
-    - Final Export: Export the Codebook as a CSV to include as a methodological appendix in your thesis.
-
+    - Final Export: Export the Codebook as a CSV or Word to include in the Supplementary Material .
 
 
 ### S1.2 The Codes
 
-The complete coding tree exported from the QualCoder project (`qualcoder_analysis.qda`). It comprises **96 codes** organised under six top-level categories — Practices, Norms, Material culture, Socio-economics, Impact and Demographics — corresponding to the three core Energy Cultures dimensions (Material Culture, Norms, Practices) plus the socio-demographic and impact dimensions added for a different purpose than this study. The following shows the complete picture of the coding tree:
+The complete coding tree exported from the QualCoder project (`qualcoder_analysis.qda`). It comprises **96 codes** organised under six top-level themes — Practices, Norms, Material culture, Socio-economics, Impact and Demographics — corresponding to the three core Energy Cultures dimensions (Material Culture, Norms, Practices) plus the socio-demographic and impact dimensions added for a different purpose than this study. The following shows the complete picture of the coding tree:
 
 1. Practices
 
@@ -83,7 +81,7 @@ The complete coding tree exported from the QualCoder project (`qualcoder_analysi
 `DEMO_children`, `DEMO_female_adult`, `DEMO_female_senior`, `DEMO_male_adult`, `DEMO_male_senior`, `DEMO_youth_female`, `DEMO_youth_male`
 
 
-In the following table, each entry lists the code label, *n* (the number of coded segments to which the code was applied across the interview corpus; 2,329 segments in total), and the code memo written in QualCoder. Memos follow the standard structure used during coding — **Definition** (what the code captures), **Energy context** (its sociological reading), **Modeling** (how it translates into a load-profile parameter), **Inclusion criteria** (when to apply it) and an **Example quote** (verbatim, in the original Spanish) — except for a small number of descriptive tags coded with free-text memos. Two low-frequency codes carry no memo and are flagged as such.
+In the following table, each entry lists the code label, *n* (the number of coded segments to which the code was applied across the interview corpus; 2,329 segments in total), and the code memo written in QualCoder. Memos follow the standard structure used during coding — **Definition** (what the code captures), **Energy context** (its sociological reading), **Modeling** (initial insights or possible implications of the code for the modeling part) **Inclusion criteria** (when to apply it) and an **Example quote** (verbatim, in the original Spanish) — except for a small number of descriptive tags coded with free-text memos. Two low-frequency codes carry no memo and are flagged as such.
 
 **Practices** (`1_practices`)
 
@@ -91,8 +89,8 @@ In the following table, each entry lists the code label, *n* (the number of code
 
 | Code | *n* | Memo |
 |:---|---:|:---|
-| `PR_act_information_communication` | 10 | **Definition:** The use of energy to power radios or charge cellphones for the purpose of staying informed or communicating.<br>**Energy context:** Sociological: Radios provide vital companionship and local news, while cellphones connect geographically isolated families.<br>**Modeling:** Represents the primary daytime or continuous low-power baseline load (charging phones, running radios).<br>**Inclusion criteria:** Apply when users discuss listening to the radio for news/company, or the critical need to charge phones to talk to migrated family members.<br>**Example quote:** "Acabo de comprarme una radio... ya qué necesito informarme poder escuchar es buena compañía también." |
-| `PR_act_knitting` | 2 | They say they use light to knit |
+| `PR_act_information_communication` | 10 | **Definition:** The use of energy to power radios or charge cellphones for the purpose of staying informed or communicating.<br>**Energy context:** Sociological: Radios provide vital companionship and local news, while cellphones connect geographically isolated families.<br>**Modeling:** It can imply a common load to model as the baseline. <br>**Inclusion criteria:** Apply when users discuss listening to the radio for news/company, or the critical need to charge phones to talk to migrated family members.<br>**Example quote:** "Acabo de comprarme una radio... ya qué necesito informarme poder escuchar es buena compañía también." |
+| `PR_act_knitting` | 2 | **Definition:** The reported practice of knitting.<br>**Energy context:** Lights can be used to knit or not. <br>**Modeling:** Not crucial for modeling because is not a common practice to use the lights to do it. <br>**Inclusion criteria:** Apply when users discuss the common practice of knitting as a recreative activity or a necesity, with economic implications or not.<br>**Example quote:** "En el día me gusta tejer, en las noches no se ve bien..." |
 | `PR_act_leisure_company` | 2 | **Definition:** The continuous use of the radio (or the desire for TV) to provide background noise, entertainment, and companionship, especially for adults working alone or pasturing animals.<br>**Energy context:** Sociological: In highly isolated, silent rural environments, the radio acts as a psychological comfort.<br>**Modeling:** Unlike active tasks (cooking, homework) which have defined time windows, "companionship" radio use creates a constant, low-wattage continuous baseline load that can run from 05:00 AM until nighttime.<br>**Inclusion criteria:** Apply when users mention leaving the radio on all day, using it while alone, explicitly calling it "company", or expressing a desire to watch DVDs/TV for entertainment.<br>**Example quote:** "Acabo de comprarme una radio con 200 bolivianas ya qué necesito informarme poder escuchar es buena compañía también." |
 | `PR_act_meals` | 20 | **Definition:** The use of SHS energy (primarily lighting) to prepare food, cook, and consume meals as a household.<br>**Energy context:** Sociological: Meal preparation is a core domestic anchor that defines the start and end of the active day, often dictated by agricultural schedules.<br>**Modeling:** This practice creates the two most predictable and inelastic load profile peaks: a brief, early morning peak (e.g., 04:00–06:00) and a longer evening peak (18:00–20:00).<br>**Inclusion criteria:** Apply when users mention using the light specifically to cook, prepare food ("fogón", "cocina"), serve dinner, or eat.<br>**Example quote:** "A veces encendemos la luz de 7:00 a 10:00 de la mañana. Generalmente para cocinar." |
 | `PR_act_mobility_out_of_community` | 19 | Residents only leave their communities for essential purchases or urgent needs due to a critical lack of public transportation. For those without private vehicles (motorcycles or cars), the journey requires a three-hour walk each way. |
@@ -126,7 +124,7 @@ In the following table, each entry lists the code label, *n* (the number of code
 | `PR_use_ict_day_charging` | 24 | **Definition:** The intentional practice of plugging in cellphones or rechargeable radios during daylight hours while the solar panel is actively generating power.<br>**Energy context:** Sociological: Shows technical adaptation; users understand that charging during the day prevents depleting the battery needed for nighttime lighting.<br>**Modeling:** This shifts the charging load to coincide with the solar generation curve (e.g., 10:00 to 16:00), effectively "clipping" the load off the battery and using direct solar yield.<br>**Inclusion criteria:** Apply when users mention charging phones/radios during the day, "cuando hay sol," or specifically avoiding nighttime charging.<br>**Example quote:** "El celular lo hago cargar durante el día... Igual, cuando ya carga completamente lo desenchufo para que no se arruine." |
 | `PR_use_ict_night_charging` | 14 | **Definition:** The practice of charging cellphones or devices during the evening or overnight hours.<br>**Energy context:** Sociological: Often driven by necessity—devices are used during the day in the fields and can only be charged when the user returns home.<br>**Modeling:** This stacks the charging load on top of the evening lighting load, causing the sharpest drop in the battery's State of Charge (SoC).<br>**Inclusion criteria:** Apply when users mention plugging in their phones when they get home from work, or leaving them plugged in overnight.<br>**Example quote:** "A veces lo cargo en las noches también, hasta el amanecer." |
 | `PR_use_radio_continuous` | 4 | **Definition:** The practice of leaving the radio powered on for extended, uninterrupted periods, often spanning the entire workday.<br>**Energy context:** Sociological: The radio serves as constant companionship rather than a tool for brief, targeted information gathering.<br>**Modeling:** Instead of a probabilistic "use window," the radio represents a continuous, flat load profile (e.g., 3-5 watts constantly drawn from 06:00 to 18:00).<br>**Inclusion criteria:** Apply when users say the radio is on "todo el día," or that they take it with them and it plays constantly.<br>**Example quote:** "Escucho la radio desde las 5 de la mañana, todo el día hasta la noche." |
-| `PR_use_radio_evening` | 1 | *(no memo recorded)* |
+| `PR_use_radio_evening` | 1 | **Definition:** The practice of leaving the radio powered during the night.<br>**Energy context:** Sociological: The radio serves as constant companionship rather than a tool for brief, targeted information gathering.<br>**Modeling:** It represents a baseline load for the nights.<br>**Inclusion criteria:** Apply when users say the radio is on during the night.<br>**Example quote:** "Escucho la radio desde las 5 de la mañana, todo el día hasta la noche." |
 | `PR_use_TV_night` | 1 | **Definition:** The practice of using the Solar Home System to power high-draw visual entertainment appliances, specifically small televisions and CD/DVD players, for brief periods of leisure during the night<br>**Energy context:** Sociological: In geographically isolated communities without broadcast signals, users still highly value visual entertainment, purchasing TVs strictly to watch physical media (CDs/DVDs). However, because standard SHS batteries struggle to sustain this heavy load, this practice is often short-lived and eventually abandoned due to hardware failure or battery depletion.<br>**Modeling:** This introduces a high-wattage, short-duration load spike (typically late in the evening, e.g., 21:00 to 22:00). Because the system struggles to sustain it, your load profile generator should apply a high "failure/abandonment probability" to this variable, meaning the load curve will feature this TV spike for a simulated period before permanently dropping to zero as the appliance breaks or is discarded.<br>**Inclusion criteria:** Apply this code when users explicitly state they actually used, owned, or powered a TV or CD/DVD player using their solar system. (Note: Do not use this code for users who simply state they "wish" they had a TV; those segments should go into the PR_unmet_appliance_demand code).<br>**Example quote:** "Teníamos una TV de 500 bolivianos para ver CDs, porque aquí no llegan canales, pero ya no funciona; antes 'levantaba' con la batería, pero ahora no la ocupamos." (Alternative quote: "Solo por las noches, a partir de las 9, una hora aproximadamente; luego apagamos y ya a descansar. Este otro que tengo también tiene batería.") |
 
   *Lighting* (`lighting`)
@@ -177,7 +175,7 @@ In the following table, each entry lists the code label, *n* (the number of code
 | `MAT_app_lighting_fixed` | 117 | Tracks the ownership, presence, and usage of Permanent LED bulbs installed in the household structure. |
 | `MAT_app_lighting_portable` | 26 | Tracks the physical presence, usage, explicit desire for, or hardware degradation of portable rechargeable lighting devices (such as "linternas" and "picolámparas"). |
 | `MAT_app_phone` | 85 | Tracks the ownership, presence, and usage of mobile phones. Unlike fixed LED bulbs, these represent a mobile energy demand that can be disconnected from the main system. |
-| `MAT_app_picolampara` | 7 | *(no memo recorded)* |
+| `MAT_app_picolampara` | 7 | Tracks the ownership of a 'picolámpara', a technology that consists on a solar lantern with an integrated battery that allows device charging as well. It is a less capacity technology than the deployed SHS. |
 | `MAT_app_radio` | 70 | Tracks the ownership, presence, and usage of rechargeable radios. Unlike fixed LED bulbs, these represent a mobile energy demand that can be disconnected from the main system. |
 | `MAT_app_refrigerator` | 5 | Tracks the physical presence, usage, explicit desire for, or hardware degradation of refrigerators. |
 | `MAT_app_thermal_comfort` | 0 | Tracks the physical presence, usage, explicit desire for, or hardware degradation of thermal comfort devices (such as "ventiladores" and "calentadores"). |
@@ -187,8 +185,8 @@ In the following table, each entry lists the code label, *n* (the number of code
 
 | Code | *n* | Memo |
 |:---|---:|:---|
-| `MAT_transport_moto` | 3 | Private motorcycles. |
-| `MAT_transport_public_car` | 7 | Public transit, buses, or community trucks. |
+| `MAT_transport_moto` | 3 | Tracks the ownership and/or use of motorcycles for transport. |
+| `MAT_transport_public_car` | 7 | Tracks the use of public transit, buses, or community trucks used for transport. |
 
   *Traditional* (`traditional`)
 
@@ -196,9 +194,9 @@ In the following table, each entry lists the code label, *n* (the number of code
 |:---|---:|:---|
 | `MAT_fuel_firewood` | 20 | Biomass used in a fogón for cooking. |
 | `MAT_fuel_gas` | 10 | Propane/LPG gas cylinders for cooking. |
-| `MAT_legacy_batteries` | 10 | "Pilas" (disposable dry-cell batteries). |
-| `MAT_legacy_candle` | 25 | Velas |
-| `MAT_legacy_mechero` | 25 | Mecheros and kerosene lamps. |
+| `MAT_legacy_batteries` | 10 | Tracks the use of "Pilas" (disposable dry-cell batteries) for different purposes such as flashlights or radios. |
+| `MAT_legacy_candle` | 25 | Tracks the use of candles for illumination |
+| `MAT_legacy_mechero` | 25 | Tracks the mentions of Mecheros and kerosene lamps as being previously used (before the SHS). |
 
 *Infrastructure realities* (`infraestrucure_realities`)
 
@@ -263,8 +261,8 @@ The following steps are used to identify the Socio-Technical Rules that govern t
 **Step 1: Identify the "Anchor" Practices (The "What")**
 
 First, core energy events that define the load profile are identified.
-- Action in QualCoder: Run a Code Frequencies report strictly on your 1_practices category.
-- What to look for: Identify the practices with the highest counts. Based on the codebook, these will likely be `PR_use_lights_time_evening_routine` (count: 56), `PR_act_school_homework` (count: 21), and `PR_use_ict_day_charging` (count: 17). These high-frequency practices are your temporal anchors.
+- Action in QualCoder: Run a Code Frequencies report strictly on 1_practices category.
+- What to look for: Identify the practices with the highest counts. Based on the codebook, these will likely be `PR_use_lights_time_evening_routine` (count: 56), `PR_act_school_homework` (count: 21), and `PR_use_ict_day_charging` (count: 17). These high-frequency practices are the temporal anchors.
 
 **Step 2: Run Co-occurrence Queries (The "Who" and the "Why")**
 
@@ -436,7 +434,7 @@ The extracted Socio-Technical rules are listed below, organized into four main t
 
 All interviews were conducted in the first language of the Raqaypampa communities, which is Quechua as spoken locally — a variety with substantial Spanish borrowing and frequent within-utterance code-switching, in which certain lexical domains (numerals, calendar and clock terms, and many frequency and timing expressions) are commonly rendered in Spanish even inside otherwise-Quechua speech. Respondents themselves comment on this mixing in the corpus. All interviews were audio-recorded in full. Transcription and translation were carried out as a single integrated step by a bilingual (Quechua–Spanish) research team member, who listened to each recording and produced a written Spanish transcript directly from the audio; this person also conducted a subset of the interviews personally and worked from the audio alone for the remainder. The resulting Spanish transcripts constitute the working corpus (all_transcripts.txt) on which all subsequent qualitative analysis was performed. Alongside the interview corpus, field memos (memos.csv) were written in Spanish by the main researcher, who participated in every field visit; the interviewers themselves rotated across visits according to team availability, so the memos are the one continuous authorial voice spanning the full fieldwork period. This is what licenses their status as a distinct, dated evidence tier in the derivation protocol (§2.1).
 
-Because the interviews were held in Quechua and coded in Spanish, one act of translation sits between the spoken source and every coded segment, and we describe the transcripts as translated rather than verbatim on that ground. Two features of the local language situation reduce how much interpretive work that step actually does for the analysis. First, the expressions the crosswalks (Supplementary Material S1.2–S1.3) most depend on — frequency markers such as a veces, de vez en cuando, cada tres días, and timing markers such as hasta las 10 or al oscurecer — are precisely the lexical items most often spoken in Spanish in Raqaypampa, so for a substantial share of the anchor material the transcript reproduces the respondent's own words rather than a translated equivalent. Second, transcription and translation were performed together by a single Quechua-speaking listener working from the audio, rather than as a two-stage pipeline, so idiom and hedging in the genuinely Quechua stretches were interpreted in the context of the whole utterance. Coding was then performed directly on the Spanish transcripts, with no further re-translation; quotes reproduced in this paper in English were translated from the Spanish transcript for presentation only.
+Because the interviews were held in Quechua and coded in Spanish, one act of translation sits between the spoken source and every coded segment, and we describe the transcripts as translated rather than verbatim on that ground. Two features of the local language situation reduce how much interpretive work that step actually does for the analysis. First, the expressions the crosswalks (Supplementary Material S3) most depend on — frequency markers such as a veces, de vez en cuando, cada tres días, and timing markers such as hasta las 10 or al oscurecer — are precisely the lexical items most often spoken in Spanish in Raqaypampa, so for a substantial share of the anchor material the transcript reproduces the respondent's own words rather than a translated equivalent. Second, transcription and translation were performed together by a single Quechua-speaking listener working from the audio, rather than as a two-stage pipeline, so idiom and hedging in the genuinely Quechua stretches were interpreted in the context of the whole utterance. Coding was then performed directly on the Spanish transcripts, with no further re-translation; quotes reproduced in this paper in English were translated from the Spanish transcript for presentation only.
 
 Using a single bilingual translator throughout ensured consistent handling of recurring terms and idiom across the entire corpus, at the cost of the independent back-translation or second-translator check a larger team would permit. Two features of the protocol mitigate this. First, the Spanish transcript is the primary (tier-1) evidence for every crosswalk anchor, is attributable to a named respondent and date, and remains open to re-inspection, so each classification decision can be traced back to a specific translated utterance. Second, the crosswalks deliberately map language onto coarse ordinal bins rather than fine numerical readings, so the analysis depends on the broad frequency or rigidity sense of an expression surviving translation — a lower bar than exact lexical fidelity — which further limits the leverage any single translation choice has on a final parameter value.
 
