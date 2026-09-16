@@ -95,6 +95,7 @@ from matplotlib.lines import Line2D
 import transforms as tf
 from style import (
     COMMUNITY_SERIES,
+    FIGSIZE_STACK_2x1,
     FIGSIZE_WIDE,
     SERIES,
     apply_style,
@@ -107,6 +108,15 @@ from style import (
 )
 
 
+# (nrows, ncols, figsize) per layout key. "wide" is the default and the only
+# one that was in use before; "stack" exists so the figure can go in a single
+# column of a two-column manuscript without being rescaled (see style.py).
+LAYOUTS = {
+    "wide": (1, 2, FIGSIZE_WIDE),          # double-column float, figure*
+    "stack": (2, 1, FIGSIZE_STACK_2x1),    # single-column float, figure
+}
+
+
 def plot_figure6(
     df,
     out_path,
@@ -116,6 +126,7 @@ def plot_figure6(
     max_traces=60,
     trace_alpha=0.12,
     window_label="",
+    layout="wide",
 ):
     """
     basis       LDC construction for panel (b); "mean_day" by default to
@@ -133,17 +144,30 @@ def plot_figure6(
     trace_alpha opacity of those individual traces. Low enough that the
                 mean curve drawn over them stays the dominant mark --- the
                 traces are context for it, not a competing series.
+    layout      "wide" (default, unchanged) puts (a) and (b) side by side at
+                double-column width (7.2in). "stack" puts (b) below (a) at
+                single-column width (3.5in), for a figure that sits in one
+                column of a two-column manuscript. Both are sized to be
+                placed at 100% scale; shrinking the 7.2in version into a
+                3.5in column instead would scale the 9pt type to ~4.4pt.
 
     Always read the printed statistics before writing the caption. The
     module docstring explains why the original "wide vs. narrow" premise
     cannot be used.
     """
+    if layout not in LAYOUTS:
+        raise ValueError(
+            f"unknown layout {layout!r}; expected one of {sorted(LAYOUTS)}"
+        )
+
     tf.check_frame(df)
     tf.require_series(df, COMMUNITY_SERIES, context="community aggregate")
     tf.check_common_resolution(df)
     apply_style()
 
-    fig, (ax_env, ax_ldc) = plt.subplots(1, 2, figsize=FIGSIZE_WIDE)
+    nrows, ncols, figsize = LAYOUTS[layout]
+    # Both geometries give a flat 2-element array, so the unpacking holds.
+    fig, (ax_env, ax_ldc) = plt.subplots(nrows, ncols, figsize=figsize)
 
     # --- (a) Daily-trace envelopes ----------------------------------------
     widths, peaks = {}, {}
@@ -205,13 +229,24 @@ def plot_figure6(
         )
         labels.append(spec["label"])
 
-    title = "Community aggregate: day-to-day spread and demand distribution"
+    # The full title does not fit on one line at 3.5in, so the stacked layout
+    # uses a short form. It still carries window_label: the window decides how
+    # strong the claim is (see module docstring), so it is the one part of the
+    # title that must never be dropped to save space.
+    if layout == "stack":
+        title = "Community aggregate"
+    else:
+        title = "Community aggregate: day-to-day spread and demand distribution"
     if window_label:
         title = f"{title} — {window_label}"
     fig.suptitle(title)  # window matters for the claim; see module docstring
     fig.tight_layout()
 
-    figure_legend(fig, handles, labels, ncol=2)
+    # Side by side these two labels are ~57 characters, wider than a 3.5in
+    # canvas: savefig(bbox_inches="tight") would then expand the whole figure
+    # to fit the legend, and a 3.5in figure would arrive 4.9in wide. One
+    # column per entry keeps the legend inside the panels' width.
+    figure_legend(fig, handles, labels, ncol=1 if layout == "stack" else 2)
     save_fig(fig, out_path)
 
     ratio = (
