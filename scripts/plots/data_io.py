@@ -45,13 +45,24 @@ KNOWN CAVEATS
 * Measured pools are small: 2 households for P1/P3/P4 and 1 for P2.
   N_HOUSEHOLDS records the counts; the panels no longer state them, so
   they have to be stated in the Fig. 4 caption instead.
-* SIM_DIR points at simulation_results/, whose per-profile runs contain
-  exactly ONE household each. profile_<pid>_minute_aggregated.csv is the
-  SUM across a profile's households, so with one household it equals that
-  household — correctly comparable to the measured representative
-  baseline. Never re-point Fig. 4/5 at sim_community/: the same filenames
-  there sum 11-28 households and the curves would be that many times too
-  high. Check simulation_summary.json's n_households before switching.
+* SIM_DIR points at results/simulation_results/simulations_v2/, whose
+  per-profile runs contain exactly ONE household each.
+  profile_<pid>_minute_aggregated.csv is the SUM across a profile's
+  households, so with one household it equals that household — correctly
+  comparable to the measured representative baseline. Never re-point
+  Fig. 4/5 at sim_community/: the same filenames there sum 11-28
+  households and the curves would be that many times too high. Check
+  simulation_summary.json's n_households before switching. Its sibling
+  simulated_v1/ is the superseded v1 parameterisation — not what the
+  manuscript's Socio-Technical panels show.
+* The three directories above were re-pointed on 2026-09-14 after results
+  moved under the top-level results/. scripts/modeling/v2/ holds working
+  copies of the same runs (simulation_results/ there is byte-identical to
+  simulations_v2/); the results/ copies are the canonical ones.
+* OPEN: COMMUNITY_DIR's aggregates are dated 2026-08-31 and were built
+  from a 2026-08-19 sim_community/, while SIM_DIR's runs are dated
+  2026-09-07. Fig. 6 may therefore describe a parameterisation one
+  revision behind Fig. 4/5 — verify before the figures are final.
 """
 
 from pathlib import Path
@@ -61,9 +72,9 @@ import pandas as pd
 # --- Where things live ----------------------------------------------------
 REPO = Path(__file__).resolve().parents[2]
 
-MEASURED_DIR = REPO / "data/clean/timeseries/baseline_results"
-SIM_DIR = REPO / "scripts/modeling/simulation_results"
-COMMUNITY_DIR = REPO / "scripts/modeling/community_results"
+MEASURED_DIR = REPO / "data/clean/timeseries/baseline_profiles"
+SIM_DIR = REPO / "results/simulation_results/simulations_v2"
+COMMUNITY_DIR = REPO / "results/community_results"
 
 MEASURED_FILE = "baseline_profile_{profile}.csv"
 SIM_FILE = "profile_{profile}_minute_aggregated.csv"
