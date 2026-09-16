@@ -28,12 +28,16 @@ Input: load_profile_minutes() — the same table Fig. 4 uses, so the two
 figures are guaranteed to describe the same samples.
 """
 
+import textwrap
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 import transforms as tf
 from style import (
     FIGSIZE_GRID_2x2,
+    FIGSIZE_ROW_1x4,
+    FIGSIZE_STACK_4x1,
     PROFILES,
     PROFILE_LABELS,
     PROFILE_SERIES,
@@ -46,6 +50,16 @@ from style import (
 )
 
 
+# (nrows, ncols, figsize) per layout key. "grid" is the default and the
+# only one that was in use before; the other two exist so the figure can be
+# placed in a two-column manuscript without being rescaled (see style.py).
+LAYOUTS = {
+    "grid": (2, 2, FIGSIZE_GRID_2x2),    # double-column float, figure*
+    "row": (1, 4, FIGSIZE_ROW_1x4),      # double-column float, figure*
+    "stack": (4, 1, FIGSIZE_STACK_4x1),  # single-column float, figure
+}
+
+
 def plot_figure5(
     df,
     out_path,
@@ -53,6 +67,7 @@ def plot_figure5(
     basis="mean_day",
     month_label="May",
     annotate_p95=True,
+    layout="grid",
 ):
     """
     basis  "mean_day" (default) sorts the representative daily curve, which
@@ -61,11 +76,33 @@ def plot_figure5(
            val_ldc_*.png figures and the LDC-RMSE / P95 values in the
            metrics tables. "pooled" and "per_day" are different curves; see
            transforms.ldc before using them.
+
+    layout "grid"  2x2 at double-column width (7.2in) — the default, unchanged.
+           "row"   1x4 across the full double-column width, one panel per
+                   profile side by side. Panels are only 1.8in wide, so the
+                   x axis drops to three ticks, the axis label is shared, and
+                   the P95 note wraps onto two lines.
+           "stack" 4x1 at single-column width (3.5in), matching Fig. 4's
+                   stacked option, for a figure that sits in one column.
+
+           Both non-default layouts are sized to be placed at 100% scale.
+           Shrinking the 7.2in grid into a 3.5in column instead would scale
+           the 9pt type down to roughly 4.4pt.
     """
+    if layout not in LAYOUTS:
+        raise ValueError(
+            f"unknown layout {layout!r}; expected one of {sorted(LAYOUTS)}"
+        )
+
     tf.check_frame(df, extra_columns=("profile",))
     apply_style()
 
-    fig, axes = plt.subplots(2, 2, figsize=FIGSIZE_GRID_2x2, sharex=True)
+    nrows, ncols, figsize = LAYOUTS[layout]
+    # squeeze=False keeps `axes` 2-D for every layout, so the row/column
+    # indexing below works unchanged whichever geometry is in use.
+    fig, axes = plt.subplots(
+        nrows, ncols, figsize=figsize, sharex=True, squeeze=False,
+    )
 
     for ax, profile in zip(axes.flat, profiles):
         sub = df[df["profile"] == profile]
@@ -82,27 +119,60 @@ def plot_figure5(
             # for P1 measured).
             p95[series] = float(np.percentile(power, 95))
 
-        ax.set_title(PROFILE_LABELS[profile])
+        # A full profile label is ~35 characters, roughly twice what fits
+        # across a 1.8in panel at 9.5pt, and adjacent titles run into each
+        # other. Wrapping keeps the names rather than reducing them to bare
+        # "P1".."P4" codes the reader would have to look up in the caption.
+        ax.set_title(
+            textwrap.fill(PROFILE_LABELS[profile], width=20)
+            if layout == "row" else PROFILE_LABELS[profile]
+        )
         ax.set_ylim(bottom=0)
-        fraction_ticks(ax, step=0.25)
+        # 1.8in panels cannot carry five "100%"-width labels without the
+        # end ones colliding, so the row layout keeps 0 / 50 / 100 only.
+        fraction_ticks(ax, step=0.5 if layout == "row" else 0.25)
 
         if annotate_p95:
             gap = p95["socio_technical"] - p95["measured"]
-            annotate(
-                ax,
-                f"P95: {p95['measured']:.2f} → {p95['socio_technical']:.2f} W "
-                f"({gap:+.2f})",
-                loc="right",
-            )
+            if layout == "row":
+                # On one line this note is wider than a 1.8in panel, and even
+                # split in two the value line still overhangs the axes. Three
+                # lines keep the longest at ~13 characters, inside the panel.
+                note = (
+                    f"P95\n{p95['measured']:.2f} → "
+                    f"{p95['socio_technical']:.2f} W\n({gap:+.2f})"
+                )
+            else:
+                note = (
+                    f"P95: {p95['measured']:.2f} → "
+                    f"{p95['socio_technical']:.2f} W ({gap:+.2f})"
+                )
+            annotate(ax, note, loc="right")
 
-    for ax in axes[:, 0]:
-        ax.set_ylabel("Power (W)")
-    for ax in axes[1, :]:
-        ax.set_xlabel("Fraction of the day at or above level")
+    if layout == "stack":
+        # One shared label instead of four repeats: at 3.5in wide the
+        # repeated label costs more width than the panels can spare.
+        fig.supylabel("Power (W)", fontsize=plt.rcParams["axes.labelsize"])
+    else:
+        for ax in axes[:, 0]:
+            ax.set_ylabel("Power (W)")
 
-    fig.suptitle(
-        f"Load Duration Curve by Energy Behavior Profile — {month_label}"
-    )
+    xlabel = "Fraction of the day at or above level"
+    if layout == "row":
+        # Every panel is a bottom panel here, and the label is far wider
+        # than 1.8in, so it goes once under the whole row.
+        fig.supxlabel(xlabel, fontsize=plt.rcParams["axes.labelsize"])
+    else:
+        for ax in axes[-1, :]:
+            ax.set_xlabel(xlabel)
+
+    # The suptitle is dropped in the stacked layout: it does not fit on one
+    # line at 3.5in, and a two-column manuscript expects the caption to
+    # carry it anyway.
+    if layout != "stack":
+        fig.suptitle(
+            f"Load Duration Curve by Energy Behavior Profile — {month_label}"
+        )
     fig.tight_layout()
 
     handles, labels = axes[0, 0].get_legend_handles_labels()
