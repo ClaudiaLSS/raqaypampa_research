@@ -1,12 +1,12 @@
 ## Section S2: Energy Behavior Profiles (EBP) 
 
-*This section corresponds to the items explicitly placed in "Supplementary Material S1" within the main manuscript.*
+*This section of the Supplementary Material focus on the Energy Behavior profiles, from a detailed description to the classification tree used to assign each household with a profile in the paper.*
 
 ### S2.1 Profiles description
 
 **Profile 1 — Educational & Agricultural Core.** Nuclear and stable-extended families with working-age adults and school-aged children; all heads are in agriculture or domestic labour, and 26 of 28 households have at least one child currently in school — the profile's defining structural feature. The daily routine centres on waking before dawn to prepare for fieldwork and school, an empty house through the working day, and a single dense evening of cooking, homework, and family time before an early bedtime. These households value schooling highly and ration energy strategically to guarantee power for children's evening study. Residence is sedentary: where the survey records temporary migration (9 of 28), it refers to one member's short-term labour absence while the household and its solar home system stay put, not a household relocation.
 
-**Profile 2 — Isolated Elderly.** Households defined structurally by the absence of both school-aged dependents and a resident working-age support generation: unipersonal households and older couples living alone, whose adult children have out-migrated to Cochabamba, Chapare, Santa Cruz, or the mines. Household size is the smallest of any profile (mean 1.9), incomes the lowest (median 100 Bs), and 7 of 11 households contain a member aged 60 or older. The label is sociological rather than an age bracket — the classifier admits a few heads under 50 whose isolation is structural (siblings gone, no dependents) rather than geriatric. These households are almost entirely agricultural (10/11), sedentary year-round, and sustained by intermittent, unscheduled visits from migrated kin; their signature practice is leaving a single bulb on until dawn.
+**Profile 2 — Isolated Elderly.** Households defined structurally by the absence of both school-aged dependents and a resident working-age support generation: unipersonal households and older couples living alone, whose adult children have out-migrated to Cochabamba, Chapare, Santa Cruz, or the mines. Household size is the smallest of any profile (mean 1.9), incomes the lowest (median 100 Bs), and 7 of 11 households contain a member aged 60 or older. The label is sociological rather than an age bracket — the classifier admits a few heads under 50 whose isolation is structural (siblings gone, no dependents) rather than geriatric. These households are almost entirely agricultural (10/11), sedentary year-round, and sustained by intermittent, unscheduled visits from migrated kin; their signature practice is using less electric devices.
 
 **Profile 3 — Extended & Multi-Tasking Hub.** Extended and numerous families — 13 of 14 carry an *Extendido* or numerous family-type code — with the largest mean household size (6.4, range 3–11) and the highest median income of the four (300 Bs); most heads are agriculturalists (11/14). The label describes family *structure*, not co-residence: the classifier admits households that are extended on paper but frequently emptied in practice, so the profile is best read as large extended families with **intermittent occupancy** rather than a uniform high-intensity hub. What genuinely separates it from Profile 2 is later, longer evenings — driven by homework where school-age children are present — and real mobility, with households leaving for the *monte*, the mines, or a second residence, sometimes for months.
 
@@ -14,7 +14,7 @@
 
 ### S2.2 Household classification tree
 
-Every household within scope was assigned to exactly one of the four Energy Behavior Profiles by a **fixed, priority-ordered decision tree** applied to survey-derived fields only. The tree is evaluated top to bottom and stops at the first matching rule. Qualitative material never assigns a profile directly; its only role in assignment is the documented, field-level correction of a miscoded input variable (§S2.2.6), after which the *same* tree is rerun. It is otherwise used downstream to characterize and validate the profiles.
+Every household within scope was assigned to one of the four Energy Behavior Profiles by a **fixed, priority-ordered decision tree** applied to survey-derived fields only. The tree is evaluated top to bottom and stops at the first matching rule. Qualitative material never assigns a profile directly; its only role in assignment is the documented, field-level correction of a miscoded input variable, after which the *same* tree is rerun. It is otherwise used downstream to characterize and validate the profiles.
 
 **Scope**
 
@@ -99,7 +99,7 @@ The finished classification is validated in two independent ways, neither of whi
 - a **qualitative concordance check**, screening each classified household's interview and memo text for the thematic markers of its assigned profile and flagging disagreements for manual review; and
 - a **quantitative discriminant-validity check**, confirming the groups separate along behavioral outcomes (e.g. daytime phone charging, agricultural labor hours, cooking duration, morning-lighting curve) that played no role in assignment.
 
-### **S2.3 Population Counts per Profile**
+### S2.3 Population Counts per Profile
 
 Each behavioral profile is defined over two nested subpopulations: the full survey-derived set of households assigned to the profile (N_survey), and the subset of those households for which a qualitative interview was conducted (N_interview). All qualitative parameters are inferred from N_interview and applied uniformly to N_survey at simulation time.
 
